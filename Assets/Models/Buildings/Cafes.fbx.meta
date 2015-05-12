@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: c9f490d01a979f24a80b97c09c4b1246
+timeCreated: 1428678453
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Balk1
+    100002: Bench1
+    100004: Bench2
+    100006: Bord
+    100008: BottleBar
+    100010: Cafes
+    100012: //RootNode
+    100014: Ceiling
+    100016: Ceiling 1
+    100018: Chair
+    100020: Chair1
+    100022: Chair2
+    100024: DeurPost
+    100026: Dividing
+    100028: Floor
+    100030: Floor 1
+    100032: Inner
+    100034: Ladder
+    100036: LongTable1
+    100038: LongTable2
+    100040: LongTable3
+    100042: LowerWalls
+    100044: OuterWalls
+    100046: pCube10
+    100048: pCube10 1
+    100050: pCube10 2
+    100052: pCube11
+    100054: pCube11 1
+    100056: pCube11 2
+    100058: pCube12
+    100060: pCube12 1
+    100062: pCube12 2
+    100064: pCube13
+    100066: pCube13 1
+    100068: pCube13 2
+    100070: pCube14
+    100072: pCube14 1
+    100074: pCube14 2
+    100076: pCube16
+    100078: Planken
+    100080: Roof
+    100082: TeaHouse
+    100084: Toonbank
+    100086: UpstairsDoor
+    100088: voorderamen
+    100090: Windscherm
+    400000: Balk1
+    400002: Bench1
+    400004: Bench2
+    400006: Bord
+    400008: BottleBar
+    400010: Cafes
+    400012: //RootNode
+    400014: Ceiling
+    400016: Ceiling 1
+    400018: Chair
+    400020: Chair1
+    400022: Chair2
+    400024: DeurPost
+    400026: Dividing
+    400028: Floor
+    400030: Floor 1
+    400032: Inner
+    400034: Ladder
+    400036: LongTable1
+    400038: LongTable2
+    400040: LongTable3
+    400042: LowerWalls
+    400044: OuterWalls
+    400046: pCube10
+    400048: pCube10 1
+    400050: pCube10 2
+    400052: pCube11
+    400054: pCube11 1
+    400056: pCube11 2
+    400058: pCube12
+    400060: pCube12 1
+    400062: pCube12 2
+    400064: pCube13
+    400066: pCube13 1
+    400068: pCube13 2
+    400070: pCube14
+    400072: pCube14 1
+    400074: pCube14 2
+    400076: pCube16
+    400078: Planken
+    400080: Roof
+    400082: TeaHouse
+    400084: Toonbank
+    400086: UpstairsDoor
+    400088: voorderamen
+    400090: Windscherm
+    2300000: Balk1
+    2300002: Bench1
+    2300004: Bench2
+    2300006: Bord
+    2300008: Ceiling
+    2300010: Ceiling 1
+    2300012: DeurPost
+    2300014: Dividing
+    2300016: Floor
+    2300018: Floor 1
+    2300020: Inner
+    2300022: Ladder
+    2300024: LongTable1
+    2300026: LongTable2
+    2300028: LongTable3
+    2300030: LowerWalls
+    2300032: OuterWalls
+    2300034: pCube10
+    2300036: pCube10 1
+    2300038: pCube10 2
+    2300040: pCube11
+    2300042: pCube11 1
+    2300044: pCube11 2
+    2300046: pCube12
+    2300048: pCube12 1
+    2300050: pCube12 2
+    2300052: pCube13
+    2300054: pCube13 1
+    2300056: pCube13 2
+    2300058: pCube14
+    2300060: pCube14 1
+    2300062: pCube14 2
+    2300064: pCube16
+    2300066: Planken
+    2300068: Roof
+    2300070: Toonbank
+    2300072: UpstairsDoor
+    2300074: voorderamen
+    2300076: Windscherm
+    3300000: Balk1
+    3300002: Bench1
+    3300004: Bench2
+    3300006: Bord
+    3300008: Ceiling
+    3300010: Ceiling 1
+    3300012: DeurPost
+    3300014: Dividing
+    3300016: Floor
+    3300018: Floor 1
+    3300020: Inner
+    3300022: Ladder
+    3300024: LongTable1
+    3300026: LongTable2
+    3300028: LongTable3
+    3300030: LowerWalls
+    3300032: OuterWalls
+    3300034: pCube10
+    3300036: pCube10 1
+    3300038: pCube10 2
+    3300040: pCube11
+    3300042: pCube11 1
+    3300044: pCube11 2
+    3300046: pCube12
+    3300048: pCube12 1
+    3300050: pCube12 2
+    3300052: pCube13
+    3300054: pCube13 1
+    3300056: pCube13 2
+    3300058: pCube14
+    3300060: pCube14 1
+    3300062: pCube14 2
+    3300064: pCube16
+    3300066: Planken
+    3300068: Roof
+    3300070: Toonbank
+    3300072: UpstairsDoor
+    3300074: voorderamen
+    3300076: Windscherm
+    4300000: Floor
+    4300002: Roof
+    4300004: Dividing
+    4300006: Ceiling
+    4300008: LowerWalls
+    4300010: Bord
+    4300012: UpstairsDoor
+    4300014: Ladder
+    4300016: LongTable2
+    4300018: LongTable1
+    4300020: Bench1
+    4300022: Bench2
+    4300024: LongTable3
+    4300026: Balk1
+    4300028: Windscherm
+    4300030: Toonbank
+    4300032: Floor
+    4300034: pCube14
+    4300036: pCube13
+    4300038: pCube12
+    4300040: pCube11
+    4300042: pCube10
+    4300044: pCube14
+    4300046: pCube13
+    4300048: pCube12
+    4300050: pCube11
+    4300052: pCube10
+    4300054: pCube14
+    4300056: pCube13
+    4300058: pCube12
+    4300060: pCube11
+    4300062: pCube10
+    4300064: pCube16
+    4300066: Ceiling
+    4300068: OuterWalls
+    4300070: Inner
+    4300072: Planken
+    4300074: DeurPost
+    4300076: voorderamen
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

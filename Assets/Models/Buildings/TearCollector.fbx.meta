@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: 278207d27441f1f458a8f5b88ad2515b
+timeCreated: 1428679592
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: behindStatueWall
+    100002: Bone
+    100004: door
+    100006: Front
+    100008: front_wall
+    100010: LittleSkull
+    100012: LittleSkull3
+    100014: roof
+    100016: SkullBovenDeur
+    100018: SkullBovenDeur1
+    100020: spikes
+    100022: StatueLeft3
+    100024: StatueRight
+    100026: //RootNode
+    100028: TearCollector
+    100030: torchL
+    100032: torchL1
+    100034: window_middle
+    400000: behindStatueWall
+    400002: Bone
+    400004: door
+    400006: Front
+    400008: front_wall
+    400010: LittleSkull
+    400012: LittleSkull3
+    400014: roof
+    400016: SkullBovenDeur
+    400018: SkullBovenDeur1
+    400020: spikes
+    400022: StatueLeft3
+    400024: StatueRight
+    400026: TearCollector
+    400028: //RootNode
+    400030: torchL
+    400032: torchL1
+    400034: window_middle
+    2300000: behindStatueWall
+    2300002: Bone
+    2300004: door
+    2300006: Front
+    2300008: front_wall
+    2300010: LittleSkull
+    2300012: LittleSkull3
+    2300014: roof
+    2300016: SkullBovenDeur
+    2300018: SkullBovenDeur1
+    2300020: spikes
+    2300022: StatueLeft3
+    2300024: StatueRight
+    2300026: torchL
+    2300028: torchL1
+    2300030: window_middle
+    3300000: behindStatueWall
+    3300002: Bone
+    3300004: door
+    3300006: Front
+    3300008: front_wall
+    3300010: LittleSkull
+    3300012: LittleSkull3
+    3300014: roof
+    3300016: SkullBovenDeur
+    3300018: SkullBovenDeur1
+    3300020: spikes
+    3300022: StatueLeft3
+    3300024: StatueRight
+    3300026: torchL
+    3300028: torchL1
+    3300030: window_middle
+    4300000: torchL
+    4300002: Front
+    4300004: window_middle
+    4300006: front_wall
+    4300008: door
+    4300010: roof
+    4300012: spikes
+    4300014: LittleSkull
+    4300016: Bone
+    4300018: LittleSkull3
+    4300020: SkullBovenDeur
+    4300022: StatueRight
+    4300024: StatueLeft3
+    4300026: SkullBovenDeur1
+    4300028: torchL1
+    4300030: behindStatueWall
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

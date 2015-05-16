@@ -254,6 +254,14 @@ Material:
         second: {r: 1, g: 1, b: 0, a: 0}
       data:
         first:
+          name: _Displacement
+        second: {r: 6.6371665, g: 20.3539829, b: -1, a: -.681415975}
+      data:
+        first:
+          name: _ShoreTiling
+        second: {r: 1, g: 1, b: .100000001, a: .100000001}
+      data:
+        first:
           name: _BumpMap_ST
         second: {r: 1, g: 1, b: 0, a: 0}
       data:
@@ -264,14 +272,6 @@ Material:
         first:
           name: _WaveOffset
         second: {r: 1, g: 1, b: -.00999999978, a: -.00999999978}
-      data:
-        first:
-          name: _Displacement
-        second: {r: 6.6371665, g: 20.3539829, b: -1, a: -.681415975}
-      data:
-        first:
-          name: _ShoreTiling
-        second: {r: 1, g: 1, b: .100000001, a: .100000001}
       data:
         first:
           name: _RefrColor
@@ -319,7 +319,7 @@ Material:
       data:
         first:
           name: _BumpDirection
-        second: {r: 40, g: 40, b: 40, a: -40}
+        second: {r: 40, g: -79.8654099, b: 20, a: -39.9327049}
       data:
         first:
           name: _BaseColor
@@ -335,11 +335,11 @@ Material:
       data:
         first:
           name: _WorldLightDir
-        second: {r: -.0285839736, g: -.20165287, b: -.979040146, a: 0}
+        second: {r: -.0265361033, g: -.201932579, b: -.979040146, a: 0}
       data:
         first:
           name: _Foam
-        second: {r: .426666677, g: .486666679, b: 0, a: 0}
+        second: {r: .426666707, g: .486666679, b: 0, a: 0}
       data:
         first:
           name: _GAmplitude
@@ -355,15 +355,15 @@ Material:
       data:
         first:
           name: _GSpeed
-        second: {r: -3, g: 2, b: 1, a: 3}
+        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: _GDirectionAB
-        second: {r: .469143569, g: .354051262, b: -.200000003, a: .100000001}
+        second: {r: .469143987, g: .154051304, b: -.200000003, a: .100000001}
       data:
         first:
           name: _GDirectionCD
-        second: {r: .70338881, g: -.679999888, b: .717573524, a: -.200000003}
+        second: {r: .70338881, g: -.279999912, b: .717573524, a: -.200000003}
       data:
         first:
           name: _ReflectiveColorCube_ST

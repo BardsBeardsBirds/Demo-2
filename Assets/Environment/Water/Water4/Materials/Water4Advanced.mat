@@ -319,7 +319,7 @@ Material:
       data:
         first:
           name: _BumpDirection
-        second: {r: 40, g: -79.8654099, b: 20, a: -39.9327049}
+        second: {r: 20.8595219, g: 38.2808762, b: 10.2455778, a: 9.50882149}
       data:
         first:
           name: _BaseColor

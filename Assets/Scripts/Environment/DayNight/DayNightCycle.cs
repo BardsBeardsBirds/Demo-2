@@ -8,19 +8,24 @@ public class DayNightCycle
     public float CurrentTime;
     public int CurrentHour;
     public int CurrentMinute;
-    //public bool Night;
-    //public bool SunDown;
-    //public bool SunUp;
+
     public bool SwitchingSkyboxes;
+    public bool ChangingLightStrength;
     public DayOrNight CurrentDayOrNight;
 
     public Clock UIClock;
+    public Light DirectionalLight;
 
     private float _skyboxBlender;
+    private float _lightStrengthBlender;
+    private float _daytimeLightStrength = 1.1f;
+    private float _nighttimeLightStrength = 0.55f;
 
     public void InitialiseCycle()
     {
         UIClock = GameObject.Find("Clock").GetComponent<Clock>();
+        DirectionalLight = GameObject.Find("Sun").GetComponent<Light>();
+        _lightStrengthBlender = DirectionalLight.intensity;
         CurrentDayOrNight = DayOrNight.Day;
         RenderSettings.skybox.SetFloat("_Blend", 1f);
 
@@ -39,12 +44,9 @@ public class DayNightCycle
             RealTimeSecondsOfDayPassed = 0f;
 
         CurrentTime = (RealTimeSecondsOfDayPassed / DayDurationInSeconds) * 24;
-    //    Debug.Log("The time is now: " + CurrentTime + " total day: " + DayDurationInSeconds + " " + RealTimeSecondsOfDayPassed);
         Debug.Log(CurrentDayOrNight + " " + CurrentTime);
 
-
         UIClock.TurnPointer();
-
 
         if(CurrentTime > 6 && CurrentTime < 18 && 
             CurrentDayOrNight == DayOrNight.Night)
@@ -53,9 +55,11 @@ public class DayNightCycle
             {
                 _skyboxBlender = 0;
                 SwitchingSkyboxes = true;
+                ChangingLightStrength = true;
             }
 
             SwitchSkybox(DayOrNight.Day);
+            ChangeDirectionalLightStrength(DayOrNight.Day);
         }
         else if (CurrentTime > 18 && 
             CurrentDayOrNight == DayOrNight.Day)
@@ -64,29 +68,12 @@ public class DayNightCycle
             {
                 _skyboxBlender = 1;
                 SwitchingSkyboxes = true;
+                ChangingLightStrength = true;
             }
 
             SwitchSkybox(DayOrNight.Night);
+            ChangeDirectionalLightStrength(DayOrNight.Night);
         }
-
-        //if (CurrentTime < 6 || CurrentTime > 18)
-        //{
-        //    Night = true;
-        //    if(!SunDown)
-        //    {
-        //        SwitchSkybox(DayOrNight.Night);
-        //    }
-        //}
-        //else
-        //{
-        //    Night = false;
-        //    if(!SunUp)
-        //    {
-        //        SwitchSkybox(DayOrNight.Day);
-        //    }
-        //}
-
-        
     }
 
     public void SwitchSkybox(DayOrNight goToTime)
@@ -115,5 +102,27 @@ public class DayNightCycle
                 SwitchingSkyboxes = false;
             }
         }
-    }  
+    }
+
+    public void ChangeDirectionalLightStrength(DayOrNight goToTime)
+    {
+        if (goToTime == DayOrNight.Day)
+        {
+            _lightStrengthBlender = Mathf.Lerp(_lightStrengthBlender, _daytimeLightStrength, .5f * Time.deltaTime);
+            DirectionalLight.intensity = _lightStrengthBlender;
+            if(DirectionalLight.intensity > (_daytimeLightStrength - .05f))
+            {
+                ChangingLightStrength = false;
+            }
+        }
+        else
+        {
+            _lightStrengthBlender = Mathf.Lerp(_lightStrengthBlender, _nighttimeLightStrength, .5f * Time.deltaTime);
+            DirectionalLight.intensity = _lightStrengthBlender;
+            if (DirectionalLight.intensity > (_nighttimeLightStrength + .05f))
+            {
+                ChangingLightStrength = false;
+            }
+        }
+    }
 }

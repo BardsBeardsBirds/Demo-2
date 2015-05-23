@@ -10,11 +10,11 @@ public class DayNightCycle
     public int CurrentMinute;
 
     public bool SwitchingSkyboxes;
-    public bool ChangingLightStrength;
+  //  public bool ChangingLightStrength;
     public DayOrNight CurrentDayOrNight;
 
     public Clock UIClock;
-    public Light DirectionalLight;
+   // public Light DirectionalLight;
 
     private float _skyboxBlender;
     private float _lightStrengthBlender;
@@ -24,11 +24,10 @@ public class DayNightCycle
     public void InitialiseCycle()
     {
         UIClock = GameObject.Find("Clock").GetComponent<Clock>();
-        DirectionalLight = GameObject.Find("Sun").GetComponent<Light>();
-        _lightStrengthBlender = DirectionalLight.intensity;
+     //   DirectionalLight = GameObject.Find("Sun").GetComponent<Light>();
+       // _lightStrengthBlender = DirectionalLight.intensity;
         CurrentDayOrNight = DayOrNight.Day;
         RenderSettings.skybox.SetFloat("_Blend", 1f);
-
 
         HourDuratarionInSeconds = 2f;
         DayDurationInSeconds = HourDuratarionInSeconds * 24;
@@ -44,7 +43,7 @@ public class DayNightCycle
             RealTimeSecondsOfDayPassed = 0f;
 
         CurrentTime = (RealTimeSecondsOfDayPassed / DayDurationInSeconds) * 24;
-        Debug.Log(CurrentDayOrNight + " " + CurrentTime);
+      //  Debug.Log(CurrentDayOrNight + " " + CurrentTime);
 
         UIClock.TurnPointer();
 
@@ -55,11 +54,11 @@ public class DayNightCycle
             {
                 _skyboxBlender = 0;
                 SwitchingSkyboxes = true;
-                ChangingLightStrength = true;
+       //         ChangingLightStrength = true;
             }
 
             SwitchSkybox(DayOrNight.Day);
-            ChangeDirectionalLightStrength(DayOrNight.Day);
+          //  ChangeDirectionalLightStrength(DayOrNight.Day);
         }
         else if (CurrentTime > 18 && 
             CurrentDayOrNight == DayOrNight.Day)
@@ -68,11 +67,11 @@ public class DayNightCycle
             {
                 _skyboxBlender = 1;
                 SwitchingSkyboxes = true;
-                ChangingLightStrength = true;
+         //       ChangingLightStrength = true;
             }
 
             SwitchSkybox(DayOrNight.Night);
-            ChangeDirectionalLightStrength(DayOrNight.Night);
+       //     ChangeDirectionalLightStrength(DayOrNight.Night);
         }
     }
 
@@ -82,11 +81,11 @@ public class DayNightCycle
         {
             _skyboxBlender = Mathf.Lerp(_skyboxBlender, 1f, 1f * Time.deltaTime);
             RenderSettings.skybox.SetFloat("_Blend", _skyboxBlender);
-            Debug.Log("BLENDER: " + _skyboxBlender);
+     //       Debug.Log("BLENDER: " + _skyboxBlender);
             if (_skyboxBlender > 0.95f)
             {
                 CurrentDayOrNight = DayOrNight.Day;
-                Debug.LogWarning("finished blending");
+        //        Debug.LogWarning("finished blending");
                 SwitchingSkyboxes = false;
             }
         }
@@ -94,11 +93,11 @@ public class DayNightCycle
         {
             _skyboxBlender = Mathf.Lerp(_skyboxBlender, 0f, 1f * Time.deltaTime);
             RenderSettings.skybox.SetFloat("_Blend", _skyboxBlender);
-            Debug.Log("BLENDER: " + _skyboxBlender);
+        //    Debug.Log("BLENDER: " + _skyboxBlender);
             if (_skyboxBlender < 0.05f)
             {
                 CurrentDayOrNight = DayOrNight.Night;
-                Debug.LogWarning("finished blending");
+         //       Debug.LogWarning("finished blending");
                 SwitchingSkyboxes = false;
             }
         }
@@ -106,23 +105,24 @@ public class DayNightCycle
 
     public void ChangeDirectionalLightStrength(DayOrNight goToTime)
     {
-        if (goToTime == DayOrNight.Day)
-        {
-            _lightStrengthBlender = Mathf.Lerp(_lightStrengthBlender, _daytimeLightStrength, .5f * Time.deltaTime);
-            DirectionalLight.intensity = _lightStrengthBlender;
-            if(DirectionalLight.intensity > (_daytimeLightStrength - .05f))
-            {
-                ChangingLightStrength = false;
-            }
-        }
-        else
-        {
-            _lightStrengthBlender = Mathf.Lerp(_lightStrengthBlender, _nighttimeLightStrength, .5f * Time.deltaTime);
-            DirectionalLight.intensity = _lightStrengthBlender;
-            if (DirectionalLight.intensity > (_nighttimeLightStrength + .05f))
-            {
-                ChangingLightStrength = false;
-            }
-        }
+        //This seems to slow down the game significantly
+        //if (goToTime == DayOrNight.Day)
+        //{
+        //    _lightStrengthBlender = Mathf.Lerp(_lightStrengthBlender, _daytimeLightStrength, .5f * Time.deltaTime);
+        //    DirectionalLight.intensity = _lightStrengthBlender;
+        //    if(DirectionalLight.intensity > (_daytimeLightStrength - .05f))
+        //    {
+        //        ChangingLightStrength = false;
+        //    }
+        //}
+        //else
+        //{
+        //    _lightStrengthBlender = Mathf.Lerp(_lightStrengthBlender, _nighttimeLightStrength, .5f * Time.deltaTime);
+        //    DirectionalLight.intensity = _lightStrengthBlender;
+        //    if (DirectionalLight.intensity > (_nighttimeLightStrength + .05f))
+        //    {
+        //        ChangingLightStrength = false;
+        //    }
+        //}
     }
 }

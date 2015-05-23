@@ -7,12 +7,16 @@ public class GameManager : MonoBehaviour
 
     public DayNightCycle DayCycle;
 
+    public GameObject Player;
+
     void Awake()
     {
         Instance = this;
 
         DayCycle = new DayNightCycle();
         DayCycle.InitialiseCycle();
+
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void Update()

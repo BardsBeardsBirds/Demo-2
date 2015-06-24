@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Water4Advanced
-  m_Shader: {fileID: 4800000, guid: 475c4a4e617a8401b84ca7b32c7cc460, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6f3c38e808d0b9d4292f168c4153c55e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -266,6 +266,10 @@ Material:
         second: {r: 1, g: 1, b: 0, a: 0}
       data:
         first:
+          name: _SpecularColor
+        second: {r: .917910457, g: .917910457, b: .917910457, a: 1}
+      data:
+        first:
           name: WaveSpeed
         second: {r: 1.08616495, g: 4.44057512, b: 12.1051464, a: -3.02064466}
       data:
@@ -330,12 +334,8 @@ Material:
         second: {r: .579416394, g: .684923828, b: .76119405, a: .431372553}
       data:
         first:
-          name: _SpecularColor
-        second: {r: .917910457, g: .917910457, b: .917910457, a: 1}
-      data:
-        first:
           name: _WorldLightDir
-        second: {r: -.0265361033, g: -.201932579, b: -.979040146, a: 0}
+        second: {r: .795820594, g: -.212597489, b: -.566985607, a: 0}
       data:
         first:
           name: _Foam

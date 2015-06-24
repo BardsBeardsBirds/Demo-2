@@ -5,8 +5,8 @@ using UnityStandardAssets.Water;
 public class WaterFlowTest : MonoBehaviour 
 {
     public static WaterFlowTest Instance;
+    public WaterBase WaterBase;
     public GameObject WaterGO;
-    public WaterTile WaterSettings;
     public Material WaterMaterial;
 
     private bool _changeDirection1To2;
@@ -28,54 +28,13 @@ public class WaterFlowTest : MonoBehaviour
         ResetRiverDirections();
         _riverDirection = new Vector4(15, -60, 10, -20);
 
-        WaterGO = GameObject.Find("Water4Advanced 1");
-        WaterSettings = WaterGO.GetComponentInChildren<WaterTile>();
-        Vector3 fl = WaterGO.GetComponent<WaterBase>().sharedMaterial.GetVector("_BumpDirection");
-        WaterGO.GetComponent<WaterBase>().sharedMaterial.SetVector("_BumpDirection", _riverDirection);
-
+        WaterGO = GameObject.Find("Daylight Water");
+    //    Debug.Log(WaterBase + " and " + WaterGO.GetComponent<WaterBase>());
+        WaterGO.GetComponent<Renderer>().sharedMaterial.SetVector("WaveSpeed", _riverDirection);
 	}
 	
 	void Update () 
     {
-   //     Debug.Log(WaterGO.GetComponent<WaterBase>().sharedMaterial.GetVector("_BumpDirection"));
-
-        //if (Input.GetKeyDown(KeyCode.Z))
-        //{
-        //    _changeDirection1To2 = true;
-        //    _changeDirection1To3 = false;
-        //    _changeDirection2To1 = false;
-        //    _changeDirection2To3 = false;
-        //    _changeDirection3To1 = false;
-        //    _changeDirection3To2 = false;
-        //}
-        //if (Input.GetKeyDown(KeyCode.X))
-        //{
-        //    _changeDirection1To2 = false;
-        //    _changeDirection1To3 = false;
-        //    _changeDirection2To1 = true;
-        //    _changeDirection2To3 = false;
-        //    _changeDirection3To1 = false;
-        //    _changeDirection3To2 = false;
-        //}
-
-        //if (Input.GetKeyDown(KeyCode.C))
-        //{
-        //    _changeDirection1To2 = false;
-        //    _changeDirection1To3 = true;
-        //    _changeDirection2To1 = false;
-        //    _changeDirection2To3 = false;
-        //    _changeDirection3To1 = false;
-        //    _changeDirection3To2 = false;
-        //} 
-        //if (Input.GetKeyDown(KeyCode.V))
-        //{
-        //    _changeDirection1To2 = false;
-        //    _changeDirection1To3 = false;
-        //    _changeDirection2To1 = false;
-        //    _changeDirection2To3 = true;
-        //    _changeDirection3To1 = false;
-        //    _changeDirection3To2 = false;
-        //}
 
         if (_changeDirection1To2)
         {
@@ -109,7 +68,7 @@ public class WaterFlowTest : MonoBehaviour
         if (from == 1)
         {
             _riverDirection = Vector4.Lerp(_riverDirection, to, 15f * Time.deltaTime);
-            WaterGO.GetComponent<WaterBase>().sharedMaterial.SetVector("_BumpDirection", _riverDirection);
+            WaterGO.GetComponent<Renderer>().sharedMaterial.SetVector("WaveSpeed", _riverDirection);
             Debug.Log("1: " + _riverDirection + " en " + to);
 
             if (to == _direction2)
@@ -134,7 +93,7 @@ public class WaterFlowTest : MonoBehaviour
         else if (from == 2)
         {
             _riverDirection = Vector4.Lerp(_riverDirection, to, 15f * Time.deltaTime);
-            WaterGO.GetComponent<WaterBase>().sharedMaterial.SetVector("_BumpDirection", _riverDirection);
+            WaterGO.GetComponent<Renderer>().sharedMaterial.SetVector("WaveSpeed", _riverDirection);
             Debug.Log("2: " + _riverDirection + " en " + to);
 
             if (to == _direction1)
@@ -159,7 +118,7 @@ public class WaterFlowTest : MonoBehaviour
         else if (from == 3)
         {
             _riverDirection = Vector4.Lerp(_riverDirection, to, 15f * Time.deltaTime);
-            WaterGO.GetComponent<WaterBase>().sharedMaterial.SetVector("_BumpDirection", _riverDirection);
+            WaterGO.GetComponent<Renderer>().sharedMaterial.SetVector("WaveSpeed", _riverDirection);
             Debug.Log("3: " + _riverDirection + " en " + to);
 
             if (to == _direction1)

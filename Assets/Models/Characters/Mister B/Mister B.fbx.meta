@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 4e31c33f5bed40b4683fc40e6adb7c46
+timeCreated: 1432808432
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Eyeball
+    100002: Eyeball1
+    100004: group13
+    100006: //RootNode
+    100008: pCube4
+    100010: pCube6
+    100012: pCube7
+    100014: polySurface10
+    100016: polySurface13
+    100018: polySurface15
+    100020: polySurface17
+    100022: polySurface20
+    100024: polySurface21
+    100026: polySurface23
+    100028: polySurface24
+    100030: polySurface25
+    100032: polySurface31
+    100034: polySurface32
+    100036: polySurface33
+    100038: polySurface34
+    100040: polySurface35
+    100042: polySurface9
+    100044: Under_Eyelid
+    100046: Under_Eyelid1
+    100048: Upper_Eyelid
+    100050: Upper_Eyelid1
+    400000: Eyeball
+    400002: Eyeball1
+    400004: group13
+    400006: //RootNode
+    400008: pCube4
+    400010: pCube6
+    400012: pCube7
+    400014: polySurface10
+    400016: polySurface13
+    400018: polySurface15
+    400020: polySurface17
+    400022: polySurface20
+    400024: polySurface21
+    400026: polySurface23
+    400028: polySurface24
+    400030: polySurface25
+    400032: polySurface31
+    400034: polySurface32
+    400036: polySurface33
+    400038: polySurface34
+    400040: polySurface35
+    400042: polySurface9
+    400044: Under_Eyelid
+    400046: Under_Eyelid1
+    400048: Upper_Eyelid
+    400050: Upper_Eyelid1
+    2300000: Eyeball
+    2300002: Eyeball1
+    2300004: pCube4
+    2300006: pCube6
+    2300008: pCube7
+    2300010: polySurface10
+    2300012: polySurface13
+    2300014: polySurface15
+    2300016: polySurface17
+    2300018: polySurface20
+    2300020: polySurface23
+    2300022: polySurface24
+    2300024: polySurface25
+    2300026: polySurface31
+    2300028: polySurface32
+    2300030: polySurface33
+    2300032: polySurface34
+    2300034: polySurface35
+    2300036: polySurface9
+    2300038: Under_Eyelid
+    2300040: Under_Eyelid1
+    2300042: Upper_Eyelid
+    2300044: Upper_Eyelid1
+    3300000: Eyeball
+    3300002: Eyeball1
+    3300004: pCube4
+    3300006: pCube6
+    3300008: pCube7
+    3300010: polySurface10
+    3300012: polySurface13
+    3300014: polySurface15
+    3300016: polySurface17
+    3300018: polySurface20
+    3300020: polySurface23
+    3300022: polySurface24
+    3300024: polySurface25
+    3300026: polySurface31
+    3300028: polySurface32
+    3300030: polySurface33
+    3300032: polySurface34
+    3300034: polySurface35
+    3300036: polySurface9
+    3300038: Under_Eyelid
+    3300040: Under_Eyelid1
+    3300042: Upper_Eyelid
+    3300044: Upper_Eyelid1
+    4300000: polySurface23
+    4300002: polySurface24
+    4300004: polySurface15
+    4300006: polySurface17
+    4300008: polySurface31
+    4300010: polySurface32
+    4300012: polySurface33
+    4300014: polySurface25
+    4300016: polySurface20
+    4300018: pCube4
+    4300020: pCube6
+    4300022: pCube7
+    4300024: polySurface34
+    4300026: polySurface35
+    4300028: polySurface9
+    4300030: polySurface10
+    4300032: polySurface13
+    4300034: Eyeball
+    4300036: Upper_Eyelid
+    4300038: Under_Eyelid
+    4300040: Eyeball1
+    4300042: Upper_Eyelid1
+    4300044: Under_Eyelid1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

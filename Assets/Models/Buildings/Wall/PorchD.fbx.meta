@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 9135932bd86cd40488e7006e90bea939
+timeCreated: 1435522155
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ArchA
+    100002: ArchIn
+    100004: ArchOut
+    100006: CeilingA2
+    100008: CorridorWallA2
+    100010: Edge
+    100012: EdgeD
+    100014: InnerWal1
+    100016: OutWall1
+    100018: PillarA
+    100020: PillarA 1
+    100022: PillarA9
+    100024: //RootNode
+    100026: PorchD
+    100028: Stone
+    100030: UpperWall1
+    100032: WallLow
+    100034: WallOutA2
+    400000: ArchA
+    400002: ArchIn
+    400004: ArchOut
+    400006: CeilingA2
+    400008: CorridorWallA2
+    400010: Edge
+    400012: EdgeD
+    400014: InnerWal1
+    400016: OutWall1
+    400018: PillarA
+    400020: PillarA 1
+    400022: PillarA9
+    400024: PorchD
+    400026: //RootNode
+    400028: Stone
+    400030: UpperWall1
+    400032: WallLow
+    400034: WallOutA2
+    2300000: ArchIn
+    2300002: ArchOut
+    2300004: CeilingA2
+    2300006: CorridorWallA2
+    2300008: Edge
+    2300010: EdgeD
+    2300012: InnerWal1
+    2300014: OutWall1
+    2300016: PillarA 1
+    2300018: PillarA9
+    2300020: Stone
+    2300022: UpperWall1
+    2300024: WallLow
+    3300000: ArchIn
+    3300002: ArchOut
+    3300004: CeilingA2
+    3300006: CorridorWallA2
+    3300008: Edge
+    3300010: EdgeD
+    3300012: InnerWal1
+    3300014: OutWall1
+    3300016: PillarA 1
+    3300018: PillarA9
+    3300020: Stone
+    3300022: UpperWall1
+    3300024: WallLow
+    4300000: WallLow
+    4300002: Stone
+    4300004: PillarA9
+    4300006: PillarA
+    4300008: ArchIn
+    4300010: Edge
+    4300012: ArchOut
+    4300014: EdgeD
+    4300016: CeilingA2
+    4300018: InnerWal1
+    4300020: OutWall1
+    4300022: UpperWall1
+    4300024: CorridorWallA2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

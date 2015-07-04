@@ -82,6 +82,12 @@ ModelImporter:
     100148: polySurface246
     100150: polySurface247
     100152: polySurface248
+    100154: pCube84
+    100156: pCube85
+    100158: pCube86
+    100160: polySurface249
+    100162: polySurface250
+    100164: polySurface251
     400000: ArchIn2
     400002: GateAA
     400004: GateAA1
@@ -159,6 +165,12 @@ ModelImporter:
     400148: polySurface246
     400150: polySurface247
     400152: polySurface248
+    400154: pCube84
+    400156: pCube85
+    400158: pCube86
+    400160: polySurface249
+    400162: polySurface250
+    400164: polySurface251
     2300000: GateAA
     2300002: GateAA1
     2300004: GateB
@@ -232,6 +244,12 @@ ModelImporter:
     2300140: polySurface246
     2300142: polySurface247
     2300144: polySurface248
+    2300146: pCube84
+    2300148: pCube85
+    2300150: pCube86
+    2300152: polySurface249
+    2300154: polySurface250
+    2300156: polySurface251
     3300000: GateAA
     3300002: GateAA1
     3300004: GateB
@@ -305,6 +323,12 @@ ModelImporter:
     3300140: polySurface246
     3300142: polySurface247
     3300144: polySurface248
+    3300146: pCube84
+    3300148: pCube85
+    3300150: pCube86
+    3300152: polySurface249
+    3300154: polySurface250
+    3300156: polySurface251
     4300000: pCube82
     4300002: pCube83
     4300004: GateAA
@@ -378,6 +402,12 @@ ModelImporter:
     4300140: GateB
     4300142: polySurface162
     4300144: GateB1
+    4300146: polySurface249
+    4300148: polySurface250
+    4300150: polySurface251
+    4300152: pCube84
+    4300154: pCube85
+    4300156: pCube86
   materials:
     importMaterials: 1
     materialName: 0

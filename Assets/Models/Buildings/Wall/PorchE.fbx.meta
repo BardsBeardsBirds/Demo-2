@@ -23,6 +23,7 @@ ModelImporter:
     100030: UpperWall
     100032: WallLow
     100034: WallOutA
+    100036: Porches
     400000: ArchA
     400002: ArchIn
     400004: ArchOut
@@ -41,6 +42,7 @@ ModelImporter:
     400030: UpperWall
     400032: WallLow
     400034: WallOutA
+    400036: Porches
     2300000: ArchIn
     2300002: ArchOut
     2300004: CeilingA

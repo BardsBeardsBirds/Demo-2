@@ -9,7 +9,7 @@ public class Minimap : MonoBehaviour
 
     public void Start()
     {
-        Player = GameManager.Instance.Player;
+        Player = GameManager.Player;
         MinimapCamera = GameObject.Find("Minimap Camera").GetComponent<Camera>();  // later set up new minimap camera through code
     }
 

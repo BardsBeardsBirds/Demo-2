@@ -11,6 +11,11 @@ public class CharacterControllerLogic : MonoBehaviour
         Dead, Talking, TalkingLastLine
     }
 
+    public enum WalkGround
+    {
+        Concrete, ConcreteGritty, CreakyFloor, CreakyRug, Deck, Dirt, Gravel, Leaves, Marble, Metal, Mud, SandDry, SandWet, Snow, Wood, WoodRug, WoodSolid, None
+    }
+
     public static CharacterControllerLogic Instance;
 
     [SerializeField]
@@ -85,7 +90,6 @@ public class CharacterControllerLogic : MonoBehaviour
             return this._animator;
         }
     }
-
     public bool IsGrounded
     {
         get
@@ -93,7 +97,6 @@ public class CharacterControllerLogic : MonoBehaviour
             return this._isGrounded;
         }
     }
-
     public float Speed
     {
         get
@@ -132,7 +135,6 @@ public class CharacterControllerLogic : MonoBehaviour
 
 	}
 	
-	// Update is called once per frame
 	void Update () 
 	{
         if (_state == CharacterState.Dead)
@@ -142,19 +144,28 @@ public class CharacterControllerLogic : MonoBehaviour
             return;
         }
 
+        if (GameManager.GamePlayingMode == GameManager.GameMode.Paused)        // these things prevent input when the player is doing something
+        {
+            StopMovingAndTurning();
+            return;
+        }
+
         //check for falling
         _isGrounded = IsGroundedTest();
 
         if(_isGrounded)
             CheckForSliding();
 
-        if(Input.GetKey(KeyCode.P))
-        {
-            Die();
-        }
+        //if(Input.GetKey(KeyCode.P))
+        //{
+        //    Die();
+        //}
 
         if (_state == CharacterState.Talking || _state == CharacterState.TalkingLastLine)
+        {
+            StopMovingAndTurning();
             return;
+        }
 
 		if(_animator && _gameCam.CamState != ThirdPersonCamera.CamStates.FirstPerson)
 		{
@@ -371,15 +382,27 @@ public class CharacterControllerLogic : MonoBehaviour
         _vertical = 0f;
         _horizontal = 0f;
         Animator.SetBool("Backwards", false);
+
+        GameManager.Instance.UICanvas.WidgetNotActive();
     }
+
     public void GoToTalkingLastLineState()
     {
         _state = CharacterState.TalkingLastLine;
     }
+
+    public void EndTalkingState()
+    {
+        GameManager.Instance.UICanvas.WidgetActive();
+
+        GoToIdleState();
+    }
+
     public void GoToIdleState()
     {
         _state = CharacterState.Idle;
     }
+
     public void ForceSpeed(float speed)
     {
         _animator.SetFloat("Speed", speed);
@@ -536,4 +559,16 @@ public class CharacterControllerLogic : MonoBehaviour
         }
     }
 
+    public void StopMovingAndTurning()
+    {
+        Animator.SetFloat("Speed", 0f);
+        Animator.SetFloat("Direction", 0f);
+        Animator.SetFloat("TurningAngle", 0f);
+    }
+
+    public CharacterState GetState()
+    {
+        CharacterState state = _state;
+        return state;
+    }
 }

@@ -216,12 +216,12 @@ Material:
         second: 0
       data:
         first:
-          name: _Blend
-        second: .951619267
-      data:
-        first:
           name: _Fog
         second: .360000014
+      data:
+        first:
+          name: _Blend
+        second: .0498029031
     m_Colors:
       data:
         first:
@@ -237,9 +237,9 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _Tint
-        second: {r: .5, g: .5, b: .5, a: .5}
-      data:
-        first:
           name: _FogColor
         second: {r: .580392182, g: .686274529, b: .572549045, a: .501960814}
+      data:
+        first:
+          name: _Tint
+        second: {r: .5, g: .5, b: .5, a: .5}

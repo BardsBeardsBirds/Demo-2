@@ -5,6 +5,8 @@ Project("{EC3E3B80-4ECD-7C35-4720-9D774D3D1692}") = "Demo 2 The Golden Screech",
 EndProject
 Project("{EC3E3B80-4ECD-7C35-4720-9D774D3D1692}") = "Demo 2 The Golden Screech", "Assembly-CSharp-vs.csproj", "{E80AD0AC-CFBD-8A78-61FF-1BF0D8A22133}"
 EndProject
+Project("{EC3E3B80-4ECD-7C35-4720-9D774D3D1692}") = "Demo 2 The Golden Screech", "Assembly-CSharp-Editor-firstpass-vs.csproj", "{C09DD8EE-ADDB-3354-8C33-0ADDBE766C8D}"
+EndProject
 Project("{EC3E3B80-4ECD-7C35-4720-9D774D3D1692}") = "Demo 2 The Golden Screech", "Assembly-CSharp-Editor-vs.csproj", "{423747C6-26CE-FE75-1D06-BC7EF509D62C}"
 EndProject
 Global
@@ -21,6 +23,10 @@ Global
 		{E80AD0AC-CFBD-8A78-61FF-1BF0D8A22133}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E80AD0AC-CFBD-8A78-61FF-1BF0D8A22133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E80AD0AC-CFBD-8A78-61FF-1BF0D8A22133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09DD8EE-ADDB-3354-8C33-0ADDBE766C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09DD8EE-ADDB-3354-8C33-0ADDBE766C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09DD8EE-ADDB-3354-8C33-0ADDBE766C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09DD8EE-ADDB-3354-8C33-0ADDBE766C8D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{423747C6-26CE-FE75-1D06-BC7EF509D62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{423747C6-26CE-FE75-1D06-BC7EF509D62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{423747C6-26CE-FE75-1D06-BC7EF509D62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,7 +35,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																															GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																														GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

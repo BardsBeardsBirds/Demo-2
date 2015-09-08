@@ -92,6 +92,8 @@
      <Compile Include="Assets\Scripts\Locations\AreaEnum.cs" />
      <Compile Include="Assets\Scripts\Locations\GroundTerrain.cs" />
      <Compile Include="Assets\Scripts\Locations\WaterBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Locations\WaterWheelHorizontal.cs" />
+     <Compile Include="Assets\Scripts\Locations\WaterWheelVertical.cs" />
      <Compile Include="Assets\Scripts\Managers\AreaManager.cs" />
      <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Managers\DialogueManager.cs" />

@@ -29,8 +29,8 @@ public class CharacterControllerLogic : MonoBehaviour
     [SerializeField]
     private bool _isGrounded;
 	[SerializeField]
-	private float _directionDampTime = 0.25f;
-	[SerializeField]
+    //private float _directionDampTime = 0.25f;
+    //[SerializeField]
 	private float _directionSpeed = 4.0f;
 	[SerializeField]
 	private float _rotationDegreePerSecond = 120f;

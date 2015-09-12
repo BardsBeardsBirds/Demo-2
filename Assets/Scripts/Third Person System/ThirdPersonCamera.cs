@@ -180,11 +180,21 @@ public class ThirdPersonCamera : MonoBehaviour
         _сameraLoadGamePosition = GameObject.Find("CameraLoadGamePosition");
 
         DialogueCameraPositions.Add(Character.Ay, GameObject.Find("AyDialogueCamera"));
+        DialogueCameraPositions.Add(Character.Bart, GameObject.Find("BartDialogueCamera"));
         DialogueCameraPositions.Add(Character.Benny, GameObject.Find("BennyDialogueCamera"));
+        DialogueCameraPositions.Add(Character.Leon, GameObject.Find("LeonDialogueCamera"));
+        DialogueCameraPositions.Add(Character.MrB, GameObject.Find("MrBDialogueCamera"));
+        DialogueCameraPositions.Add(Character.Obstructor, GameObject.Find("ObstructorDialogueCamera"));
+        DialogueCameraPositions.Add(Character.Opposita, GameObject.Find("OppositaDialogueCamera"));
         DialogueCameraPositions.Add(Character.Sentinel, GameObject.Find("SentinelDialogueCamera"));
 
         PlayerDialoguePositions.Add(Character.Ay, GameObject.Find("AyPlayerDialoguePosition"));
+        PlayerDialoguePositions.Add(Character.Bart, GameObject.Find("BartPlayerDialoguePosition"));
         PlayerDialoguePositions.Add(Character.Benny, GameObject.Find("BennyPlayerDialoguePosition"));
+        PlayerDialoguePositions.Add(Character.Leon, GameObject.Find("LeonPlayerDialoguePosition"));
+        PlayerDialoguePositions.Add(Character.MrB, GameObject.Find("MrBPlayerDialoguePosition"));
+        PlayerDialoguePositions.Add(Character.Obstructor, GameObject.Find("ObstructorPlayerDialoguePosition"));
+        PlayerDialoguePositions.Add(Character.Opposita, GameObject.Find("OppositaPlayerDialoguePosition"));
         PlayerDialoguePositions.Add(Character.Sentinel, GameObject.Find("SentinelPlayerDialoguePosition"));
     }
 
@@ -453,6 +463,12 @@ public class ThirdPersonCamera : MonoBehaviour
 
     public void CameraToDialoguePosition(Character character)
     {
+        if (DialogueCameraPositions[character] == null)
+        {
+            Debug.LogWarning("no camera position set up for: " + character);
+            return;
+        }
+
         _freezeCamera = true;
 
         _camera.transform.position = DialogueCameraPositions[character].transform.position;

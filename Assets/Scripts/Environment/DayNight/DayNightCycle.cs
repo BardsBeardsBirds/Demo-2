@@ -18,8 +18,8 @@ public class DayNightCycle
 
     private float _skyboxBlender;
     private float _lightStrengthBlender;
-    private float _daytimeLightStrength = 1.1f;
-    private float _nighttimeLightStrength = 0.55f;
+  //  private float _daytimeLightStrength = 1.1f;
+   // private float _nighttimeLightStrength = 0.55f;
 
     public void InitialiseCycle()
     {

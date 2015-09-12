@@ -58,11 +58,15 @@
      <Compile Include="Assets\Scripts\AI\CritterStates.cs" />
      <Compile Include="Assets\Scripts\AI\Rabbit.cs" />
      <Compile Include="Assets\Scripts\Characters\AyTheTearCollector.cs" />
+     <Compile Include="Assets\Scripts\Characters\BartTumblescream.cs" />
      <Compile Include="Assets\Scripts\Characters\BennyTwospoons.cs" />
      <Compile Include="Assets\Scripts\Characters\CharacterEnum.cs" />
+     <Compile Include="Assets\Scripts\Characters\LeonTurmeric.cs" />
+     <Compile Include="Assets\Scripts\Characters\MadameOpposita.cs" />
      <Compile Include="Assets\Scripts\Characters\Sentinel.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialogueMenu.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialogueOption.cs" />
+     <Compile Include="Assets\Scripts\DialogueSystem\DialogueOptions.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialoguePlayback.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialogueSituationSelector.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialogueType.cs" />
@@ -87,7 +91,6 @@
      <Compile Include="Assets\Scripts\Items\ItemDatabase.cs" />
      <Compile Include="Assets\Scripts\Items\MoneyThrower.cs" />
      <Compile Include="Assets\Scripts\Items\PickUpItemListener.cs" />
-     <Compile Include="Assets\Scripts\Items\StandardNPC.cs" />
      <Compile Include="Assets\Scripts\Locations\Area.cs" />
      <Compile Include="Assets\Scripts\Locations\AreaEnum.cs" />
      <Compile Include="Assets\Scripts\Locations\GroundTerrain.cs" />

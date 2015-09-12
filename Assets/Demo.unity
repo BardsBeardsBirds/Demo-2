@@ -23308,6 +23308,7 @@ GameObject:
   - 4: {fileID: 1002426152}
   - 33: {fileID: 1002426156}
   - 23: {fileID: 1002426154}
+  - 95: {fileID: 1002426153}
   m_Layer: 0
   m_Name: Mysterious Obstructor
   m_TagString: Untagged
@@ -23327,6 +23328,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 639882918}
   m_RootOrder: 0
+--- !u!95 &1002426153
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1002426151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &1002426154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32515,6 +32533,27 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aea019aaa36443549bf15b1f2c940745, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1366782357 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 122856, guid: af0819f4a2cf4154da27dba707c24db2, type: 2}
+  m_PrefabInternal: {fileID: 177593833}
+--- !u!95 &1366782358
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1366782357}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &1368118605 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400022, guid: 4ac5d61b477032d4d8d9bfe28d2b4f9d, type: 3}

@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FootMixer
+  m_OutputGroup: {fileID: 24303332, guid: 88b60c8e0fe69a744a05f695b5fba900, type: 2}
+  m_MasterGroup: {fileID: 24300001}
+  m_Snapshots:
+  - {fileID: 24500003}
+  m_StartSnapshot: {fileID: 24500003}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 21340eaf8da32d042af06fbce0f03704
+    - 7d75882395189f743af6a5350a64dbc1
+    - 4612614cdf2c2af4188d87cfdf4a5b20
+    - 1850435d001538c499f5b3f4540dcccc
+    - 72f71e0a11542904aafd3aad557edf82
+    - c10e4022d64160341a11b81f5a28855c
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500003}
+--- !u!243 &24300001
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 21340eaf8da32d042af06fbce0f03704
+  m_Children:
+  - {fileID: 24337636}
+  - {fileID: 24377910}
+  - {fileID: 24328348}
+  - {fileID: 24311622}
+  - {fileID: 24341478}
+  m_Volume: 1c015b5e5dc0d1e41b41238426483813
+  m_Pitch: a6f7ee1dd1072884ca45c9f0fd61ba3c
+  m_Effects:
+  - {fileID: 24400002}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24311622
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Water
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 1850435d001538c499f5b3f4540dcccc
+  m_Children: []
+  m_Volume: 58154ddbc6fb82e42a5d35ee665bb72d
+  m_Pitch: 1f8eaa0f798478e4588d98cdc262abad
+  m_Effects:
+  - {fileID: 24468990}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24328348
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: StoneFloor
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 7d75882395189f743af6a5350a64dbc1
+  m_Children: []
+  m_Volume: bf44a314829414640b69bd80ef96b053
+  m_Pitch: 64a55bb14f9f79d43a74e4da6f0c9bc8
+  m_Effects:
+  - {fileID: 24434302}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24337636
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Grass
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: c10e4022d64160341a11b81f5a28855c
+  m_Children: []
+  m_Volume: ece0f8db728d5ee4283748a52044c77a
+  m_Pitch: 5f94d904680bfa04cbc046cb5199c3eb
+  m_Effects:
+  - {fileID: 24428236}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24341478
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Wood
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 4612614cdf2c2af4188d87cfdf4a5b20
+  m_Children: []
+  m_Volume: c57bf87d7a8319742a7cec44da748913
+  m_Pitch: 98548cad5f4034747a85e6d5e5c4a5e0
+  m_Effects:
+  - {fileID: 24486204}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &24377910
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Rock
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 72f71e0a11542904aafd3aad557edf82
+  m_Children: []
+  m_Volume: 7afa3d63172a9f344a90a1ab0ddd5b35
+  m_Pitch: eec6000cece534547862a6731cfe3feb
+  m_Effects:
+  - {fileID: 24421246}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400002
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: dd2e921cfd010ff4bb46a75a847a4555
+  m_EffectName: Attenuation
+  m_MixLevel: 62ea257d3fd6e3e4ba56efb3d07d8863
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24421246
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 15a0ebe6d43dbcc439262beb469e4f49
+  m_EffectName: Attenuation
+  m_MixLevel: 0d53c6961891916459a543c8655a386b
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24428236
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 596ae3d74ea51ee439c610c9f016be84
+  m_EffectName: Attenuation
+  m_MixLevel: 478d2996ded61284d969933db5aca1a3
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24434302
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1c874c3532301ff42874b2e35a65f58c
+  m_EffectName: Attenuation
+  m_MixLevel: 2419253f7afaca04eaa2443c75401dac
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24468990
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 7ed4bc88a4a02c2409a70eafba7189f6
+  m_EffectName: Attenuation
+  m_MixLevel: ab14a89c497b7c54eb8c031a033f6b83
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24486204
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1e942b6cfd6fedb47b04f3c98e7d7805
+  m_EffectName: Attenuation
+  m_MixLevel: fdb352daaa499eb4789a3ffe2d0c9f55
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500003
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 889b5dfbedd07f44897f8d564e0f99f5
+  m_FloatValues: {}
+  m_TransitionOverrides: {}

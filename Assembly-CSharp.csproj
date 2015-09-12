@@ -63,6 +63,8 @@
      <Compile Include="Assets\Scripts\Characters\CharacterEnum.cs" />
      <Compile Include="Assets\Scripts\Characters\LeonTurmeric.cs" />
      <Compile Include="Assets\Scripts\Characters\MadameOpposita.cs" />
+     <Compile Include="Assets\Scripts\Characters\MrB.cs" />
+     <Compile Include="Assets\Scripts\Characters\Obstructor.cs" />
      <Compile Include="Assets\Scripts\Characters\Sentinel.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialogueMenu.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialogueOption.cs" />

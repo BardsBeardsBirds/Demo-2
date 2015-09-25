@@ -126,6 +126,11 @@ public static class ObjectCommentary
             case ObjectsInLevel.Axe: 
                 CurrentDialogueIDs.Add(20000);
                 break;
+            case ObjectsInLevel.BookOfMusicalWildlife:
+                ItemManager.AddItem(ItemType.BookOfMusicalWildlife);
+                //TODO: Add Special diaglogue                 
+                CurrentDialogueIDs.Add(20000);
+                break;
             case ObjectsInLevel.Brush:
                 CurrentDialogueIDs.Add(20000);
                 break;
@@ -234,6 +239,12 @@ public static class ObjectCommentary
             case ObjectsInLevel.Axe:
                 CurrentDialogueIDs.Add(21000);
                 break;
+            case ObjectsInLevel.BookOfMusicalWildlife:
+                //Add the book to 
+                ItemManager.AddItem(ItemType.BookOfMusicalWildlife);
+                //TODO: Add Special diaglogue 
+                CurrentDialogueIDs.Add(21000);
+                break;
             case ObjectsInLevel.Brush:
                 CurrentDialogueIDs.Add(21000);
                 break;
@@ -274,8 +285,8 @@ public static class ObjectCommentary
                 CurrentDialogueIDs.Add(21000);
                 break;
             case ObjectsInLevel.Scissors:
-                CurrentDialogueIDs.Add(21000);
-                break;
+                 ItemManager.AddItem(ItemType.Scissors);                
+                 break;
             case ObjectsInLevel.SelfMadeMask:
                 CurrentDialogueIDs.Add(21000);
                 break;

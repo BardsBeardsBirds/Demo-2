@@ -8,6 +8,8 @@ public class DialogueTimer
     public static float AudioClipLength = 0f;
     public static int ChosenOptionID;
 
+    public static bool LineFinished = false;
+
     private float _timer = 0;
     
 
@@ -27,6 +29,8 @@ public class DialogueTimer
         AudioClipLength = timerLength;
         _timer = 1f;
         _timer = timerLength;
+
+        LineFinished = false;
     }
 
     public void Update()
@@ -69,6 +73,8 @@ public class DialogueTimer
          //       Debug.Log("Do we do something at the end?" + DialoguePlayback.CurrentLineID);
 
                 DoSomethingAtEnd(DialoguePlayback.CurrentLineID);
+
+                LineFinished = true;
             }
         }       
     }

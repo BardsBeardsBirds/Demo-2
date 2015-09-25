@@ -72,12 +72,13 @@ public class AyTheTearCollector : MonoBehaviour
             DialogueMenu.AddToDialogueOptions(11070);
         if (IsLastBefore(optionID, 11080) && DialogueManager.IsDialoguePassed(11080))
             DialogueMenu.AddToDialogueOptions(11080);
-        if (IsLastBefore(optionID, 11100))
+        if (IsLastBefore(optionID, 11100) && WorldEvents.NeedsToKnowWhatSacrificeIs)
             DialogueMenu.AddToDialogueOptions(11100); 
         if (IsLastBefore(optionID, 11110))
             DialogueMenu.AddToDialogueOptions(11110);
         if (IsLastBefore(optionID, 11200))
-            DialogueMenu.AddToDialogueOptions(11200);
+            if(GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake))
+                DialogueMenu.AddToDialogueOptions(11200);
         if (IsLastBefore(optionID, 11220))
             DialogueMenu.AddToDialogueOptions(11220);
         if (IsLastBefore(optionID, 11230) && DialogueManager.IsDialoguePassed(11220))
@@ -125,6 +126,8 @@ public class AyTheTearCollector : MonoBehaviour
                 AddToDialogue(11012);
                 DialoguePlayback.EndingDialogue = true;
                 WorldEvents.SpokeToAy = true;
+                WorldEvents.AskedAyAboutGallery = true;
+                WorldEvents.PeopleNotGoingToGallery = WorldEvents.PeopleNotGoingToGallery + 1;
 
                 DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(11001);
 
@@ -246,6 +249,7 @@ public class AyTheTearCollector : MonoBehaviour
             AddToDialogue(11101);
             AddToDialogue(11102);
             AddToDialogue(11103);
+
         }
 
         if (dialogueOptionID == 11110)

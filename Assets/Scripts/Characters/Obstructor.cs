@@ -210,6 +210,8 @@ public class Obstructor : MonoBehaviour
             AddToDialogue(17060);
             AddToDialogue(17061);
 
+            WorldEvents.NeedsToKnowWhatSacrificeIs = true;
+
             DialoguePlayback.EndingDialogue = true;
         }
     }

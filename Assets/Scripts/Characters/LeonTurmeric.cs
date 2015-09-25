@@ -65,7 +65,7 @@ public class LeonTurmeric : MonoBehaviour
             DialogueMenu.AddToDialogueOptions(14050);
         if (IsLastBefore(optionID, 14055))
             DialogueMenu.AddToDialogueOptions(14055);
-        if (IsLastBefore(optionID, 14060))
+        if (IsLastBefore(optionID, 14060) && WorldEvents.NeedsToKnowWhatSacrificeIs)
             DialogueMenu.AddToDialogueOptions(14060);
         if (IsLastBefore(optionID, 14080) && DialogueManager.IsDialoguePassed(14050))
             DialogueMenu.AddToDialogueOptions(14080);
@@ -133,6 +133,8 @@ public class LeonTurmeric : MonoBehaviour
             AddToDialogue(14009);
             AddToDialogue(14010);
             AddToDialogue(14011);
+
+            WorldEvents.PeopleNotGoingToGallery = WorldEvents.PeopleNotGoingToGallery + 1;
         }
 
         if (dialogueOptionID == 14020)

@@ -18,6 +18,8 @@ public class DialoguePlayback : MonoBehaviour
 
     private static string _currentDialogueLine;
 
+    private List<char> _autoWriteChars = new List<char>();
+
     public void Awake()
     {
         _currentDialogueLine = "";
@@ -44,7 +46,9 @@ public class DialoguePlayback : MonoBehaviour
         Text lineText = GameManager.Instance.UICanvas.DialogueLineImage.GetComponentInChildren<Text>();
         lineText.text = _currentDialogueLine;
    //     lineText.text = "";
-     //   lineText.enabled = true;
+        //   lineText.enabled = true;        
+        //_autoWriteChars.Clear();
+
      //   StartCoroutine(AutoType(lineText));
     }
 
@@ -261,11 +265,20 @@ public class DialoguePlayback : MonoBehaviour
 
     IEnumerator AutoType(Text lineText)
     {
+        DialogueTimer.LineFinished = false;
+
         foreach (char letter in _currentDialogueLine.ToCharArray())
         {
-            lineText.text += letter;
+            _autoWriteChars.Add(letter);
+        }
 
-            yield return new WaitForSeconds(0.015f); 
+        for (int i = 0; i < _autoWriteChars.Count; i++)
+        {
+            if (DialogueTimer.LineFinished)
+                break;
+
+            lineText.text += _autoWriteChars[i];
+            yield return new WaitForSeconds(.015f);
         }
     }
 

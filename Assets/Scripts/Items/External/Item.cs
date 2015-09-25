@@ -6,7 +6,24 @@ using System.Xml;
 using System.Xml.Serialization;
 
 public enum ItemClass { None, Weapon, UniqueItem, Ammunition, Consumable };
-public enum ItemType { Empty, RoughneckShot, Carrot, MaskOfMockery };
+public enum ItemType { 
+    Empty = 0, 
+    //Story specific items// start at 0
+    BookOfMusicalWildlife = 1, 
+    TeaLeaves = 2,
+    AysSecretIngredients = 3,
+    Scissors = 4,
+    ClownNose = 5, 
+    ClownMask = 6,
+    PartyHat = 7,
+    DynamiteShake = 8,
+    //consumables// start at 100
+    RoughneckShot = 101,
+    Carrot = 102, 
+    //unique items// start at 200
+
+
+};
 
 public class Item
 {
@@ -33,19 +50,4 @@ public class Item
         return icon;
     }
 
-    //public Item(string name, int id, string description, int amount, ItemClass iClass, ItemType iType)
-    //{
-    //    ItemName = name;
-    //    ID = id;
-    //    ItemDescription = description;
-    //    ItemAmount = amount;
-    //    Class = iClass;
-    //    IType = iType;
-    //    ItemIcon = Resources.Load<Sprite>("Icons/Items/" + name);
-    //}
-
-    //public Item()   // empty slots
-    //{
-
-    //}
 }

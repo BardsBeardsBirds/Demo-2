@@ -126,7 +126,7 @@ public class MadameOpposita : MonoBehaviour
         if (IsLastBefore(optionID, 15100))
             DialogueMenu.AddToDialogueOptions(15100);
       
-        if (IsLastBefore(optionID, 15200))
+        if (IsLastBefore(optionID, 15200)  && WorldEvents.NeedsToKnowWhatSacrificeIs)
             DialogueMenu.AddToDialogueOptions(15200);
       
         if (IsLastBefore(optionID, 15210))
@@ -183,13 +183,14 @@ public class MadameOpposita : MonoBehaviour
         if (IsLastBefore(optionID, 15393))
             DialogueMenu.AddToDialogueOptions(15393);
 
-        if (IsLastBefore(optionID, 15405) && DialogueManager.IsDialoguePassed(15200))
+        if (IsLastBefore(optionID, 15405) && DialogueManager.IsDialoguePassed(15200))   //what was the sacrifice again? 
             DialogueMenu.AddToDialogueOptions(15405);
                   
         if (IsLastBefore(optionID, 15410))
             DialogueMenu.AddToDialogueOptions(15410);
                   
-        if (IsLastBefore(optionID, 15420) && WorldEvents.HasTeaLeaves)
+        if (IsLastBefore(optionID, 15420))
+            if (GameManager.Instance.MyInventory.LookForItem(ItemType.TeaLeaves))
             DialogueMenu.AddToDialogueOptions(15420);
                   
         if (IsLastBefore(optionID, 15500))
@@ -265,6 +266,8 @@ public class MadameOpposita : MonoBehaviour
                     AddToDialogue(15022);
 
                     WorldEvents.SpokeToOpposita = true;
+                    WorldEvents.AskedOppositaAboutGallery = true;
+                    WorldEvents.PeopleNotGoingToGallery = WorldEvents.PeopleNotGoingToGallery + 1;
 
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(15010);
                 }
@@ -607,6 +610,9 @@ public class MadameOpposita : MonoBehaviour
             AddToDialogue(15397);
             AddToDialogue(15398);
             AddToDialogue(15399);
+
+            WorldEvents.KnowsWhatSacrificeIs = true; 
+            WorldEvents.NeedsToKnowWhatSacrificeIs = false;
         }
 
         if (dialogueOptionID == 15390)
@@ -629,6 +635,9 @@ public class MadameOpposita : MonoBehaviour
             AddToDialogue(15397);
             AddToDialogue(15398);
             AddToDialogue(15399);
+
+            WorldEvents.KnowsWhatSacrificeIs = true;
+            WorldEvents.NeedsToKnowWhatSacrificeIs = false;
         }
 
         if (dialogueOptionID == 15400)

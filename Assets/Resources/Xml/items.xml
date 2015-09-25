@@ -8,21 +8,63 @@
 			<Amount>0</Amount>
 		</Item>
 		<Item ID="1001">
-			<Type>RoughneckShot</Type>
-			<Name>Roughneck Shot</Name>
+			<Type>BookOfMusicalWildlife</Type>
+			<Name>The Book of Musical Wildlife</Name>
 			<Class>UniqueItem</Class>
 			<Amount>1</Amount>
 		</Item>
 		<Item ID="1002">
-			<Type>Carrot</Type>
-			<Name>Carrot</Name>
-			<Class>Consumable</Class>
+			<Type>TeaLeaves</Type>
+			<Name>Tea Leaves</Name>
+			<Class>UniqueItem</Class>
 			<Amount>1</Amount>
 		</Item>
 		<Item ID="1003">
-			<Type>MaskOfMockery</Type>
-			<Name>Mask of Mockery</Name>
+			<Type>AysSecretIngredients</Type>
+			<Name>Ay's Secret Ingredients</Name>
 			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1004">
+			<Type>Scissors</Type>
+			<Name>Scissors</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1005">
+			<Type>ClownNose</Type>
+			<Name>Clown Nose</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1006">
+			<Type>ClownMask</Type>
+			<Name>Clown Mask</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1007">
+			<Type>PartyHat</Type>
+			<Name>Party Hat</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1101">
+			<Type>DynamiteShake</Type>
+			<Name>Ay's Magical Dynamite Shake</Name>
+			<Class>Consumable</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1102">
+			<Type>RoughneckShot</Type>
+			<Name>Roughneck Shot</Name>
+			<Class>Consumable</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1103">
+			<Type>Carrot</Type>
+			<Name>Carrot</Name>
+			<Class>Consumable</Class>
 			<Amount>1</Amount>
 		</Item>
 	</Items>

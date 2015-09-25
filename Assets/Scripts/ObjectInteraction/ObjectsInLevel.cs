@@ -14,6 +14,7 @@ public enum ObjectsInLevel
     
     AysMagicDynamiteShake,
     Axe,
+    BookOfMusicalWildlife,
     Brush,
     BrushWithPaint,
     BucketWithPaint,
@@ -31,7 +32,6 @@ public enum ObjectsInLevel
     SelfMadeMask,
     SpeakingTrumpet,
     TeaLeaves,
-
 
     CopperBowl,
 };

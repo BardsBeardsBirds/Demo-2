@@ -133,6 +133,7 @@
      <Compile Include="Assets\Scripts\Tools\Portal.cs" />
      <Compile Include="Assets\Scripts\Tools\RotateTowards.cs" />
      <Compile Include="Assets\Scripts\Tools\Spin.cs" />
+     <Compile Include="Assets\Scripts\Tools\TestScreen.cs" />
      <Compile Include="Assets\Scripts\Tools\UVScroller.cs" />
      <Compile Include="Assets\Scripts\UI\Clock.cs" />
      <Compile Include="Assets\Scripts\UI\DescriptionUnderlining.cs" />

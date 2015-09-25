@@ -141,6 +141,9 @@ public class MrB : MonoBehaviour
                     AddToDialogue(16038);
                     AddToDialogue(16039);
 
+                    WorldEvents.IsAfterGoldenScreech = true;
+                    WorldEvents.LookingForGalleryVisitors = false;
+
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(12230);
                 }
                 else

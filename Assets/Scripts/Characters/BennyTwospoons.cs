@@ -82,7 +82,8 @@ public class BennyTwospoons : MonoBehaviour
         if (IsLastBefore(optionID, 13150))
             DialogueMenu.AddToDialogueOptions(13150);
         if (IsLastBefore(optionID, 13200))
-            DialogueMenu.AddToDialogueOptions(13200);
+            if(GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake))
+                DialogueMenu.AddToDialogueOptions(13200);
         if (IsLastBefore(optionID, 13300))
             DialogueMenu.AddToDialogueOptions(13300);
 
@@ -159,6 +160,8 @@ public class BennyTwospoons : MonoBehaviour
             AddToDialogue(13006);
             AddToDialogue(13007);
             AddToDialogue(13008);
+
+            WorldEvents.PeopleNotGoingToGallery = WorldEvents.PeopleNotGoingToGallery + 1;
         }
 
         if (dialogueOptionID == 13010)
@@ -224,6 +227,10 @@ public class BennyTwospoons : MonoBehaviour
             AddToDialogue(13112);
             AddToDialogue(13113);
 
+            ItemManager.AddItem(ItemType.ClownNose);
+            ItemManager.AddItem(ItemType.PartyHat);                
+
+
             DialoguePlayback.EndingDialogue = true;
         }
 
@@ -250,6 +257,8 @@ public class BennyTwospoons : MonoBehaviour
             AddToDialogue(13142);
             AddToDialogue(13143);
             AddToDialogue(13144);
+
+            ItemManager.AddItem(ItemType.ClownMask);      
 
             DialoguePlayback.EndingDialogue = true;
         }

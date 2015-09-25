@@ -158,7 +158,7 @@ public class ActionPanel
         {
             int id = InventoryCommentary.FindInvestigationHoverLines(ThisItem);
             Debug.Log("Hover INVESTIGATION: " + id + " " + dialogueType);
-
+     //       GameManager.Instance.UICanvas.ObjectDescriptionText.text = "Implement later";
             GameManager.Instance.UICanvas.ObjectDescriptionText.text = GameManager.InventoryInvestigationDialogue[id].Text;
 
             GameManager.Instance.UICanvas.NewObjectDescription();

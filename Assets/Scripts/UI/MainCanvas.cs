@@ -12,6 +12,7 @@ public class MainCanvas : MonoBehaviour
     public GameObject PauseMenuHelpWindow;
     public GameObject ScreenButtonWidget;
     public GameObject IntroScreen;
+    public TestScreen TestScreen;
 
     public GameObject DialogueLineImage;
     public GameObject ObjectDescriptionTextGO;
@@ -25,6 +26,7 @@ public class MainCanvas : MonoBehaviour
     public DialogueOptions MyDialogueOptions;
 
     private bool _widgetIsActive = false;
+    private bool _testScreenIsOpen = false;
 
     public void Awake()
     {
@@ -86,6 +88,22 @@ public class MainCanvas : MonoBehaviour
         else
         {
             InventoryCanvasGO.GetComponent<InventoryCanvas>().OpenInventory();
+        }
+    }
+
+    public void OpenCloseTestScreen()
+    {
+        if (_testScreenIsOpen)
+        {
+            TestScreen.gameObject.SetActive(false);
+            _testScreenIsOpen = false;
+        }
+        else
+        {
+            TestScreen.gameObject.SetActive(true);
+            _testScreenIsOpen = true;
+
+            TestScreen.EndCelebration.isOn = (WorldEvents.EndCelebration == true) ? true : false;
         }
     }
 

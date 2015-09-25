@@ -92,14 +92,6 @@ public class SaveAndLoadGame
                 }
                 Debug.LogWarning("I saved " + data.Carrot + " " + item.IType);
             }
-            else if (item.IType == ItemType.MaskOfMockery)
-            {
-                for (int i = 0; i < item.ItemAmount; i++)
-                {
-                    data.MaskOfMockery = data.MaskOfMockery + 1;
-                }
-                Debug.LogWarning("I saved " + data.MaskOfMockery + " " + item.IType);
-            }
         }
     }
 

@@ -121,13 +121,13 @@ public class BartTumblescream : MonoBehaviour
             DialogueMenu.AddToDialogueOptions(12100);
         if (IsLastBefore(optionID, 12110) && DialogueManager.IsDialoguePassed(12070))
             DialogueMenu.AddToDialogueOptions(12110);
-        if (IsLastBefore(optionID, 12200))
+        if (IsLastBefore(optionID, 12200) && WorldEvents.ReceivedBookOfMusicalWildlife)
             DialogueMenu.AddToDialogueOptions(12200);
         if (IsLastBefore(optionID, 12210) && DialogueManager.IsDialoguePassed(12200))
             DialogueMenu.AddToDialogueOptions(12210);
         if (IsLastBefore(optionID, 12245))
             DialogueMenu.AddToDialogueOptions(12245);
-        if (IsLastBefore(optionID, 12300))
+        if (IsLastBefore(optionID, 12300) && WorldEvents.NeedsToKnowWhatSacrificeIs)
             DialogueMenu.AddToDialogueOptions(12300);
         if (IsLastBefore(optionID, 12310))
             DialogueMenu.AddToDialogueOptions(12310);
@@ -203,6 +203,9 @@ public class BartTumblescream : MonoBehaviour
                     AddToDialogue(12240);
                     AddToDialogue(12241);
 
+                    WorldEvents.IsAfterGoldenScreech = true;
+                    WorldEvents.LookingForGalleryVisitors = false;
+
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(12230);
                 }
                 else if(WorldEvents.SpokeToMrB && !WorldEvents.IsAfterGoldenScreech && !WorldEvents.LookingForGalleryVisitors)
@@ -213,6 +216,8 @@ public class BartTumblescream : MonoBehaviour
                     AddToDialogue(12223);
 
                     DialoguePlayback.EndingDialogue = true;
+
+                    WorldEvents.LookingForGalleryVisitors = true;
 
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(12220);
 
@@ -369,6 +374,8 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12085);
             AddToDialogue(12086);
             AddToDialogue(12087);
+
+            WorldEvents.ReceivedBookOfMusicalWildlife = true;
         }
 
         if (dialogueOptionID == 12090)
@@ -510,6 +517,9 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12366);
             AddToDialogue(12367);
             AddToDialogue(12368);
+
+            WorldEvents.KnowsWhatSacrificeIs = true;
+            WorldEvents.NeedsToKnowWhatSacrificeIs = false;
         }
 
         if (dialogueOptionID == 12360)
@@ -523,6 +533,9 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12366);
             AddToDialogue(12367);
             AddToDialogue(12368);
+
+            WorldEvents.KnowsWhatSacrificeIs = true;
+            WorldEvents.NeedsToKnowWhatSacrificeIs = false;
         }
 
         if (dialogueOptionID == 12370)

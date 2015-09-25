@@ -50,13 +50,21 @@ public class Inventory : MonoBehaviour
         //////////////////////////
         /// This is here Items are added before the start of the game
         //////////////////////////
-   //     AddItem(1003); //mask
-   //     AddItem(1001); //roughneck shot
-     //   AddItem(1002); //carrot
 
-
-    //    Debug.Log(Items[0].ItemName);
-   //     Debug.Log(Items[1].ItemName);
+        //ItemManager.AddItem(ItemType.AysSecretIngredients);
+        //ItemManager.AddItem(ItemType.BookOfMusicalWildlife);
+        //ItemManager.AddItem(ItemType.Carrot);
+        //ItemManager.AddItem(ItemType.Carrot);
+        //ItemManager.AddItem(ItemType.Carrot);
+        //ItemManager.AddItem(ItemType.ClownMask);
+        //ItemManager.AddItem(ItemType.ClownNose);
+        //ItemManager.AddItem(ItemType.DynamiteShake);
+        //ItemManager.AddItem(ItemType.PartyHat);
+        //ItemManager.AddItem(ItemType.RoughneckShot);
+        //ItemManager.AddItem(ItemType.RoughneckShot);
+        //ItemManager.AddItem(ItemType.Scissors);
+        //ItemManager.AddItem(ItemType.TeaLeaves);
+        //ItemManager.AddItem(ItemType.Scissors);
 
         if (GameManager.MyGameType != GameManager.GameType.NewGame && 
             GameManager.MyGameType != GameManager.GameType.None)
@@ -186,7 +194,6 @@ public class Inventory : MonoBehaviour
 
     public void MakeAllSlotsEmpty()
     {
-
         Debug.Log("empty all slots");
         for (int i = 0; i < Items.Count; i++)
         {
@@ -219,6 +226,22 @@ public class Inventory : MonoBehaviour
             Item item = Items[i];
             item.ItemAmount = 0;
         }
+    }
+
+    public bool LookForItem(ItemType itemType)
+    {
+        bool isInInventory = false;
+
+        for (int i = 0; i < Items.Count; i++)
+        {
+            Item item = Items[i];
+            if(item.IType == itemType)
+            {
+                isInInventory = true;
+                return isInInventory;
+            }
+        }
+        return isInInventory;
     }
 }
 

@@ -8,20 +8,20 @@ public class AyTheTearCollector : MonoBehaviour
     public static AyTheTearCollector Instance;
     public Animator Animator;
 
-    private static List<int> LastOptionsBefore11030 = new List<int>() { 11020, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11036 = new List<int>() { 11020, 11030, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11040 = new List<int>() { 11020, 11036, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11050 = new List<int>() { 11020, 11030, 11036, 11040, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11051 = new List<int>() { 11020, 11030, 11036, 11040, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11060 = new List<int>() { 11020, 11030, 11036, 11040, 11050, 11051, 11100, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11070 = new List<int>() { 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11100, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11080 = new List<int>() { 11020, 11030, 11036, 11040, 11050, 11051, 11070, 11100, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11100 = new List<int>() { 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11110 = new List<int>() { 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11120 = new List<int>() { 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
-    private static List<int> LastOptionsBefore11200 = new List<int>() { 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11220, 11230 };
-    private static List<int> LastOptionsBefore11220 = new List<int>() { 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200 };
-    private static List<int> LastOptionsBefore11230 = new List<int>() { 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220 };
+    private static List<int> LastOptionsBefore11030 = new List<int>() { 11001, 11016, 11020, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11036 = new List<int>() { 11001, 11016, 11020, 11030, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11040 = new List<int>() { 11001, 11016, 11020, 11036, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11050 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11051 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11060 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11050, 11051, 11100, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11070 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11100, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11080 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11050, 11051, 11070, 11100, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11100 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11110 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11120 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220, 11230 };
+    private static List<int> LastOptionsBefore11200 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11220, 11230 };
+    private static List<int> LastOptionsBefore11220 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200 };
+    private static List<int> LastOptionsBefore11230 = new List<int>() { 11001, 11016, 11020, 11030, 11036, 11040, 11050, 11051, 11060, 11070, 11080, 11100, 11110, 11200, 11220 };
     
 
     private static Dictionary<int, List<int>> PrecedingOptions = new Dictionary<int, List<int>>()
@@ -56,7 +56,7 @@ public class AyTheTearCollector : MonoBehaviour
 
     public void DialogueLineNumberToSituation(int optionID)   
     {
-        if (IsLastBefore(optionID, 11030))
+        if (IsLastBefore(optionID, 11030) && (DialogueManager.IsDialoguePassed(11015) || DialogueManager.IsDialoguePassed(11016)))
             DialogueMenu.AddToDialogueOptions(11030);
         if (IsLastBefore(optionID, 11036) && DialogueManager.IsDialoguePassed(11030))
             DialogueMenu.AddToDialogueOptions(11036);
@@ -66,7 +66,7 @@ public class AyTheTearCollector : MonoBehaviour
             DialogueMenu.AddToDialogueOptions(11050);
         if (IsLastBefore(optionID, 11051) && !WorldEvents.AskedAyAboutGallery)
             DialogueMenu.AddToDialogueOptions(11051);
-        if (IsLastBefore(optionID, 11060))
+        if (IsLastBefore(optionID, 11060) && (DialogueManager.IsDialoguePassed(11050) || DialogueManager.IsDialoguePassed(11051)))
             DialogueMenu.AddToDialogueOptions(11060);
         if (IsLastBefore(optionID, 11070) && DialogueManager.IsDialoguePassed(11060))
             DialogueMenu.AddToDialogueOptions(11070);
@@ -79,7 +79,7 @@ public class AyTheTearCollector : MonoBehaviour
         if (IsLastBefore(optionID, 11200))
             if(GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake))
                 DialogueMenu.AddToDialogueOptions(11200);
-        if (IsLastBefore(optionID, 11220))
+        if (IsLastBefore(optionID, 11220) && WorldEvents.KnowsWhatSacrificeIs)
             DialogueMenu.AddToDialogueOptions(11220);
         if (IsLastBefore(optionID, 11230) && DialogueManager.IsDialoguePassed(11220))
             DialogueMenu.AddToDialogueOptions(11230);
@@ -111,38 +111,72 @@ public class AyTheTearCollector : MonoBehaviour
 
         switch (dialogueSituation)
         {
-            case 1: //SITUATION 1
-                AddToDialogue(11001);
-                AddToDialogue(11002);
-                AddToDialogue(11003);
-                AddToDialogue(11004);
-                AddToDialogue(11005);
-                AddToDialogue(11006);
-                AddToDialogue(11007);
-                AddToDialogue(11008);
-                AddToDialogue(11009);
-                AddToDialogue(11010);                
-                AddToDialogue(11011);
-                AddToDialogue(11012);
-                DialoguePlayback.EndingDialogue = true;
-                WorldEvents.SpokeToAy = true;
-                WorldEvents.AskedAyAboutGallery = true;
-                WorldEvents.PeopleNotGoingToGallery = WorldEvents.PeopleNotGoingToGallery + 1;
+            case 1: //SITUATION 1   // The first time Emmon talks to AY
+                if (WorldEvents.LookingForGalleryVisitors)
+                {
+                    AddToDialogue(11001);
+                    AddToDialogue(11002);
+                    AddToDialogue(11003);
+                    AddToDialogue(11004);
+                    AddToDialogue(11005);
+                    AddToDialogue(11006);
+                    AddToDialogue(11007);
+                    AddToDialogue(11008);
+                    AddToDialogue(11009);
+                    AddToDialogue(11010);
+                    AddToDialogue(11011);
+                    AddToDialogue(11012);
+                    DialoguePlayback.EndingDialogue = true;
+                    WorldEvents.SpokeToAy = true;
+                    WorldEvents.AskedAyAboutGallery = true;
+                    WorldEvents.PeopleNotGoingToGallery = WorldEvents.PeopleNotGoingToGallery + 1;
 
-                DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(11001);
+                    DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(11001);
+                }
+                else
+                {
+                    AddToDialogue(11001);
+                    AddToDialogue(11002);
+                    AddToDialogue(11003);
+                    AddToDialogue(11004);
+                    AddToDialogue(11005);
+                    AddToDialogue(11006);
+                    AddToDialogue(11007);
+                    AddToDialogue(11014);
 
+                    DialoguePlayback.DeleteLineID = 11015;
+
+                    AddToDialogue(11015);
+
+                    WorldEvents.SpokeToAy = true;
+
+                    DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(11001);
+                }
                 break;
-            case 2: //SITUATION 2   
-                AddToDialogue(11020);
-                AddToDialogue(11021);
+            case 2: //SITUATION 2 
+                if (WorldEvents.AskedAyAboutGallery && !DialogueManager.IsDialoguePassed(11016))  //we asked Ay to come to the gallery, therefor he did not yet mention his Potion Shop
+                {
+                    DialoguePlayback.DeleteLineID = 11016;
 
-                DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(11020);
+                    AddToDialogue(11016);
+                    AddToDialogue(11017);
+                    AddToDialogue(11018);
+                    AddToDialogue(11019);
+
+                    DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(11016);
+                }
+                else
+                {
+                    AddToDialogue(11020);
+                    AddToDialogue(11021);
+
+                    DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(11020);
+                }
                 break;
             case 3: // SITUATION 3
                 AddToDialogue(11300);
                 AddToDialogue(11301);
                 AddToDialogue(11302);
-                AddToDialogue(11003);
                 DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(11300);
                 DialoguePlayback.EndingDialogue = true;
                 break;
@@ -189,7 +223,6 @@ public class AyTheTearCollector : MonoBehaviour
         if (dialogueOptionID == 11050 || dialogueOptionID == 11051)
         {
             DialoguePlayback.DeleteLineID = 11050;
-            DialoguePlayback.DeleteLineID = 11051;
 
             if(dialogueOptionID == 11050)
                 AddToDialogue(11050);
@@ -197,6 +230,9 @@ public class AyTheTearCollector : MonoBehaviour
                 AddToDialogue(11051);
 
             AddToDialogue(11052);
+
+            DialoguePlayback.DeleteLineID = 11051;
+
             AddToDialogue(11053);
             AddToDialogue(11054);
             AddToDialogue(11055);

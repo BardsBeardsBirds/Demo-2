@@ -25,7 +25,7 @@ public class DialogueTimer
 
     public void SetDialogueTimerLength(float timerLength)
     {
-        timerLength = timerLength / 2f;   ///TO make every thing go faster 
+        timerLength = timerLength / 1.5f;   ///TO make every thing go faster 
         AudioClipLength = timerLength;
         _timer = 1f;
         _timer = timerLength;

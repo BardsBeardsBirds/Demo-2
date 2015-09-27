@@ -74,25 +74,25 @@ public class MrB : MonoBehaviour
             DialogueMenu.AddToDialogueOptions(16024);
         if (IsLastBefore(optionID, 16026))
             DialogueMenu.AddToDialogueOptions(16026);
-        if (IsLastBefore(optionID, 16040))
+        if (IsLastBefore(optionID, 16040) && !WorldEvents.IsAfterGoldenScreech)
             DialogueMenu.AddToDialogueOptions(16040);
-        if (IsLastBefore(optionID, 16055) && DialogueManager.IsDialoguePassed(16040))
+        if (IsLastBefore(optionID, 16055) && DialogueManager.IsDialoguePassed(16040) && DialogueManager.IsDialoguePassed(16080))
             DialogueMenu.AddToDialogueOptions(16055);
-        if (IsLastBefore(optionID, 16065) && (DialogueManager.IsDialoguePassed(16055) || DialogueManager.IsDialoguePassed(16080)))
+        if (IsLastBefore(optionID, 16065) && (DialogueManager.IsDialoguePassed(16055) && DialogueManager.IsDialoguePassed(16080)))
             DialogueMenu.AddToDialogueOptions(16065);
         if (IsLastBefore(optionID, 16075) && DialogueManager.IsDialoguePassed(16065))
             DialogueMenu.AddToDialogueOptions(16075);
-        if (IsLastBefore(optionID, 16080))
+        if (IsLastBefore(optionID, 16080) && DialogueManager.IsDialoguePassed(12230))
             DialogueMenu.AddToDialogueOptions(16080);
-        if (IsLastBefore(optionID, 16085))
+        if (IsLastBefore(optionID, 16085) && WorldEvents.NeedsToKnowWhatSacrificeIs && DialogueManager.IsDialoguePassed(16080))
             DialogueMenu.AddToDialogueOptions(16085);
         if (IsLastBefore(optionID, 16090))
             DialogueMenu.AddToDialogueOptions(16090);
-        if (IsLastBefore(optionID, 16100))
+        if (IsLastBefore(optionID, 16100) && DialogueManager.IsDialoguePassed(13001))       //benny is not pleased
             DialogueMenu.AddToDialogueOptions(16100);
-        if (IsLastBefore(optionID, 16110))
+        if (IsLastBefore(optionID, 16110) && WorldEvents.SpokeToOpposita)
             DialogueMenu.AddToDialogueOptions(16110);
-        if (IsLastBefore(optionID, 16120))
+        if (IsLastBefore(optionID, 16120))                                                  // exit
             DialogueMenu.AddToDialogueOptions(16120);
 
         switch (optionID)
@@ -144,13 +144,15 @@ public class MrB : MonoBehaviour
                     WorldEvents.IsAfterGoldenScreech = true;
                     WorldEvents.LookingForGalleryVisitors = false;
 
-                    DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(12230);
+                    DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(16034);
                 }
                 else
                 {
                     AddToDialogue(16115);
                     AddToDialogue(16116);
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(16115);
+                    Debug.Log("Has passed 16065?? " + DialogueManager.IsDialoguePassed(16065));
+
                 }
                 break;
             case 3: //SITUATION 3
@@ -220,6 +222,8 @@ public class MrB : MonoBehaviour
             AddToDialogue(16029);
             AddToDialogue(16030);
 
+            WorldEvents.SpokeToMrB = true;
+            WorldEvents.LookingForGalleryVisitors = true;
             DialoguePlayback.EndingDialogue = true;
         }
 
@@ -231,6 +235,8 @@ public class MrB : MonoBehaviour
             AddToDialogue(16029);
             AddToDialogue(16030);
 
+            WorldEvents.SpokeToMrB = true;
+            WorldEvents.LookingForGalleryVisitors = true;
             DialoguePlayback.EndingDialogue = true;
         }
 
@@ -242,6 +248,8 @@ public class MrB : MonoBehaviour
             AddToDialogue(16029);
             AddToDialogue(16030);
 
+            WorldEvents.SpokeToMrB = true;
+            WorldEvents.LookingForGalleryVisitors = true;
             DialoguePlayback.EndingDialogue = true;
         }
 
@@ -250,6 +258,9 @@ public class MrB : MonoBehaviour
             DialoguePlayback.DeleteLineID = 16040;
 
             AddToDialogue(16040);
+
+            DialoguePlayback.DeleteLineID = 16080;
+
             AddToDialogue(16041);
             AddToDialogue(16042);
             AddToDialogue(16043);
@@ -277,11 +288,14 @@ public class MrB : MonoBehaviour
         {
             DialoguePlayback.DeleteLineID = 16065;
 
+            AddToDialogue(16065);
+
             DialoguePlayback.DeleteLineID = 16055;
+
+            AddToDialogue(16066);
+
             DialoguePlayback.DeleteLineID = 16080;
 
-            AddToDialogue(16065);
-            AddToDialogue(16066);
             AddToDialogue(16067);
             AddToDialogue(16068);
             AddToDialogue(16069);
@@ -296,7 +310,12 @@ public class MrB : MonoBehaviour
 
         if (dialogueOptionID == 16080)
         {
+            DialoguePlayback.DeleteLineID = 16080;
+
             AddToDialogue(16080);
+
+            DialoguePlayback.DeleteLineID = 16040;
+
             AddToDialogue(16081);
             AddToDialogue(16082);
             AddToDialogue(16083);

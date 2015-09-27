@@ -66,10 +66,31 @@
 			<Text>I see. Guess I will ask somebody else then.</Text>
 			<DialogueType>AyDialogue</DialogueType>
 		</SpokenLine>
+		<SpokenLine ID="11014">
+			<Speaker>Emmon</Speaker>
+			<Text>That’s starting to become a strange habit of yours. Well, if you are going to spend your screen time again outside of your shop you better start doing something useful.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
 		<SpokenLine ID="11015">
 			<Speaker>Ay</Speaker>
 			<Text>Hm.. yes.. maybe it is time I open up Ay’s Miserable Potion Shop again.</Text>
 			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11016">
+			<Speaker>Emmon</Speaker>
+			<Text>Hey Ay! Still out there?</Text>
+		</SpokenLine>
+		<SpokenLine ID="11017">
+			<Speaker>Ay</Speaker>
+			<Text>Yes..</Text>
+		</SpokenLine>
+		<SpokenLine ID="11018">
+			<Speaker>Emmon</Speaker>
+			<Text>Well, if you are going to spend your screen time again outside of your shop you better start doing something useful.</Text>
+		</SpokenLine>
+		<SpokenLine ID="11019">
+			<Speaker>Ay</Speaker>
+			<Text>Hm.. yes.. maybe it is time I open up Ay’s Miserable Potion Shop again.</Text>
 		</SpokenLine>
 		<SpokenLine ID="11020">
 			<Speaker>Emmon</Speaker>
@@ -663,7 +684,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12050">
 			<Speaker>Bart</Speaker>
-			<Text>You should talk to the manager of the gallery, the outrageous mr. B.</Text>
+			<Text>You should talk to the manager of the gallery, the outrageous Mr. B.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12051">
@@ -848,7 +869,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12201">
 			<Speaker>Bart</Speaker>
-			<Text>Oh, he was a great man, Emmon. They say he could he could count to twenty on one hand!</Text>
+			<Text>Oh, he was a great man, Emmon. They say he could count to twenty on one hand!</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12202">
@@ -978,12 +999,12 @@
 		</SpokenLine>
 		<SpokenLine ID="12245">
 			<Speaker>Emmon</Speaker>
-			<Text>Where is the Golden Screech?</Text>
+			<Text>Can you tell me where to find the Golden Screech?</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12246">
 			<Speaker>Bart</Speaker>
-			<Text>As far as I know it can be found in the Citadel of Doubt. You can see its tower rise on the other side of the river.</Text>
+			<Text>As far as I know the legendary Golden Screech can be found in the Citadel of Doubt. You can see its tower rise on the other side of the river.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12247">
@@ -1083,7 +1104,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12330">
 			<Speaker>Bart</Speaker>
-			<Text>Princess Zaptacka was getting a bit desperate now, as you can imagine. She went to Mockery with only a tiny bit of hope.</Text>
+			<Text>Princess Zaptacka was getting a bit desperate now, as you can imagine. She went to Mockery with only a tiny bit of hope left.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12331">
@@ -1183,7 +1204,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12364">
 			<Speaker>Bart</Speaker>
-			<Text>Oddly enough he didn’t exterminate them or something; he just showed them a new location where they in the end found the city of Atadom.</Text>
+			<Text>Oddly enough he didn’t exterminate them or something; he just showed them a new location where  in the end they founded the city of Atadom.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12365">
@@ -1708,7 +1729,7 @@
 		</SpokenLine>
 		<SpokenLine ID="14011">
 			<Speaker>Leon</Speaker>
-			<Text>Do you see what you are doing: you’re bringing me into trouble.</Text>
+			<Text>Do you see what you are doing: you’re getting me into trouble.</Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14020">
@@ -1963,7 +1984,7 @@
 		</SpokenLine>
 		<SpokenLine ID="15003">
 			<Speaker>Emmon</Speaker>
-			<Text>Okay, I believe we’re not on the same line. I’ll come back later.</Text>
+			<Text>I believe we’re not on the same line. I’ll come back later.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15010">
@@ -1981,7 +2002,7 @@
 			<Text>The evil spirits there may disturb my inner vibrations.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
-		<SpokenLine ID="15013">
+		<SpokenLine ID="14">
 			<Speaker>Opposita</Speaker>
 			<Text>Besides, the museum once rejected one of my voodoo sculptures.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
@@ -2493,7 +2514,7 @@
 		</SpokenLine>
 		<SpokenLine ID="15364">
 			<Speaker>Opposita</Speaker>
-			<Text>And the fact that Mockery - the maniac -  kept on laughing at Cynicism during the attack, only made it worse for him.</Text>
+			<Text>And the fact that Mockery - the maniac - kept on laughing at Cynicism during the attack, only made it worse for him.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15365">
@@ -2521,7 +2542,7 @@
 			<Text>Some say the Anchorians got the gods they deserved. A people that goes through great lengths to develop the perfect Honey Lump Soup understandably ends up with gods like “Apathy” and “M-m-mockery”.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
-		<SpokenLine ID="15373">
+		<SpokenLine ID="15379">
 			<Speaker>Emmon</Speaker>
 			<Text>What happened to princess Baklava and her supporters?</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
@@ -2748,7 +2769,7 @@
 		</SpokenLine>
 		<SpokenLine ID="15810">
 			<Speaker>Emmon</Speaker>
-			<Text>Hey! You like the way the Golden Screech is exposed?</Text>
+			<Text>Do you like the way the Golden Screech is exposed?</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15811">
@@ -3038,7 +3059,7 @@
 		</SpokenLine>
 		<SpokenLine ID="16055">
 			<Speaker>Emmon</Speaker>
-			<Text>It sounds like the Golden Screech can boost the gallery’s prestige?</Text>
+			<Text>It sounds like this Golden Screech can boost the gallery’s prestige?</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16056">
@@ -3063,7 +3084,7 @@
 		</SpokenLine>
 		<SpokenLine ID="16060">
 			<Speaker>MrB</Speaker>
-			<Text>If you leave the village in the north north and cross the river there you will enter the Squanderlands. The road going south should just lead you to the Citadel of Doubt.</Text>
+			<Text>If you leave the village in the north and cross the river there you will enter the Squanderlands. The road going south should just lead you to the Citadel of Doubt.</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16061">
@@ -3073,12 +3094,12 @@
 		</SpokenLine>
 		<SpokenLine ID="16065">
 			<Speaker>Emmon</Speaker>
-			<Text>You think the Golden Screech would be sufficient to keep the gallery open?</Text>
+			<Text>So you think the Golden Screech would be sufficient to keep the gallery open?</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16066">
 			<Speaker>MrB</Speaker>
-			<Text>Yes, without a doubt people from all of Baton people flock to the museum to catch a glimpse of this historical object. It will do. I am sure.</Text>
+			<Text>Yes, without a doubt people from all of Baton will flock to the museum to catch a glimpse of this historical object. It will do. I am sure.</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16067">
@@ -3143,7 +3164,7 @@
 		</SpokenLine>
 		<SpokenLine ID="16090">
 			<Speaker>Emmon</Speaker>
-			<Text>Tea of coffee?</Text>
+			<Text>Tea or coffee?</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16091">
@@ -3838,6 +3859,7 @@
 		</SpokenLine>
 		<SpokenLine ID="21002">
 			<Speaker>Emmon</Speaker>
+			<Text>My father would gladly spend whole days in the gallery. Let's muster more support to convince Mr. B he should keep the gallery open.</Text>
 			<DialogueType>ObjectInteraction</DialogueType>
 			<Object>Bart</Object>
 		</SpokenLine>
@@ -3858,6 +3880,7 @@
 		</SpokenLine>
 		<SpokenLine ID="21006">
 			<Speaker>Emmon</Speaker>
+			<Text>I told Mr. B I woul find people who wanted to visit the gallery. Let's not waste time</Text>
 			<DialogueType>ObjectInteraction</DialogueType>
 			<Object>MrB</Object>
 		</SpokenLine>
@@ -3955,6 +3978,12 @@
 			<Speaker>Emmon</Speaker>
 			<DialogueType>ObjectInteraction</DialogueType>
 			<Object>CopperBowl</Object>
+		</SpokenLine>
+		<SpokenLine ID="21201">
+			<Speaker>Emmon</Speaker>
+			<Text>He is performing. I shouldn't disturb him.</Text>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Bart</Object>
 		</SpokenLine>
 		<SpokenLine ID="22000">
 			<Speaker>Emmon</Speaker>

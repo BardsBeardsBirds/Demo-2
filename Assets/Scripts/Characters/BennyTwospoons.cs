@@ -82,8 +82,13 @@ public class BennyTwospoons : MonoBehaviour
         if (IsLastBefore(optionID, 13150))
             DialogueMenu.AddToDialogueOptions(13150);
         if (IsLastBefore(optionID, 13200))
-            if(GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake))
+            Debug.Log("Do we have a dynamite shake? " + GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake));
+
+            if (GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake))
+            {
+                Debug.Log("Do we have a dynamite shake? " + GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake));
                 DialogueMenu.AddToDialogueOptions(13200);
+            }
         if (IsLastBefore(optionID, 13300))
             DialogueMenu.AddToDialogueOptions(13300);
 
@@ -129,11 +134,12 @@ public class BennyTwospoons : MonoBehaviour
                 }
                 else
                 {
+                    DialoguePlayback.DeleteLineID = 13400;
+
                     DialogueMenu.AddToDialogueOptions(13400);
                     DialogueMenu.AddToDialogueOptions(13401);
                     DialogueMenu.AddToDialogueOptions(13402);
 
-                    DialoguePlayback.DeleteLineID = 13400;
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(13400);
                 }
 
@@ -222,7 +228,6 @@ public class BennyTwospoons : MonoBehaviour
 
         if (dialogueOptionID == 13110)
         {
-            AddToDialogue(13110);
             AddToDialogue(13111);
             AddToDialogue(13112);
             AddToDialogue(13113);
@@ -230,13 +235,11 @@ public class BennyTwospoons : MonoBehaviour
             ItemManager.AddItem(ItemType.ClownNose);
             ItemManager.AddItem(ItemType.PartyHat);                
 
-
             DialoguePlayback.EndingDialogue = true;
         }
 
         if (dialogueOptionID == 13120)
         {
-            AddToDialogue(13120);
             AddToDialogue(13121);
             AddToDialogue(13122);
         }
@@ -252,7 +255,6 @@ public class BennyTwospoons : MonoBehaviour
 
         if (dialogueOptionID == 13140)
         {
-            AddToDialogue(13140);
             AddToDialogue(13141);
             AddToDialogue(13142);
             AddToDialogue(13143);

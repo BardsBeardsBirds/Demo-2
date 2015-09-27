@@ -57,9 +57,9 @@ public class DialogueSituationSelector
     public static void LoadMadameOppositaSituations()
     {
         CharacterSituation = 1;
-        if (WorldEvents.SpokeToMrB && !WorldEvents.AskedOppositaAboutGallery)
+        if (WorldEvents.SpokeToMrB && WorldEvents.LookingForGalleryVisitors)
             CharacterSituation = 2;
-        if (WorldEvents.SpokeToMrB && WorldEvents.AskedOppositaAboutGallery)
+        if (WorldEvents.SpokeToMrB && !WorldEvents.LookingForGalleryVisitors)
             CharacterSituation = 3;
         if (WorldEvents.EndCelebration)
             CharacterSituation = 4;

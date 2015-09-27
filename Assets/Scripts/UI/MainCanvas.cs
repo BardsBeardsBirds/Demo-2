@@ -103,7 +103,16 @@ public class MainCanvas : MonoBehaviour
             TestScreen.gameObject.SetActive(true);
             _testScreenIsOpen = true;
 
-            TestScreen.EndCelebration.isOn = (WorldEvents.EndCelebration == true) ? true : false;
+            TestScreen.ChangeCheckmark(TestScreen.PassedIntroduction, WorldEvents.PassedIntroduction);
+            TestScreen.ChangeCheckmark(TestScreen.EndCelebration, WorldEvents.EndCelebration);
+            TestScreen.ChangeCheckmark(TestScreen.SpokeToAy, WorldEvents.SpokeToAy);
+            TestScreen.ChangeCheckmark(TestScreen.SpokeToMrB, WorldEvents.SpokeToMrB);
+            TestScreen.ChangeCheckmark(TestScreen.SpokeToObstructor, WorldEvents.SpokeToObstructor);
+            TestScreen.ChangeCheckmark(TestScreen.SpokeToOpposita, WorldEvents.SpokeToOpposita);
+            TestScreen.ChangeCheckmark(TestScreen.LookingForGalleryVisitors, WorldEvents.LookingForGalleryVisitors);
+            TestScreen.ChangeCheckmark(TestScreen.IsAfterGoldenScreech, WorldEvents.IsAfterGoldenScreech);
+            TestScreen.ChangeCheckmark(TestScreen.NeedsToKnowWhatSacrificeIs, WorldEvents.NeedsToKnowWhatSacrificeIs);
+            TestScreen.ChangeCheckmark(TestScreen.KnowsWhatSacrificeIs, WorldEvents.KnowsWhatSacrificeIs);
         }
     }
 

@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Characters\MrB.cs" />
      <Compile Include="Assets\Scripts\Characters\Obstructor.cs" />
      <Compile Include="Assets\Scripts\Characters\Sentinel.cs" />
+     <Compile Include="Assets\Scripts\DialogueSystem\DialogueColour.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialogueMenu.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialogueOption.cs" />
      <Compile Include="Assets\Scripts\DialogueSystem\DialogueOptions.cs" />

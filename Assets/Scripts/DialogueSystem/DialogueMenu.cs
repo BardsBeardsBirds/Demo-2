@@ -100,7 +100,7 @@ public class DialogueMenu : MonoBehaviour
 
         if (VisibleDialogueOptions.Length + DialogueOptions.Offset == AllDialogueOptionsID.Count)
             canGoDown = false;
-        Debug.Log("can we go down? " + canGoDown);
+        //Debug.Log("can we go down? " + canGoDown);
         return canGoDown;
     }
 
@@ -110,7 +110,7 @@ public class DialogueMenu : MonoBehaviour
 
         if (DialogueOptions.Offset == 0)
             canGoUp = false;
-        Debug.Log("can we go up? " + canGoUp);
+        //Debug.Log("can we go up? " + canGoUp);
         return canGoUp;
     }
 

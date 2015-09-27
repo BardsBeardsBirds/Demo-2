@@ -18,7 +18,12 @@ public static class ObjectCommentary
 
         int id = 7078;
 
-        DialoguePlayback.Instance.SetCurrentDialogueLine(GameManager.ObjectInteractionDialogue[id].Text);
+        SpokenLine spokenLine = GameManager.ObjectInteractionDialogue[id];
+
+        DialogueColour.SetTextColour(id, spokenLine);
+
+     //   DialoguePlayback.Instance.SetCurrentDialogueLine(GameManager.ObjectInteractionDialogue[id].Text);
+        DialoguePlayback.Instance.SetCurrentDialogueLine(spokenLine.Text);
 
         DialoguePlayback.Instance.ShowDialogueLines();
 
@@ -43,17 +48,23 @@ public static class ObjectCommentary
             var id = CurrentDialogueIDs[i];
             CurrentID = id;
             Debug.Log(dialogueType + " " + id);
+
+            SpokenLine spokenLine = null;
+
             if (dialogueType == DialogueType.ObjectInvestigation)
             {
-                DialoguePlayback.Instance.SetCurrentDialogueLine(GameManager.ObjectInvestigationDialogue[id].Text);
+                spokenLine = GameManager.ObjectInvestigationDialogue[id];
+                DialoguePlayback.Instance.SetCurrentDialogueLine(spokenLine.Text);
             }
             else if (dialogueType == DialogueType.ObjectInteraction)
             {
-                DialoguePlayback.Instance.SetCurrentDialogueLine(GameManager.ObjectInteractionDialogue[id].Text);
+                spokenLine = GameManager.ObjectInteractionDialogue[id];
+                DialoguePlayback.Instance.SetCurrentDialogueLine(spokenLine.Text);
             }
 
-            DialoguePlayback.Instance.ShowDialogueLines();
+            DialogueColour.SetTextColour(id, spokenLine);
 
+            DialoguePlayback.Instance.ShowDialogueLines();
 
             int audioId = CheckUniqueAudio(id);
             string audioFile = "ObjectInteraction/" + audioId;
@@ -205,15 +216,15 @@ public static class ObjectCommentary
                 if (WorldEvents.SpokeToMrB && WorldEvents.PeopleNotGoingToGallery < 2 && WorldEvents.LookingForGalleryVisitors)
                 {
                     //should say: I should ask people to go to the galery
-                    CurrentDialogueIDs.Add(21000);
+                    CurrentDialogueIDs.Add(21002);
                 }
                 else if(WorldEvents.EndCelebration)
                 {
                     //should say: he is performing. Let's not disturb him
-                    CurrentDialogueIDs.Add(21000);
+                    CurrentDialogueIDs.Add(21201);
                 }
                 else
-                BartTumblescream.Instance.StartDialogue();
+                    BartTumblescream.Instance.StartDialogue();
                 break;
             case ObjectsInLevel.BennyTwospoons:
                 BennyTwospoons.Instance.StartDialogue();
@@ -225,7 +236,12 @@ public static class ObjectCommentary
                 MadameOpposita.Instance.StartDialogue();
                 break;
             case ObjectsInLevel.MrB:
-                MrB.Instance.StartDialogue();
+                if (WorldEvents.LookingForGalleryVisitors && WorldEvents.PeopleNotGoingToGallery < 2)
+                {
+                    CurrentDialogueIDs.Add(21006);  // I should first find people
+                }
+                else
+                    MrB.Instance.StartDialogue();
                 break;
             case ObjectsInLevel.Obstructor:
                 Obstructor.Instance.StartDialogue();

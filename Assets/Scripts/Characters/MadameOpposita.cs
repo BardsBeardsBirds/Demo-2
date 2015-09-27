@@ -13,9 +13,9 @@ public class MadameOpposita : MonoBehaviour
     private static List<int> LastOptionsBefore15040 = new List<int>() { 15010, 15025, 15030, 15050 };
     private static List<int> LastOptionsBefore15050 = new List<int>() { 15010, 15025, 15030, 15040 };
     private static List<int> LastOptionsBefore15070 = new List<int>() { 15025, 15030, 15040, 15050 };  //only if scissors are revealed
-    private static List<int> LastOptionsBefore15095 = new List<int>() { 15090, 15410, 15320, 15330, 15340, 15350, 15405, 15503, 15510 };
-    private static List<int> LastOptionsBefore15100 = new List<int>() { 15090, 15410, 15320, 15330, 15340, 15350, 15503, 15405, 15510 };
-    private static List<int> LastOptionsBefore15200 = new List<int>() { 15090, 15100, 15410, 15503, 15510};
+    private static List<int> LastOptionsBefore15095 = new List<int>() { 15080, 15090, 15410, 15379, 15393, 15405 };
+    private static List<int> LastOptionsBefore15100 = new List<int>() { 15080, 15090, 15100, 15410, 15379, 15393, 15405 };
+    private static List<int> LastOptionsBefore15200 = new List<int>() { 15080, 15090, 15100, 15410 };
     private static List<int> LastOptionsBefore15210 = new List<int>() { 15200  };
     private static List<int> LastOptionsBefore15220 = new List<int>() { 15200  };
     private static List<int> LastOptionsBefore15230 = new List<int>() { 15200  };
@@ -30,22 +30,20 @@ public class MadameOpposita : MonoBehaviour
     private static List<int> LastOptionsBefore15330 = new List<int>() { 15290, 15300, 15305 };
     private static List<int> LastOptionsBefore15340 = new List<int>() { 15290, 15300, 15305 };
     private static List<int> LastOptionsBefore15350 = new List<int>() { 15290, 15300, 15305 };
-    private static List<int> LastOptionsBefore15370 = new List<int>() { 15320, 15330, 15340, 15350 };
-    private static List<int> LastOptionsBefore15379 = new List<int>() { 15320, 15330, 15340, 15350 };
-    private static List<int> LastOptionsBefore15390 = new List<int>() { 15320, 15330, 15340, 15350 };
-    private static List<int> LastOptionsBefore15393 = new List<int>() { 15320, 15330, 15340, 15350 };
-    private static List<int> LastOptionsBefore15405 = new List<int>() { 15100, 15320, 15330, 15340, 15350, 15405, 15410, 15503, 15510 };
-    private static List<int> LastOptionsBefore15410 = new List<int>() { 15090, 15320, 15330, 15340, 15350, 15405, 15410, 15503, 15510 };
-    private static List<int> LastOptionsBefore15420 = new List<int>() { 15090, 15320, 15330, 15340, 15350, 15410, };
-    private static List<int> LastOptionsBefore15500 = new List<int>() { 15090, 15410, 15320, 15330, 15340, 15350, 15405 };
-    private static List<int> LastOptionsBefore15502 = new List<int>() { 15090, 15410, 15320, 15330, 15340, 15350, 15405 };
-    private static List<int> LastOptionsBefore15503 = new List<int>() { 15500, 15502 };
-    private static List<int> LastOptionsBefore15510 = new List<int>() { 15500, 15502 };
+    private static List<int> LastOptionsBefore15370 = new List<int>() { 15320, 15330, 15340, 15350, 15390 };
+    private static List<int> LastOptionsBefore15379 = new List<int>() { 15320, 15330, 15340, 15350, 15370, 15390 };
+    private static List<int> LastOptionsBefore15390 = new List<int>() { 15320, 15330, 15340, 15350, 15370 };
+    private static List<int> LastOptionsBefore15393 = new List<int>() { 15320, 15330, 15340, 15350, 15370, 15390 };
+    private static List<int> LastOptionsBefore15405 = new List<int>() { 15100, 15379, 15393, 15405, 15410 };
+    private static List<int> LastOptionsBefore15410 = new List<int>() { 15080, 15090, 15100, 15379, 15393, 15405, 15410 };
+    private static List<int> LastOptionsBefore15420 = new List<int>() { 15080, 15090, 15410, };
+    private static List<int> LastOptionsBefore15500 = new List<int>() { 15080, 15090, 15100, 15379, 15393, 15405, 15410 };
+    private static List<int> LastOptionsBefore15502 = new List<int>() { 15080, 15090, 15100, 15379, 15393, 15405, 15410 };
 
-    private static List<int> LastOptionsBefore15810 = new List<int>() { 15810, 15813, 15820, 15830 };
-    private static List<int> LastOptionsBefore15813 = new List<int>() { 15810, 15813, 15820, 15830 };
-    private static List<int> LastOptionsBefore15820 = new List<int>() { 15810, 15813, 15820, 15830 };
-    private static List<int> LastOptionsBefore15830 = new List<int>() { 15810, 15813, 15820, 15830 };
+    private static List<int> LastOptionsBefore15810 = new List<int>() { 15800, 15810, 15813, 15820, 15830 };
+    private static List<int> LastOptionsBefore15813 = new List<int>() { 15800, 15810, 15813, 15820, 15830 };
+    private static List<int> LastOptionsBefore15820 = new List<int>() { 15800, 15810, 15813, 15820, 15830 };
+    private static List<int> LastOptionsBefore15830 = new List<int>() { 15800, 15810, 15813, 15820, 15830 };
 
 
     private static Dictionary<int, List<int>> PrecedingOptions = new Dictionary<int, List<int>>()
@@ -81,8 +79,8 @@ public class MadameOpposita : MonoBehaviour
         {15420, LastOptionsBefore15420},
         {15500, LastOptionsBefore15500},
         {15502, LastOptionsBefore15502},
-        {15503, LastOptionsBefore15503},
-        {15510, LastOptionsBefore15510},
+   //     {15503, LastOptionsBefore15503},
+      //  {15510, LastOptionsBefore15510},
         {15810, LastOptionsBefore15810},
         {15813, LastOptionsBefore15813},
         {15820, LastOptionsBefore15820},
@@ -119,10 +117,7 @@ public class MadameOpposita : MonoBehaviour
 
         if (IsLastBefore(optionID, 15070) && WorldEvents.OppositaRevealedScissors)
             DialogueMenu.AddToDialogueOptions(15070);
-      
-        if (IsLastBefore(optionID, 15095))
-            DialogueMenu.AddToDialogueOptions(15095);
-      
+
         if (IsLastBefore(optionID, 15100))
             DialogueMenu.AddToDialogueOptions(15100);
       
@@ -195,15 +190,18 @@ public class MadameOpposita : MonoBehaviour
                   
         if (IsLastBefore(optionID, 15500))
             DialogueMenu.AddToDialogueOptions(15500);
-                  
-        if (IsLastBefore(optionID, 15502))
+
+        if (IsLastBefore(optionID, 15502) && DialogueManager.IsDialoguePassed(15500))
             DialogueMenu.AddToDialogueOptions(15502);
                   
-        if (IsLastBefore(optionID, 15503))
-            DialogueMenu.AddToDialogueOptions(15503);
+        //if (IsLastBefore(optionID, 15503))
+        //    DialogueMenu.AddToDialogueOptions(15503);
                   
-        if (IsLastBefore(optionID, 15510))
-            DialogueMenu.AddToDialogueOptions(15510);
+        //if (IsLastBefore(optionID, 15510))
+        //    DialogueMenu.AddToDialogueOptions(15510);
+
+        if (IsLastBefore(optionID, 15095))                  //exit
+            DialogueMenu.AddToDialogueOptions(15095);
                   
         if (IsLastBefore(optionID, 15810))
             DialogueMenu.AddToDialogueOptions(15810);
@@ -255,7 +253,7 @@ public class MadameOpposita : MonoBehaviour
 
                 break;
             case 2: //SITUATION 2   
-                if (!WorldEvents.SpokeToOpposita)
+                if (!WorldEvents.SpokeToOpposita && WorldEvents.LookingForGalleryVisitors)
                 {
                     AddToDialogue(15010);
                     AddToDialogue(15011);
@@ -266,7 +264,6 @@ public class MadameOpposita : MonoBehaviour
                     AddToDialogue(15022);
 
                     WorldEvents.SpokeToOpposita = true;
-                    WorldEvents.AskedOppositaAboutGallery = true;
                     WorldEvents.PeopleNotGoingToGallery = WorldEvents.PeopleNotGoingToGallery + 1;
 
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(15010);
@@ -286,7 +283,6 @@ public class MadameOpposita : MonoBehaviour
                 {
                     AddToDialogue(15080);
                     AddToDialogue(15081);
-                    AddToDialogue(15013);
                     AddToDialogue(15020);
                     AddToDialogue(15021);
                     AddToDialogue(15022);
@@ -375,20 +371,6 @@ public class MadameOpposita : MonoBehaviour
             AddToDialogue(15064);
 
             WorldEvents.OppositaRevealedScissors = true;
-        }
-
-        if (dialogueOptionID == 15070)
-        {
-            AddToDialogue(15070);
-
-            DialoguePlayback.EndingDialogue = true;
-        }
-
-        if (dialogueOptionID == 15095)  
-        {
-            AddToDialogue(15095);
-
-            DialoguePlayback.EndingDialogue = true;
         }
 
         if (dialogueOptionID == 15100)//obsoletes only when Emmon has tea leaves
@@ -594,7 +576,6 @@ public class MadameOpposita : MonoBehaviour
         {
             DialoguePlayback.DeleteLineID = 15200;
 
-            AddToDialogue(15370);
             AddToDialogue(15371);
             AddToDialogue(15372);
         }
@@ -675,41 +656,83 @@ public class MadameOpposita : MonoBehaviour
             DialoguePlayback.EndingDialogue = true;
         }
 
-        if (dialogueOptionID == 15500)
+        if (dialogueOptionID == 15500) // ask help
         {
             DialoguePlayback.DeleteLineID = 15500;
 
             AddToDialogue(15500);
             AddToDialogue(15501);
+
+
+            if (true)   //That entrepreneur, Mr. B….
+
+            {
+                AddToDialogue(15503);
+                AddToDialogue(15504);
+                AddToDialogue(15505);
+                AddToDialogue(15506);
+                AddToDialogue(15507);
+                AddToDialogue(15508);
+            }
+            else if (true)      //That trumpet sound will lure Leon away, so you can put your potion in the teapot!
+            {
+                AddToDialogue(15510);
+                AddToDialogue(15511);
+                AddToDialogue(15512);
+                AddToDialogue(15513);
+                AddToDialogue(15514);
+                AddToDialogue(15515);
+            }
         }
 
-        if (dialogueOptionID == 15502)
+        if (dialogueOptionID == 15502)  // ask help
         {
             AddToDialogue(15502);
+
+            if(true)
+            {
+                AddToDialogue(15503);
+                AddToDialogue(15504);
+                AddToDialogue(15505);
+                AddToDialogue(15506);
+                AddToDialogue(15507);
+                AddToDialogue(15508);
+            }
+            else if(true)
+            {
+                AddToDialogue(15510);
+                AddToDialogue(15511);
+                AddToDialogue(15512);
+                AddToDialogue(15513);
+                AddToDialogue(15514);
+                AddToDialogue(15515);
+            }
         }
 
-        if (dialogueOptionID == 15503)
-        {
-            AddToDialogue(15503);
-            AddToDialogue(15504);
-            AddToDialogue(15505);
-            AddToDialogue(15506);
-            AddToDialogue(15507);
-            AddToDialogue(15508);
-        }
+        //if (dialogueOptionID == 15503)
+        //{
+        //    AddToDialogue(15503);
+        //    AddToDialogue(15504);
+        //    AddToDialogue(15505);
+        //    AddToDialogue(15506);
+        //    AddToDialogue(15507);
+        //    AddToDialogue(15508);
+        //}
 
-        if (dialogueOptionID == 15510)
-        {
-            AddToDialogue(15510);
-            AddToDialogue(15511);
-            AddToDialogue(15512);
-            AddToDialogue(15513);
-            AddToDialogue(15514);
-            AddToDialogue(15515);
-        }
+        //if (dialogueOptionID == 15510)
+        //{
+        //    AddToDialogue(15510);
+        //    AddToDialogue(15511);
+        //    AddToDialogue(15512);
+        //    AddToDialogue(15513);
+        //    AddToDialogue(15514);
+        //    AddToDialogue(15515);
+        //}
 
         if (dialogueOptionID == 15810)
         {
+            DialoguePlayback.DeleteLineID = 15810;
+
             AddToDialogue(15810);
             AddToDialogue(15811);
             AddToDialogue(15812);
@@ -717,6 +740,8 @@ public class MadameOpposita : MonoBehaviour
 
         if (dialogueOptionID == 15813)
         {
+            DialoguePlayback.DeleteLineID = 15813;
+
             AddToDialogue(15813);
             AddToDialogue(15814);
             AddToDialogue(15815);
@@ -724,12 +749,28 @@ public class MadameOpposita : MonoBehaviour
 
         if (dialogueOptionID == 15820)
         {
+            DialoguePlayback.DeleteLineID = 15820;
+
             AddToDialogue(15820);
             AddToDialogue(15821);
             AddToDialogue(15822);
             AddToDialogue(15823);
             AddToDialogue(15824);
             AddToDialogue(15825);
+        }
+
+        if (dialogueOptionID == 15070)
+        {
+            AddToDialogue(15070);
+
+            DialoguePlayback.EndingDialogue = true;
+        }
+
+        if (dialogueOptionID == 15095)
+        {
+            AddToDialogue(15095);
+
+            DialoguePlayback.EndingDialogue = true;
         }
 
         if (dialogueOptionID == 15830)

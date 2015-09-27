@@ -110,7 +110,7 @@ public class DialoguePlayback : MonoBehaviour
 
             SpokenLine spokenLine = GameManager.CharacterDialogueLists[NPC][id];
 
-            SetTextColour(id);
+            DialogueColour.SetTextColour(id, spokenLine);
 
             Instance.SetCurrentDialogueLine(spokenLine.Text);
 
@@ -143,31 +143,14 @@ public class DialoguePlayback : MonoBehaviour
         }
     }
 
-    private static void SetTextColour(int id)
-    {
-        Text lineText = GameManager.Instance.UICanvas.DialogueLineImage.GetComponentInChildren<Text>();
-        SpokenLine spokenLine = GameManager.CharacterDialogueLists[NPC][id];
+    //public static void ResetTextColour()
+    //{
+    //    Text lineText = GameManager.Instance.UICanvas.DialogueLineImage.GetComponentInChildren<Text>();
+    //    lineText.color = new Color(.95f, .95f, .95f);
 
-        if (spokenLine.Speaker == NPC)
-        {
-            switch (NPC)
-            {
-                case Character.Ay:
-                    lineText.color = new Color(1f, .75f, .62f);
-                    break;
-                case Character.Benny:
-                    lineText.color = new Color(.24f, .64f, .60f);
-                    break;
-                case Character.Sentinel:
-                    lineText.color = new Color(.67f, .829f, .96f);
-                    break;
-                default:
-                    break;
-            }
-        }
-        else
-            lineText.color = new Color(.95f, .95f, .95f);
-    }
+    //}
+
+    
 
     private static void SetTalkingListening(int id)
     {
@@ -188,7 +171,12 @@ public class DialoguePlayback : MonoBehaviour
     public static void AddToDialogue(int dialogueID)
     {
         CurrentDialogueIDs.Add(dialogueID);
-        DeleteLine(DeleteLineID); 
+
+        if (DeleteLineID != 0)
+        {
+            DeleteLine(DeleteLineID); 
+            DeleteLineID = 0;
+        }
     }
 
     public static void DeleteLine(int deleteLineID)

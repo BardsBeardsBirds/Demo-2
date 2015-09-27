@@ -18,16 +18,16 @@ public class BartTumblescream : MonoBehaviour
     private static List<int> LastOptionsBefore12060 = new List<int>() { 12030, 12035, 12040, 12045, 12060 };
 
     private static List<int> LastOptionsBefore12065 = new List<int>() { 12030, 12035, 12040, 12045, 12060, //exit option
-                                                        12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400};
-
-    private static List<int> LastOptionsBefore12070 = new List<int>() { 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400 };
+                                                        12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400, 12410};
+    
+    private static List<int> LastOptionsBefore12070 = new List<int>() { 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400, 12410 };
     private static List<int> LastOptionsBefore12090 = new List<int>() { 12070, 12090, 12110 };
     private static List<int> LastOptionsBefore12100 = new List<int>() { 12070, 12090, 12110 };
-    private static List<int> LastOptionsBefore12110 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400 };
-    private static List<int> LastOptionsBefore12200 = new List<int>() { 12100, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400 };
-    private static List<int> LastOptionsBefore12210 = new List<int>() { 12100, 12200, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400 };
-    private static List<int> LastOptionsBefore12245 = new List<int>() { 12100, 12200, 12210, 12230, 12355, 12360, 12370, 12375, 12380, 12390, 12400 };
-    private static List<int> LastOptionsBefore12300 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12380, 12390, 12400 };
+    private static List<int> LastOptionsBefore12110 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400, 12410 };
+    private static List<int> LastOptionsBefore12200 = new List<int>() { 12100, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400, 12410 };
+    private static List<int> LastOptionsBefore12210 = new List<int>() { 12100, 12200, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400, 12410 };
+    private static List<int> LastOptionsBefore12245 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12400, 12410 };
+    private static List<int> LastOptionsBefore12300 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12380, 12390, 12400, 12410 };
 
     private static List<int> LastOptionsBefore12310 = new List<int>() { 12300 };    // Bard's story
     private static List<int> LastOptionsBefore12320 = new List<int>() { 12300 };
@@ -39,10 +39,10 @@ public class BartTumblescream : MonoBehaviour
     private static List<int> LastOptionsBefore12360 = new List<int>() { 12335, 12340, 12345 };
     private static List<int> LastOptionsBefore12370 = new List<int>() { 12300, 12310, 12320, 12325, 12335, 12340, 12345 }; // I heard enough
 
-    private static List<int> LastOptionsBefore12375 = new List<int>() { 12335, 12340, 12345, 12370, 12375, 12380 };// story again
-    private static List<int> LastOptionsBefore12380 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12390, 12400 };
-    private static List<int> LastOptionsBefore12390 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380  };
-    private static List<int> LastOptionsBefore12400 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390 };
+    private static List<int> LastOptionsBefore12375 = new List<int>() { 12355, 12360, 12370, 12375, 12380 };// I forgot the story
+    private static List<int> LastOptionsBefore12380 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12390, 12400, 12410 };
+    private static List<int> LastOptionsBefore12390 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12410  };
+    private static List<int> LastOptionsBefore12400 = new List<int>() { 12100, 12200, 12210, 12230, 12245, 12355, 12360, 12370, 12375, 12380, 12390, 12410 };
 
     private static Dictionary<int, List<int>> PrecedingOptions = new Dictionary<int, List<int>>()
     { 
@@ -98,7 +98,9 @@ public class BartTumblescream : MonoBehaviour
         if (IsLastBefore(optionID, 12005))
             DialogueMenu.AddToDialogueOptions(12005);
         if (IsLastBefore(optionID, 12006))
-            DialogueMenu.AddToDialogueOptions(12006);
+            DialogueMenu.AddToDialogueOptions(12006); 
+        if (IsLastBefore(optionID, 12007))
+            DialogueMenu.AddToDialogueOptions(12007);
         if (IsLastBefore(optionID, 12008))
             DialogueMenu.AddToDialogueOptions(12008);
         if (IsLastBefore(optionID, 12030))
@@ -111,8 +113,6 @@ public class BartTumblescream : MonoBehaviour
             DialogueMenu.AddToDialogueOptions(12045);
         if (IsLastBefore(optionID, 12060))
             DialogueMenu.AddToDialogueOptions(12060);
-        if (IsLastBefore(optionID, 12065))
-            DialogueMenu.AddToDialogueOptions(12065);
         if (IsLastBefore(optionID, 12070))
             DialogueMenu.AddToDialogueOptions(12070);
         if (IsLastBefore(optionID, 12090))
@@ -145,16 +145,18 @@ public class BartTumblescream : MonoBehaviour
             DialogueMenu.AddToDialogueOptions(12355);
         if (IsLastBefore(optionID, 12360))
             DialogueMenu.AddToDialogueOptions(12360);
-        if (IsLastBefore(optionID, 12370) && DialogueManager.IsDialoguePassed(12300))
+        if (IsLastBefore(optionID, 12370) && DialogueManager.IsDialoguePassed(12300) && WorldEvents.KnowsWhatSacrificeIs)
             DialogueMenu.AddToDialogueOptions(12370);
-        if (IsLastBefore(optionID, 12375) && DialogueManager.IsDialoguePassed(12300))
+        if (IsLastBefore(optionID, 12375) && DialogueManager.IsDialoguePassed(12300) && WorldEvents.KnowsWhatSacrificeIs)
             DialogueMenu.AddToDialogueOptions(12375);
         if (IsLastBefore(optionID, 12380))
             DialogueMenu.AddToDialogueOptions(12380);
         if (IsLastBefore(optionID, 12390))
             DialogueMenu.AddToDialogueOptions(12390);
-        if (IsLastBefore(optionID, 12400) && DialogueManager.IsDialoguePassed(12400))
+        if (IsLastBefore(optionID, 12400) && DialogueManager.IsDialoguePassed(12390))
             DialogueMenu.AddToDialogueOptions(12400);
+        if (IsLastBefore(optionID, 12065))  // exit option
+            DialogueMenu.AddToDialogueOptions(12065);
        
 
         switch (optionID)
@@ -179,19 +181,36 @@ public class BartTumblescream : MonoBehaviour
         switch (dialogueSituation)
         {
             case 1: //SITUATION 1
-                AddToDialogue(12001);
-                AddToDialogue(12002);
-                AddToDialogue(12003);
-                AddToDialogue(12004);
+                if (!WorldEvents.PassedIntroduction)
+                {
+                    AddToDialogue(12001);
+                    AddToDialogue(12002);
+                    AddToDialogue(12003);
+                    AddToDialogue(12004);
 
-                DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(14001);
+                    DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(12001);
+                }
+                else
+                {
+                    DialogueMenu.AddToDialogueOptions(12060);
+                    DialogueMenu.AddToDialogueOptions(12065);
 
+                    DialogueMenu.FindVisibleDialogueOptions(Character.Bart);
+                }
                 break;
             case 2: //SITUATION 2
                 if (WorldEvents.PeopleNotGoingToGallery >= 2 && !WorldEvents.IsAfterGoldenScreech && WorldEvents.LookingForGalleryVisitors)
                 {   //people find it dull. Bart: you should get the screech.
+                    DialoguePlayback.DeleteLineID = 16040;  //we now cannot get the same info from mister B.
+
                     AddToDialogue(12230);
+
+                    DialoguePlayback.DeleteLineID = 16055;
+
                     AddToDialogue(12231);
+
+                    DialoguePlayback.DeleteLineID = 12230;
+
                     AddToDialogue(12232);
                     AddToDialogue(12233);
                     AddToDialogue(12234);
@@ -203,6 +222,8 @@ public class BartTumblescream : MonoBehaviour
                     AddToDialogue(12240);
                     AddToDialogue(12241);
 
+
+                    Debug.Log("It should delete line 16040 now! ");
                     WorldEvents.IsAfterGoldenScreech = true;
                     WorldEvents.LookingForGalleryVisitors = false;
 
@@ -224,7 +245,7 @@ public class BartTumblescream : MonoBehaviour
                 }
                 else 
                 {   //Emmon is after the screech
-                    AddToDialogue(12410);
+                    AddToDialogue(12410);   // hi dad
 
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(12410);
                 }
@@ -240,61 +261,61 @@ public class BartTumblescream : MonoBehaviour
         if (dialogueOptionID == 12005)
         {
             AddToDialogue(12005);
-            AddToDialogue(14010);
-            AddToDialogue(14011);
-            AddToDialogue(14012);
-            AddToDialogue(14013);
-            AddToDialogue(14014);
-            AddToDialogue(14015);
-            AddToDialogue(14016);
-            AddToDialogue(14017);
-            AddToDialogue(14018);
-            AddToDialogue(14019);
+            AddToDialogue(12010);
+            AddToDialogue(12011);
+            AddToDialogue(12012);
+            AddToDialogue(12013);
+            AddToDialogue(12014);
+            AddToDialogue(12015);
+            AddToDialogue(12016);
+            AddToDialogue(12017);
+            AddToDialogue(12018);
+            AddToDialogue(12019);
         }
 
         if (dialogueOptionID == 12006)
         {
             AddToDialogue(12006);
-            AddToDialogue(14010);
-            AddToDialogue(14011);
-            AddToDialogue(14012);
-            AddToDialogue(14013);
-            AddToDialogue(14014);
-            AddToDialogue(14015);
-            AddToDialogue(14016);
-            AddToDialogue(14017);
-            AddToDialogue(14018);
-            AddToDialogue(14019);
+            AddToDialogue(12010);
+            AddToDialogue(12011);
+            AddToDialogue(12012);
+            AddToDialogue(12013);
+            AddToDialogue(12014);
+            AddToDialogue(12015);
+            AddToDialogue(12016);
+            AddToDialogue(12017);
+            AddToDialogue(12018);
+            AddToDialogue(12019);
         }
 
         if (dialogueOptionID == 12007)
         {
             AddToDialogue(12007);
-            AddToDialogue(14010);
-            AddToDialogue(14011);
-            AddToDialogue(14012);
-            AddToDialogue(14013);
-            AddToDialogue(14014);
-            AddToDialogue(14015);
-            AddToDialogue(14016);
-            AddToDialogue(14017);
-            AddToDialogue(14018);
-            AddToDialogue(14019);
+            AddToDialogue(12010);
+            AddToDialogue(12011);
+            AddToDialogue(12012);
+            AddToDialogue(12013);
+            AddToDialogue(12014);
+            AddToDialogue(12015);
+            AddToDialogue(12016);
+            AddToDialogue(12017);
+            AddToDialogue(12018);
+            AddToDialogue(12019);
         }
 
         if (dialogueOptionID == 12008)
         {
             AddToDialogue(12008);
-            AddToDialogue(14010);
-            AddToDialogue(14011);
-            AddToDialogue(14012);
-            AddToDialogue(14013);
-            AddToDialogue(14014);
-            AddToDialogue(14015);
-            AddToDialogue(14016);
-            AddToDialogue(14017);
-            AddToDialogue(14018);
-            AddToDialogue(14019);
+            AddToDialogue(12010);
+            AddToDialogue(12011);
+            AddToDialogue(12012);
+            AddToDialogue(12013);
+            AddToDialogue(12014);
+            AddToDialogue(12015);
+            AddToDialogue(12016);
+            AddToDialogue(12017);
+            AddToDialogue(12018);
+            AddToDialogue(12019);
         }
 
         if (dialogueOptionID == 12030)
@@ -310,6 +331,8 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12053);
             AddToDialogue(12054);
             AddToDialogue(12055);
+
+            WorldEvents.PassedIntroduction = true;
         }
 
         if (dialogueOptionID == 12035)
@@ -322,6 +345,8 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12053);
             AddToDialogue(12054);
             AddToDialogue(12055);
+
+            WorldEvents.PassedIntroduction = true;
         }
 
         if (dialogueOptionID == 12040)
@@ -335,21 +360,28 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12053);
             AddToDialogue(12054);
             AddToDialogue(12055);
+
+            WorldEvents.PassedIntroduction = true;
+        }
+
+        if (dialogueOptionID == 12045)
+        {
+            AddToDialogue(12045);
+            AddToDialogue(12046);
+            AddToDialogue(12050);
+            AddToDialogue(12051);
+            AddToDialogue(12052);
+            AddToDialogue(12053);
+            AddToDialogue(12054);
+            AddToDialogue(12055);
+
+            WorldEvents.PassedIntroduction = true;
         }
 
         if (dialogueOptionID == 12060)
         {
             AddToDialogue(12060);
             AddToDialogue(12061);
-        }
-
-        if (dialogueOptionID == 12065)
-        {
-            int rand = Random.Range(12065, 12066);
-            Debug.Log("random was: " + rand);
-            AddToDialogue(rand);
-
-            DialoguePlayback.EndingDialogue = true;
         }
 
         if (dialogueOptionID == 12070)
@@ -375,6 +407,7 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12086);
             AddToDialogue(12087);
 
+            ItemManager.AddItem(ItemType.BookOfMusicalWildlife);
             WorldEvents.ReceivedBookOfMusicalWildlife = true;
         }
 
@@ -407,7 +440,7 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12203);
             AddToDialogue(12204);
             AddToDialogue(12205);
-            AddToDialogue(12106);
+            AddToDialogue(12206);
         }
 
         if (dialogueOptionID == 12210)
@@ -553,6 +586,8 @@ public class BartTumblescream : MonoBehaviour
 
         if (dialogueOptionID == 12380)
         {
+            DialoguePlayback.DeleteLineID = 12380;
+
             AddToDialogue(12380);
             AddToDialogue(12381);
             AddToDialogue(12382);
@@ -577,6 +612,15 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12401);
             AddToDialogue(12402);
             AddToDialogue(12403);
+        }
+
+        if (dialogueOptionID == 12065)
+        {
+            int rand = Random.Range(12065, 12067);
+            Debug.Log("random was: " + rand);
+            AddToDialogue(rand);
+
+            DialoguePlayback.EndingDialogue = true;
         }
     }
 

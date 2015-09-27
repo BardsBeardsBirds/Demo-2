@@ -93,7 +93,9 @@ public class DialogueManager
 
     public static void AddToPassedDialogueLines(int id)
     {
-        PassedDialogueLines.Add(id);
+        Debug.LogWarning("Add to passed dialogue lines: " + id);
+        if(!PassedDialogueLines.Contains(id))
+            PassedDialogueLines.Add(id);
     }
 
     public static bool IsDialoguePassed(int id)

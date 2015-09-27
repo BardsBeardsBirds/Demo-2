@@ -57,7 +57,7 @@ public class Obstructor : MonoBehaviour
             DialogueMenu.AddToDialogueOptions(17025);
         if (IsLastBefore(optionID, 17030))
             DialogueMenu.AddToDialogueOptions(17030);
-        if (IsLastBefore(optionID, 17040) && DialogueManager.IsDialoguePassed(16025))
+        if (IsLastBefore(optionID, 17040) && DialogueManager.IsDialoguePassed(17025))
             DialogueMenu.AddToDialogueOptions(17040);
         if (IsLastBefore(optionID, 17050))
             DialogueMenu.AddToDialogueOptions(17050);
@@ -211,6 +211,7 @@ public class Obstructor : MonoBehaviour
             AddToDialogue(17061);
 
             WorldEvents.NeedsToKnowWhatSacrificeIs = true;
+            WorldEvents.SpokeToObstructor = true;
 
             DialoguePlayback.EndingDialogue = true;
         }

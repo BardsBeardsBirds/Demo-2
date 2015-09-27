@@ -9,7 +9,7 @@ public class LeonTurmeric : MonoBehaviour
 
     private static List<int> LastOptionsBefore14002 = new List<int>() { 14001, 14020, 14030, 14040, 14050, 14060, 14080 };
     private static List<int> LastOptionsBefore14020 = new List<int>() { 14001, 14002, 14030, 14040, 14050, 14060, 14080 };
-    private static List<int> LastOptionsBefore14030 = new List<int>() { 14001, 14002, 14020, 14040, 14050, 14060, 14080 };
+    private static List<int> LastOptionsBefore14030 = new List<int>() { 14001, 14002, 14020, 14030, 14040, 14050, 14060, 14080 };
     private static List<int> LastOptionsBefore14040 = new List<int>() { 14001, 14002, 14020, 14030, 14060 };
     private static List<int> LastOptionsBefore14050 = new List<int>() { 14001, 14002, 14020, 14030, 14040, 14060 };
     private static List<int> LastOptionsBefore14055 = new List<int>() { 14001, 14002, 14020, 14030, 14040, 14050, 14060, 14080 };
@@ -53,7 +53,7 @@ public class LeonTurmeric : MonoBehaviour
 
     public void DialogueLineNumberToSituation(int optionID)   //the last line of dialogue determines which situation will follow
     {
-        if (IsLastBefore(optionID, 14002))
+        if (IsLastBefore(optionID, 14002) && WorldEvents.LookingForGalleryVisitors)
             DialogueMenu.AddToDialogueOptions(14002);
         if (IsLastBefore(optionID, 14020))
             DialogueMenu.AddToDialogueOptions(14020);
@@ -63,12 +63,13 @@ public class LeonTurmeric : MonoBehaviour
             DialogueMenu.AddToDialogueOptions(14040);
         if (IsLastBefore(optionID, 14050) && DialogueManager.IsDialoguePassed(14040))
             DialogueMenu.AddToDialogueOptions(14050);
-        if (IsLastBefore(optionID, 14055))
-            DialogueMenu.AddToDialogueOptions(14055);
         if (IsLastBefore(optionID, 14060) && WorldEvents.NeedsToKnowWhatSacrificeIs)
             DialogueMenu.AddToDialogueOptions(14060);
         if (IsLastBefore(optionID, 14080) && DialogueManager.IsDialoguePassed(14050))
             DialogueMenu.AddToDialogueOptions(14080);
+        if (IsLastBefore(optionID, 14055))
+            DialogueMenu.AddToDialogueOptions(14055);
+
         if (IsLastBefore(optionID, 14100))
             DialogueMenu.AddToDialogueOptions(14100);
         if (IsLastBefore(optionID, 14110))
@@ -76,7 +77,20 @@ public class LeonTurmeric : MonoBehaviour
         if (IsLastBefore(optionID, 14114))
             DialogueMenu.AddToDialogueOptions(14114);
         if (IsLastBefore(optionID, 14120))
+        {
             DialogueMenu.AddToDialogueOptions(14120);
+
+          //  if (DialogueManager.IsDialoguePassed(14100) && DialogueManager.IsDialoguePassed(14110) && DialogueManager.IsDialoguePassed(14114))
+          //  {
+          //      AddToDialogue(14120);
+
+          //      DialoguePlayback.EndingDialogue = true;
+
+          ////      DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(14120);
+          //  }
+          //  else
+          //      DialogueMenu.AddToDialogueOptions(14120);
+        }
 
         switch (optionID)
         {
@@ -105,11 +119,16 @@ public class LeonTurmeric : MonoBehaviour
 
                 break;
             case 2: //SITUATION 2
-                DialogueMenu.AddToDialogueOptions(14100);
-                DialogueMenu.AddToDialogueOptions(14110);
-                DialogueMenu.AddToDialogueOptions(14114);
-                DialogueMenu.AddToDialogueOptions(14040);
-                DialogueMenu.FindVisibleDialogueOptions(Character.Leon);
+                if (DialogueManager.IsDialoguePassed(14100) && DialogueManager.IsDialoguePassed(14110) && DialogueManager.IsDialoguePassed(14114))
+                    DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(14120);
+                else
+                {
+                    DialogueMenu.AddToDialogueOptions(14100);
+                    DialogueMenu.AddToDialogueOptions(14110);
+                    DialogueMenu.AddToDialogueOptions(14114);
+                    DialogueMenu.AddToDialogueOptions(14120);
+                    DialogueMenu.FindVisibleDialogueOptions(Character.Leon);
+                }
                 break;
             default: //in all other dialogue options
                 DialogueMenu.FindVisibleDialogueOptions(Character.Leon);
@@ -213,23 +232,50 @@ public class LeonTurmeric : MonoBehaviour
 
         if (dialogueOptionID == 14100)
         {
+            DialoguePlayback.DeleteLineID = 14100;
+
             AddToDialogue(14100);
             AddToDialogue(14101);
             AddToDialogue(14102);
+
+            if (DialogueManager.IsDialoguePassed(14110) && DialogueManager.IsDialoguePassed(14114))
+            {
+                AddToDialogue(14120);
+
+                DialoguePlayback.EndingDialogue = true;
+            }
         }
 
         if (dialogueOptionID == 14110)
         {
+            DialoguePlayback.DeleteLineID = 14110;
+
             AddToDialogue(14110);
             AddToDialogue(14111);
             AddToDialogue(14112);
             AddToDialogue(14113);
+
+            if (DialogueManager.IsDialoguePassed(14100) && DialogueManager.IsDialoguePassed(14114))
+            {
+                AddToDialogue(14120);
+
+                DialoguePlayback.EndingDialogue = true;
+            }
         }
 
         if (dialogueOptionID == 14114)
         {
+            DialoguePlayback.DeleteLineID = 14114;
+
             AddToDialogue(14114);
             AddToDialogue(14115);
+
+            if (DialogueManager.IsDialoguePassed(14100) && DialogueManager.IsDialoguePassed(14110))
+            {
+                AddToDialogue(14120);
+
+                DialoguePlayback.EndingDialogue = true;
+            }
         }
 
         if (dialogueOptionID == 14120)

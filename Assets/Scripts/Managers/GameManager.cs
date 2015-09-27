@@ -149,8 +149,6 @@ public class GameManager : MonoBehaviour
 
             if (Input.GetKeyUp(KeyCode.N))
             {
-                WorldEvents.EndCelebration = true;
-                Debug.Log("set to true ");
                 //Debug.Log("EmmonWasBlockedBySentinel" + WorldEvents.EmmonKnowsWhatSentinelWants);
                 //Debug.Log("EmmonHasRoughneckShot" + WorldEvents.EmmonHasRoughneckShot);
                 //Debug.Log("PickedUpMaskOfMockery" + InGameObjectManager.PickedUpMaskOfMockery);

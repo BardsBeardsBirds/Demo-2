@@ -52,7 +52,7 @@ public class BennyTwospoons : MonoBehaviour
 
     public void StartDialogue()
     {
-        DialogueManager.StartDialogueState(Character.Benny);
+        DialogueManager.StartDialogueState(Character.Benny, 0);
     }
 
     public void DialogueLineNumberToSituation(int optionID)   //the last line of dialogue determines which situation will follow
@@ -82,11 +82,11 @@ public class BennyTwospoons : MonoBehaviour
         if (IsLastBefore(optionID, 13150))
             DialogueMenu.AddToDialogueOptions(13150);
         if (IsLastBefore(optionID, 13200))
-            Debug.Log("Do we have a dynamite shake? " + GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake));
+            Debug.Log("Do we have a dynamite shake? " + GameManager.Instance.MyInventory.LookForItem(ItemType.AysMagicDynamiteShake));
 
-            if (GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake))
+            if (GameManager.Instance.MyInventory.LookForItem(ItemType.AysMagicDynamiteShake))
             {
-                Debug.Log("Do we have a dynamite shake? " + GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake));
+                Debug.Log("Do we have a dynamite shake? " + GameManager.Instance.MyInventory.LookForItem(ItemType.AysMagicDynamiteShake));
                 DialogueMenu.AddToDialogueOptions(13200);
             }
         if (IsLastBefore(optionID, 13300))
@@ -118,7 +118,8 @@ public class BennyTwospoons : MonoBehaviour
                 DialogueMenu.AddToDialogueOptions(13001);
                 DialogueMenu.AddToDialogueOptions(13010);
                 DialogueMenu.AddToDialogueOptions(13100);
-                DialogueMenu.AddToDialogueOptions(13200);
+                if (GameManager.Instance.MyInventory.LookForItem(ItemType.AysMagicDynamiteShake))
+                    DialogueMenu.AddToDialogueOptions(13200);
                 DialogueMenu.AddToDialogueOptions(13300);
                 DialogueMenu.FindVisibleDialogueOptions(Character.Benny);
 
@@ -234,7 +235,7 @@ public class BennyTwospoons : MonoBehaviour
 
             ItemManager.AddItem(ItemType.ClownNose);
             ItemManager.AddItem(ItemType.PartyHat);                
-
+            //remove money
             DialoguePlayback.EndingDialogue = true;
         }
 
@@ -260,8 +261,8 @@ public class BennyTwospoons : MonoBehaviour
             AddToDialogue(13143);
             AddToDialogue(13144);
 
-            ItemManager.AddItem(ItemType.ClownMask);      
-
+            ItemManager.AddItem(ItemType.ClownMask);
+            //remove money
             DialoguePlayback.EndingDialogue = true;
         }
 

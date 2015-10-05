@@ -14,7 +14,6 @@ public class Inventory : MonoBehaviour
     public List<Item> Items = new List<Item>();
     public List<int> InitialiseInventoryItems = new List<int>();
     public GameObject Slots;
-    public GameObject Tooltip;
     public GameObject DraggedItemGameObject;
     public ItemDatabase Database;
     public Item TheDraggedItem;
@@ -58,13 +57,13 @@ public class Inventory : MonoBehaviour
         //ItemManager.AddItem(ItemType.Carrot);
         //ItemManager.AddItem(ItemType.ClownMask);
         //ItemManager.AddItem(ItemType.ClownNose);
-        //ItemManager.AddItem(ItemType.DynamiteShake);
+        //ItemManager.AddItem(ItemType.AysMagicDynamiteShake);
         //ItemManager.AddItem(ItemType.PartyHat);
         //ItemManager.AddItem(ItemType.RoughneckShot);
-        //ItemManager.AddItem(ItemType.RoughneckShot);
+        //ItemManager.AddItem(ItemType.BucketWithPaint);
         //ItemManager.AddItem(ItemType.Scissors);
         //ItemManager.AddItem(ItemType.TeaLeaves);
-        //ItemManager.AddItem(ItemType.Scissors);
+        //ItemManager.AddItem(ItemType.Brush);
 
         if (GameManager.MyGameType != GameManager.GameType.NewGame && 
             GameManager.MyGameType != GameManager.GameType.None)
@@ -90,24 +89,9 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void ShowTooltip(Vector3 toolPosition, Item item)
-    {
-        Tooltip.SetActive(true);
-        Tooltip.GetComponent<RectTransform>().localPosition = new Vector3(toolPosition.x + 360, toolPosition.y, toolPosition.z);
-
-   //     Tooltip.transform.GetChild(0).GetComponent<Text>().text = item.ItemName;
-    //    Tooltip.transform.GetChild(2).GetComponent<Text>().text = item.ItemDescription;
-    }
-
-    public void HideTooltip()
-    {
-        Tooltip.SetActive(false);
-    }
-
     public void ShowDraggedItem(Item item, int slotNumber)
     {
         IndexOfDraggedItem = slotNumber;
-        HideTooltip();
         DraggedItemGameObject.SetActive(true);
         TheDraggedItem = item;
         UIDrawer.IsDraggingItem = true;
@@ -123,10 +107,21 @@ public class Inventory : MonoBehaviour
 
     public void HideDraggedItem()
     {
+        Debug.Log("hide dragged item in inventory");
+
         UIDrawer.IsDraggingItem = false;
         DraggedItemGameObject.SetActive(false);
     }
+    public void DeleteDraggedItem()
+    {
+        Debug.Log("delete dragged item in inventory");
 
+        UIDrawer.IsDraggingItem = false;
+        DraggedItemGameObject.SetActive(false);
+        GameManager.Instance.MyInventory.Items[UIDrawer.DraggingFromSlotNo] = new Item();
+        TheDraggedItem = new Item();
+
+    }
     public void CheckIfItemExists(int itemID, Item item)
     {
         Debug.LogWarning("check if exists: " + item.IType);
@@ -150,7 +145,7 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(int id)
     {
-        Debug.Log("we now add item " + id);
+        //Debug.Log("we now add item " + id);
         for (int i = 0; i < Database.Items.Count; i++)
         {
             if(Database.Items[i].ID == id)
@@ -173,8 +168,36 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void RemoveItem(ItemType itemType)
+    {
+        for (int i = 0; i < GameManager.Instance.MyInventory.Items.Count; i++)
+        {
+            if (GameManager.Instance.MyInventory.Items[i].IType == itemType)
+            {
+                Debug.Log("remove " + i + " " + GameManager.Instance.MyInventory.Items[i].IType);
+             //   SlotList[i].GetComponent<InventorySlot>().MakeSlotEmpty();
+                GameManager.Instance.MyInventory.MakeSlotEmpty(i);
+                return;
+            }
+        }
+
+        //if(UIDrawer.DraggingItem.IType == itemType)
+        //{
+        //    GameManager.Instance.MyInventory.HideDraggedItem();
+        //    UIDrawer.DraggingItem = null;
+        //}
+
+        //for (int i = 0; i < Items.Count; i++)
+        //{
+        //    Debug.Log(Items[i].IType);
+        //}
+
+        Debug.LogWarning("Could not find " + itemType + " in the inventory!");
+    }
+
     public void AddItemAtEmptySlot(Item item)
     {
+        Debug.Log("add at empty slot: " + item);
         for (int i = 0; i < Items.Count; i++)
         {
             if(Items[i].IType == ItemType.Empty)
@@ -185,7 +208,7 @@ public class Inventory : MonoBehaviour
                     Debug.LogWarning("add item " + item.ItemName + ". icon is: " + "Icons/Items/" + item.ItemName);
                     item.ItemAmount = item.ItemAmount + 1;  // added this later
                 }               
-                Debug.Log(Items[i].IType + " is null. Item amount is: " + item.ItemAmount);
+                //Debug.Log(Items[i].IType + " is null. Item amount is: " + item.ItemAmount);
                 Items[i] = item;
                 break;
             }
@@ -203,9 +226,7 @@ public class Inventory : MonoBehaviour
 
     public void MakeSlotEmpty(int slotNumber)
     {
-        //Debug.Log("empty slot");
         Items[slotNumber] = new Item();
-        HideTooltip();
     }
 
     public void LoadItemsFromSave()

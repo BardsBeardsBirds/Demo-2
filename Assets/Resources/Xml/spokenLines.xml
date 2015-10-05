@@ -79,18 +79,22 @@
 		<SpokenLine ID="11016">
 			<Speaker>Emmon</Speaker>
 			<Text>Hey Ay! Still out there?</Text>
+			<DialogueType>AyDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="11017">
 			<Speaker>Ay</Speaker>
 			<Text>Yes..</Text>
+			<DialogueType>AyDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="11018">
 			<Speaker>Emmon</Speaker>
 			<Text>Well, if you are going to spend your screen time again outside of your shop you better start doing something useful.</Text>
+			<DialogueType>AyDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="11019">
 			<Speaker>Ay</Speaker>
 			<Text>Hm.. yes.. maybe it is time I open up Ay’s Miserable Potion Shop again.</Text>
+			<DialogueType>AyDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="11020">
 			<Speaker>Emmon</Speaker>
@@ -1139,7 +1143,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12341">
 			<Speaker>Bart</Speaker>
-			<Text>It will all become clear in a while, son. For once in your life, be patient!</Text>
+			<Text>It will all become clear in a while, Emmon. For once in your life, be patient!</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12345">
@@ -1244,7 +1248,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12377">
 			<Speaker>Bart</Speaker>
-			<Text>It took me ages to tell you this story!</Text>
+			<Text>Blimey, it took me ages to tell you this story!</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12378">
@@ -2002,7 +2006,7 @@
 			<Text>The evil spirits there may disturb my inner vibrations.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
-		<SpokenLine ID="14">
+		<SpokenLine ID="15013">
 			<Speaker>Opposita</Speaker>
 			<Text>Besides, the museum once rejected one of my voodoo sculptures.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
@@ -2179,7 +2183,7 @@
 		</SpokenLine>
 		<SpokenLine ID="15103">
 			<Speaker>Opposita</Speaker>
-			<Text>If you want me to be more specific I will need some tea leaves.</Text>
+			<Text>If you want me to be more specific I will need some tea to read</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15200">
@@ -3014,7 +3018,7 @@
 		</SpokenLine>
 		<SpokenLine ID="16040">
 			<Speaker>Emmon</Speaker>
-			<Text>Tell me how we can keep the gallery open</Text>
+			<Text>Tell me how we can keep the gallery open!</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16041">
@@ -3847,6 +3851,24 @@
 			<DialogueType>ObjectInvestigation</DialogueType>
 			<Object>CopperBowl</Object>
 		</SpokenLine>
+		<SpokenLine ID="20027">
+			<Speaker>Emmon</Speaker>
+			<Text>It's the door to the elevator</Text>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>ElevatorDoor1</Object>
+		</SpokenLine>
+		<SpokenLine ID="20028">
+			<Speaker>Emmon</Speaker>
+			<Text>It's the door to the elevator</Text>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>ElevatorDoor2</Object>
+		</SpokenLine>
+		<SpokenLine ID="20029">
+			<Speaker>Emmon</Speaker>
+			<Text>It's the door to the elevator</Text>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>ElevatorDoor3</Object>
+		</SpokenLine>
 		<SpokenLine ID="21000">
 			<Speaker>Emmon</Speaker>
 			<Text>Object Interaction</Text>
@@ -3987,12 +4009,12 @@
 		</SpokenLine>
 		<SpokenLine ID="22000">
 			<Speaker>Emmon</Speaker>
-			<Text>This rabbit doesn't eat carrots.</Text>
+			<Text>Trying to combine an inventory item with the world</Text>
 			<DialogueType>ItemWorldCombination</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="23000">
 			<Speaker>Emmon</Speaker>
-			<Text>Would you like a carrot?</Text>
+			<Text>Trying to combine an inventory item with another inventory item</Text>
 			<DialogueType>InventoryCombination</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="24000">

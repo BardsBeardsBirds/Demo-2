@@ -56,7 +56,7 @@ public class MrB : MonoBehaviour
 
     public void StartDialogue()
     {
-        DialogueManager.StartDialogueState(Character.MrB);
+        DialogueManager.StartDialogueState(Character.MrB, 0);
     }
 
     public void DialogueLineNumberToSituation(int optionID)   //the last line of dialogue determines which situation will follow
@@ -141,7 +141,6 @@ public class MrB : MonoBehaviour
                     AddToDialogue(16038);
                     AddToDialogue(16039);
 
-                    WorldEvents.IsAfterGoldenScreech = true;
                     WorldEvents.LookingForGalleryVisitors = false;
 
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(16034);
@@ -269,6 +268,9 @@ public class MrB : MonoBehaviour
             AddToDialogue(16046);
             AddToDialogue(16047);
             AddToDialogue(16048);
+
+            WorldEvents.IsAfterGoldenScreech = true;
+
         }
 
         if (dialogueOptionID == 16055)

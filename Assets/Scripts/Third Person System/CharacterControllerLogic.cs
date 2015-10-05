@@ -76,34 +76,10 @@ public class CharacterControllerLogic : MonoBehaviour
     private int _m_LocomotionPivotLTransId = 0;
     private int _m_LocomotionPivotRTransId = 0;
 
-    public CharacterState State
-    {
-        get
-        {
-            return this._state;
-        }
-    }
-    public Animator Animator
-    {
-        get
-        {
-            return this._animator;
-        }
-    }
-    public bool IsGrounded
-    {
-        get
-        {
-            return this._isGrounded;
-        }
-    }
-    public float Speed
-    {
-        get
-        {
-            return this._speed;
-        }
-    }
+    public CharacterState State { get { return this._state; } }
+    public Animator Animator { get { return this._animator; } }
+    public bool IsGrounded { get { return this._isGrounded; } }
+    public float Speed { get { return this._speed; } }
 
     public float LocomotionThreshold { get { return 0.2f; } }
 
@@ -148,6 +124,12 @@ public class CharacterControllerLogic : MonoBehaviour
         {
             StopMovingAndTurning();
             return;
+        }
+
+        //elevator height
+        if(Elevator.Instance.MyAnimator.GetBool("IsMoving"))
+        {
+            //transform.position = transform.position + new Vector3(0, Elevator.Instance.transform.localPosition.y, 0);
         }
 
         //check for falling
@@ -287,9 +269,7 @@ public class CharacterControllerLogic : MonoBehaviour
                 Vector3.OrthoNormalize(ref hit, ref _slideDirection);
                 Vector3 moveVector = _slideDirection;
 
-
                 transform.position = transform.position + moveVector * Time.deltaTime * 10f;
-           
 
                 Debug.DrawRay(transform.position, transform.forward, Color.red);
                 Debug.DrawRay(transform.position, _slideDirection, Color.white);

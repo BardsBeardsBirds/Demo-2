@@ -54,7 +54,7 @@ public class DialoguePlayback : MonoBehaviour
 
     public static void TriggerDialogue(int dialogueOptionID)
     {
-        Debug.LogWarning("Laten we deze dialoog spelen: " + NPC + " " + dialogueOptionID);
+        Debug.Log("Laten we deze dialoog spelen: " + NPC + " " + dialogueOptionID);
 
         if (NPC == Character.Ay)
             AyTheTearCollector.TriggerDialogue(dialogueOptionID);

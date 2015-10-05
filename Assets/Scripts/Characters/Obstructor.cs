@@ -40,7 +40,7 @@ public class Obstructor : MonoBehaviour
 
     public void StartDialogue()
     {
-        DialogueManager.StartDialogueState(Character.Obstructor);
+        DialogueManager.StartDialogueState(Character.Obstructor, 0);
     }
 
     public void DialogueLineNumberToSituation(int optionID)   //the last line of dialogue determines which situation will follow

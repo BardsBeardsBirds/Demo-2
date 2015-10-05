@@ -9,6 +9,7 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
     public int SlotNumber;
     public Image ItemImage;
     public Text ItemAmountTxt;
+    public string ItemName = "";
 
     private MouseClickOnObject mouseClickOnObject;
     private Text _descriptionText;
@@ -27,12 +28,15 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
 
     void Update()
     {
+
+
         if (GameManager.Instance.MyInventory.Items[SlotNumber].ItemName != null)
         {
             ItemAmountTxt.enabled = false;
             ItemImage.enabled = true;
-         //   ItemImage.sprite = GameManager.Instance.MyInventory.Items[SlotNumber].ItemIcon;/////////////
+
             ItemImage.sprite = GameManager.Instance.MyInventory.Items[SlotNumber].FindIcon(GameManager.Instance.MyInventory.Items[SlotNumber]);/////////////
+            ItemName = GameManager.Instance.MyInventory.Items[SlotNumber].ItemName;
 
             if (GameManager.Instance.MyInventory.Items[SlotNumber].Class == ItemClass.Consumable)
             {
@@ -46,7 +50,6 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
                     // amount of consumable = 0
                     ItemImage.enabled = false;
                     GameManager.Instance.MyInventory.Items[SlotNumber] = new Item();
-                    GameManager.Instance.MyInventory.HideTooltip();
                 }
             }
         }
@@ -69,9 +72,12 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
                 tryCombine = GameManager.Instance.IIventoryItemWithObject.CombineItems(UIDrawer.DraggingItem, GameManager.Instance.MyInventory.Items[SlotNumber]);
                 if (tryCombine)
                 {
-                    Debug.LogWarning("We can combine these two!!");
-                    GameManager.Instance.MyInventory.EndDragging(SlotNumber);
+                    Debug.LogWarning("We can combine these two!! Slot number: " + SlotNumber + " Dragging from: " + UIDrawer.DraggingFromSlotNo);
+                    //     GameManager.Instance.MyInventory.EndDragging(UIDrawer.DraggingFromSlotNo);
+                    GameManager.Instance.MyInventory.HideDraggedItem(); // not entirely sure about this one
                 }
+
+
             }
             else
             {
@@ -113,10 +119,8 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
 
         GameManager.Instance.UICanvas.Hovering = MainCanvas.Hoverings.MouseInInventory;
 
-        if (GameManager.Instance.MyInventory.Items[SlotNumber].ItemName != null && !UIDrawer.IsDraggingItem)  // there is an item in the slot we are hov
+        if (GameManager.Instance.MyInventory.Items[SlotNumber].ItemName != null && !UIDrawer.IsDraggingItem)  // there is an item in the slot we are hovering
         {
-            GameManager.Instance.MyInventory.ShowTooltip(GameManager.Instance.MyInventory.SlotList[SlotNumber].GetComponent<RectTransform>().localPosition, GameManager.Instance.MyInventory.Items[SlotNumber]);
-
             _descriptionText.enabled = true;
             _descriptionText.text = GameManager.Instance.MyInventory.Items[SlotNumber].ItemName;
 
@@ -137,9 +141,6 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
 
     public void OnPointerExit(PointerEventData data)
     {
-        if (GameManager.Instance.MyInventory.Items[SlotNumber].ItemName != null)
-            GameManager.Instance.MyInventory.HideTooltip();
-
         if (UIDrawer.IsDraggingItem)
         {
             _descriptionText.text = UIDrawer.DraggingItem.ItemName;
@@ -180,7 +181,6 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
             ItemImage.enabled = false;
 
         GameManager.Instance.MyInventory.Items[SlotNumber] = new Item();
-        GameManager.Instance.MyInventory.HideTooltip();
     }
 }
 

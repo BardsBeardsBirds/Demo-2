@@ -1,0 +1,4213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SpokenLineCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SpokenLines>
+		<SpokenLine ID="11000">
+			<Speaker>Ay</Speaker>
+			<Text>Ay the TearCollector Dialogues</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11001">
+			<Speaker>Emmon</Speaker>
+			<Text>Ay!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11002">
+			<Speaker>Ay</Speaker>
+			<Text>Hi!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11003">
+			<Speaker>Emmon</Speaker>
+			<Text>Long time no see, but not much has changed. You are again sitting in front of your mansion!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11004">
+			<Speaker>Ay</Speaker>
+			<Text>Oh hum, I’m just enjoying the sunny weather.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11005">
+			<Speaker>Emmon</Speaker>
+			<Text>That doesn’t seem to suit a dark wizard, does it?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11006">
+			<Speaker>Ay</Speaker>
+			<Text>...No it doesn’t. Fine. I locked myself out of my shop again.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11007">
+			<Speaker>Ay</Speaker>
+			<Text>That’s what you wanted to hear isn’t it?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11008">
+			<Speaker>Emmon</Speaker>
+			<Text>That’s starting to become a strange habit of yours. But anyway, if you don’t have anything else to do, how about you come with me to the Outside In Art Gallery?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11009">
+			<Speaker>Ay</Speaker>
+			<Text>I would rather not. That museum is a big hoax. I always thought art is supposed to move you. Well, I went there, the gallery, ready to collect the tears of dedicated art lovers.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11010">
+			<Speaker>Ay</Speaker>
+			<Text>What do you think? Nothing. Stone cold those snobs were, staring at the wall their fishy eyes.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11011">
+			<Speaker>Ay</Speaker>
+			<Text>I went home and cried in misery over my unsuccessful day - which was a stroke of luck of course.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11012">
+			<Speaker>Emmon</Speaker>
+			<Text>I see. Guess I will ask somebody else then.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11014">
+			<Speaker>Emmon</Speaker>
+			<Text>That’s starting to become a strange habit of yours. Well, if you are going to spend your screen time again outside of your shop you better start doing something useful.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11015">
+			<Speaker>Ay</Speaker>
+			<Text>Hm.. yes.. maybe it is time I open up Ay’s Miserable Potion Shop again.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11016">
+			<Speaker>Emmon</Speaker>
+			<Text>Hey Ay! Still out there?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11017">
+			<Speaker>Ay</Speaker>
+			<Text>Yes..</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11018">
+			<Speaker>Emmon</Speaker>
+			<Text>Well, if you are going to spend your screen time again outside of your shop you better start doing something useful.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11019">
+			<Speaker>Ay</Speaker>
+			<Text>Hm.. yes.. maybe it is time I open up Ay’s Miserable Potion Shop again.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11020">
+			<Speaker>Emmon</Speaker>
+			<Text>Rejoice, I’m back!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11021">
+			<Speaker>Ay</Speaker>
+			<Text>Hm..</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11030">
+			<Speaker>Emmon</Speaker>
+			<Text>What is Ay’s Miserable Potion Shop?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11031">
+			<Speaker>Ay</Speaker>
+			<Text>Well, there was this other time that I had accidentally locked myself out of my shop..</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11032">
+			<Speaker>Emmon</Speaker>
+			<Text>Really..</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11033">
+			<Speaker>Ay</Speaker>
+			<Text>..and I decided that, although I can’t get to my tear collection (sighs), I could still brew and sell some potions.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11034">
+			<Speaker>Ay</Speaker>
+			<Text>In Ay’s Miserable Potion Shop the deal goes like this: if you supply me with some ingredients I can give you useful potions for an affordable price.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11035">
+			<Speaker>Emmon</Speaker>
+			<Text>Hm.. this gets interesting!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11036">
+			<Speaker>Emmon</Speaker>
+			<Text>Tell me more about Ay’s Miserable Potion Shop.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11037">
+			<Speaker>Ay</Speaker>
+			<Text>Father Armadal used to supply me for my mixtures. But since he disappeared to another demo level his house has been left abandoned. Probably you can find many special ingredients there.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11040">
+			<Speaker>Emmon</Speaker>
+			<Text>How do I get ingredients for your potions?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11041">
+			<Speaker>Ay</Speaker>
+			<Text>You won’t mind if I explain to you in rhyme form, right?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11042">
+			<Speaker>Ay</Speaker>
+			<Text>Father Armadal has a cabin beneath the mighty forest trees, there he brews his wicked potions, with incarnate expertise,</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11043">
+			<Speaker>Ay</Speaker>
+			<Text>Follow the road out of the village, eastward, straight into the woods, you shall see the druid’s hut, where you find the needed goods,</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11044">
+			<Speaker>Ay</Speaker>
+			<Text>Ay creates for you a brewage that even makes a dragon frown, if you bring me the ingredients, I will never let you down.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11045">
+			<Speaker>Ay</Speaker>
+			<Text>Of course, many of the more common ingredients can be found anywhere. Roam the forests! Explore the hills!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11050">
+			<Speaker>Emmon</Speaker>
+			<Text>So you don’t like Inside Out Gallery?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11051">
+			<Speaker>Emmon</Speaker>
+			<Text>What about you and the Inside Out Art Gallery?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11052">
+			<Speaker>Ay</Speaker>
+			<Text>I don’t like it there. It is a collection of overvalued junk crafted by third grade imposters!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11053">
+			<Speaker>Emmon</Speaker>
+			<Text>No kidding.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11054">
+			<Speaker>Ay</Speaker>
+			<Text>Did you know there are several paintings in the gallery made by Benny Twospoons? Do you know what he is? A clown!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11055">
+			<Speaker>Ay</Speaker>
+			<Text>And his paintings are not even funny.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11060">
+			<Speaker>Emmon</Speaker>
+			<Text>What do you have against Benny Twospoons?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11061">
+			<Speaker>Ay</Speaker>
+			<Text>I once explained to you that Benny and I are like fire and water. A jokester like him works against my… tear trade efficiency.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11062">
+			<Speaker>Emmon</Speaker>
+			<Text>Can he not make people crying with laughter? That should suit you.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11063">
+			<Speaker>Ay</Speaker>
+			<Text>No one laughs at his jokes.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11070">
+			<Speaker>Emmon</Speaker>
+			<Text>So you and Benny don’t go together well..</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11071">
+			<Speaker>Ay</Speaker>
+			<Text>That’s right. It all started the day that evil clown put a banana peel in front of my doorstep. Naturally his aim was for me to trip on it and fall. Yes…</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11072">
+			<Speaker>Ay</Speaker>
+			<Text>But he underestimated me. Of course I would never be tricked by such a classic prank.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11073">
+			<Speaker>Emmon</Speaker>
+			<Text>How did you succeed in avoiding the banana?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11074">
+			<Speaker>Ay</Speaker>
+			<Text>Some would call it luck, I just think that Benny had chosen a bad time for his plan. As it happened I couldn’t enter my house at the time, as I had lost my keys.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11075">
+			<Speaker>Ay</Speaker>
+			<Text>As I was investigating the soil around my house in order to find them, I localised the banana. After that neutralising it was only a matter of getting hold of the right tools and having some patience.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11080">
+			<Speaker>Emmon</Speaker>
+			<Text>What happened after Benny and the banana?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11081">
+			<Speaker>Ay</Speaker>
+			<Text>Of course I couldn’t let the trickster clown get away with his prank. And soon I knew what to do… I later wrote a poem about what happened. Let’s see..</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11082">
+			<Speaker>Ay</Speaker>
+			<Text>When the bats woke up and the sun went down, I sneaked to the cave of that hideous clown,</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11083">
+			<Speaker>Ay</Speaker>
+			<Text>I was carrying the nail of a sparrow-hawk’s claw, What goes around comes around, that is Ay’s only law,</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11084">
+			<Speaker>Ay</Speaker>
+			<Text>Poor Ben was asleep when I entered his shop, With the razor-sharp claw I made his balloons pop,</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11085">
+			<Speaker>Ay</Speaker>
+			<Text>Two spoons one shop, Everywhere balloons pop,</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11086">
+			<Speaker>Ay</Speaker>
+			<Text>One shop, two spoons. I savaged all his balloons.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11087">
+			<Speaker>Ay</Speaker>
+			<Text>Mwughahahaha.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11088">
+			<Speaker>Emmon</Speaker>
+			<Text>You are a talented poet. You and me, we should become a musical duo. If you provide the lyrics, I compose the melodies.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11089">
+			<Speaker>Ay</Speaker>
+			<Text>Are you serious?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11090">
+			<Speaker>Emmon</Speaker>
+			<Text>No.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11100">
+			<Speaker>Emmon</Speaker>
+			<Text>Do you know anything about a sacrifice for Cynicism?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11101">
+			<Speaker>Ay</Speaker>
+			<Text>No… but if it is something sinister, I would certainly be interested in learned more about it…</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11102">
+			<Speaker>Emmon</Speaker>
+			<Text>If I think you might help be of use for your dark plans I will inform you.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11103">
+			<Speaker>Ay</Speaker>
+			<Text>Thank you.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11110">
+			<Speaker>Emmon</Speaker>
+			<Text>Do you also hear the alienating sounds coming out of that house?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11111">
+			<Speaker>Ay</Speaker>
+			<Text>Yes, that is Valeria Vata-Valóta, the artist. Every night, in my bed, I listen to the bizarre music coming from there. I have grown used to it.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11112">
+			<Speaker>Ay</Speaker>
+			<Text>Now I have to spend the night out here it feels strangely welcoming.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11113">
+			<Speaker>Emmon</Speaker>
+			<Text>I think it sounds creepy.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11114">
+			<Speaker>Ay</Speaker>
+			<Text>Maybe. But so am I.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11115">
+			<Speaker>Emmon</Speaker>
+			<Text>Are you?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11120">
+			<Speaker>Emmon</Speaker>
+			<Text>I suddenly feel a great urge to go stand over there! Bye.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11130">
+			<Speaker>Emmon</Speaker>
+			<Text>I would like to make use of Ay’s Miserable Potion Shop</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11131">
+			<Speaker>Ay</Speaker>
+			<Text>What would you like?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11132">
+			<Speaker>Emmon</Speaker>
+			<Text>A Roughneck Shot</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11133">
+			<Speaker>Emmon</Speaker>
+			<Text>I would like to buy a Roughneck Shot. For old time’s sake!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11134">
+			<Speaker>Ay</Speaker>
+			<Text>Here you go.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11140">
+			<Speaker>Emmon</Speaker>
+			<Text>Barcarolle</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11145">
+			<Speaker>Emmon</Speaker>
+			<Text>Fluid Temper</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11150">
+			<Speaker>Emmon</Speaker>
+			<Text>Ay’s Magic Dynamite Shake</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11200">
+			<Speaker>Emmon</Speaker>
+			<Text>I brought you the ingredients you requested.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11201">
+			<Speaker>Ay</Speaker>
+			<Text>Good, good. Now I can craft my most inventive potions. Well, not my most inventive potion. To make Ay’s Magic Dynamite Shake, I need one more ingredient.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11202">
+			<Speaker>Emmon</Speaker>
+			<Text>Ay’s Magic Dynamite Shake?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11203">
+			<Speaker>Ay</Speaker>
+			<Text>Aye. My Magic Dynamite Shake, it is my best creation yet. If you give this to somebody it will have an ‘explosive’ impact.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11204">
+			<Speaker>Ay</Speaker>
+			<Text>I once successfully poured it into the drink of Benny, that clown from across the street. Oh yes, when he drank it, he flew right through the ceiling of his clownery. A beautiful memory.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11205">
+			<Speaker>Emmon</Speaker>
+			<Text>Impressive.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11206">
+			<Speaker>Ay</Speaker>
+			<Text>Anyway. I can make Ay’s Magic Dynamite Shake for you, but you have to give me 6 Woodland Tattler mushrooms from the forest.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11207">
+			<Speaker>Emmon</Speaker>
+			<Text>Cool!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11220">
+			<Speaker>Emmon</Speaker>
+			<Text>I need a mask Ay.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11221">
+			<Speaker>Emmon</Speaker>
+			<Text>I need a mask Ay, do you happen to know something about that? ..Ay?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11222">
+			<Speaker>Ay</Speaker>
+			<Text>Yes?! What are you looking at me for?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11223">
+			<Speaker>Emmon</Speaker>
+			<Text>I nothing, I just thought, maybe I could borrow yours for a moment..</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11224">
+			<Speaker>Ay</Speaker>
+			<Text>The bard wants my mask! Does he have no feelings!? What would I begin without my mask? Nothing would conceal the wickedness of my abhorrent face!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11225">
+			<Speaker>Emmon</Speaker>
+			<Text>Okay okay I’m sorry, I didn’t know it was that serious!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11226">
+			<Speaker>Ay</Speaker>
+			<Text>Oh don’t worry, I made that up.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11227">
+			<Speaker>Emmon</Speaker>
+			<Text>Oh it is not serious?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11228">
+			<Speaker>Ay</Speaker>
+			<Text>No no, it is!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11229">
+			<Speaker>Emmon</Speaker>
+			<Text>You’re confusing.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11230">
+			<Speaker>Emmon</Speaker>
+			<Text>What is behind the mask Ay?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11231">
+			<Speaker>Emmon</Speaker>
+			<Text>Why are you wearing a mask Ay? What are you hiding?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11232">
+			<Speaker>Ay</Speaker>
+			<Text>Two honest eyes. The mouth that speaks wisdom. And the true face of humanity.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11300">
+			<Speaker>Emmon</Speaker>
+			<Text>Hey Ay! Are you enjoying yourself here?</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11301">
+			<Speaker>Ay</Speaker>
+			<Text>Aye, I am trying to collect the tears from the people here listening at the concert.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11302">
+			<Speaker>Ay</Speaker>
+			<Text>I am sure one of these beings must either feel so much resentment, or so much admiration that they will shed a tear. I think I will start with Mister B. over there.</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="11303">
+			<Speaker>Emmon</Speaker>
+			<Text>Good luck!</Text>
+			<DialogueType>AyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12000">
+			<Speaker>Bart</Speaker>
+			<Text>Bart Tumblescream Dialogues</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12001">
+			<Speaker>Bart</Speaker>
+			<Text>Dum Dum Dum</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12002">
+			<Speaker>Emmon</Speaker>
+			<Text>Hi dad, why singing in minor today?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12003">
+			<Speaker>Bart</Speaker>
+			<Text>Och son, didn’t you hear? Mister B. is going to close the Inside Out Art Gallery! That place always gives me inspiration.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12004">
+			<Speaker>Bart</Speaker>
+			<Text>I am so sad now, I have to write a song of mourning. Do you want to hear what I have so far?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12005">
+			<Speaker>Emmon</Speaker>
+			<Text>Nah, I think I heard enough already.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12006">
+			<Speaker>Emmon</Speaker>
+			<Text>No, what we need is something uplifting!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12007">
+			<Speaker>Emmon</Speaker>
+			<Text>Bring it on daddy-o, make me weep.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12008">
+			<Speaker>Emmon</Speaker>
+			<Text>Let me take my lute, we can express your pain together.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12010">
+			<Speaker>Bart</Speaker>
+			<Text>Hm.. well.. on second thought, it is a bit unpolished.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12011">
+			<Speaker>Bart</Speaker>
+			<Text>It can be dangerous for us bards to set free the children of our vision too soon..</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12012">
+			<Speaker>Bart</Speaker>
+			<Text>But when I heard the news today I just had to do something!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12013">
+			<Speaker>Bart</Speaker>
+			<Text>I did not even tell my Valeria. Oh she will be broken!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12014">
+			<Speaker>Emmon</Speaker>
+			<Text>Valeria..</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12015">
+			<Speaker>Bart</Speaker>
+			<Text>Come on now Emmon. You are grownup now.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12016">
+			<Speaker>Emmon</Speaker>
+			<Text>What would mother have thought if she would have seen you with that mediocre artist?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12017">
+			<Speaker>Bart</Speaker>
+			<Text>We are not discussing your mother now, Emmon.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12018">
+			<Speaker>Bart</Speaker>
+			<Text>And as you know the Gallery is very important for Valeria as well. Many magnificent works of hers hang there.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12019">
+			<Speaker>Bart</Speaker>
+			<Text>Son, you really need to help your old father to prevent this disaster from happening.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12030">
+			<Speaker>Emmon</Speaker>
+			<Text>I’m sorry, dad. I’m too busy.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12031">
+			<Speaker>Bart</Speaker>
+			<Text>Busy? How come?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12032">
+			<Speaker>Emmon</Speaker>
+			<Text>Eehm… well, for a start: I’m trying to improve my musical skills, since I own this lute now. Shall I play something for you?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12033">
+			<Speaker>Bart</Speaker>
+			<Text>NO!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12034">
+			<Speaker>Bart</Speaker>
+			<Text>I mean, it seems you have enough time to help me. Please, son. For old times’ sake.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12035">
+			<Speaker>Emmon</Speaker>
+			<Text>But I know nothing about modern art. In fact: it makes me feel itchy.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12036">
+			<Speaker>Bart</Speaker>
+			<Text>Nonsense.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12040">
+			<Speaker>Emmon</Speaker>
+			<Text>I could give a performance at the gallery.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12041">
+			<Speaker>Emmon</Speaker>
+			<Text>I can go to the gallery right now and give a performance. I’m sure that will change their minds.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12042">
+			<Speaker>Bart</Speaker>
+			<Text>I’m not sure how that is going to help.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12045">
+			<Speaker>Emmon</Speaker>
+			<Text>Do I really care about the gallery that much?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12046">
+			<Speaker>Bart</Speaker>
+			<Text>Yes you do! And so do I!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12050">
+			<Speaker>Bart</Speaker>
+			<Text>You should talk to the manager of the gallery, the outrageous Mr. B.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12051">
+			<Speaker>Emmon</Speaker>
+			<Text>Mr. B.? He is a businessman: well-spoken and well-dressed. Is he to be trusted?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12052">
+			<Speaker>Bart</Speaker>
+			<Text>I’m sure you can convince him to keep the gallery open. You’ve always been a good talker too.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12053">
+			<Speaker>Emmon</Speaker>
+			<Text>Where can I find him anyway? Is he still hanging around in that old tea house a lot?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12054">
+			<Speaker>Bart</Speaker>
+			<Text>Yes! So you’re willing to help me? That’s my boy.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12055">
+			<Speaker>Emmon</Speaker>
+			<Text>Like you said, dad. For old time's sake.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12060">
+			<Speaker>Emmon</Speaker>
+			<Text>I have forgotten where to find Mister B.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12061">
+			<Speaker>Bart</Speaker>
+			<Text>These days he is usually at the Tea House Cafe. Just walk down the hill and take a right.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12065">
+			<Speaker>Emmon</Speaker>
+			<Text>I’m off to save the gallery dad!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12066">
+			<Speaker>Emmon</Speaker>
+			<Text>I’m off to save the galaxy dad!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12067">
+			<Speaker>Bart</Speaker>
+			<Text>The bards smile upon you.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12070">
+			<Speaker>Emmon</Speaker>
+			<Text>Tell me about musical weapons</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12071">
+			<Speaker>Bart</Speaker>
+			<Text>Ah, yes. As you know, we bards do not just entertain our kings with our songs. Our musical instruments protect the realm from greater and lesser evils.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12072">
+			<Speaker>Bart</Speaker>
+			<Text>I think it is about time that you start your journey on the road of musical combat yourself.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12073">
+			<Speaker>Emmon</Speaker>
+			<Text>So how does it work?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12074">
+			<Speaker>Bart</Speaker>
+			<Text>Alright son, here we go. Your first steps as a bard-at-arms.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12075">
+			<Speaker>Bart</Speaker>
+			<Text>You see, this dangerous world is populated by many creatures who would gladly roast a bard for dinner.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12076">
+			<Speaker>Bart</Speaker>
+			<Text>Not all enemies are as menacing however. And many can successfully be beaten by making use of their weaknesses.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12077">
+			<Speaker>Bart</Speaker>
+			<Text>And now son, it is time for you to take this book from your father: The Brilliant Bard: The Book of Musical Wildlife.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12078">
+			<Speaker>Bart</Speaker>
+			<Text>It has been in the family for ages. In this legendary publication Scoutmaster William collected all the enemies in the world. It is a source of immensely valuable information.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12079">
+			<Speaker>Emmon</Speaker>
+			<Text>Thanks dad!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12080">
+			<Speaker>Emmon</Speaker>
+			<Text>..but dad</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12081">
+			<Speaker>Emmon</Speaker>
+			<Text>it is not exactly readable, is it?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12082">
+			<Speaker>Emmon</Speaker>
+			<Text>Wow! What happened to this thing?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12083">
+			<Speaker>Bart</Speaker>
+			<Text>Well it has survived some pretty wild periods…</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12084">
+			<Speaker>Bart</Speaker>
+			<Text>And there are some..</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12085">
+			<Speaker>Emmon</Speaker>
+			<Text>Wine stains!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12086">
+			<Speaker>Bart</Speaker>
+			<Text>Yeah… Maybe it is possible to find some ahum, cleaner versions of the pages. Indeed that would maybe be more useful.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12087">
+			<Speaker>Emmon</Speaker>
+			<Text>Thanks a lot dad.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12090">
+			<Speaker>Emmon</Speaker>
+			<Text>Tell me about other weapons</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12091">
+			<Speaker>Bart</Speaker>
+			<Text>Yes it is true, although the lute is the bard’s traditional companion, there are many other instruments that can be used to fight enemies.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12092">
+			<Speaker>Bart</Speaker>
+			<Text>Of course each instrument has his own strengths and weaknesses. Unfortunately there are no other instruments available in this town. Regard it as a future ambition.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12100">
+			<Speaker>Emmon</Speaker>
+			<Text>I heard enough about musical violence</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12101">
+			<Speaker>Bart</Speaker>
+			<Text>Very well.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12110">
+			<Speaker>Emmon</Speaker>
+			<Text>I want to hear more about music and warfare</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12111">
+			<Speaker>Bart</Speaker>
+			<Text>What do you want to know?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12200">
+			<Speaker>Emmon</Speaker>
+			<Text>What can you tell me about Scoutmaster William, the author of the Book of Musical Wildlife?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12201">
+			<Speaker>Bart</Speaker>
+			<Text>Oh, he was a great man, Emmon. They say he could count to twenty on one hand!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12202">
+			<Speaker>Bart</Speaker>
+			<Text>And that is not all. He wrote several legendary books that up to this day count as indispensable for a minstrel in the wilderness.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12203">
+			<Speaker>Bart</Speaker>
+			<Text>I already introduced you to The Brilliant Bard: The Book of Musical Wildlife.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12204">
+			<Speaker>Emmon</Speaker>
+			<Text>Yeah, thanks for that.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12205">
+			<Speaker>Bart</Speaker>
+			<Text>Scoutmaster William also wrote another classic: The Brave Bard: Musical Defence in a Hostile World.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12206">
+			<Speaker>Emmon</Speaker>
+			<Text>Can’t wait to read it.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12210">
+			<Speaker>Emmon</Speaker>
+			<Text>What more can you tell me about Scoutmaster William?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12211">
+			<Speaker>Bart</Speaker>
+			<Text>Much more… múch more. He was such a remarkable man.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12212">
+			<Speaker>Bart</Speaker>
+			<Text>Whenever he went on expedition he used to take his dog with him. He believed that in the wilderness, everybody needs a friend.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12213">
+			<Speaker>Emmon</Speaker>
+			<Text>How interesting..</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12220">
+			<Speaker>Emmon</Speaker>
+			<Text>I went to see him; the Mister B. He said that if we are able to attract more people to the museum, he will keep it open.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12221">
+			<Speaker>Bart</Speaker>
+			<Text>Although I never trust that weasel, this might work. Mister B. just cares about his business.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12222">
+			<Speaker>Emmon</Speaker>
+			<Text>Yup. It should keep him satisfied.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12223">
+			<Speaker>Bart</Speaker>
+			<Text>Go talk to other villagers, muster support!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12230">
+			<Speaker>Emmon</Speaker>
+			<Text>No one is interested in the museum. They find it dull.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12231">
+			<Speaker>Bart</Speaker>
+			<Text>I don’t understand it! It is such a wonderful place. We might need to come up with a better trick. Oh I know. We need the Golden Screech.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12232">
+			<Speaker>Emmon</Speaker>
+			<Text>The Golden Screech? Who is that?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12233">
+			<Speaker>Bart</Speaker>
+			<Text>The Golden Screech! Every bard is supposed to know about the Screech! It is the golden horn that is kept safe in the castle on the other side of the river.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12234">
+			<Speaker>Bart</Speaker>
+			<Text>It is one of the legendary artefacts of the old Anchorian god of Cynicism. He used to play the horn himself. He performed for his cynical friends, the owls.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12235">
+			<Speaker>Emmon</Speaker>
+			<Text>Aha..</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12236">
+			<Speaker>Bart</Speaker>
+			<Text>If we would be able to get a showpiece like that in the gallery. Anyone would want to see the real Golden Screech.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12237">
+			<Speaker>Emmon</Speaker>
+			<Text>It sounds like that could work…</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12238">
+			<Speaker>Bart</Speaker>
+			<Text>I’m absolutely positive. But getting there might be difficult, I fear. From here to that tower, the road is filled with vile creatures.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12239">
+			<Speaker>Emmon</Speaker>
+			<Text>When has that ever stopped a bard?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12240">
+			<Speaker>Bart</Speaker>
+			<Text>That’s the spirit, my boy! Now you go and get that Screech!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12241">
+			<Speaker>Emmon</Speaker>
+			<Text>…Oh. Okay.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12245">
+			<Speaker>Emmon</Speaker>
+			<Text>Can you tell me where to find the Golden Screech?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12246">
+			<Speaker>Bart</Speaker>
+			<Text>As far as I know the legendary Golden Screech can be found in the Citadel of Doubt. You can see its tower rise on the other side of the river.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12247">
+			<Speaker>Bart</Speaker>
+			<Text>To get to that side of the river you will have to cross the bridge in the north. Beyond that I am not sure..</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12300">
+			<Speaker>Emmon</Speaker>
+			<Text>Do you know anything about making a sacrifice for Cynicism?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12301">
+			<Speaker>Bart</Speaker>
+			<Text>But of course, my son. There is a famous story connected to that, recited by bards all over the country.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12302">
+			<Speaker>Emmon</Speaker>
+			<Text>I’m all ears!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12303">
+			<Speaker>Bart</Speaker>
+			<Text>Well, there we go then. I’ll try to keep it short.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12304">
+			<Speaker>Bart</Speaker>
+			<Text>At the beginning of this era princess Zaptacka, the leader of the Anchorian people, wanted to found a grand new capital: the city of Atadom.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12305">
+			<Speaker>Bart</Speaker>
+			<Text>Zaptacka only didn’t know where the new city should be located. So she went to the divine guardians of the Anchorians to ask for their advice…</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12310">
+			<Speaker>Emmon</Speaker>
+			<Text>The guardians of the Anchorians?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12311">
+			<Speaker>Bart</Speaker>
+			<Text>Yes, the three Shepherd of Displeasure: Apathy, Mockery and Cynicism. Godlike creatures they were: not very kind and all. But veeery powerful…</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12312">
+			<Speaker>Bart</Speaker>
+			<Text>Aha! Well, Mockery rings a bell. And Cynicism is the guy from the screech, I suppose?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12313">
+			<Speaker>Bart</Speaker>
+			<Text>Right! I will get to that.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12320">
+			<Speaker>Emmon</Speaker>
+			<Text>Why did the princess want to found a city? I mean, didn’t the Anchorian people have a place to live already?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12321">
+			<Speaker>Bart</Speaker>
+			<Text>They never had a safe home. For decades they had been suffering by the disastrous Drenchy Flood.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12322">
+			<Speaker>Bart</Speaker>
+			<Text>The Anchorians were really longing for a place where the devastating water wouldn’t cause a threat to them.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12325">
+			<Speaker>Emmon</Speaker>
+			<Text>Nice prologue! Continue!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12326">
+			<Speaker>Bart</Speaker>
+			<Text>So, where was I? Princess Zaptacka went to consult the guardians of the Anchorians, the Shepherds of Displeasure. She started with the god Apathy.  </Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12327">
+			<Speaker>Bart</Speaker>
+			<Text>Apathy was not interested in helping out. However, he was also not exactly against helping her either. In fact, he didn’t care. In the end he just fell asleep.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12328">
+			<Speaker>Bart</Speaker>
+			<Text>So then Zaptacka visited his colleague, Cynicism. From his throne Cynicism glanced at the princess with a look of contempt.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12329">
+			<Speaker>Bart</Speaker>
+			<Text>He didn’t believe that she would ever be able to resurrect her people, like he doesn’t believe in anything. Scornfully he dismissed her.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12330">
+			<Speaker>Bart</Speaker>
+			<Text>Princess Zaptacka was getting a bit desperate now, as you can imagine. She went to Mockery with only a tiny bit of hope left.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12331">
+			<Speaker>Bart</Speaker>
+			<Text>At first Mockery was not really paying attention to the princess’ story, and was interrupting her with rude laughter and weird noises, when she suddenly caught his interest.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12332">
+			<Speaker>Bart</Speaker>
+			<Text>When she was finished, he pointed her to a suitable location. There she should build her city, he said.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12335">
+			<Speaker>Emmon</Speaker>
+			<Text>I wouldn’t expect someone with the name ‘Mockery’ to be so generous..</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12336">
+			<Speaker>Emmon</Speaker>
+			<Text>A strange turn of the story. I wouldn’t expect someone with the name ‘Mockery’ to be so generous.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12337">
+			<Speaker>Bart</Speaker>
+			<Text>Your bard instinct is right. You’ll see what will happen next.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12340">
+			<Speaker>Emmon</Speaker>
+			<Text>This story leads nowhere. Why is it called ‘The myth of Mockery and Cynicism’? What does this Zaptacka figure have to do with it?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12341">
+			<Speaker>Bart</Speaker>
+			<Text>It will all become clear in a while, Emmon. For once in your life, be patient!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12345">
+			<Speaker>Emmon</Speaker>
+			<Text>Maybe we need a short break from this story. Perhaps I should sing something…</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12346">
+			<Speaker>Emmon</Speaker>
+			<Text>Maybe we need a short break from this story. Some distraction from this world of crazy Gods and princesses with dubious names. Perhaps I should sing something…</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12347">
+			<Speaker>Bart</Speaker>
+			<Text>Tempting, but no: I am just getting in the mood of storytelling.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12350">
+			<Speaker>Bart</Speaker>
+			<Text>He wasn’t generous at all, my son. He was just mocking the poor princess. She did not know that the malicious Mockery had brought her to the Holy Woods of Cynicism.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12351">
+			<Speaker>Bart</Speaker>
+			<Text>And the Holy Woods of Cynicism are the favourite spot of the God Cynicism.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12355">
+			<Speaker>Emmon</Speaker>
+			<Text>Why were the Woods his favourite spot? Never thought of it as a nice place…</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12356">
+			<Speaker>Bart</Speaker>
+			<Text>The thing is, the Woods were full of temples dedicated to Cynicism, built by the forest dwellers. So that’s why Cynicism found some sort of pleasure in going there.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12357">
+			<Speaker>Bart</Speaker>
+			<Text>(He also liked to spend time with the owls that live in the Woods. But that’s a different story.)</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12360">
+			<Speaker>Emmon</Speaker>
+			<Text>So Cynicism was not happy?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12361">
+			<Speaker>Bart</Speaker>
+			<Text>He was furious! While Zaptacka had merrily brought her Anchorians to the Woods and had started to draw out a city plan, Cynicism quickly found out what had happened.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12362">
+			<Speaker>Bart</Speaker>
+			<Text>So he went to Mockery and in a misanthropic fit of rage he smashed Mockery’s face with an anvil.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12363">
+			<Speaker>Bart</Speaker>
+			<Text>And thus Cynicism took revenge, but now he still had to get rid of these Anchorians.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12364">
+			<Speaker>Bart</Speaker>
+			<Text>Oddly enough he didn’t exterminate them or something; he just showed them a new location where  in the end they founded the city of Atadom.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12365">
+			<Speaker>Bart</Speaker>
+			<Text>In this way Cynicism was able to spend his nights in the Woods alone with the owls again.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12366">
+			<Speaker>Bart</Speaker>
+			<Text>For ages to come the Anchorians ritually smashed wooden masks with the face of Mockery on it,</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12367">
+			<Speaker>Bart</Speaker>
+			<Text>as to remember how Cynicism, in a rare act of kindness, had helped them to find a location for their glorious city.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12368">
+			<Speaker>Bart</Speaker>
+			<Text>I think this tale has solved your problem?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12370">
+			<Speaker>Emmon</Speaker>
+			<Text>I think I heard enough.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12375">
+			<Speaker>Emmon</Speaker>
+			<Text>I forgot what sacrifice I have to make.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12376">
+			<Speaker>Emmon</Speaker>
+			<Text>I really enjoyed your story dad, but I forgot the clue. Could you maybe share the logline version with me?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12377">
+			<Speaker>Bart</Speaker>
+			<Text>Blimey, it took me ages to tell you this story!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12378">
+			<Speaker>Bart</Speaker>
+			<Text>The Anchorians please Cynicism by smashing masks with the face of Mockery on it, that’s the clue.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12380">
+			<Speaker>Emmon</Speaker>
+			<Text>Tell me a story from the rich histories of the bards.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12381">
+			<Speaker>Bart</Speaker>
+			<Text>You and I have a dignified profession, son. Did you know that Moro the Bard once wrote a piece called the Dragon Ballad?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12382">
+			<Speaker>Bart</Speaker>
+			<Text>It is one of the most powerful and attractive songs ever written. When you played it, dragons from miles away would come and listen.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12383">
+			<Speaker>Bart</Speaker>
+			<Text>Too bad the song has been long lost. Sometimes I get tired of playing “Yaba Lee” for the umpteenth time.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12390">
+			<Speaker>Emmon</Speaker>
+			<Text>So what has Valeria been up to lately?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12391">
+			<Speaker>Bart</Speaker>
+			<Text>Oh she is preparing her greatest work yet! She did not yet want to show it to me, but she promised it would include tokens from both the physical world and the spiritual.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12392">
+			<Speaker>Emmon</Speaker>
+			<Text>I’m sure no one has gone there before.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12393">
+			<Speaker>Bart</Speaker>
+			<Text>Yes, that is the great thing about Valeria. She’s always one step ahead of simple performers such as myself.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12400">
+			<Speaker>Emmon</Speaker>
+			<Text>Didn’t Valeria once organise an exhibition in which the whole audience was blindfolded?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12401">
+			<Speaker>Bart</Speaker>
+			<Text>Yes that is right! Obscured Delusion it was called. The critics loved it.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12402">
+			<Speaker>Emmon</Speaker>
+			<Text>How did they know if liked it if they were blindfolded?</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12403">
+			<Speaker>Bart</Speaker>
+			<Text>It was Valeria’s; of course it was great!</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12410">
+			<Speaker>Emmon</Speaker>
+			<Text>Hi dad.</Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13000">
+			<Speaker>Benny</Speaker>
+			<Text>Benny Twospoons Dialogues</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13001">
+			<Speaker>Emmon</Speaker>
+			<Text>Benny! Would you like to go with me to the Outside in Art Gallery?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13002">
+			<Speaker>Benny</Speaker>
+			<Text>Of course not. What a silly question.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13003">
+			<Speaker>Emmon</Speaker>
+			<Text>Why? When I look at the way you decorated this shop… It seems there hides an artist beneath that clown’s costume.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13004">
+			<Speaker>Benny</Speaker>
+			<Text>You are right. There has always been a strong connection between art and the circus.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13005">
+			<Speaker>Benny</Speaker>
+			<Text>And I am an artist myself indeed: some of my paintings are even in the Outside in Gallery. Didn’t you know?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13006">
+			<Speaker>Emmon</Speaker>
+			<Text>But why don’t you want to come with me then? Chop chop, let’s go the the Gallery and take a look at your paintings!</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13007">
+			<Speaker>Benny</Speaker>
+			<Text>Absolutely not. I hate the way these art barbarians exposed my paintings! They even hang my unrivalled La douleur d'un clown next to a portrait of Mr. B..</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13008">
+			<Speaker>Benny</Speaker>
+			<Text>No, I’m not going to show my face there ever again. Besides, I can under no circumstances leave my shop: an important customer might arrive every moment.  </Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13010">
+			<Speaker>Emmon</Speaker>
+			<Text>So, did you hear some good jokes lately?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13011">
+			<Speaker>Benny</Speaker>
+			<Text>No. Did you?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13020">
+			<Speaker>Emmon</Speaker>
+			<Text>I am not a professional jokesmith. You are!</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13021">
+			<Speaker>Benny</Speaker>
+			<Text>Well, I guess these are not the times to tell jokes, laddy.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13022">
+			<Speaker>Emmon</Speaker>
+			<Text>Clown business is not going well?   </Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13023">
+			<Speaker>Benny</Speaker>
+			<Text>For the owner of a clown shop life is no bed of roses.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13024">
+			<Speaker>Benny</Speaker>
+			<Text>At most a bed of squirting flowers, but roses… no.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13025">
+			<Speaker>Emmon</Speaker>
+			<Text>What makes it all so difficult?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13026">
+			<Speaker>Benny</Speaker>
+			<Text>Oh, don’t get me started.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13027">
+			<Speaker>Benny</Speaker>
+			<Text>Mr. B. is corrupting the business with his commercial circus articles and mass produced dragon merchandise. It makes every self-respecting clown feel sad.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13030">
+			<Speaker>Emmon</Speaker>
+			<Text>Yes, I know a joke about a clown. That should appeal to you.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13031">
+			<Speaker>Emmon</Speaker>
+			<Text>It’s a riddle. What is the icky red stuff beneath the toes of an elephant? Well?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13032">
+			<Speaker>Emmon</Speaker>
+			<Text>Slow clowns!!</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13033">
+			<Speaker>Benny</Speaker>
+			<Text>You find that funny? I lost a colleague during a tragic circus accident with an elephant.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13040">
+			<Speaker>Emmon</Speaker>
+			<Text>Yes! This one involves furry animals.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13041">
+			<Speaker>Emmon</Speaker>
+			<Text>Two rabbits are sitting on a hill top. So one of the rabbits says to the other one: may I push you down the hill? And the other rabbit says: no.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13042">
+			<Speaker>Emmon</Speaker>
+			<Text>Benny?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13043">
+			<Speaker>Benny</Speaker>
+			<Text>That was the punchline?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13044">
+			<Speaker>Emmon</Speaker>
+			<Text>Yes...</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13045">
+			<Speaker>Benny</Speaker>
+			<Text>Please, be so kind to leave my shop, before I throw you out.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13046">
+			<Speaker>Emmon</Speaker>
+			<Text>But…</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13047">
+			<Speaker>Benny</Speaker>
+			<Text>Get lost.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13100">
+			<Speaker>Emmon</Speaker>
+			<Text>Benny, I would like to buy something.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13101">
+			<Speaker>Benny</Speaker>
+			<Text>That’s what you’re here for. That’s what I am here for. What do you want?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13102">
+			<Speaker>Emmon</Speaker>
+			<Text>The Mask of Mockery</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13103">
+			<Speaker>Emmon</Speaker>
+			<Text>So Benny, how much for that old mask of yours? The Mask of Mockery.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13104">
+			<Speaker>Benny</Speaker>
+			<Text>Ha! You want to buy the Mask of Mockery? You are bonkers, kid. That mask is the cream of the crop, the absolute showpiece of my collection.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13105">
+			<Speaker>Benny</Speaker>
+			<Text>Did you not see how well it is protected?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13110">
+			<Speaker>Emmon</Speaker>
+			<Text>Clown nose</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13111">
+			<Speaker>Benny</Speaker>
+			<Text>Ah, a clown nose: a good choice!</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13112">
+			<Speaker>Benny</Speaker>
+			<Text>Here you go, lad. And you’re lucky. I will offer you a free party hat too.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13113">
+			<Speaker>Emmon</Speaker>
+			<Text>Thanks a lot!</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13120">
+			<Speaker>Emmon</Speaker>
+			<Text>Clown certificate</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13121">
+			<Speaker>Emmon</Speaker>
+			<Text>How much for the clown certificate that’s hanging there?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13122">
+			<Speaker>Benny</Speaker>
+			<Text>It is not for sale. You can only earn that by years of honest labour.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13130">
+			<Speaker>Emmon</Speaker>
+			<Text>Gorilla costume</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13131">
+			<Speaker>Emmon</Speaker>
+			<Text>That gorilla costume seems pretty mean, I’m still thinking of buying it.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13132">
+			<Speaker>Benny</Speaker>
+			<Text>I’m sorry, but I promised that costume to the Duke of Prunes. He  wanted to use it for the graduation party of his son.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13133">
+			<Speaker>Emmon</Speaker>
+			<Text>Oh, don’t worry. I did not really want to buy it. It is silly.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13134">
+			<Speaker>Benny</Speaker>
+			<Text>Some joke..</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13140">
+			<Speaker>Emmon</Speaker>
+			<Text>Clown mask</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13141">
+			<Speaker>Benny</Speaker>
+			<Text>The clown mask it will be? What are you up to boy? This equipment is designed to be used by professionals.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13142">
+			<Speaker>Emmon</Speaker>
+			<Text>Don’t worry. I will use it wisely.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13143">
+			<Speaker>Benny</Speaker>
+			<Text>Hmm, alright. Here you go.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13144">
+			<Speaker>Emmon</Speaker>
+			<Text>Merci.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13150">
+			<Speaker>Emmon</Speaker>
+			<Text>I have to think it over some more.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13200">
+			<Speaker>Emmon</Speaker>
+			<Text>Would you like to try this special potion, Benny? It is really refreshing.  </Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13201">
+			<Speaker>Benny</Speaker>
+			<Text>To be honest, I’m quite thirsty… Let me see, what do you have here?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13202">
+			<Speaker>Benny</Speaker>
+			<Text>…</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13203">
+			<Speaker>Benny</Speaker>
+			<Text>WHAT!!</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13204">
+			<Speaker>Benny</Speaker>
+			<Text>I recognise this brewage!</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13205">
+			<Speaker>Benny</Speaker>
+			<Text>This is a creation of my evil neighbour Ay, that miserable whipster. Are you trying to poison me boy?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13206">
+			<Speaker>Emmon</Speaker>
+			<Text>I think I’d better go.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13207">
+			<Speaker>Benny</Speaker>
+			<Text>Yes, by Archimedes’ beard. Go, before you turn a clown into your enemy.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13300">
+			<Speaker>Emmon</Speaker>
+			<Text>Bye Benny.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13301">
+			<Speaker>Benny</Speaker>
+			<Text>Bye.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13400">
+			<Speaker>Emmon</Speaker>
+			<Text>Benny! So you have found your way to the Gallery after all?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13401">
+			<Speaker>Benny</Speaker>
+			<Text>Grmbl. I already regret coming here. Look at that cynicism thing, exposed in the most beautiful area of the museum.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13402">
+			<Speaker>Benny</Speaker>
+			<Text>And where are the revolutionary artworks of Benny Twospoons? Tucked away in some shady backroom. It’s a bloody disgrace!</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13410">
+			<Speaker>Emmon</Speaker>
+			<Text>Hello Benny, did you hear some good jokes lately?</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13411">
+			<Speaker>Benny</Speaker>
+			<Text>You know what’s a good joke? Me, standing here in this room full of frauds, while an important customer can arrive at my shop any moment.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="13412">
+			<Speaker>Benny</Speaker>
+			<Text>And no one is there to help that customer. I’d better go back.</Text>
+			<DialogueType>BennyDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14000">
+			<Speaker>Leon</Speaker>
+			<Text>Leon Turmeric Dialogues</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14001">
+			<Speaker>Emmon</Speaker>
+			<Text>Hello!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14002">
+			<Speaker>Emmon</Speaker>
+			<Text>I was wondering, would you perhaps like to visit the Outside In Art Gallery?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14003">
+			<Speaker>Leon</Speaker>
+			<Text>The Gallery??</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14004">
+			<Speaker>Emmon</Speaker>
+			<Text>Yes, we can go there together if you want. Maybe also have an icecream or something.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14005">
+			<Speaker>Leon</Speaker>
+			<Text>You think I have time for that kind of decadence?? I’m running a teahouse!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14006">
+			<Speaker>Eremma</Speaker>
+			<Text>LEON!! Where are you??</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14007">
+			<Speaker>Leon</Speaker>
+			<Text>Yes, I will visit you later mother!!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14008">
+			<Speaker>Leon</Speaker>
+			<Text>We have to talk softer. My mother is very curious and very suspicious - a deadly cocktail… Besides, I don’t like the Inside Out Gallery. Childhood trauma… Don’t want to talk about it!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14009">
+			<Speaker>Eremma</Speaker>
+			<Text>Leon, are you taking me to the Gallery?? Don’t you dare, you lousy raccoon! I’d rather die!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14010">
+			<Speaker>Leon</Speaker>
+			<Text>No, mother! We will not go there.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14011">
+			<Speaker>Leon</Speaker>
+			<Text>Do you see what you are doing: you’re getting me into trouble.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14020">
+			<Speaker>Emmon</Speaker>
+			<Text>Garçon! Can I perhaps order a tea?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14021">
+			<Speaker>Leon</Speaker>
+			<Text>Yes you can! One tea for monsieur…</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14022">
+			<Speaker>Eremma</Speaker>
+			<Text>LEON!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14023">
+			<Speaker>Leon</Speaker>
+			<Text>Yes, mother?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14024">
+			<Speaker>Eremma</Speaker>
+			<Text>Come inside! You have to water the plants, they are dying!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14025">
+			<Speaker>Leon</Speaker>
+			<Text>I am coming, mother!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14026">
+			<Speaker>Leon</Speaker>
+			<Text>They are cacti, they don’t need water. She doesn’t understand…</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14027">
+			<Speaker>Leon</Speaker>
+			<Text>Anyway, I have to stop talking to you: I have to finish a lot of work before I can drawn those poor desert plants.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14030">
+			<Speaker>Emmon</Speaker>
+			<Text>Excuse me? I would like to order a coffee.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14031">
+			<Speaker>Leon</Speaker>
+			<Text>Two coffee?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14032">
+			<Speaker>Emmon</Speaker>
+			<Text>One coffee please.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14033">
+			<Speaker>Leon</Speaker>
+			<Text>    Yes, of course. There you go, there you go!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14034">
+			<Speaker>Eremma</Speaker>
+			<Text>LEON!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14035">
+			<Speaker>Leon</Speaker>
+			<Text>Oh no, that’s my mother. I really cannot speak to you anymore. She would not approve. She doesn’t like bards…</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14040">
+			<Speaker>Emmon</Speaker>
+			<Text>You know, I am a bard. Would you like me to sing on your terras?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14041">
+			<Speaker>Emmon</Speaker>
+			<Text>You know, I am a bard. Would you like me to sing on your terras? To entertain the guests a bit.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14042">
+			<Speaker>Leon</Speaker>
+			<Text>Are you taking the mickey with me? My mother would never approve.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14050">
+			<Speaker>Emmon</Speaker>
+			<Text>How are doing on this fine day?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14051">
+			<Speaker>Leon</Speaker>
+			<Text>I’m as busy as a bee. I don’t have time to talk. Je m’excuse.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14052">
+			<Speaker>Eremma</Speaker>
+			<Text>LEON, DARLING?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14053">
+			<Speaker>Leon</Speaker>
+			<Text>I’m coming, mother! I’m just wrapping this up!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14054">
+			<Speaker>Leon</Speaker>
+			<Text>Sorry, I must leave you, IMMEDIATELY. Au revoir.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14055">
+			<Speaker>Emmon</Speaker>
+			<Text>I leave you to your business.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14060">
+			<Speaker>Emmon</Speaker>
+			<Text>Any idea what would be a suitable object to sacrifice to Cynicism?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14061">
+			<Speaker>Emmon</Speaker>
+			<Text>I have to prepare a sacrifice for Cynicism. Any idea what would be a suitable object to sacrifice?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14062">
+			<Speaker>Leon</Speaker>
+			<Text>You could sacrifice me, for a start. At least then I don’t have to listen to…</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14063">
+			<Speaker>Eremma</Speaker>
+			<Text>LEON! WHAT DOES THE LITTLE CHOIR BOY WANT?!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14064">
+			<Speaker>Emmon</Speaker>
+			<Text>Hey, I’m not a choir boy. I am a bard!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14065">
+			<Speaker>Leon</Speaker>
+			<Text>Just go to sleep, mother. I’ll handle this.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14066">
+			<Speaker>Eremma</Speaker>
+			<Text>TELL THAT BUSKER HE SHOULD BE CAREFUL! CYNICISM IS A DANGEROUS ENTITY.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14067">
+			<Speaker>Eremma</Speaker>
+			<Text>I DON’T WANT TO HAVE ANYTHING TO WITH IT!</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14068">
+			<Speaker>Leon</Speaker>
+			<Text>You don’t have to, mother! Come on, take it easy and just finish your jigsaw puzzle.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14069">
+			<Speaker>Leon</Speaker>
+			<Text>You should not talk about this kind of stuff around here; my mother is really sensitive. And I don’t have time; more important customers to serve.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14070">
+			<Speaker>Leon</Speaker>
+			<Text>Sacrebleu! Mother, you scared me. You don’t have to roar like that, I am coming.  I can hear you just fine if you scream in a gentle way.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14071">
+			<Speaker>Leon</Speaker>
+			<Text>Didn’t you take your cough drops today? Grmmblm. Mwrf.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14080">
+			<Speaker>Emmon</Speaker>
+			<Text>Mister B. seems to be a good customer?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14081">
+			<Speaker>Leon</Speaker>
+			<Text>Yes, at the moment we are practically living on his tea consumption. He never stops.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14100">
+			<Speaker>Emmon</Speaker>
+			<Text>Hey Leon, what do you think of the museum’s new work of art?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14101">
+			<Speaker>Leon</Speaker>
+			<Text>They tell me you are responsible for this?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14102">
+			<Speaker>Leon</Speaker>
+			<Text>Well, congratulations. This heathen work of art is really astonishing.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14110">
+			<Speaker>Emmon</Speaker>
+			<Text>I thought you didn’t like the Outside In Gallery? Something with a childhood trauma…</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14111">
+			<Speaker>Leon</Speaker>
+			<Text>Don’t get me started. I used to be the manager of the museum bar.  My first job. Never saw a single customer. Without the increasing amount of visitors we were on a sinking ship.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14112">
+			<Speaker>Emmon</Speaker>
+			<Text>Now the museum will be popular again.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14113">
+			<Speaker>Leon</Speaker>
+			<Text>You think so? Well, seeing is believing. That’s what my mother always tells me.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14114">
+			<Speaker>Emmon</Speaker>
+			<Text>Good to see you here, Leon! Where is your beloved mother?</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14115">
+			<Speaker>Leon</Speaker>
+			<Text>She’s still at home, that old weeping willow. If you listen carefully you can hear her scream. I better head back home as soon as possible.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14120">
+			<Speaker>Emmon</Speaker>
+			<Text>I’m going to check out the gallery some more. Bye.</Text>
+			<DialogueType>LeonDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15000">
+			<Speaker>Opposita</Speaker>
+			<Text>Madame Opposita Dialogues</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15001">
+			<Speaker>Emmon</Speaker>
+			<Text>Howdy! What are you getting up to in this old wagon? I’m Emmon by the way.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15002">
+			<Speaker>Emmon</Speaker>
+			<Text>Hello?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15003">
+			<Speaker>Emmon</Speaker>
+			<Text>I believe we’re not on the same line. I’ll come back later.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15010">
+			<Speaker>Emmon</Speaker>
+			<Text>Hello milady. My name is Emmon and I have a wonderful proposal for you: let’s go to the Outside In Gallery. It’s a jolly place!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15011">
+			<Speaker>Opposita</Speaker>
+			<Text>No, no, no! That gallery is a haunted building.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15012">
+			<Speaker>Opposita</Speaker>
+			<Text>The evil spirits there may disturb my inner vibrations.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="14">
+			<Speaker>Opposita</Speaker>
+			<Text>Besides, the museum once rejected one of my voodoo sculptures.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15020">
+			<Speaker>Emmon</Speaker>
+			<Text>Inner vibrations you say? If I may ask, are you some kind of spiritual being?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15021">
+			<Speaker>Opposita</Speaker>
+			<Text>I see the past, I see the future, every now and then I even see the present. Time is relative, you know.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15022">
+			<Speaker>Opposita</Speaker>
+			<Text>And there exists no clear boundary between your mind and my mind. Which means that your thoughts are not a secret for me. Do these things make me a spiritual being. Perhaps...</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15025">
+			<Speaker>Emmon</Speaker>
+			<Text>Interesting! By the way, do you want me to sing?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15026">
+			<Speaker>Opposita</Speaker>
+			<Text>Dream on boy, dream on.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15030">
+			<Speaker>Emmon</Speaker>
+			<Text>I do not agree that time is relative. Let’s elaborate on the subject ‘time’!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15031">
+			<Speaker>Opposita</Speaker>
+			<Text>What are you? A scientist? You cannot capture time in the stronghold of words, boy. Don’t even try.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15040">
+			<Speaker>Emmon</Speaker>
+			<Text>I am a spiritual being too!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15041">
+			<Speaker>Opposita</Speaker>
+			<Text>No, you're not.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15042">
+			<Speaker>Emmon</Speaker>
+			<Text>Oh.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15050">
+			<Speaker>Emmon</Speaker>
+			<Text>You can read my mind? So tell me, what is my main purpose on this fine day?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15051">
+			<Speaker>Opposita</Speaker>
+			<Text>Your main purpose… Hard to tell, I might need some of your hair</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15052">
+			<Speaker>Emmon</Speaker>
+			<Text>No, no, no. That is not a good idea!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15053">
+			<Speaker>Opposita</Speaker>
+			<Text>Come a bit closer then boy, so I can sense the vibrations of your soul. Yes, I feel it! You have a task for this day indeed.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15054">
+			<Speaker>Opposita</Speaker>
+			<Text>A task of great importance…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15055">
+			<Speaker>Emmon</Speaker>
+			<Text>That’s right…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15056">
+			<Speaker>Opposita</Speaker>
+			<Text>This task has something to do with a relative. Your…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15057">
+			<Speaker>Emmon</Speaker>
+			<Text>My father, yes!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15058">
+			<Speaker>Opposita</Speaker>
+			<Text>I knew it! The spirit of the ladybug didn’t trick me. Now I see everything clearly! You are planning to close the Outside in Art Gallery to provoke your father.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15059">
+			<Speaker>Emmon</Speaker>
+			<Text>Yes, that… wait a minute: NO. I don’t want to close the Gallery, I’m trying to keep them from closing it. And I don’t do it to provoke my father. I do it to help the poor fellow.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15060">
+			<Speaker>Opposita</Speaker>
+			<Text>But that is exactly what I said.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15061">
+			<Speaker>Emmon</Speaker>
+			<Text>Was it? Now I’m confused. Let’s try another one. What’s my favourite musical instrument?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15062">
+			<Speaker>Opposita</Speaker>
+			<Text>A tuba.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15063">
+			<Speaker>Emmon</Speaker>
+			<Text>No, a piccolo.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15064">
+			<Speaker>Opposita</Speaker>
+			<Text>Yes, yes, I sensed you prefer wind instruments.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15070">
+			<Speaker>Emmon</Speaker>
+			<Text>Well, I guess that if you are able to read all of my thoughts I don’t need to say anything anymore. Bye.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15080">
+			<Speaker>Emmon</Speaker>
+			<Text>Hello, is there anybody in there?!?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15081">
+			<Speaker>Opposita</Speaker>
+			<Text>Stop yelling. You are disturbing my inner vibrations.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15090">
+			<Speaker>Emmon</Speaker>
+			<Text>Guess what?! I came back.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15091">
+			<Speaker>Opposita</Speaker>
+			<Text>Of course I already knew you would come back eventually..</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15095">
+			<Speaker>Emmon</Speaker>
+			<Text>I must say, you have a peculiar style of soothsaying, but maybe it will prove worthy later on. Have a nice day.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15100">
+			<Speaker>Emmon</Speaker>
+			<Text>Can you tell me something about my own future?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15101">
+			<Speaker>Opposita</Speaker>
+			<Text>My dear boy, do you really want to know?! I see a future darker than the starless nights in the Deep Grimm. You will undergo horrible punishments and sink in a boggy swamp afterwards.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15102">
+			<Speaker>Emmon</Speaker>
+			<Text>How dreadful!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15103">
+			<Speaker>Opposita</Speaker>
+			<Text>If you want me to be more specific I will need some tea leaves.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15200">
+			<Speaker>Emmon</Speaker>
+			<Text>Maybe you can help me! I’m looking for some peculiar object. It’s called the Golden Screech…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15201">
+			<Speaker>Opposita</Speaker>
+			<Text>..And now you need to know where you can buy a ‘screech’. No problem.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15202">
+			<Speaker>Emmon</Speaker>
+			<Text>No, I need to make a sacrifice to Cynicism so I can pass through the gate.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15203">
+			<Speaker>Opposita</Speaker>
+			<Text>Of course. Sit down, young minstrel. I will tell you an old legend.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15204">
+			<Speaker>Opposita</Speaker>
+			<Text>Once upon a time the Anchorian people - do you know them? -  were in biiiig trouble. There had been so many devastating floods.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15205">
+			<Speaker>Opposita</Speaker>
+			<Text>Can you imagine the terrible position their leader hm… princess Baklava, was it? All those people crying and begging her to find a solution.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15206">
+			<Speaker>Opposita</Speaker>
+			<Text>Luckily the princess was a very special person. Her aura was purple, with a few peculiar yellow dots…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15210">
+			<Speaker>Emmon</Speaker>
+			<Text>Please, spare me the aura nonsense!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15211">
+			<Speaker>Emmon</Speaker>
+			<Text>I think perhaps you should tell me about the aura of this princess some other time.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15220">
+			<Speaker>Emmon</Speaker>
+			<Text>How do you know about this aura? I mean, this is really long ago, right?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15221">
+			<Speaker>Opposita</Speaker>
+			<Text>Oh, I can look way, way back into the past. Besides, I am older then you might think.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15222">
+			<Speaker>Emmon</Speaker>
+			<Text>I see.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15230">
+			<Speaker>Emmon</Speaker>
+			<Text>Interesting. Tell me more about Baklava’s aura.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15231">
+			<Speaker>Opposita</Speaker>
+			<Text>Each layer inside her aura vibrated in its own rhythm. The effect was… breathtaking.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15232">
+			<Speaker>Opposita</Speaker>
+			<Text>There was also a touch of violet in it. It is difficult to explain with something such inadequate as words. You should see it, feel it…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15233">
+			<Speaker>Opposita</Speaker>
+			<Text>Anyway.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15240">
+			<Speaker>Emmon</Speaker>
+			<Text>All that crying would not help to stop the floods, would it?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15241">
+			<Speaker>Opposita</Speaker>
+			<Text>Don’t make fun of those poor people.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15242">
+			<Speaker>Emmon</Speaker>
+			<Text>Sorry.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15250">
+			<Speaker>Opposita</Speaker>
+			<Text>Alright then. I’ll tell you what happened next.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15251">
+			<Speaker>Opposita</Speaker>
+			<Text>The princess went on a quest to find a suitable location where she could found a new city for her people. It was an exhausting journey and Baklava became really emotional.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15252">
+			<Speaker>Opposita</Speaker>
+			<Text>At some point she was crawling on hands and feet through the blisteringly hot desert sand, when she saw a man in a purple cloak. First she thought it was a fata morgana.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15260">
+			<Speaker>Emmon</Speaker>
+			<Text>Fata morgana? I thought fata morgana’s were abolished.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15261">
+			<Speaker>Opposita</Speaker>
+			<Text>No, they’re not.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15262">
+			<Speaker>Opposita</Speaker>
+			<Text>So.. where was I?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15265">
+			<Speaker>Emmon</Speaker>
+			<Text>That must have been Mockery. Am I right?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15270">
+			<Speaker>Emmon</Speaker>
+			<Text>Please, continue with your story!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15271">
+			<Speaker>Opposita</Speaker>
+			<Text>It was Mockery, the powerful Anchorian deity.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15272">
+			<Speaker>Opposita</Speaker>
+			<Text>And if the princess had not yet recognised him as such, she surely would have had after she told him about her hardships, because the vile man instantly started to mock her.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15273">
+			<Speaker>Opposita</Speaker>
+			<Text>His laughter sounded something like: “HOHOHO”.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15274">
+			<Speaker>Opposita</Speaker>
+			<Text>Hm.., no more:</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15275">
+			<Speaker>Opposita</Speaker>
+			<Text>“Hahah..”</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15276">
+			<Speaker>Opposita</Speaker>
+			<Text>And he also tried this:</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15277">
+			<Speaker>Opposita</Speaker>
+			<Text>“Hi hi hi hi”.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15278">
+			<Speaker>Emmon</Speaker>
+			<Text>I got it.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15279">
+			<Speaker>Opposita</Speaker>
+			<Text>Good.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15280">
+			<Speaker>Opposita</Speaker>
+			<Text>As you understand, this was not too encouraging for sweet Baklava, and she was just getting ready to crawl through the sand some more when Mockery did something unexpectedly nice.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15290">
+			<Speaker>Emmon</Speaker>
+			<Text>He offered her a glass of ice cold water. It must have been hot there!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15291">
+			<Speaker>Opposita</Speaker>
+			<Text>Without a doubt princess Baklava would have appreciated this, but no, he did something else.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15300">
+			<Speaker>Emmon</Speaker>
+			<Text>He built a castle in the sand where she could live for a while.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15301">
+			<Speaker>Opposita</Speaker>
+			<Text>No, that would just have lengthened her stay in the hot desert, you fool. What a lack of vision!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15302">
+			<Speaker>Emmon</Speaker>
+			<Text>Sorry, I guess didn’t think it over too much.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15303">
+			<Speaker>Emmon</Speaker>
+			<Text>You know, I don’t know why I  sometimes just gabble these things. It is like somebody makes me do it.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15304">
+			<Speaker>Opposita</Speaker>
+			<Text>Yes, great powers are at work.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15305">
+			<Speaker>Emmon</Speaker>
+			<Text>Let’s continue, I have a dangerous quest waiting.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15306">
+			<Speaker>Opposita</Speaker>
+			<Text>As you wish.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15310">
+			<Speaker>Opposita</Speaker>
+			<Text>So..</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15311">
+			<Speaker>Opposita</Speaker>
+			<Text>Mockery quit his weird laughing and instead kindly told her that he knew the perfect place for her city. The princess was in a bad situation and decided to let Mockery take her on a sightseeing tour.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15312">
+			<Speaker>Opposita</Speaker>
+			<Text>She saw lush green woodlands, high and dry up the hills. It was a spiritual place.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15313">
+			<Speaker>Opposita</Speaker>
+			<Text>So anyway, when Mockery showed princess Baklava what was to become her new realm, and she immediately fell in love with the place.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15314">
+			<Speaker>Opposita</Speaker>
+			<Text>As fast as she could she flew back to her followers on her magic carpet…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15315">
+			<Speaker>Emmon</Speaker>
+			<Text>Wait, she had a magic carpet?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15316">
+			<Speaker>Opposita</Speaker>
+			<Text>..and started planning the new capital with them. But then something totally unexpected happened...</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15320">
+			<Speaker>Emmon</Speaker>
+			<Text>Oh no!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15321">
+			<Speaker>Emmon</Speaker>
+			<Text>Oh no! If only princess Baklava had had your assistance, she could have seen it coming a long time!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15322">
+			<Speaker>Opposita</Speaker>
+			<Text>Maybe, but you will see it was not her was about to get in trouble.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15330">
+			<Speaker>Emmon</Speaker>
+			<Text>Are we getting to the gory part now?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15331">
+			<Speaker>Opposita</Speaker>
+			<Text>Your prediction is true, but of course any layman could have guessed this. We are entering...</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15332">
+			<Speaker>Opposita</Speaker>
+			<Text>THE CLIMAX!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15340">
+			<Speaker>Emmon</Speaker>
+			<Text>This is taking too long! Do you know yourself where we are heading?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15341">
+			<Speaker>Opposita</Speaker>
+			<Text>I always know how my stories finish. Even if I dislike their ending.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15350">
+			<Speaker>Emmon</Speaker>
+			<Text>She shouldn’t have trusted this Mockery guy!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15360">
+			<Speaker>Opposita</Speaker>
+			<Text>Well then. It was at this moment that the god of Cynicism passed by. He didn’t believe his eyes.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15361">
+			<Speaker>Opposita</Speaker>
+			<Text>He came to visit his Sacred Forest and to talk with his skeptical friends, the owls. And now suddenly he found all this activity going on in his woods! Mockery had - once again - played a trick on him.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15362">
+			<Speaker>Emmon</Speaker>
+			<Text>The weasel…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15363">
+			<Speaker>Opposita</Speaker>
+			<Text>Cynicism exploded with rage and when he found Mockery, chuckling behind a bramble bush, he assaulted him with a big fat hammer.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15364">
+			<Speaker>Opposita</Speaker>
+			<Text>And the fact that Mockery - the maniac - kept on laughing at Cynicism during the attack, only made it worse for him.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15365">
+			<Speaker>Opposita</Speaker>
+			<Text>The sound of Mockery’s laughter was even more terrifying than the sound of the hammer coming down on his crooked head. After this fight Mockery forever wore the distorted double face we know him with.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15366">
+			<Speaker>Opposita</Speaker>
+			<Text>After this fight Mockery forever wore the distorted double face we know him with.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15370">
+			<Speaker>Emmon</Speaker>
+			<Text>What Cynicism did there doesn’t seem very dignified to me.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15371">
+			<Speaker>Emmon</Speaker>
+			<Text>What Cynicism did there, that doesn’t seem very dignified to me. They are a strange lot, those Anchorian gods.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15372">
+			<Speaker>Opposita</Speaker>
+			<Text>Some say the Anchorians got the gods they deserved. A people that goes through great lengths to develop the perfect Honey Lump Soup understandably ends up with gods like “Apathy” and “M-m-mockery”.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15379">
+			<Speaker>Emmon</Speaker>
+			<Text>What happened to princess Baklava and her supporters?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15380">
+			<Speaker>Emmon</Speaker>
+			<Text>I hope that princess Baklava and her supporters didn’t get an equal treatment?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15381">
+			<Speaker>Opposita</Speaker>
+			<Text>Nooo, they were all fine, Emmon. And between you and me, I believe Cynicism was captivated by the strength and inner beauty of Baklava. So he would never be able to use his hammer on her.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15382">
+			<Speaker>Opposita</Speaker>
+			<Text>On the other hand, he was too cynical for love of course.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15390">
+			<Speaker>Emmon</Speaker>
+			<Text>Surely Mockery would think twice, the next time he wanted to play a trick on someone!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15391">
+			<Speaker>Opposita</Speaker>
+			<Text>If only that were true.. But noo, Mockery could not help but come up with new gags.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15392">
+			<Speaker>Opposita</Speaker>
+			<Text>He hid valuable items, distressed damsels, led travelers off the road, wrote tasteless poetry..  Sometimes this would get him into trouble, but he probably accepted that risk.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15393">
+			<Speaker>Opposita</Speaker>
+			<Text>Is this where the sacrifice comes in?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15394">
+			<Speaker>Opposita</Speaker>
+			<Text>Yeess! Let me tell you.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15395">
+			<Speaker>Opposita</Speaker>
+			<Text>Cynicism wanted to be alone with his owls again, so he thought: lets bring the confusing princess and these other creatures to a place where they can found a city.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15396">
+			<Speaker>Opposita</Speaker>
+			<Text>He showed them a location and they were indeed able to build a city there, the beautiful city of Atadom. The Anchorians were really thankful and kept on worshiping Cynicism ever since.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15397">
+			<Speaker>Opposita</Speaker>
+			<Text>They made wooden masks with the face of Mockery on it and smashed it with a hammer. BAM! As a sacrifice to their Lord and Saviour, Cynicism.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15398">
+			<Speaker>Opposita</Speaker>
+			<Text>That’s the story of the sacrifice, but in fact I can tell you stories about Baklava that are way more interesting. For instance, one time she swallowed a chess piece…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15399">
+			<Speaker>Emmon</Speaker>
+			<Text>Madam, please! I heard enough. Thanks for this enriching monologue.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15400">
+			<Speaker>Emmon</Speaker>
+			<Text>I think I heard enough.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15405">
+			<Speaker>Emmon</Speaker>
+			<Text>I forgot what sacrifice I have to make to get the Golden Screech.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15406">
+			<Speaker>Emmon</Speaker>
+			<Text>I forgot what sacrifice I have to make to get the Golden Screech. What did you story say again?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15407">
+			<Speaker>Opposita</Speaker>
+			<Text>The only thing you need to remember is that the Anchorians made masks with the face of Cynicism painted on it. They then smashed the masks to please Cynicism.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15410">
+			<Speaker>Emmon</Speaker>
+			<Text>What is my favourite wind direction?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15411">
+			<Speaker>Opposita</Speaker>
+			<Text>West.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15412">
+			<Speaker>Emmon</Speaker>
+			<Text>No, East!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15420">
+			<Speaker>Emmon</Speaker>
+			<Text>I brought some tea leaves. Can you now tell me about my dreadful future?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15421">
+			<Speaker>Opposita</Speaker>
+			<Text>Ah, let me see. Oh no… The horror!! Your life path will lead you through a     series of events so immeasurably sad…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15422">
+			<Speaker>Opposita</Speaker>
+			<Text>You will lose one of your eyebrows, your father will turn into a buffalo, you will marry a wooden statue…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15423">
+			<Speaker>Opposita</Speaker>
+			<Text>I cannot even continue!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15424">
+			<Speaker>Opposita</Speaker>
+			<Text>Hu-hu-hu</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15425">
+			<Speaker>Emmon</Speaker>
+			<Text>You can stop now: I see that this is too emotional for you.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15426">
+			<Speaker>Emmon</Speaker>
+			<Text>Besides, one should not know too much about his own future.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15427">
+			<Speaker>Opposita</Speaker>
+			<Text>Poor, poor boy… Your have the most terrifying future I ever got a glimpse of. You should write a chanson about it or something!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15500">
+			<Speaker>Emmon</Speaker>
+			<Text>Can you help me to get back on track again?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15501">
+			<Speaker>Emmon</Speaker>
+			<Text>I was wondering. With all your magic fortune teller’s insights, you might have some tips for me. I already told you that I am on a journey to save the Outside in Gallery, but I’m kind of lost.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15502">
+			<Speaker>Emmon</Speaker>
+			<Text>Can you help me to get back on track again?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15503">
+			<Speaker>Opposita</Speaker>
+			<Text>That entrepreneur, Mr. B….</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15504">
+			<Speaker>Emmon</Speaker>
+			<Text>What about him?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15505">
+			<Speaker>Opposita</Speaker>
+			<Text>It might help you to put something in his tea that will make him fall asleep…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15506">
+			<Speaker>Emmon</Speaker>
+			<Text>Really? … And what exactly do I put in his tea then?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15507">
+			<Speaker>Opposita</Speaker>
+			<Text>A sleeping potion. You can buy it from Benny the Tear Collector.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15508">
+			<Speaker>Emmon</Speaker>
+			<Text>Benny the Tear Collector? Hmm, okay, thank you.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15510">
+			<Speaker>Opposita</Speaker>
+			<Text>Well, let me give you this advice. I sense that you succeeded in giving Leon’s tea a special taste, hihi. Well, you…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15511">
+			<Speaker>Emmon</Speaker>
+			<Text>Wait a minute. I didn’t succeed. Leon saw through my plan!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15512">
+			<Speaker>Opposita</Speaker>
+			<Text>Yes, that is what I was saying. Anyway, if you want to succeed you should…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15513">
+			<Speaker>Opposita</Speaker>
+			<Text>this may sound a little odd, but it’s what the holy spirits tell me… you should use the voice of Leon’s mother to imitate a trumpet...</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15514">
+			<Speaker>Opposita</Speaker>
+			<Text>That trumpet sound will lure Leon away, so you can put your potion in the teapot!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15515">
+			<Speaker>Emmon</Speaker>
+			<Text>Leon’s mother has to imitate a trumpet?? That sounds... pretty insane. But I can try.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15800">
+			<Speaker>Emmon</Speaker>
+			<Text>Madame Opposita, you are here too!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15810">
+			<Speaker>Emmon</Speaker>
+			<Text>Do you like the way the Golden Screech is exposed?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15811">
+			<Speaker>Opposita</Speaker>
+			<Text>Don’t underestimate the dark and ancient power of that artefact, Emmon. The Golden Screech contains powers you and I cannot survey.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15812">
+			<Speaker>Opposita</Speaker>
+			<Text>Mr. B. made a big mistake bringing this cursed horn to the museum. But it will backfire on him, oh yes, it will...</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15813">
+			<Speaker>Emmon</Speaker>
+			<Text>Madame Opposita, I was a bit sceptical at first, but in the end your prophecies helped me a lot. Thanks!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15814">
+			<Speaker>Opposita</Speaker>
+			<Text>How can you thank me?!? After what I told you about your own future… The horrible, horrible things you will have to face. I...</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15815">
+			<Speaker>Emmon</Speaker>
+			<Text>Stop it! At least I’m sure my future will bring me a lot more thrilling adventures! YAHOO!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15820">
+			<Speaker>Emmon</Speaker>
+			<Text>So, what will tomorrow’s weather be like?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15821">
+			<Speaker>Opposita</Speaker>
+			<Text>Misty, with a lot of rain…</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15822">
+			<Speaker>Emmon</Speaker>
+			<Text>Ah, that’s good news!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15823">
+			<Speaker>Opposita</Speaker>
+			<Text>I beg your pardon?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15824">
+			<Speaker>Emmon</Speaker>
+			<Text>Yes, I understand your way of fortune telling now, hehe.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15825">
+			<Speaker>Opposita</Speaker>
+			<Text>I don’t know what you’re talking about! It’s gibberish.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15830">
+			<Speaker>Emmon</Speaker>
+			<Text>I am off to more adventures!</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15831">
+			<Speaker>Emmon</Speaker>
+			<Text>I am off to more adventures. But then again, you know that already.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16000">
+			<Speaker>MrB</Speaker>
+			<Text>Mr. B Dialogues</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16001">
+			<Speaker>Emmon</Speaker>
+			<Text>Mister B., we bards sing songs about the mighty ones of our time. You must know that you are a returning topic in our epics!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16002">
+			<Speaker>Emmon</Speaker>
+			<Text>How did the director of BBusiness come to the faulty decision to close down the famous Inside-Out Art Gallery?!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16003">
+			<Speaker>MrB</Speaker>
+			<Text>Ah Emmon, young rascal. You surely must understand that I don’t like to close the gallery. We still remember the great patrons of the past because they let the arts flourish.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16004">
+			<Speaker>MrB</Speaker>
+			<Text>But the stupid peasants in this town simply seem to not understand the true value of art.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16005">
+			<Speaker>Emmon</Speaker>
+			<Text>Well, we do house court bards and avant-garde artists...</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16006">
+			<Speaker>MrB</Speaker>
+			<Text>That is different... Besides, lately my finances require me to be more careful. The restoration of my Dragon Zoo turned out to be a bit.. costly.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16007">
+			<Speaker>MrB</Speaker>
+			<Text>I can’t afford to pump great sums of money in unloved cultural projects..</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16010">
+			<Speaker>Emmon</Speaker>
+			<Text>I know at least one person in this town who loves the gallery</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16011">
+			<Speaker>Emmon</Speaker>
+			<Text>But this gallery is what makes our town great!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16012">
+			<Speaker>Emmon</Speaker>
+			<Text>Surely you could afford a little bit of money..?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16013">
+			<Speaker>Emmon</Speaker>
+			<Text>I was sent to convince you of just that. I want you to pump great sums of money in unloved cultural projects.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16014">
+			<Speaker>MrB</Speaker>
+			<Text>Ah I understand now. Your father.. He probably sent you?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16015">
+			<Speaker>Emmon</Speaker>
+			<Text>You got me.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16016">
+			<Speaker>MrB</Speaker>
+			<Text>Of course the old bard cares about the gallery. His kind thrives in such environments: stuffy and pretentious.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16017">
+			<Speaker>MrB</Speaker>
+			<Text>In any case, in order to keep that gallery open, we need to find a way to make the Inside Out Gallery pay back its maintenance costs.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16018">
+			<Speaker>Emmon</Speaker>
+			<Text>I wouldn’t be surprised if these are more than modest.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16019">
+			<Speaker>MrB</Speaker>
+			<Text>Hm.. of course a well respected cultural institution needs to reward its excellent staff.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16020">
+			<Speaker>Emmon</Speaker>
+			<Text>Being… you?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16021">
+			<Speaker>MrB</Speaker>
+			<Text>Being me.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16022">
+			<Speaker>Emmon</Speaker>
+			<Text>We could find a rich person to donate his fortune to the institution.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16023">
+			<Speaker>MrB</Speaker>
+			<Text>If you know anyone left in Baton whose wealth can compete with mine, I’ll make sure that I get to that money personally!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16024">
+			<Speaker>Emmon</Speaker>
+			<Text>We could raise the prices of the tickets</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16025">
+			<Speaker>MrB</Speaker>
+			<Text>No one is visiting the gallery anyway, that wouldn’t work!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16026">
+			<Speaker>Emmon</Speaker>
+			<Text>We could reduce the amount of personnel. That should save costs.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16027">
+			<Speaker>MrB</Speaker>
+			<Text>You think you can outthink a cunning business man as myself? (triumphant) I did that long time ago!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16028">
+			<Speaker>MrB</Speaker>
+			<Text>Noo Emmon, what we need is increase the amount of people coming to the gallery.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16029">
+			<Speaker>Emmon</Speaker>
+			<Text>I am sure I can find visitors!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16030">
+			<Speaker>MrB</Speaker>
+			<Text>You go and try. My expectations are not high.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16034">
+			<Speaker>Emmon</Speaker>
+			<Text>You were right, people don’t want to visit the gallery! They even find it.. boring!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16035">
+			<Speaker>MrB</Speaker>
+			<Text>Yes we are talking about a serious problem here. The gallery is just collecting dust.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16036">
+			<Speaker>Emmon</Speaker>
+			<Text>But there must be something we can do!!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16037">
+			<Speaker>MrB</Speaker>
+			<Text>I have been thinking about this. In fact, I even drafted a business plan. I have calculated that in order to run a profit,</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16038">
+			<Speaker>MrB</Speaker>
+			<Text>I need to immediately expose at least one new major work of art in the gallery. -We are talking about a real knockout here-</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16039">
+			<Speaker>MrB</Speaker>
+			<Text>This will provide the constant stream of curious visitors the institute needs to flourish. And to compensate the management.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16040">
+			<Speaker>Emmon</Speaker>
+			<Text>Tell me how we can keep the gallery open</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16041">
+			<Speaker>MrB</Speaker>
+			<Text>We need at least one major work of art for the gallery. Gregory’s Sixteen Baboons for example.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16042">
+			<Speaker>Emmon</Speaker>
+			<Text>Hm..</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16043">
+			<Speaker>MrB</Speaker>
+			<Text>Or an ancient Barnean chalise, people always like those.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16044">
+			<Speaker>Emmon</Speaker>
+			<Text>I see..</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16045">
+			<Speaker>MrB</Speaker>
+			<Text>But of course, these are just insignificant compared with the real artifacts of this world. Think of… the Golden Screech.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16046">
+			<Speaker>Emmon</Speaker>
+			<Text>Hm.. I think I know the Golden Screech..</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16047">
+			<Speaker>MrB</Speaker>
+			<Text>Definitely a minstrel’s son should know. It is the phenomenal horn decorated in gold that was used by the deity Cynicism himself. Or so those old Anchorians believed anyway.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16048">
+			<Speaker>MrB</Speaker>
+			<Text>It has been stored for ages on the top of the mountain over there, in Cynicism’s sacred castle: the Citadel of Doubt.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16055">
+			<Speaker>Emmon</Speaker>
+			<Text>It sounds like this Golden Screech can boost the gallery’s prestige?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16056">
+			<Speaker>MrB</Speaker>
+			<Text>Yes, it would be quite a showpiece. But notice the rare sense of doubt in my voice: I wouldn’t send you on a quest like that. The Golden Screech is extremely well protected..</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16057">
+			<Speaker>MrB</Speaker>
+			<Text>In the distant past the Citadel of Doubt has slayed many heroes trying to recover the Golden Screech. You wouldn’t stand a chance..</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16058">
+			<Speaker>Emmon</Speaker>
+			<Text>Maybe it is time somebody makes another attempt...</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16059">
+			<Speaker>MrB</Speaker>
+			<Text>Alright, you win. But be very careful. As the old bridge over here that led to the citadel is broken, you will have to take a slight detour:</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16060">
+			<Speaker>MrB</Speaker>
+			<Text>If you leave the village in the north and cross the river there you will enter the Squanderlands. The road going south should just lead you to the Citadel of Doubt.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16061">
+			<Speaker>Emmon</Speaker>
+			<Text>I’ll be back soon with the Golden Screech, I assure you.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16065">
+			<Speaker>Emmon</Speaker>
+			<Text>So you think the Golden Screech would be sufficient to keep the gallery open?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16066">
+			<Speaker>MrB</Speaker>
+			<Text>Yes, without a doubt people from all of Baton will flock to the museum to catch a glimpse of this historical object. It will do. I am sure.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16067">
+			<Speaker>Emmon</Speaker>
+			<Text>Seems worth trying then!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16068">
+			<Speaker>MrB</Speaker>
+			<Text>Try, little bard, try. The shine of gold awaits my eye.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16069">
+			<Speaker>Emmon</Speaker>
+			<Text>What was that?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16070">
+			<Speaker>MrB</Speaker>
+			<Text>Nothing.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16075">
+			<Speaker>Emmon</Speaker>
+			<Text>I find the Golden Screech and we can save the gallery?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16076">
+			<Speaker>MrB</Speaker>
+			<Text>Indeed. And it is very close. Now off you go to the Citadel of Doubt, you can see the tower from here!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16080">
+			<Speaker>Emmon</Speaker>
+			<Text>Maybe finding the Golden Screech will save the gallery?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16081">
+			<Speaker>Emmon</Speaker>
+			<Text>I have launched plan B, mister. Although people are not eager yet to come to the gallery, getting the Golden Screech from the Citadel of Doubt should create enough interest. What do you think?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16082">
+			<Speaker>MrB</Speaker>
+			<Text>That sounds excellent! The Golden Screech is legendary indeed. I might visit the gallery myself.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16083">
+			<Speaker>Emmon</Speaker>
+			<Text>Good. I think that means I’m on the right track.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16085">
+			<Speaker>Emmon</Speaker>
+			<Text>I need to make a sacrifice to Cynicism. Any ideas?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16086">
+			<Speaker>MrB</Speaker>
+			<Text>What would you sacrifice to Cynicism..? Maybe you should find something sincere. But I guess I am not the right person to ask.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16090">
+			<Speaker>Emmon</Speaker>
+			<Text>Tea or coffee?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16091">
+			<Speaker>MrB</Speaker>
+			<Text>I used to drink a lot of coffee. It kept me awake during long meetings with the Big Industry Club. But these days I drink nothing else than the tea that good Leon over here prepares.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16100">
+			<Speaker>Emmon</Speaker>
+			<Text>Benny is not pleased with the way you arranged his paintings</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16101">
+			<Speaker>MrB</Speaker>
+			<Text>Oh he noticed I put them in the dark corners, did he?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16102">
+			<Speaker>MrB</Speaker>
+			<Text>Between you and me, there is really no one interested in the art of that clown anyway. But he kept sending me stuff, so in the end I had to put it up somewhere.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16110">
+			<Speaker>Emmon</Speaker>
+			<Text>Do you know Madame Opposita?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16111">
+			<Speaker>MrB</Speaker>
+			<Text>She is becoming quite a local celebrity around here. I don’t know how she does it but she has a talent for predicting falsehoods.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16112">
+			<Speaker>MrB</Speaker>
+			<Text>So in a way she does tell you the future: you just know what absolutely is not going to happen hehehe.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16115">
+			<Speaker>Emmon</Speaker>
+			<Text>How’s it going?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16116">
+			<Speaker>MrB</Speaker>
+			<Text>Oh.. business as usual. But bigger!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16120">
+			<Speaker>Emmon</Speaker>
+			<Text>I have to leave now. Adventure awaits!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16200">
+			<Speaker>Emmon</Speaker>
+			<Text>So everything turned all right!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16201">
+			<Speaker>MrB</Speaker>
+			<Text>Indeed. People are eager to come see the Golden Screech. Your scheme worked.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16202">
+			<Speaker>Emmon</Speaker>
+			<Text>That means you will keep the gallery open right?</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16203">
+			<Speaker>MrB</Speaker>
+			<Text>Yes, this exhibition offers good prospects for future business. My minions are working on a follow-up strategy as we speak.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17000">
+			<Speaker>Obstructor</Speaker>
+			<Text>Obstructor Dialogues</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17001">
+			<Speaker>Obstructor</Speaker>
+			<Text>Halt! Who goes there!</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17002">
+			<Speaker>Emmon</Speaker>
+			<Text>The name is Emmon Tumblescream, bard of Baton.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17003">
+			<Speaker>Obstructor</Speaker>
+			<Text>Welcome Emmon. What is your quest?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17005">
+			<Speaker>Emmon</Speaker>
+			<Text>Just a humble minstrel passing through.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17006">
+			<Speaker>Obstructor</Speaker>
+			<Text>Does the humble minstrel bare a name?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17007">
+			<Speaker>Emmon</Speaker>
+			<Text>My friends call me Emmon. Oh, and so do my enemies.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17008">
+			<Speaker>Obstructor</Speaker>
+			<Text>Emmon it is then. What is your quest?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17010">
+			<Speaker>Emmon</Speaker>
+			<Text>I am Mister B., you fool, the most important man in the realm!</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17011">
+			<Speaker>Obstructor</Speaker>
+			<Text>You can’t fool me. Everybody knows Mister B. is a [dwarfish]  creature with a moustache, whereas you… I don’t even know how to describe you.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17012">
+			<Speaker>Emmon</Speaker>
+			<Text>Fine. You can call me Emmon. I am a bard.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17013">
+			<Speaker>Emmon</Speaker>
+			<Text>Welcome Emmon. What is your quest?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17015">
+			<Speaker>Emmon</Speaker>
+			<Text>My name is no one.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17016">
+			<Speaker>Obstructor</Speaker>
+			<Text>No one goes there?! What kind of confusing name is that? I rather call you… hm..</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17017">
+			<Speaker>Emmon</Speaker>
+			<Text>You can call me Emmon if you like. I am a bard.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17018">
+			<Speaker>Obstructor</Speaker>
+			<Text>Emmon will do. What is your quest?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17019">
+			<Speaker>Emmon</Speaker>
+			<Text>I am after the Golden Screech!</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17020">
+			<Speaker>Obstructor</Speaker>
+			<Text>Oh here’s another adventurer. Yes, the Golden Screech is somewhere behind this wall. But I will tell you what I told the others:</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17021">
+			<Speaker>Obstructor</Speaker>
+			<Text>I don’t care what you do with the Golden Screech, as long as you pay your respects to the guardian of this place…</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17022">
+			<Speaker>Obstructor</Speaker>
+			<Text>You will have bring the proper sacrifice to Cynicism. Now go arrange that or be gone.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17023">
+			<Speaker>Obstructor</Speaker>
+			<Text>Good day sir.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17024">
+			<Speaker>Emmon</Speaker>
+			<Text>Wait!</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17025">
+			<Speaker>Emmon</Speaker>
+			<Text>Why do I need to make a sacrifice to Cynicism?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17026">
+			<Speaker>Obstructor</Speaker>
+			<Text>By the divine law of Cynicism (article 15b), anyone who wants to pass here is required to make a proper sacrifice to the deity.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17027">
+			<Speaker>Emmon</Speaker>
+			<Text>Who’s law? Who are you working for?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17028">
+			<Speaker>Obstructor</Speaker>
+			<Text>I only serve Cynicism.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17030">
+			<Speaker>Emmon</Speaker>
+			<Text>What is a proper sacrifice? How do I do it?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17031">
+			<Speaker>Obstructor</Speaker>
+			<Text>It is not my task to explain this to you. I am here just to guarantee that Cynicism enjoys the proper respect and that no one is poaching his lands.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17032">
+			<Speaker>Obstructor</Speaker>
+			<Text>That you will have to figure out for yourself what you have to do, will make your sacrifice to Cynicism all the more pure.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17033">
+			<Speaker>Emmon</Speaker>
+			<Text>Do you not mind that I want to steal the Golden Screech?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17034">
+			<Speaker>Obstructor</Speaker>
+			<Text>Oh, if he wanted to Cynicism could make ten new ones. Besides, no one ever has gotten that far. It seems the tower is crawling with monsters. No, it is just HOW you enter that concerns me.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17035">
+			<Speaker>Emmon</Speaker>
+			<Text>Fair enough.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17040">
+			<Speaker>Emmon</Speaker>
+			<Text>Who are you anyway?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17041">
+			<Speaker>Obstructor</Speaker>
+			<Text>My name is not important. It is not a relevant question.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17042">
+			<Speaker>Emmon</Speaker>
+			<Text>You are sure you are a person, are you?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17043">
+			<Speaker>Obstructor</Speaker>
+			<Text>Listen, the only thing of importance to you is that you make the right offering to Cynicism.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17044">
+			<Speaker>Emmon</Speaker>
+			<Text>Pff. Who put you here?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17045">
+			<Speaker>Obstructor</Speaker>
+			<Text>I am self-employed. Anything else?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17050">
+			<Speaker>Emmon</Speaker>
+			<Text>Where do I perform this sacrifice?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17051">
+			<Speaker>Emmon</Speaker>
+			<Text>Where do I perform this sacrifice? Is there some kind of secret location for that?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17052">
+			<Speaker>Obstructor</Speaker>
+			<Text>No, you can just do it here. As you can see there is a copper offering bowl over there.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17060">
+			<Speaker>Emmon</Speaker>
+			<Text>I am going to sort this out. Bye.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17061">
+			<Speaker>Emmon</Speaker>
+			<Text>Man, I have to find somebody who can tell me more about this.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17070">
+			<Speaker>Emmon</Speaker>
+			<Text>Look, do we really need to go through all this trouble? Can you not just open the gate?</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17071">
+			<Speaker>Obstructor</Speaker>
+			<Text>There is just one way: Cynicism demands..</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17072">
+			<Speaker>Emmon</Speaker>
+			<Text>An appropriate sacrifice. Ok.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17080">
+			<Speaker>Emmon</Speaker>
+			<Text>Hi, gave it some thought, consulted wise people, and finally came to the conclusion that what you are actually trying to say is that you want me to smash a mask.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17081">
+			<Speaker>Obstructor</Speaker>
+			<Text>This is true.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17082">
+			<Speaker>Emmon</Speaker>
+			<Text>Right. I am going to arrange that mask and smash it for you.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17083">
+			<Speaker>Obstructor</Speaker>
+			<Text>You can smash the mask and put it in the copper bowl over there. This is a special bowl that has a direct connection to Cynicism. He will feel your blessing, wherever he is.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17084">
+			<Speaker>Emmon</Speaker>
+			<Text>If you say so.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17090">
+			<Speaker>Obstructor</Speaker>
+			<Text>Nice try, but not appropriate enough for Cyncism.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17091">
+			<Speaker>Emmon</Speaker>
+			<Text>Yes, it should be ‘appropriate’.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17100">
+			<Speaker>Obstructor</Speaker>
+			<Text>I’m sorry, but that is not the mask Cynicism demands. He is very strict about these things.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17110">
+			<Speaker>Obstructor</Speaker>
+			<Text>That seems to be the appropriate mask. Now smash that Mockery!</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="17120">
+			<Speaker>Obstructor</Speaker>
+			<Text>That will please Cynicism. You can pass.</Text>
+			<DialogueType>ObstructorDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18000">
+			<Speaker>Sentinel</Speaker>
+			<Text>Sentinel Dialogues</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18001">
+			<Speaker>Emmon</Speaker>
+			<Text>Hey, we meet again! Again on important duty?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18002">
+			<Speaker>Sentinel</Speaker>
+			<Text>Oh hello Emmon. Yes I was brought over. Very important things.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18003">
+			<Speaker>Emmon</Speaker>
+			<Text>Oh? Like what?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18004">
+			<Speaker>Sentinel</Speaker>
+			<Text>Very important matters..</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18010">
+			<Speaker>Emmon</Speaker>
+			<Text>I suppose I cannot enter that house that you are guarding?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18011">
+			<Speaker>Sentinel</Speaker>
+			<Text>No, absolutely not. Very very strict orders.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18012">
+			<Speaker>Emmon</Speaker>
+			<Text>It must be very important!</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18013">
+			<Speaker>Sentinel</Speaker>
+			<Text>Yes it is. And now be gone you, don’t distract a royal guardsman on duty.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18014">
+			<Speaker>Emmon</Speaker>
+			<Text>I see… Would you like me to sing?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18015">
+			<Speaker>Sentinel</Speaker>
+			<Text>No! That could endanger my mission!</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18016">
+			<Speaker>Emmon</Speaker>
+			<Text>A curious mission indeed…</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18020">
+			<Speaker>Emmon</Speaker>
+			<Text>You made me rather curious what it is you are guarding here…</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18021">
+			<Speaker>Sentinel</Speaker>
+			<Text>Look, just pretend I am not here okay?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18022">
+			<Speaker>Emmon</Speaker>
+			<Text>That is kind of hard, a mighty royal sentinel in front of the town's most miserable shed makes one wonder…</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18030">
+			<Speaker>Sentinel</Speaker>
+			<Text>Ok, ok. I know you want to know what I am guarding here. I will explain to you why I can’t tell you: I kind of forgot it myself..</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18031">
+			<Speaker>Emmon</Speaker>
+			<Text>Really?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18032">
+			<Speaker>Sentinel</Speaker>
+			<Text>You see, the king always sends his orders in a secret code, so the enemy can’t find out what we are planning.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18033">
+			<Speaker>Sentinel</Speaker>
+			<Text>But with this last message… well, I forgot the key [vertaalsleutel]. It is disastrous! I don’t understand my orders anymore!</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18034">
+			<Speaker>Emmon</Speaker>
+			<Text>What are you doing here then?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18035">
+			<Speaker>Sentinel</Speaker>
+			<Text>I don’t know! I don’t if this is the place! It could be anywhere!</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18036">
+			<Speaker>Emmon</Speaker>
+			<Text>Maybe I can help you?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18037">
+			<Speaker>Sentinel</Speaker>
+			<Text>You are a smart lad, maybe you can understand what my orders are.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18040">
+			<Speaker>Emmon</Speaker>
+			<Text>I still don’t understand why you are standing guard here.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18041">
+			<Speaker>Sentinel</Speaker>
+			<Text>I saw an open door, it seemed worthy to protect.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18042">
+			<Speaker>Emmon</Speaker>
+			<Text>I see.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18050">
+			<Speaker>Emmon</Speaker>
+			<Text>I deciphered your orders for you. Look here: it says the king needs you to stand guard at [the big crafters house in Nailbore Rock.] Not this -slightly- trivial shed.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18051">
+			<Speaker>Sentinel</Speaker>
+			<Text>What?! I am totally wrong here! I will have to move swift. I hope nobody found out yet!</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18052">
+			<Speaker>Emmon</Speaker>
+			<Text>And there runs the king’s guard. Right. Let’s see what’s inside.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18060">
+			<Speaker>Sentinel</Speaker>
+			<Text>Hold it here! I cannot let you do that!</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18061">
+			<Speaker>Emmon</Speaker>
+			<Text>But you said yourself that you don’t know where you are supposed to stand guard.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18062">
+			<Speaker>Sentinel</Speaker>
+			<Text>Yes. But we can’t know for sure that it is NOT this place.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18063">
+			<Speaker>Emmon</Speaker>
+			<Text>Fair enough. I will decode your orders for you and show you what to do.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18100">
+			<Speaker>Emmon</Speaker>
+			<Text>You came to the party as well?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18101">
+			<Speaker>Sentinel</Speaker>
+			<Text>I heard something memorable was going on..</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18102">
+			<Speaker>Emmon</Speaker>
+			<Text>What do you think?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18103">
+			<Speaker>Sentinel</Speaker>
+			<Text>Hmm. it is something different, that’s for sure…</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18110">
+			<Speaker>Emmon</Speaker>
+			<Text>What do you think?</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="18111">
+			<Speaker>Sentinel</Speaker>
+			<Text>Heroic journeys generally end with some great celebration.</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="20000">
+			<Speaker>Emmon</Speaker>
+			<Text>Object Investigation</Text>
+			<DialogueType>ObjectInvestigation</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="20001">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>AyTheTearCollector</Object>
+		</SpokenLine>
+		<SpokenLine ID="20002">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>Bart</Object>
+		</SpokenLine>
+		<SpokenLine ID="20003">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>BennyTwospoons</Object>
+		</SpokenLine>
+		<SpokenLine ID="20004">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>LeonTurmeric</Object>
+		</SpokenLine>
+		<SpokenLine ID="20005">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>MadameOpposita</Object>
+		</SpokenLine>
+		<SpokenLine ID="20006">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>MrB</Object>
+		</SpokenLine>
+		<SpokenLine ID="20007">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>Obstructor</Object>
+		</SpokenLine>
+		<SpokenLine ID="20008">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>Sentinel</Object>
+		</SpokenLine>
+		<SpokenLine ID="20009">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>Axe</Object>
+		</SpokenLine>
+		<SpokenLine ID="20010">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>Brush</Object>
+		</SpokenLine>
+		<SpokenLine ID="20011">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>BucketWithPaint</Object>
+		</SpokenLine>
+		<SpokenLine ID="20012">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>ClownMask</Object>
+		</SpokenLine>
+		<SpokenLine ID="20013">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>ClownNose</Object>
+		</SpokenLine>
+		<SpokenLine ID="20014">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>CupOfCoffee</Object>
+		</SpokenLine>
+		<SpokenLine ID="20015">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>CupOfTea</Object>
+		</SpokenLine>
+		<SpokenLine ID="20016">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>GalleryKey</Object>
+		</SpokenLine>
+		<SpokenLine ID="20017">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>Hammer</Object>
+		</SpokenLine>
+		<SpokenLine ID="20018">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>MaskRemains</Object>
+		</SpokenLine>
+		<SpokenLine ID="20019">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>PartyHat</Object>
+		</SpokenLine>
+		<SpokenLine ID="20020">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>Purse</Object>
+		</SpokenLine>
+		<SpokenLine ID="20021">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>Brush</Object>
+		</SpokenLine>
+		<SpokenLine ID="20022">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>RoughneckShot</Object>
+		</SpokenLine>
+		<SpokenLine ID="20023">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>Scissors</Object>
+		</SpokenLine>
+		<SpokenLine ID="20024">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>SelfMadeMask</Object>
+		</SpokenLine>
+		<SpokenLine ID="20025">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>TeaLeaves</Object>
+		</SpokenLine>
+		<SpokenLine ID="20026">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInvestigation</DialogueType>
+			<Object>CopperBowl</Object>
+		</SpokenLine>
+		<SpokenLine ID="21000">
+			<Speaker>Emmon</Speaker>
+			<Text>Object Interaction</Text>
+			<DialogueType>ObjectInteraction</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="21001">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>AyTheTearCollector</Object>
+		</SpokenLine>
+		<SpokenLine ID="21002">
+			<Speaker>Emmon</Speaker>
+			<Text>My father would gladly spend whole days in the gallery. Let's muster more support to convince Mr. B he should keep the gallery open.</Text>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Bart</Object>
+		</SpokenLine>
+		<SpokenLine ID="21003">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>BennyTwospoons</Object>
+		</SpokenLine>
+		<SpokenLine ID="21004">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>LeonTurmeric</Object>
+		</SpokenLine>
+		<SpokenLine ID="21005">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>MadameOpposita</Object>
+		</SpokenLine>
+		<SpokenLine ID="21006">
+			<Speaker>Emmon</Speaker>
+			<Text>I told Mr. B I woul find people who wanted to visit the gallery. Let's not waste time</Text>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>MrB</Object>
+		</SpokenLine>
+		<SpokenLine ID="21007">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Obstructor</Object>
+		</SpokenLine>
+		<SpokenLine ID="21008">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Sentinel</Object>
+		</SpokenLine>
+		<SpokenLine ID="21009">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Axe</Object>
+		</SpokenLine>
+		<SpokenLine ID="21010">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Brush</Object>
+		</SpokenLine>
+		<SpokenLine ID="21011">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>BucketWithPaint</Object>
+		</SpokenLine>
+		<SpokenLine ID="21012">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>ClownMask</Object>
+		</SpokenLine>
+		<SpokenLine ID="21013">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>ClownNose</Object>
+		</SpokenLine>
+		<SpokenLine ID="21014">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>CupOfCoffee</Object>
+		</SpokenLine>
+		<SpokenLine ID="21015">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>CupOfTea</Object>
+		</SpokenLine>
+		<SpokenLine ID="21016">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>GalleryKey</Object>
+		</SpokenLine>
+		<SpokenLine ID="21017">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Hammer</Object>
+		</SpokenLine>
+		<SpokenLine ID="21018">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>MaskRemains</Object>
+		</SpokenLine>
+		<SpokenLine ID="21019">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>PartyHat</Object>
+		</SpokenLine>
+		<SpokenLine ID="21020">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Purse</Object>
+		</SpokenLine>
+		<SpokenLine ID="21021">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>RoughneckShot</Object>
+		</SpokenLine>
+		<SpokenLine ID="21022">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Scissors</Object>
+		</SpokenLine>
+		<SpokenLine ID="21023">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>SelfMadeMask</Object>
+		</SpokenLine>
+		<SpokenLine ID="21024">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>TeaLeaves</Object>
+		</SpokenLine>
+		<SpokenLine ID="21025">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>CopperBowl</Object>
+		</SpokenLine>
+		<SpokenLine ID="21201">
+			<Speaker>Emmon</Speaker>
+			<Text>He is performing. I shouldn't disturb him.</Text>
+			<DialogueType>ObjectInteraction</DialogueType>
+			<Object>Bart</Object>
+		</SpokenLine>
+		<SpokenLine ID="22000">
+			<Speaker>Emmon</Speaker>
+			<Text>Trying to combine an inventory item with the world</Text>
+			<DialogueType>ItemWorldCombination</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="23000">
+			<Speaker>Emmon</Speaker>
+			<Text>Trying to combine an inventory item with another inventory item</Text>
+			<DialogueType>InventoryCombination</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="24000">
+			<Speaker>Emmon</Speaker>
+			<Text>Standard Inventory Investigation. Please Implement</Text>
+			<DialogueType>InventoryInvestigation</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="24001">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>Axe</Object>
+		</SpokenLine>
+		<SpokenLine ID="24002">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>Brush</Object>
+		</SpokenLine>
+		<SpokenLine ID="24003">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>BrushWithPaint</Object>
+		</SpokenLine>
+		<SpokenLine ID="24004">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>BucketWithPaint</Object>
+		</SpokenLine>
+		<SpokenLine ID="24005">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>ClownMask</Object>
+		</SpokenLine>
+		<SpokenLine ID="24006">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>ClownNose</Object>
+		</SpokenLine>
+		<SpokenLine ID="24007">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>CupOfCoffee</Object>
+		</SpokenLine>
+		<SpokenLine ID="24008">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>CupOfTea</Object>
+		</SpokenLine>
+		<SpokenLine ID="24009">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>GalleryKey</Object>
+		</SpokenLine>
+		<SpokenLine ID="24010">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>Hammer</Object>
+		</SpokenLine>
+		<SpokenLine ID="24011">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>MaskRemains</Object>
+		</SpokenLine>
+		<SpokenLine ID="24012">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>PartyHat</Object>
+		</SpokenLine>
+		<SpokenLine ID="24013">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>Purse</Object>
+		</SpokenLine>
+		<SpokenLine ID="24014">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>Brush</Object>
+		</SpokenLine>
+		<SpokenLine ID="24015">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>RoughneckShot</Object>
+		</SpokenLine>
+		<SpokenLine ID="24016">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>Scissors</Object>
+		</SpokenLine>
+		<SpokenLine ID="24017">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>SelfMadeMask</Object>
+		</SpokenLine>
+		<SpokenLine ID="24018">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>SpeakingTrumpet</Object>
+		</SpokenLine>
+		<SpokenLine ID="24019">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInvestigation</DialogueType>
+			<Object>TeaLeaves</Object>
+		</SpokenLine>
+		<SpokenLine ID="25000">
+			<Speaker>Emmon</Speaker>
+			<Text>Standard Inventory Interaction Please Implement</Text>
+			<DialogueType>InventoryInteraction</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="25001">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>Axe</Object>
+		</SpokenLine>
+		<SpokenLine ID="25002">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>Brush</Object>
+		</SpokenLine>
+		<SpokenLine ID="25003">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>BrushWithPaint</Object>
+		</SpokenLine>
+		<SpokenLine ID="25004">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>BucketWithPaint</Object>
+		</SpokenLine>
+		<SpokenLine ID="25005">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>ClownMask</Object>
+		</SpokenLine>
+		<SpokenLine ID="25006">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>ClownNose</Object>
+		</SpokenLine>
+		<SpokenLine ID="25007">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>CupOfCoffee</Object>
+		</SpokenLine>
+		<SpokenLine ID="25008">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>CupOfTea</Object>
+		</SpokenLine>
+		<SpokenLine ID="25009">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>GalleryKey</Object>
+		</SpokenLine>
+		<SpokenLine ID="25010">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>Hammer</Object>
+		</SpokenLine>
+		<SpokenLine ID="25011">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>MaskRemains</Object>
+		</SpokenLine>
+		<SpokenLine ID="25012">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>PartyHat</Object>
+		</SpokenLine>
+		<SpokenLine ID="25013">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>Purse</Object>
+		</SpokenLine>
+		<SpokenLine ID="25014">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>Brush</Object>
+		</SpokenLine>
+		<SpokenLine ID="25015">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>RoughneckShot</Object>
+		</SpokenLine>
+		<SpokenLine ID="25016">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>Scissors</Object>
+		</SpokenLine>
+		<SpokenLine ID="25017">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>SelfMadeMask</Object>
+		</SpokenLine>
+		<SpokenLine ID="25018">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>SpeakingTrumpet</Object>
+		</SpokenLine>
+		<SpokenLine ID="25019">
+			<Speaker>Emmon</Speaker>
+			<DialogueType>InventoryInteraction</DialogueType>
+			<Object>TeaLeaves</Object>
+		</SpokenLine>
+		<SpokenLine ID="26000">
+			<Speaker>Emmon</Speaker>
+			<Text>Standard Investigation Hover</Text>
+			<DialogueType>InventoryInvestigation</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="27000">
+			<Speaker>Emmon</Speaker>
+			<Text>Standard Interaction Hover</Text>
+			<DialogueType>InventoryInteraction</DialogueType>
+		</SpokenLine>
+	</SpokenLines>
+</SpokenLineCollection>

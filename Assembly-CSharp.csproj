@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\Items\InventoryCommentary.cs" />
      <Compile Include="Assets\Scripts\Items\InventorySlot.cs" />
      <Compile Include="Assets\Scripts\Items\ItemDatabase.cs" />
+     <Compile Include="Assets\Scripts\Items\ItemEnabler.cs" />
      <Compile Include="Assets\Scripts\Items\MoneyThrower.cs" />
      <Compile Include="Assets\Scripts\Items\PickUpItemListener.cs" />
      <Compile Include="Assets\Scripts\Locations\Area.cs" />
@@ -115,6 +116,13 @@
      <Compile Include="Assets\Scripts\ObjectInteraction\InventoryCombinations.cs" />
      <Compile Include="Assets\Scripts\ObjectInteraction\MouseClickOnObject.cs" />
      <Compile Include="Assets\Scripts\ObjectInteraction\ObjectCommentary.cs" />
+     <Compile Include="Assets\Scripts\ObjectInteraction\Objects\Door.cs" />
+     <Compile Include="Assets\Scripts\ObjectInteraction\Objects\Doors.cs" />
+     <Compile Include="Assets\Scripts\ObjectInteraction\Objects\Elevator.cs" />
+     <Compile Include="Assets\Scripts\ObjectInteraction\Objects\ElevatorButton.cs" />
+     <Compile Include="Assets\Scripts\ObjectInteraction\Objects\ElevatorFloor.cs" />
+     <Compile Include="Assets\Scripts\ObjectInteraction\Objects\LiftFloor.cs" />
+     <Compile Include="Assets\Scripts\ObjectInteraction\Objects\Portal.cs" />
      <Compile Include="Assets\Scripts\ObjectInteraction\ObjectsInLevel.cs" />
      <Compile Include="Assets\Scripts\Sound\AmbientSoundtracks.cs" />
      <Compile Include="Assets\Scripts\Sound\Footsteps.cs" />
@@ -131,11 +139,9 @@
      <Compile Include="Assets\Scripts\Third Person System\ThirdPersonCameraEditor.cs" />
      <Compile Include="Assets\Scripts\Tools\ArrangeParticleSystems.cs" />
      <Compile Include="Assets\Scripts\Tools\DestroyAfterPlayback.cs" />
-     <Compile Include="Assets\Scripts\Tools\Portal.cs" />
      <Compile Include="Assets\Scripts\Tools\RotateTowards.cs" />
      <Compile Include="Assets\Scripts\Tools\Spin.cs" />
      <Compile Include="Assets\Scripts\Tools\TestScreen.cs" />
-     <Compile Include="Assets\Scripts\Tools\UVScroller.cs" />
      <Compile Include="Assets\Scripts\UI\Clock.cs" />
      <Compile Include="Assets\Scripts\UI\DescriptionUnderlining.cs" />
      <Compile Include="Assets\Scripts\UI\InteractionWithObjectButton.cs" />
@@ -182,6 +188,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Resources\Xml\backup spokenLines.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />

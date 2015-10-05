@@ -196,6 +196,21 @@ public static class ObjectCommentary
             case ObjectsInLevel.CopperBowl:
                 CurrentDialogueIDs.Add(20000);
                 break;
+            case ObjectsInLevel.GoldenScreech:
+                CurrentDialogueIDs.Add(20000);
+                break;
+            case ObjectsInLevel.GalleryPrivateDoor:
+                CurrentDialogueIDs.Add(20000);
+                break;
+            case ObjectsInLevel.ElevatorDoor1:
+                CurrentDialogueIDs.Add(20000);
+                break;
+            case ObjectsInLevel.ElevatorDoor2:
+                CurrentDialogueIDs.Add(20000);
+                break;
+            case ObjectsInLevel.ElevatorDoor3:
+                CurrentDialogueIDs.Add(20000);
+                break;
             default:
                 Debug.Log("this object is null");
                 break;
@@ -252,8 +267,12 @@ public static class ObjectCommentary
             case ObjectsInLevel.AysMagicDynamiteShake:
                 CurrentDialogueIDs.Add(21000);
                 break;
+            case ObjectsInLevel.AysSecretIngredients:
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.AysSecretIngredients);
+                break;
             case ObjectsInLevel.Axe:
-                CurrentDialogueIDs.Add(21000);
+                ItemManager.AddItem(ItemType.Axe);
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Axe);
                 break;
             case ObjectsInLevel.BookOfMusicalWildlife:
                 //Add the book to 
@@ -262,13 +281,15 @@ public static class ObjectCommentary
                 CurrentDialogueIDs.Add(21000);
                 break;
             case ObjectsInLevel.Brush:
-                CurrentDialogueIDs.Add(21000);
+                ItemManager.AddItem(ItemType.Brush);
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Brush);
                 break;
             case ObjectsInLevel.BrushWithPaint:
                 CurrentDialogueIDs.Add(21000);
                 break;
             case ObjectsInLevel.BucketWithPaint:
-                CurrentDialogueIDs.Add(21000);
+                ItemManager.AddItem(ItemType.BucketWithPaint);
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Bucket);
                 break;
             case ObjectsInLevel.ClownMask:
                 CurrentDialogueIDs.Add(21000);
@@ -283,37 +304,82 @@ public static class ObjectCommentary
                 CurrentDialogueIDs.Add(21000);
                 break;
             case ObjectsInLevel.GalleryKey:
-                CurrentDialogueIDs.Add(21000);
+                ItemManager.AddItem(ItemType.GalleryKey);   //only if Mr B exploded
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.GalleryKey);
                 break;
             case ObjectsInLevel.Hammer:
-                CurrentDialogueIDs.Add(21000);
+                ItemManager.AddItem(ItemType.Hammer);
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Hammer);
                 break;
             case ObjectsInLevel.MaskRemains:
                 CurrentDialogueIDs.Add(21000);
                 break;
             case ObjectsInLevel.PartyHat:
                 CurrentDialogueIDs.Add(21000);
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.PartyHat);
                 break;
             case ObjectsInLevel.Purse:
-                CurrentDialogueIDs.Add(21000);
+                ItemManager.AddItem(ItemType.Purse);
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Purse);
                 break;
             case ObjectsInLevel.RoughneckShot:
                 CurrentDialogueIDs.Add(21000);
                 break;
             case ObjectsInLevel.Scissors:
-                 ItemManager.AddItem(ItemType.Scissors);                
+                if (WorldEvents.OppositaIsCrying)
+                {
+                    ItemManager.AddItem(ItemType.Scissors);
+                    InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Scissors);
+                }
+                else
+                {
+                    CurrentDialogueIDs.Add(21000);
+                    Debug.Log("Opposita watches over her scissors. You cannot take them.");
+                }
                  break;
             case ObjectsInLevel.SelfMadeMask:
-                CurrentDialogueIDs.Add(21000);
                 break;
             case ObjectsInLevel.SpeakingTrumpet:
-                CurrentDialogueIDs.Add(21000);
                 break;
             case ObjectsInLevel.TeaLeaves:
-                CurrentDialogueIDs.Add(21000);
+                ItemManager.AddItem(ItemType.TeaLeaves);
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.TeaLeaves);
                 break;
             case ObjectsInLevel.CopperBowl:
                 CurrentDialogueIDs.Add(21000);
+                break;
+            case ObjectsInLevel.GoldenScreech:
+                InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.GoldenScreech);
+                WorldEvents.EndCelebration = true;
+                break;
+            case ObjectsInLevel.GalleryPrivateDoor:
+                CurrentDialogueIDs.Add(21000);
+                break;
+            case ObjectsInLevel.ElevatorDoor1:
+                if (InGameObjectManager.Instance.ElevatorDoor1.IsOpen)
+                    InGameObjectManager.Instance.ElevatorDoor1.CloseDoor();
+                else
+                    InGameObjectManager.Instance.ElevatorDoor1.OpenDoor();
+                break;
+            case ObjectsInLevel.ElevatorDoor2:
+                if (InGameObjectManager.Instance.ElevatorDoor2.IsOpen)
+                    InGameObjectManager.Instance.ElevatorDoor2.CloseDoor();
+                else
+                    InGameObjectManager.Instance.ElevatorDoor2.OpenDoor();                
+                break;
+            case ObjectsInLevel.ElevatorDoor3:
+                if (InGameObjectManager.Instance.ElevatorDoor3.IsOpen)
+                    InGameObjectManager.Instance.ElevatorDoor3.CloseDoor();
+                else
+                    InGameObjectManager.Instance.ElevatorDoor3.OpenDoor();                
+                break;
+            case ObjectsInLevel.ElevatorUp:
+                ElevatorButton.Direction = ElevatorDirection.Up;
+                InGameObjectManager.Instance.ElevatorUp.Pressed();
+                break;
+            case ObjectsInLevel.ElevatorDown:
+                ElevatorButton.Direction = ElevatorDirection.Down;
+                InGameObjectManager.Instance.ElevatorDown.Pressed();
                 break;
             default:
                 Debug.Log("this object is null");

@@ -8,21 +8,30 @@ using System.Xml.Serialization;
 public enum ItemClass { None, Weapon, UniqueItem, Ammunition, Consumable };
 public enum ItemType { 
     Empty = 0, 
-    //Story specific items// start at 0
-    BookOfMusicalWildlife = 1, 
-    TeaLeaves = 2,
-    AysSecretIngredients = 3,
-    Scissors = 4,
-    ClownNose = 5, 
-    ClownMask = 6,
-    PartyHat = 7,
-    DynamiteShake = 8,
-    //consumables// start at 100
-    RoughneckShot = 101,
-    Carrot = 102, 
-    //unique items// start at 200
 
-
+    AysMagicDynamiteShake = 11,
+    Axe = 12,
+    BookOfMusicalWildlife = 13,
+    Brush = 14,
+    BrushWithPaint = 15,
+    BucketWithPaint = 16,
+    ClownMask = 17,
+    ClownNose = 18,
+    CupOfCoffee = 19,
+    CupOfTea = 20,
+    GalleryKey = 21,
+    Hammer = 22,
+    MaskRemains = 23,
+    PartyHat = 24,
+    Purse = 25,
+    RoughneckShot = 26,
+    Scissors = 27,
+    SelfMadeMask = 28,
+    SpeakingTrumpet = 29,
+    TeaLeaves = 30,
+    AysSecretIngredients = 31,
+    Carrot = 32,
+    GoldenScreech = 33,
 };
 
 public class Item

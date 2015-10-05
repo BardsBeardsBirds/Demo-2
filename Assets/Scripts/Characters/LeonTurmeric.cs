@@ -48,16 +48,18 @@ public class LeonTurmeric : MonoBehaviour
 
     public void StartDialogue()
     {
-        DialogueManager.StartDialogueState(Character.Leon);
+        DialogueManager.StartDialogueState(Character.Leon, 0);
     }
 
     public void DialogueLineNumberToSituation(int optionID)   //the last line of dialogue determines which situation will follow
     {
         if (IsLastBefore(optionID, 14002) && WorldEvents.LookingForGalleryVisitors)
             DialogueMenu.AddToDialogueOptions(14002);
-        if (IsLastBefore(optionID, 14020))
+        if (IsLastBefore(optionID, 14020)) 
+            if ((!GameManager.Instance.MyInventory.LookForItem(ItemType.CupOfTea)))
             DialogueMenu.AddToDialogueOptions(14020);
         if (IsLastBefore(optionID, 14030))
+            if((!GameManager.Instance.MyInventory.LookForItem(ItemType.CupOfCoffee)))
             DialogueMenu.AddToDialogueOptions(14030);
         if (IsLastBefore(optionID, 14040))
             DialogueMenu.AddToDialogueOptions(14040);
@@ -80,16 +82,6 @@ public class LeonTurmeric : MonoBehaviour
         {
             DialogueMenu.AddToDialogueOptions(14120);
 
-          //  if (DialogueManager.IsDialoguePassed(14100) && DialogueManager.IsDialoguePassed(14110) && DialogueManager.IsDialoguePassed(14114))
-          //  {
-          //      AddToDialogue(14120);
-
-          //      DialoguePlayback.EndingDialogue = true;
-
-          ////      DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(14120);
-          //  }
-          //  else
-          //      DialogueMenu.AddToDialogueOptions(14120);
         }
 
         switch (optionID)
@@ -166,6 +158,8 @@ public class LeonTurmeric : MonoBehaviour
             AddToDialogue(14025);
             AddToDialogue(14026);
             AddToDialogue(14027);
+
+            ItemManager.AddItem(ItemType.CupOfTea);
         }
 
         if (dialogueOptionID == 14030)
@@ -176,6 +170,8 @@ public class LeonTurmeric : MonoBehaviour
             AddToDialogue(14033);
             AddToDialogue(14034);
             AddToDialogue(14035);
+
+            ItemManager.AddItem(ItemType.CupOfCoffee);
         }
 
         if (dialogueOptionID == 14040)

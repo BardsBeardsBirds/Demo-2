@@ -20,7 +20,7 @@ public class Sentinel : MonoBehaviour
 
     public void StartDialogue()
     {
-        DialogueManager.StartDialogueState(Character.Sentinel);
+        DialogueManager.StartDialogueState(Character.Sentinel, 0);
     }
 
     public void DialogueLineNumberToSituation(int optionID)   //the last line of dialogue determines which situation will follow

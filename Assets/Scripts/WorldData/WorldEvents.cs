@@ -20,7 +20,7 @@ public static class WorldEvents
     public static bool DecipheredSentinelsMessage = false;
     public static bool ReceivedBookOfMusicalWildlife = false;
 
-
+    public static bool BlewUpMisterB = false;
     public static bool OppositaIsCrying = false;
     public static bool OppositaRevealedScissors = false;
     public static bool LookingForGalleryVisitors = false;

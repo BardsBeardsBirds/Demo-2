@@ -19,6 +19,8 @@ public class TestScreen : MonoBehaviour
     public Button IsAfterGoldenScreech;
     public Button NeedsToKnowWhatSacrificeIs;
     public Button KnowsWhatSacrificeIs;
+    public Button BlewUpMisterB;
+
 
     private void Start()
     {
@@ -183,6 +185,22 @@ public class TestScreen : MonoBehaviour
 
         WorldEvents.LookingForGalleryVisitors = false;
         ChangeCheckmark(LookingForGalleryVisitors, WorldEvents.LookingForGalleryVisitors);
+    }
+
+    public void DoBlewUpMisterB()
+    {
+        WorldEvents.BlewUpMisterB = (WorldEvents.BlewUpMisterB == true) ? false : true;
+        Debug.Log("Did we blow up Mister B with the Dynamite Shake? " + WorldEvents.BlewUpMisterB);
+        ChangeCheckmark(BlewUpMisterB, WorldEvents.BlewUpMisterB);
+
+        WorldEvents.PassedIntroduction = true;
+        ChangeCheckmark(PassedIntroduction, WorldEvents.PassedIntroduction);
+
+        WorldEvents.SpokeToMrB = true;
+        ChangeCheckmark(SpokeToMrB, WorldEvents.SpokeToMrB);
+
+        InGameObjectManager.Instance.ItemEnablerGO.EnableItem(ItemType.Purse);
+        InGameObjectManager.Instance.ItemEnablerGO.EnableItem(ItemType.GalleryKey);
     }
 
     public void ChangeCheckmark(Button button, bool isEventTrue)

@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     public static GameObject Player;
     public Inventory MyInventory;
-    public InGameObjectManager InGameObjectM;
+    //public InGameObjectManager InGameObjectM;
     public InventoryCombinations IIventoryItemWithObject = null;
 
     private GameObject _ay;
@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
         if (MyGameType == GameType.NewGame)
             SetInitialBools();
 
-        InGameObjectManager.Instance.LoadInGameObjectsInfo();  //see what objects should be turned on or off
+     //   InGameObjectManager.Instance.LoadInGameObjectsInfo();  //see what objects should be turned on or off
         IIventoryItemWithObject = new InventoryCombinations();
 
         DayCycle = new DayNightCycle();
@@ -208,7 +208,7 @@ public class GameManager : MonoBehaviour
         GameManagerObj.AddComponent<ItemManager>();
         GameManagerObj.AddComponent<DialogueMenu>();
         GameManagerObj.AddComponent<DialoguePlayback>();
-        InGameObjectM = GameManagerObj.AddComponent<InGameObjectManager>();
+        //InGameObjectM = this.gameObject.GetComponent<InGameObjectManager>();
     }
 
     public void FindCharacters()

@@ -15,7 +15,7 @@
 		</Item>
 		<Item ID="1002">
 			<Type>TeaLeaves</Type>
-			<Name>Tea Leaves</Name>
+			<Name>Tea leaves</Name>
 			<Class>UniqueItem</Class>
 			<Amount>1</Amount>
 		</Item>
@@ -33,24 +33,90 @@
 		</Item>
 		<Item ID="1005">
 			<Type>ClownNose</Type>
-			<Name>Clown Nose</Name>
+			<Name>Clown nose</Name>
 			<Class>UniqueItem</Class>
 			<Amount>1</Amount>
 		</Item>
 		<Item ID="1006">
 			<Type>ClownMask</Type>
-			<Name>Clown Mask</Name>
+			<Name>Clown mask</Name>
 			<Class>UniqueItem</Class>
 			<Amount>1</Amount>
 		</Item>
 		<Item ID="1007">
 			<Type>PartyHat</Type>
-			<Name>Party Hat</Name>
+			<Name>Party hat</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1008">
+			<Type>SpeakingTrumpet</Type>
+			<Name>Speaking trumpet</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1009">
+			<Type>Axe</Type>
+			<Name>Axe</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1010">
+			<Type>Hammer</Type>
+			<Name>Hammer</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1011">
+			<Type>Brush</Type>
+			<Name>Paint brush</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1012">
+			<Type>BucketWithPaint</Type>
+			<Name>Bucket with paint</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1013">
+			<Type>BrushWithPaint</Type>
+			<Name>Brush with paint</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1014">
+			<Type>SelfMadeMask</Type>
+			<Name>Self made mask</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1015">
+			<Type>MaskRemains</Type>
+			<Name>Mask remains</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1016">
+			<Type>GalleryKey</Type>
+			<Name>Gallery key</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1017">
+			<Type>Purse</Type>
+			<Name>Purse</Name>
+			<Class>UniqueItem</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1018">
+			<Type>GoldenScreech</Type>
+			<Name>Golden screech</Name>
 			<Class>UniqueItem</Class>
 			<Amount>1</Amount>
 		</Item>
 		<Item ID="1101">
-			<Type>DynamiteShake</Type>
+			<Type>AysMagicDynamiteShake</Type>
 			<Name>Ay's Magical Dynamite Shake</Name>
 			<Class>Consumable</Class>
 			<Amount>1</Amount>
@@ -62,6 +128,18 @@
 			<Amount>1</Amount>
 		</Item>
 		<Item ID="1103">
+			<Type>CupOfTea</Type>
+			<Name>Cup of tea</Name>
+			<Class>Consumable</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1104">
+			<Type>CupOfCoffee</Type>
+			<Name>Cup of coffee</Name>
+			<Class>Consumable</Class>
+			<Amount>1</Amount>
+		</Item>
+		<Item ID="1105">
 			<Type>Carrot</Type>
 			<Name>Carrot</Name>
 			<Class>Consumable</Class>

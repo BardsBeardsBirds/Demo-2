@@ -89,7 +89,7 @@ public class BartTumblescream : MonoBehaviour
 
     public void StartDialogue()
     {
-        DialogueManager.StartDialogueState(Character.Bart);
+        DialogueManager.StartDialogueState(Character.Bart, 0);
     }
 
     public void DialogueLineNumberToSituation(int optionID)   //the last line of dialogue determines which situation will follow

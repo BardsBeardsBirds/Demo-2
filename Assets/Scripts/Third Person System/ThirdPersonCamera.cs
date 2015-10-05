@@ -465,7 +465,7 @@ public class ThirdPersonCamera : MonoBehaviour
     {
         if (DialogueCameraPositions[character] == null)
         {
-            Debug.LogWarning("no camera position set up for: " + character);
+            //Debug.LogWarning("no camera position set up for: " + character);
             return;
         }
 

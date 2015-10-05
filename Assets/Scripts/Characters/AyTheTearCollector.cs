@@ -51,7 +51,7 @@ public class AyTheTearCollector : MonoBehaviour
 
     public void StartDialogue()
     {
-        DialogueManager.StartDialogueState(Character.Ay);
+        DialogueManager.StartDialogueState(Character.Ay, 0);
     }
 
     public void DialogueLineNumberToSituation(int optionID)   
@@ -77,7 +77,7 @@ public class AyTheTearCollector : MonoBehaviour
         if (IsLastBefore(optionID, 11110))
             DialogueMenu.AddToDialogueOptions(11110);
         if (IsLastBefore(optionID, 11200))
-            if(GameManager.Instance.MyInventory.LookForItem(ItemType.DynamiteShake))
+            if(GameManager.Instance.MyInventory.LookForItem(ItemType.AysMagicDynamiteShake))
                 DialogueMenu.AddToDialogueOptions(11200);
         if (IsLastBefore(optionID, 11220) && WorldEvents.KnowsWhatSacrificeIs)
             DialogueMenu.AddToDialogueOptions(11220);

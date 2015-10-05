@@ -7,15 +7,16 @@ public class MadameOpposita : MonoBehaviour
     public static int CharacterSituation;
     public static MadameOpposita Instance;
     public Animator Animator;
+    
 
     private static List<int> LastOptionsBefore15025 = new List<int>() { 15010, 15030, 15040, 15050 };
     private static List<int> LastOptionsBefore15030 = new List<int>() { 15010, 15025, 15040, 15050 };
     private static List<int> LastOptionsBefore15040 = new List<int>() { 15010, 15025, 15030, 15050 };
     private static List<int> LastOptionsBefore15050 = new List<int>() { 15010, 15025, 15030, 15040 };
-    private static List<int> LastOptionsBefore15070 = new List<int>() { 15025, 15030, 15040, 15050 };  //only if scissors are revealed
-    private static List<int> LastOptionsBefore15095 = new List<int>() { 15080, 15090, 15410, 15379, 15393, 15405 };
-    private static List<int> LastOptionsBefore15100 = new List<int>() { 15080, 15090, 15100, 15410, 15379, 15393, 15405 };
-    private static List<int> LastOptionsBefore15200 = new List<int>() { 15080, 15090, 15100, 15410 };
+    private static List<int> LastOptionsBefore15070 = new List<int>() { 15025, 15030, 15040, 15050 };  
+    private static List<int> LastOptionsBefore15095 = new List<int>() { 15050, 15080, 15090, 15410, 15379, 15393, 15405, 15425 };
+    private static List<int> LastOptionsBefore15100 = new List<int>() { 15050, 15080, 15090, 15100, 15410, 15379, 15393, 15405, 15425 };
+    private static List<int> LastOptionsBefore15200 = new List<int>() { 15050, 15080, 15090, 15100, 15410, 15425 };
     private static List<int> LastOptionsBefore15210 = new List<int>() { 15200  };
     private static List<int> LastOptionsBefore15220 = new List<int>() { 15200  };
     private static List<int> LastOptionsBefore15230 = new List<int>() { 15200  };
@@ -35,10 +36,10 @@ public class MadameOpposita : MonoBehaviour
     private static List<int> LastOptionsBefore15390 = new List<int>() { 15320, 15330, 15340, 15350, 15370 };
     private static List<int> LastOptionsBefore15393 = new List<int>() { 15320, 15330, 15340, 15350, 15370, 15390 };
     private static List<int> LastOptionsBefore15405 = new List<int>() { 15100, 15379, 15393, 15405, 15410 };
-    private static List<int> LastOptionsBefore15410 = new List<int>() { 15080, 15090, 15100, 15379, 15393, 15405, 15410 };
-    private static List<int> LastOptionsBefore15420 = new List<int>() { 15080, 15090, 15410, };
-    private static List<int> LastOptionsBefore15500 = new List<int>() { 15080, 15090, 15100, 15379, 15393, 15405, 15410 };
-    private static List<int> LastOptionsBefore15502 = new List<int>() { 15080, 15090, 15100, 15379, 15393, 15405, 15410 };
+    private static List<int> LastOptionsBefore15410 = new List<int>() { 15050, 15080, 15090, 15100, 15379, 15393, 15405, 15410, 15425 };
+    private static List<int> LastOptionsBefore15420 = new List<int>() { 15050, 15080, 15090, 15410, 15425 };
+    private static List<int> LastOptionsBefore15500 = new List<int>() { 15050, 15080, 15090, 15100, 15379, 15393, 15405, 15410, 15425 };
+    private static List<int> LastOptionsBefore15502 = new List<int>() { 15050, 15080, 15090, 15100, 15379, 15393, 15405, 15410, 15425 };
 
     private static List<int> LastOptionsBefore15810 = new List<int>() { 15800, 15810, 15813, 15820, 15830 };
     private static List<int> LastOptionsBefore15813 = new List<int>() { 15800, 15810, 15813, 15820, 15830 };
@@ -97,7 +98,12 @@ public class MadameOpposita : MonoBehaviour
 
     public void StartDialogue()
     {
-        DialogueManager.StartDialogueState(Character.Opposita);
+        DialogueManager.StartDialogueState(Character.Opposita, 0);
+    }
+
+    public void StartDialogue(int forcedDialogue)
+    {
+        DialogueManager.StartDialogueState(Character.Opposita, forcedDialogue);
     }
 
     public void DialogueLineNumberToSituation(int optionID)
@@ -118,7 +124,7 @@ public class MadameOpposita : MonoBehaviour
         if (IsLastBefore(optionID, 15070) && WorldEvents.OppositaRevealedScissors)
             DialogueMenu.AddToDialogueOptions(15070);
 
-        if (IsLastBefore(optionID, 15100))
+        if (IsLastBefore(optionID, 15100) && WorldEvents.OppositaRevealedScissors)
             DialogueMenu.AddToDialogueOptions(15100);
       
         if (IsLastBefore(optionID, 15200)  && WorldEvents.NeedsToKnowWhatSacrificeIs)
@@ -183,11 +189,15 @@ public class MadameOpposita : MonoBehaviour
                   
         if (IsLastBefore(optionID, 15410))
             DialogueMenu.AddToDialogueOptions(15410);
-                  
-        if (IsLastBefore(optionID, 15420))
+
+        if (IsLastBefore(optionID, 15420) && WorldEvents.OppositaRevealedScissors)  // I brought some tea leaves
             if (GameManager.Instance.MyInventory.LookForItem(ItemType.TeaLeaves))
-            DialogueMenu.AddToDialogueOptions(15420);
-                  
+            {
+                DialogueMenu.AddToDialogueOptions(15420);
+                if (DialogueMenu.AllDialogueOptionsID.Contains(15100))
+                    DialogueMenu.AllDialogueOptionsID.Remove(15100);
+            }
+
         if (IsLastBefore(optionID, 15500))
             DialogueMenu.AddToDialogueOptions(15500);
 
@@ -371,6 +381,8 @@ public class MadameOpposita : MonoBehaviour
             AddToDialogue(15064);
 
             WorldEvents.OppositaRevealedScissors = true;
+            InGameObjectManager.Instance.ItemEnablerGO.EnableItem(ItemType.Scissors);
+
         }
 
         if (dialogueOptionID == 15100)//obsoletes only when Emmon has tea leaves
@@ -646,12 +658,14 @@ public class MadameOpposita : MonoBehaviour
             DialoguePlayback.DeleteLineID = 15420;
 
             AddToDialogue(15420);
+            DialoguePlayback.DeleteLineID = 15100;
             AddToDialogue(15421);
             AddToDialogue(15422);
             AddToDialogue(15423);
             AddToDialogue(15424);
 
             WorldEvents.OppositaIsCrying = true;
+            GameManager.Instance.MyInventory.RemoveItem(ItemType.TeaLeaves);
 
             DialoguePlayback.EndingDialogue = true;
         }

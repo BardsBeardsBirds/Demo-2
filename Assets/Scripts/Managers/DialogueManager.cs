@@ -9,7 +9,7 @@ public class DialogueManager
 
     public static List<int> PassedDialogueLines = new List<int>();
 
-    public static void StartDialogueState(Character NPC)
+    public static void StartDialogueState(Character NPC, int optionalForcedDialogue)
     {
         CurrentDialogueNPC = NPC;
 
@@ -50,7 +50,7 @@ public class DialogueManager
                 break;
             case Character.Opposita:
                 ThisDialogueType = DialogueType.OppositaDialogue;
-                DialogueSituationSelector.LoadMadameOppositaSituations();
+                DialogueSituationSelector.LoadMadameOppositaSituations(optionalForcedDialogue);
                 break;
             case Character.Sentinel:
                 ThisDialogueType = DialogueType.SentinelDialogue;
@@ -93,7 +93,7 @@ public class DialogueManager
 
     public static void AddToPassedDialogueLines(int id)
     {
-        Debug.LogWarning("Add to passed dialogue lines: " + id);
+        Debug.Log("Add to passed dialogue lines: " + id);
         if(!PassedDialogueLines.Contains(id))
             PassedDialogueLines.Add(id);
     }

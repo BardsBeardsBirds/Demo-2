@@ -54,7 +54,7 @@ public class DialogueSituationSelector
         DialogueMenu.ShowDialogueOptions();
     }
 
-    public static void LoadMadameOppositaSituations()
+    public static void LoadMadameOppositaSituations(int forcedSituation)
     {
         CharacterSituation = 1;
         if (WorldEvents.SpokeToMrB && WorldEvents.LookingForGalleryVisitors)
@@ -63,10 +63,17 @@ public class DialogueSituationSelector
             CharacterSituation = 3;
         if (WorldEvents.EndCelebration)
             CharacterSituation = 4;
-        Debug.Log(CharacterSituation);
         MadameOpposita.CharacterSituation = CharacterSituation;
-        MadameOpposita.Instance.DialogueLineNumberToSituation(CharacterSituation);
-        DialogueMenu.ShowDialogueOptions();
+
+        if(forcedSituation == 15420)
+        {
+            DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(15420);
+        }
+        else
+        {
+            MadameOpposita.Instance.DialogueLineNumberToSituation(CharacterSituation);
+            DialogueMenu.ShowDialogueOptions();
+        }
     }
 
     public static void LoadMrBSituations()

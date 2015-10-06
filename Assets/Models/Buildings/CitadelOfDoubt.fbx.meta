@@ -164,6 +164,41 @@ ModelImporter:
     100312: polySurface350
     100314: Elevator
     100316: ElevatorDoors
+    100318: elevatorDoor4
+    100320: polySurface351
+    100322: polySurface352
+    100324: polySurface353
+    100326: polySurface354
+    100328: polySurface355
+    100330: polySurface356
+    100332: polySurface357
+    100334: polySurface358
+    100336: polySurface361
+    100338: polySurface364
+    100340: polySurface365
+    100342: polySurface366
+    100344: polySurface367
+    100346: polySurface368
+    100348: polySurface369
+    100350: polySurface370
+    100352: polySurface371
+    100354: polySurface372
+    100356: polySurface373
+    100358: polySurface374
+    100360: polySurface375
+    100362: polySurface376
+    100364: polySurface377
+    100366: polySurface378
+    100368: polySurface379
+    100370: polySurface380
+    100372: polySurface381
+    100374: polySurface382
+    100376: polySurface383
+    100378: polySurface384
+    100380: polySurface385
+    100382: polySurface386
+    100384: StairsA2
+    100386: StairsA3
     400000: ceiling
     400002: //RootNode
     400004: elevator_door
@@ -323,6 +358,41 @@ ModelImporter:
     400312: polySurface350
     400314: Elevator
     400316: ElevatorDoors
+    400318: elevatorDoor4
+    400320: polySurface351
+    400322: polySurface352
+    400324: polySurface353
+    400326: polySurface354
+    400328: polySurface355
+    400330: polySurface356
+    400332: polySurface357
+    400334: polySurface358
+    400336: polySurface361
+    400338: polySurface364
+    400340: polySurface365
+    400342: polySurface366
+    400344: polySurface367
+    400346: polySurface368
+    400348: polySurface369
+    400350: polySurface370
+    400352: polySurface371
+    400354: polySurface372
+    400356: polySurface373
+    400358: polySurface374
+    400360: polySurface375
+    400362: polySurface376
+    400364: polySurface377
+    400366: polySurface378
+    400368: polySurface379
+    400370: polySurface380
+    400372: polySurface381
+    400374: polySurface382
+    400376: polySurface383
+    400378: polySurface384
+    400380: polySurface385
+    400382: polySurface386
+    400384: StairsA2
+    400386: StairsA3
     2300000: ceiling
     2300002: elevator_door1
     2300004: elevator_door2
@@ -436,6 +506,41 @@ ModelImporter:
     2300220: ButtonDown
     2300222: ButtonUp
     2300224: polySurface350
+    2300226: elevatorDoor4
+    2300228: polySurface351
+    2300230: polySurface352
+    2300232: polySurface353
+    2300234: polySurface354
+    2300236: polySurface355
+    2300238: polySurface356
+    2300240: polySurface357
+    2300242: polySurface358
+    2300244: polySurface361
+    2300246: polySurface364
+    2300248: polySurface365
+    2300250: polySurface366
+    2300252: polySurface367
+    2300254: polySurface368
+    2300256: polySurface369
+    2300258: polySurface370
+    2300260: polySurface371
+    2300262: polySurface372
+    2300264: polySurface373
+    2300266: polySurface374
+    2300268: polySurface375
+    2300270: polySurface376
+    2300272: polySurface377
+    2300274: polySurface378
+    2300276: polySurface379
+    2300278: polySurface380
+    2300280: polySurface381
+    2300282: polySurface382
+    2300284: polySurface383
+    2300286: polySurface384
+    2300288: polySurface385
+    2300290: polySurface386
+    2300292: StairsA2
+    2300294: StairsA3
     3300000: ceiling
     3300002: elevator_door1
     3300004: elevator_door2
@@ -549,6 +654,41 @@ ModelImporter:
     3300220: ButtonDown
     3300222: ButtonUp
     3300224: polySurface350
+    3300226: elevatorDoor4
+    3300228: polySurface351
+    3300230: polySurface352
+    3300232: polySurface353
+    3300234: polySurface354
+    3300236: polySurface355
+    3300238: polySurface356
+    3300240: polySurface357
+    3300242: polySurface358
+    3300244: polySurface361
+    3300246: polySurface364
+    3300248: polySurface365
+    3300250: polySurface366
+    3300252: polySurface367
+    3300254: polySurface368
+    3300256: polySurface369
+    3300258: polySurface370
+    3300260: polySurface371
+    3300262: polySurface372
+    3300264: polySurface373
+    3300266: polySurface374
+    3300268: polySurface375
+    3300270: polySurface376
+    3300272: polySurface377
+    3300274: polySurface378
+    3300276: polySurface379
+    3300278: polySurface380
+    3300280: polySurface381
+    3300282: polySurface382
+    3300284: polySurface383
+    3300286: polySurface384
+    3300288: polySurface385
+    3300290: polySurface386
+    3300292: StairsA2
+    3300294: StairsA3
     4300000: pCylinder13
     4300002: polySurface103
     4300004: polySurface70
@@ -659,6 +799,41 @@ ModelImporter:
     4300214: polySurface350
     4300216: ButtonDown
     4300218: ButtonUp
+    4300220: polySurface351
+    4300222: polySurface352
+    4300224: elevatorDoor4
+    4300226: polySurface353
+    4300228: polySurface354
+    4300230: polySurface355
+    4300232: polySurface357
+    4300234: polySurface358
+    4300236: polySurface356
+    4300238: polySurface373
+    4300240: polySurface374
+    4300242: polySurface375
+    4300244: polySurface376
+    4300246: polySurface377
+    4300248: polySurface378
+    4300250: polySurface379
+    4300252: polySurface380
+    4300254: polySurface381
+    4300256: polySurface371
+    4300258: polySurface372
+    4300260: polySurface383
+    4300262: polySurface384
+    4300264: polySurface382
+    4300266: polySurface361
+    4300268: polySurface364
+    4300270: polySurface365
+    4300272: polySurface366
+    4300274: polySurface367
+    4300276: polySurface368
+    4300278: polySurface385
+    4300280: polySurface386
+    4300282: polySurface369
+    4300284: polySurface370
+    4300286: StairsA2
+    4300288: StairsA3
   materials:
     importMaterials: 1
     materialName: 0

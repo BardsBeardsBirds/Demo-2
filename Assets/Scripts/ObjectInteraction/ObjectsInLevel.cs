@@ -47,6 +47,7 @@ public enum ObjectsInLevel
     ElevatorDoor1 = 501,
     ElevatorDoor2 = 502,
     ElevatorDoor3 = 503,
+    ElevatorDoor4 = 504,
     
     //buttons
     ElevatorUp = 600,

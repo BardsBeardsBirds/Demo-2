@@ -371,7 +371,13 @@ public static class ObjectCommentary
                 if (InGameObjectManager.Instance.ElevatorDoor3.IsOpen)
                     InGameObjectManager.Instance.ElevatorDoor3.CloseDoor();
                 else
-                    InGameObjectManager.Instance.ElevatorDoor3.OpenDoor();                
+                    InGameObjectManager.Instance.ElevatorDoor3.OpenDoor();
+                break;
+            case ObjectsInLevel.ElevatorDoor4:
+                if (InGameObjectManager.Instance.ElevatorDoor4.IsOpen)
+                    InGameObjectManager.Instance.ElevatorDoor4.CloseDoor();
+                else
+                    InGameObjectManager.Instance.ElevatorDoor4.OpenDoor();
                 break;
             case ObjectsInLevel.ElevatorUp:
                 ElevatorButton.Direction = ElevatorDirection.Up;

@@ -1,1 +1,1 @@
-﻿public enum LiftFloor { None, FirstFloor, SecondFloor, ThirdFloor, InBetweenFloors };
+﻿public enum LiftFloor { None, FirstFloor, SecondFloor, ThirdFloor, FourthFloor, InBetweenFloors };

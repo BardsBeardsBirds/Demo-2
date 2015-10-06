@@ -1427,7 +1427,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
-  - time: .800000012
+  - time: .766666651
     functionName: SetInbetweenFloors
     data: 
     objectReferenceParameter: {fileID: 0}

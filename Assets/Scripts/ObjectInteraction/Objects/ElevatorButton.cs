@@ -17,12 +17,12 @@ public enum ElevatorDirection { None, Up, Down};
 
             if (Direction == ElevatorDirection.Up)
             {
-                if (Elevator.Instance.CurrentLiftFloor == LiftFloor.ThirdFloor)
+                if (Elevator.Instance.CurrentLiftFloor == LiftFloor.FourthFloor)
                 {
                     Debug.Log("We are already at the top floor.");
                     return;
-                }
-                if (Elevator.Instance.CurrentLiftFloor == LiftFloor.FirstFloor)
+                } 
+                else if (Elevator.Instance.CurrentLiftFloor == LiftFloor.FirstFloor)
                 {
                     Elevator.Instance.MyAnimator.SetInteger("GoalFloor", 2);                   
                     CloseElevatorDoor();
@@ -34,6 +34,12 @@ public enum ElevatorDirection { None, Up, Down};
                     Elevator.Instance.MyAnimator.SetInteger("GoalFloor", 3);
                     CloseElevatorDoor();
                     Debug.Log("To the third.");
+                }
+                else if (Elevator.Instance.CurrentLiftFloor == LiftFloor.ThirdFloor)
+                {
+                    Elevator.Instance.MyAnimator.SetInteger("GoalFloor", 4);
+                    CloseElevatorDoor();
+                    Debug.Log("To the fourth floor.");
                 }
 
             }
@@ -56,6 +62,12 @@ public enum ElevatorDirection { None, Up, Down};
                     Elevator.Instance.MyAnimator.SetInteger("GoalFloor", 2);
                     CloseElevatorDoor();
                     Debug.Log("To the second.");
+                }
+                else if (Elevator.Instance.CurrentLiftFloor == LiftFloor.FourthFloor)
+                {
+                    Elevator.Instance.MyAnimator.SetInteger("GoalFloor", 3);
+                    CloseElevatorDoor();
+                    Debug.Log("To the third.");
                 }
                 Debug.Log("We go down one floor.");
             }
@@ -83,7 +95,13 @@ public enum ElevatorDirection { None, Up, Down};
                     if (InGameObjectManager.Instance.ElevatorDoor3.IsOpen)
                         InGameObjectManager.Instance.ElevatorDoor3.CloseDoor();
                     else
-                        InGameObjectManager.Instance.ElevatorDoor3.SetInbetweenFloors();                    
+                        InGameObjectManager.Instance.ElevatorDoor3.SetInbetweenFloors();
+                    break;
+                case Door.ElevatorDoor4:
+                    if (InGameObjectManager.Instance.ElevatorDoor4.IsOpen)
+                        InGameObjectManager.Instance.ElevatorDoor4.CloseDoor();
+                    else
+                        InGameObjectManager.Instance.ElevatorDoor4.SetInbetweenFloors();
                     break;
                 default:
                     Debug.LogWarning("something is wrong with the currently assigned elevator door");

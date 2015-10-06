@@ -34,6 +34,12 @@ public class Elevator : MonoBehaviour
         EndMoving();
     }
 
+    public void SetToFloorFour()
+    {
+        CurrentLiftFloor = LiftFloor.FourthFloor;
+        EndMoving();
+    }
+
     private void EndMoving()
     {
         Elevator.Instance.MyAnimator.SetBool("IsMoving", false);

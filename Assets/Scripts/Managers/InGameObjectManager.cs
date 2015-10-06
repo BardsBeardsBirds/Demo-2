@@ -29,6 +29,7 @@ public class InGameObjectManager : MonoBehaviour
     public Doors ElevatorDoor1;
     public Doors ElevatorDoor2;
     public Doors ElevatorDoor3;
+    public Doors ElevatorDoor4;
 
     public ElevatorButton ElevatorUp;
     public ElevatorButton ElevatorDown;
@@ -42,7 +43,9 @@ public class InGameObjectManager : MonoBehaviour
         if (Instance.ElevatorDoor2 == null)
             Debug.LogError("Could not find elevator door 2!");
         if (Instance.ElevatorDoor3 == null)
-            Debug.LogError("Could not find elevator door 3!");
+            Debug.LogError("Could not find elevator door 3!"); 
+        if (Instance.ElevatorDoor4 == null)
+            Debug.LogError("Could not find elevator door 4!");
     }
 
     void Start()

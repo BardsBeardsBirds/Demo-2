@@ -14,6 +14,7 @@ public class Doors : MonoBehaviour
         {LiftFloor.FirstFloor, Door.ElevatorDoor1},
         {LiftFloor.SecondFloor, Door.ElevatorDoor2},
         {LiftFloor.ThirdFloor, Door.ElevatorDoor3},
+        {LiftFloor.FourthFloor, Door.ElevatorDoor4},
     };
 
     public void Awake()

@@ -65,6 +65,7 @@ public class MouseClickOnObject : MonoBehaviour
         {ObjectsInLevel.ElevatorDoor1, "Elevator door"},
         {ObjectsInLevel.ElevatorDoor2, "Elevator door"},
         {ObjectsInLevel.ElevatorDoor3, "Elevator door"},
+        {ObjectsInLevel.ElevatorDoor4, "Elevator door"},
 
         {ObjectsInLevel.ElevatorUp, "Go up button"},
         {ObjectsInLevel.ElevatorDown, "Go down button"},
@@ -113,6 +114,7 @@ public class MouseClickOnObject : MonoBehaviour
         {ObjectsInLevel.ElevatorDoor1, "Open elevator door"},
         {ObjectsInLevel.ElevatorDoor2, "Open elevator door"},
         {ObjectsInLevel.ElevatorDoor3, "Open elevator door"},
+        {ObjectsInLevel.ElevatorDoor4, "Open elevator door"},
 
         {ObjectsInLevel.ElevatorUp, "Go up"},
         {ObjectsInLevel.ElevatorDown, "Go down"},
@@ -161,6 +163,7 @@ public class MouseClickOnObject : MonoBehaviour
         {ObjectsInLevel.ElevatorDoor1, "Investigate elevator door"},
         {ObjectsInLevel.ElevatorDoor2, "Investigate elevator door"},
         {ObjectsInLevel.ElevatorDoor3, "Investigate elevator door"},
+        {ObjectsInLevel.ElevatorDoor4, "Investigate elevator door"},
 
         {ObjectsInLevel.ElevatorUp, "Investigate go up button"},
         {ObjectsInLevel.ElevatorDown, "Investigate go down button"},

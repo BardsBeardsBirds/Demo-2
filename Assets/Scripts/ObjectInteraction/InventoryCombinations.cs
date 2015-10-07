@@ -186,6 +186,8 @@ public class InventoryCombinations
 
                         Debug.Log("We put the mask remains in the copper bowl! That should please the obstructor");
                         GameManager.Instance.MyInventory.RemoveItem(ItemType.MaskRemains);
+                        InGameObjectManager.Instance.GateDoor.OpenGateDoor();
+                        WorldEvents.OpenedGate = true;
                     }
                     else
                         CurrentDialogueIDs.Add(22000);

@@ -10,6 +10,7 @@ using System.IO;
 public class Inventory : MonoBehaviour
 {
     public static Inventory Instance;
+    public Animator MyAnimator;
     public List<GameObject> SlotList = new List<GameObject>();
     public List<Item> Items = new List<Item>();
     public List<int> InitialiseInventoryItems = new List<int>();
@@ -24,6 +25,10 @@ public class Inventory : MonoBehaviour
     public void Awake()
     {
         Instance = GameManager.Instance.MyInventory;
+        MyAnimator = this.GetComponent<Animator>();
+        if (MyAnimator == null)
+            Debug.LogError("Could not find the inventory animator");
+        MyAnimator.SetBool("Open", false);
 
         Database = GameObject.FindGameObjectWithTag("ItemDatabase").GetComponent<ItemDatabase>();
         InitialiseInventoryItems.Clear();
@@ -43,7 +48,9 @@ public class Inventory : MonoBehaviour
     public void Start()
     {
         Instance = this;
-        
+
+        MyAnimator.SetBool("Open", false);
+
         Database = GameObject.FindGameObjectWithTag("ItemDatabase").GetComponent<ItemDatabase>();
 
         //////////////////////////

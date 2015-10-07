@@ -38,8 +38,12 @@ public class Doors : MonoBehaviour
 
     public void SetInbetweenFloors()
     {
-
         Elevator.Instance.CurrentLiftFloor = LiftFloor.InBetweenFloors;
         Elevator.Instance.MyAnimator.SetBool("IsMoving", true);
+    }
+
+    public void OpenGateDoor()
+    {
+        _animator.SetBool("Open", true);
     }
 }

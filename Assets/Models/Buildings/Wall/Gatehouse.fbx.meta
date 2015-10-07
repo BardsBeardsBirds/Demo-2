@@ -88,6 +88,10 @@ ModelImporter:
     100160: polySurface249
     100162: polySurface250
     100164: polySurface251
+    100166: DoorA
+    100168: DoorB
+    100170: DoorB1
+    100172: SideDoors
     400000: ArchIn2
     400002: GateAA
     400004: GateAA1
@@ -171,6 +175,10 @@ ModelImporter:
     400160: polySurface249
     400162: polySurface250
     400164: polySurface251
+    400166: DoorA
+    400168: DoorB
+    400170: DoorB1
+    400172: SideDoors
     2300000: GateAA
     2300002: GateAA1
     2300004: GateB
@@ -250,6 +258,9 @@ ModelImporter:
     2300152: polySurface249
     2300154: polySurface250
     2300156: polySurface251
+    2300158: DoorA
+    2300160: DoorB
+    2300162: DoorB1
     3300000: GateAA
     3300002: GateAA1
     3300004: GateB
@@ -329,6 +340,9 @@ ModelImporter:
     3300152: polySurface249
     3300154: polySurface250
     3300156: polySurface251
+    3300158: DoorA
+    3300160: DoorB
+    3300162: DoorB1
     4300000: pCube82
     4300002: pCube83
     4300004: GateAA
@@ -408,6 +422,9 @@ ModelImporter:
     4300152: pCube84
     4300154: pCube85
     4300156: pCube86
+    4300158: DoorB
+    4300160: DoorA
+    4300162: DoorB1
   materials:
     importMaterials: 1
     materialName: 0

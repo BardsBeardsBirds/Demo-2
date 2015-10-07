@@ -20,6 +20,7 @@ public class TestScreen : MonoBehaviour
     public Button NeedsToKnowWhatSacrificeIs;
     public Button KnowsWhatSacrificeIs;
     public Button BlewUpMisterB;
+    public Button OpenedGate;
 
 
     private void Start()
@@ -201,6 +202,34 @@ public class TestScreen : MonoBehaviour
 
         InGameObjectManager.Instance.ItemEnablerGO.EnableItem(ItemType.Purse);
         InGameObjectManager.Instance.ItemEnablerGO.EnableItem(ItemType.GalleryKey);
+    }
+
+    public void DoOpenGate()
+    {
+        WorldEvents.OpenedGate = (WorldEvents.OpenedGate == true) ? false : true;
+        Debug.Log("Did we open the gate? " + WorldEvents.OpenedGate);
+        ChangeCheckmark(OpenedGate, WorldEvents.OpenedGate);
+
+        InGameObjectManager.Instance.GateDoor.OpenGateDoor();
+
+        WorldEvents.PassedIntroduction = true;
+        ChangeCheckmark(PassedIntroduction, WorldEvents.PassedIntroduction);
+
+        WorldEvents.SpokeToObstructor = true;
+        ChangeCheckmark(SpokeToObstructor, WorldEvents.SpokeToObstructor);
+
+        WorldEvents.SpokeToMrB = true;
+        ChangeCheckmark(SpokeToMrB, WorldEvents.SpokeToMrB);
+
+        WorldEvents.KnowsWhatSacrificeIs = true;
+        ChangeCheckmark(KnowsWhatSacrificeIs, WorldEvents.KnowsWhatSacrificeIs);
+
+        WorldEvents.IsAfterGoldenScreech = true;
+        ChangeCheckmark(SpokeToMrB, WorldEvents.IsAfterGoldenScreech);
+
+        WorldEvents.BlewUpMisterB = true;
+        ChangeCheckmark(BlewUpMisterB, WorldEvents.BlewUpMisterB);
+
     }
 
     public void ChangeCheckmark(Button button, bool isEventTrue)

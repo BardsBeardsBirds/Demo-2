@@ -25,5 +25,7 @@ public static class WorldEvents
     public static bool OppositaRevealedScissors = false;
     public static bool LookingForGalleryVisitors = false;
 
+    public static bool OpenedGate = false;
+
     public static int PeopleNotGoingToGallery = 0;
 }

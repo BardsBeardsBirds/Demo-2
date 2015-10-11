@@ -37,7 +37,7 @@ public static class ObjectCommentary
         yield return new WaitForSeconds(timerLength);   
     }
 
-    public static IEnumerator CommentaryRoutine(DialogueType dialogueType, ObjectsInLevel objectInLevel)  //object in the world
+    public static IEnumerator CommentaryRoutine(DialogueType dialogueType, InWorldObject objectInLevel)  //object in the world
     {
         DialogueManager.ThisDialogueType = dialogueType;
 
@@ -81,7 +81,7 @@ public static class ObjectCommentary
         }
     }
 
-    public static void FindLines(DialogueType dialogueType, ObjectsInLevel objectInLevel)
+    public static void FindLines(DialogueType dialogueType, InWorldObject objectInLevel)
     {
         if (dialogueType == DialogueType.ObjectInvestigation)
             FindInvestigationLines(objectInLevel);
@@ -100,115 +100,115 @@ public static class ObjectCommentary
     }
 
     #region ObjectLines
-    private static void FindInvestigationLines(ObjectsInLevel objectInLevel)
+    private static void FindInvestigationLines(InWorldObject objectInLevel)
     {
         switch (objectInLevel)
         {
-            case ObjectsInLevel.Null:
+            case InWorldObject.Null:
                 Debug.Log("this object is null");
                 break;
-            case ObjectsInLevel.AyTheTearCollector:
+            case InWorldObject.AyTheTearCollector:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.Bart:
+            case InWorldObject.Bart:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.BennyTwospoons:
+            case InWorldObject.BennyTwospoons:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.LeonTurmeric:
+            case InWorldObject.LeonTurmeric:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.MadameOpposita:
+            case InWorldObject.MadameOpposita:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.MrB:
+            case InWorldObject.MrB:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.Obstructor:
+            case InWorldObject.Obstructor:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.Sentinel:
+            case InWorldObject.Sentinel:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.AysMagicDynamiteShake:
+            case InWorldObject.AysMagicDynamiteShake:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.Axe: 
+            case InWorldObject.Axe: 
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.BookOfMusicalWildlife:
+            case InWorldObject.BookOfMusicalWildlife:
                 ItemManager.AddItem(ItemType.BookOfMusicalWildlife);
                 //TODO: Add Special diaglogue                 
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.Brush:
+            case InWorldObject.Brush:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.BrushWithPaint:
+            case InWorldObject.BrushWithPaint:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.BucketWithPaint:
+            case InWorldObject.BucketWithPaint:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.ClownMask:
+            case InWorldObject.ClownMask:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.ClownNose:
+            case InWorldObject.ClownNose:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.CupOfCoffee:
+            case InWorldObject.CupOfCoffee:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.CupOfTea:
+            case InWorldObject.CupOfTea:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.GalleryKey:
+            case InWorldObject.GalleryKey:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.Hammer:
+            case InWorldObject.Hammer:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.MaskRemains:
+            case InWorldObject.MaskRemains:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.PartyHat:
+            case InWorldObject.PartyHat:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.Purse:
+            case InWorldObject.Purse:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.RoughneckShot:
+            case InWorldObject.RoughneckShot:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.Scissors:
+            case InWorldObject.Scissors:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.SelfMadeMask:
+            case InWorldObject.SelfMadeMask:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.SpeakingTrumpet:
+            case InWorldObject.SpeakingTrumpet:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.TeaLeaves:
+            case InWorldObject.TeaLeaves:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.CopperBowl:
+            case InWorldObject.CopperBowl:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.GoldenScreech:
+            case InWorldObject.GoldenScreech:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.GalleryPrivateDoor:
+            case InWorldObject.GalleryPrivateDoor:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.ElevatorDoor1:
+            case InWorldObject.ElevatorDoor1:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.ElevatorDoor2:
+            case InWorldObject.ElevatorDoor2:
                 CurrentDialogueIDs.Add(20000);
                 break;
-            case ObjectsInLevel.ElevatorDoor3:
+            case InWorldObject.ElevatorDoor3:
                 CurrentDialogueIDs.Add(20000);
                 break;
             default:
@@ -217,17 +217,17 @@ public static class ObjectCommentary
         }
     }
 
-    private static void FindInteractionLines(ObjectsInLevel objectInLevel)
+    private static void FindInteractionLines(InWorldObject objectInLevel)
     {
         switch (objectInLevel)
         {
-            case ObjectsInLevel.Null:
+            case InWorldObject.Null:
                 Debug.Log("this object is null");
                 break;
-            case ObjectsInLevel.AyTheTearCollector:
+            case InWorldObject.AyTheTearCollector:
                 AyTheTearCollector.Instance.StartDialogue();
                 break;
-            case ObjectsInLevel.Bart:
+            case InWorldObject.Bart:
                 if (WorldEvents.SpokeToMrB && WorldEvents.PeopleNotGoingToGallery < 2 && WorldEvents.LookingForGalleryVisitors)
                 {
                     //should say: I should ask people to go to the galery
@@ -241,16 +241,16 @@ public static class ObjectCommentary
                 else
                     BartTumblescream.Instance.StartDialogue();
                 break;
-            case ObjectsInLevel.BennyTwospoons:
+            case InWorldObject.BennyTwospoons:
                 BennyTwospoons.Instance.StartDialogue();
                 break;
-            case ObjectsInLevel.LeonTurmeric:
+            case InWorldObject.LeonTurmeric:
                 LeonTurmeric.Instance.StartDialogue();
                 break;
-            case ObjectsInLevel.MadameOpposita:
+            case InWorldObject.MadameOpposita:
                 MadameOpposita.Instance.StartDialogue();
                 break;
-            case ObjectsInLevel.MrB:
+            case InWorldObject.MrB:
                 if (WorldEvents.LookingForGalleryVisitors && WorldEvents.PeopleNotGoingToGallery < 2)
                 {
                     CurrentDialogueIDs.Add(21006);  // I should first find people
@@ -258,74 +258,74 @@ public static class ObjectCommentary
                 else
                     MrB.Instance.StartDialogue();
                 break;
-            case ObjectsInLevel.Obstructor:
+            case InWorldObject.Obstructor:
                 Obstructor.Instance.StartDialogue();
                 break;
-            case ObjectsInLevel.Sentinel:
+            case InWorldObject.Sentinel:
                 Sentinel.Instance.StartDialogue();
                 break;
-            case ObjectsInLevel.AysMagicDynamiteShake:
+            case InWorldObject.AysMagicDynamiteShake:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.AysSecretIngredients:
+            case InWorldObject.AysSecretIngredients:
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.AysSecretIngredients);
                 break;
-            case ObjectsInLevel.Axe:
+            case InWorldObject.Axe:
                 ItemManager.AddItem(ItemType.Axe);
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Axe);
                 break;
-            case ObjectsInLevel.BookOfMusicalWildlife:
+            case InWorldObject.BookOfMusicalWildlife:
                 //Add the book to 
                 ItemManager.AddItem(ItemType.BookOfMusicalWildlife);
                 //TODO: Add Special diaglogue 
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.Brush:
+            case InWorldObject.Brush:
                 ItemManager.AddItem(ItemType.Brush);
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Brush);
                 break;
-            case ObjectsInLevel.BrushWithPaint:
+            case InWorldObject.BrushWithPaint:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.BucketWithPaint:
+            case InWorldObject.BucketWithPaint:
                 ItemManager.AddItem(ItemType.BucketWithPaint);
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Bucket);
                 break;
-            case ObjectsInLevel.ClownMask:
+            case InWorldObject.ClownMask:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.ClownNose:
+            case InWorldObject.ClownNose:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.CupOfCoffee:
+            case InWorldObject.CupOfCoffee:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.CupOfTea:
+            case InWorldObject.CupOfTea:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.GalleryKey:
+            case InWorldObject.GalleryKey:
                 ItemManager.AddItem(ItemType.GalleryKey);   //only if Mr B exploded
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.GalleryKey);
                 break;
-            case ObjectsInLevel.Hammer:
+            case InWorldObject.Hammer:
                 ItemManager.AddItem(ItemType.Hammer);
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Hammer);
                 break;
-            case ObjectsInLevel.MaskRemains:
+            case InWorldObject.MaskRemains:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.PartyHat:
+            case InWorldObject.PartyHat:
                 CurrentDialogueIDs.Add(21000);
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.PartyHat);
                 break;
-            case ObjectsInLevel.Purse:
+            case InWorldObject.Purse:
                 ItemManager.AddItem(ItemType.Purse);
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.Purse);
                 break;
-            case ObjectsInLevel.RoughneckShot:
+            case InWorldObject.RoughneckShot:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.Scissors:
+            case InWorldObject.Scissors:
                 if (WorldEvents.OppositaIsCrying)
                 {
                     ItemManager.AddItem(ItemType.Scissors);
@@ -337,53 +337,53 @@ public static class ObjectCommentary
                     Debug.Log("Opposita watches over her scissors. You cannot take them.");
                 }
                  break;
-            case ObjectsInLevel.SelfMadeMask:
+            case InWorldObject.SelfMadeMask:
                 break;
-            case ObjectsInLevel.SpeakingTrumpet:
+            case InWorldObject.SpeakingTrumpet:
                 break;
-            case ObjectsInLevel.TeaLeaves:
+            case InWorldObject.TeaLeaves:
                 ItemManager.AddItem(ItemType.TeaLeaves);
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.TeaLeaves);
                 break;
-            case ObjectsInLevel.CopperBowl:
+            case InWorldObject.CopperBowl:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.GoldenScreech:
+            case InWorldObject.GoldenScreech:
                 InGameObjectManager.Instance.TurnOffObject(InGameObjectManager.Instance.GoldenScreech);
                 WorldEvents.EndCelebration = true;
                 break;
-            case ObjectsInLevel.GalleryPrivateDoor:
+            case InWorldObject.GalleryPrivateDoor:
                 CurrentDialogueIDs.Add(21000);
                 break;
-            case ObjectsInLevel.ElevatorDoor1:
+            case InWorldObject.ElevatorDoor1:
                 if (InGameObjectManager.Instance.ElevatorDoor1.IsOpen)
                     InGameObjectManager.Instance.ElevatorDoor1.CloseDoor();
                 else
                     InGameObjectManager.Instance.ElevatorDoor1.OpenDoor();
                 break;
-            case ObjectsInLevel.ElevatorDoor2:
+            case InWorldObject.ElevatorDoor2:
                 if (InGameObjectManager.Instance.ElevatorDoor2.IsOpen)
                     InGameObjectManager.Instance.ElevatorDoor2.CloseDoor();
                 else
                     InGameObjectManager.Instance.ElevatorDoor2.OpenDoor();                
                 break;
-            case ObjectsInLevel.ElevatorDoor3:
+            case InWorldObject.ElevatorDoor3:
                 if (InGameObjectManager.Instance.ElevatorDoor3.IsOpen)
                     InGameObjectManager.Instance.ElevatorDoor3.CloseDoor();
                 else
                     InGameObjectManager.Instance.ElevatorDoor3.OpenDoor();
                 break;
-            case ObjectsInLevel.ElevatorDoor4:
+            case InWorldObject.ElevatorDoor4:
                 if (InGameObjectManager.Instance.ElevatorDoor4.IsOpen)
                     InGameObjectManager.Instance.ElevatorDoor4.CloseDoor();
                 else
                     InGameObjectManager.Instance.ElevatorDoor4.OpenDoor();
                 break;
-            case ObjectsInLevel.ElevatorUp:
+            case InWorldObject.ElevatorUp:
                 ElevatorButton.Direction = ElevatorDirection.Up;
                 InGameObjectManager.Instance.ElevatorUp.Pressed();
                 break;
-            case ObjectsInLevel.ElevatorDown:
+            case InWorldObject.ElevatorDown:
                 ElevatorButton.Direction = ElevatorDirection.Down;
                 InGameObjectManager.Instance.ElevatorDown.Pressed();
                 break;

@@ -1,5 +1,6 @@
 ﻿public enum Character 
 { 
+    Null,
     Emmon,
     Ay,
     Bart,

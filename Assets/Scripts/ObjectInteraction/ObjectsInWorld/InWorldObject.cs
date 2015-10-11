@@ -1,6 +1,6 @@
 ﻿//First we have all the characters, then all the objects that can exist in the inventory, then all the other world items
  
-public enum ObjectsInLevel 
+public enum InWorldObject
 { 
     //characters
     Null = 0,
@@ -39,8 +39,14 @@ public enum ObjectsInLevel
     GoldenScreech = 33,
 
     //other world objects
-    CopperBowl = 100,
-    Teapot = 101,
+    //town
+    Teapot = 100,
+    Scarecrow = 110,
+
+    //
+    CopperBowl = 200,
+
+    
 
     //doors
     GalleryPrivateDoor = 500,
@@ -48,6 +54,8 @@ public enum ObjectsInLevel
     ElevatorDoor2 = 502,
     ElevatorDoor3 = 503,
     ElevatorDoor4 = 504,
+    SmallGateDoor = 505,
+    BigGateDoor = 506,
     
     //buttons
     ElevatorUp = 600,

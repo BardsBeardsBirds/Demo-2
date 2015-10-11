@@ -13,7 +13,7 @@ public class InteractionWithObjectButton : MonoBehaviour, IPointerEnterHandler, 
 
     public void OnPointerEnter(PointerEventData eventData)
     {       
-        MouseClickOnObject.MouseIsOnInteractionButton = true;
+        ClickableObject.MouseIsOnInteractionButton = true;
         GameManager.Instance.UICanvas.ObjectDescriptionText.enabled = true;
         if (ActionPanel.IsInInventory)
             ActionPanel.ShowHoverInteractionLine(DialogueType.InventoryInteraction);
@@ -23,7 +23,7 @@ public class InteractionWithObjectButton : MonoBehaviour, IPointerEnterHandler, 
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        MouseClickOnObject.MouseIsOnInteractionButton = false;
+        ClickableObject.MouseIsOnInteractionButton = false;
         GameManager.Instance.UICanvas.HideObjectDescriptionText();
     }
 }

@@ -13,7 +13,7 @@ public class ActionPanel
     public static Item ThisItem;
     public static bool IsInInventory = false;
 
-    public static ObjectsInLevel LastHoveredObject;
+    public static InWorldObject LastHoveredObject;
 
     public void MoveActionPanelToClickedObject(bool isInInventory) // move action panel
     {
@@ -33,11 +33,11 @@ public class ActionPanel
         SetUpActionPanel();
     }
 
-    public void PlayActionPanelForClickedObject(ObjectsInLevel naam, Transform trans)   //Objects in world.
+    public void PlayActionPanelForClickedObject(InWorldObject naam, Transform trans)   //Objects in world.
     {
-        if (MouseClickOnObject.MouseIsOnInvestigateButton)
+        if (ClickableObject.MouseIsOnInvestigateButton)
             InvestigateObject(naam);
-        else if (MouseClickOnObject.MouseIsOnInteractionButton)
+        else if (ClickableObject.MouseIsOnInteractionButton)
         {
             bool inRange = CalculateDistanceWitNPC(naam, trans);
             if (inRange)
@@ -52,15 +52,15 @@ public class ActionPanel
         GameManager.Destroy("InteractionButton");
         GameManager.Destroy("InvestigateButton");
 
-        MouseClickOnObject.MouseIsOnInvestigateButton = false;
-        MouseClickOnObject.MouseIsOnInteractionButton = false;
+        ClickableObject.MouseIsOnInvestigateButton = false;
+        ClickableObject.MouseIsOnInteractionButton = false;
     }
 
     public void PlayActionPanelForClickedObject(Item item, int slotNumber)  //Inventory
     {
-        if (MouseClickOnObject.MouseIsOnInvestigateButton)
+        if (ClickableObject.MouseIsOnInvestigateButton)
             InvestigateItem(item);
-        else if (MouseClickOnObject.MouseIsOnInteractionButton)
+        else if (ClickableObject.MouseIsOnInteractionButton)
         {
             InteractWithItem(item, slotNumber);
         }
@@ -68,8 +68,8 @@ public class ActionPanel
         GameManager.Destroy("InteractionButton");
         GameManager.Destroy("InvestigateButton");
 
-        MouseClickOnObject.MouseIsOnInvestigateButton = false;
-        MouseClickOnObject.MouseIsOnInteractionButton = false;
+        ClickableObject.MouseIsOnInvestigateButton = false;
+        ClickableObject.MouseIsOnInteractionButton = false;
     }
 
     public static void HideActionPanel()
@@ -77,21 +77,21 @@ public class ActionPanel
         GameManager.Destroy("InteractionButton");
         GameManager.Destroy("InvestigateButton");
 
-        MouseClickOnObject.MouseIsOnInvestigateButton = false;
-        MouseClickOnObject.MouseIsOnInteractionButton = false;
+        ClickableObject.MouseIsOnInvestigateButton = false;
+        ClickableObject.MouseIsOnInteractionButton = false;
     }
 
-    public void InvestigateObject(ObjectsInLevel naam)//items in the world
+    public void InvestigateObject(InWorldObject naam)//items in the world
     {
         DialogueManager.ThisDialogueType = DialogueType.ObjectInvestigation;
-        MyConsole.WriteToConsole("Start Investigation of " + MouseClickOnObject.ObjectLines[naam]);
+        MyConsole.WriteToConsole("Start Investigation of " + ClickableObject.ObjectLines[naam]);
         DialoguePlayback.Instance.PlaybackCommentary(DialogueType.ObjectInvestigation, naam);
     }
 
-    public void InteractWithObject(ObjectsInLevel naam) //items in the world
+    public void InteractWithObject(InWorldObject naam) //items in the world
     {
         DialogueManager.ThisDialogueType = DialogueType.ObjectInteraction;
-        MyConsole.WriteToConsole("Start Interaction with " + MouseClickOnObject.ObjectLines[naam]);
+        MyConsole.WriteToConsole("Start Interaction with " + ClickableObject.ObjectLines[naam]);
         DialoguePlayback.Instance.PlaybackCommentary(DialogueType.ObjectInteraction, naam); //SOUND
     }
 
@@ -117,7 +117,7 @@ public class ActionPanel
         GameManager.Instance.UICanvas.HideObjectDescriptionText();
     }
 
-    public bool CalculateDistanceWitNPC(ObjectsInLevel naam, Transform trans)
+    public bool CalculateDistanceWitNPC(InWorldObject naam, Transform trans)
     {
     //    float distance = Vector3.Distance(trans.position, GameManager.Player.transform.position);
        // Debug.Log("Distance: " + distance);
@@ -133,7 +133,7 @@ public class ActionPanel
     {
         if (dialogueType == DialogueType.ObjectInteraction)
         {
-            GameManager.Instance.UICanvas.ObjectDescriptionText.text = MouseClickOnObject.ObjectInteractionLines[MouseClickOnObject.CurrentObject];
+            GameManager.Instance.UICanvas.ObjectDescriptionText.text = ClickableObject.ObjectInteractionLines[ClickableObject.CurrentObject];
             GameManager.Instance.UICanvas.NewObjectDescription();
         }
         else
@@ -151,7 +151,7 @@ public class ActionPanel
     {
         if (dialogueType == DialogueType.ObjectInvestigation)
         {
-            GameManager.Instance.UICanvas.ObjectDescriptionText.text = MouseClickOnObject.ObjectInvestigationLines[MouseClickOnObject.CurrentObject];
+            GameManager.Instance.UICanvas.ObjectDescriptionText.text = ClickableObject.ObjectInvestigationLines[ClickableObject.CurrentObject];
             GameManager.Instance.UICanvas.NewObjectDescription();
         }
         else        //in inventory

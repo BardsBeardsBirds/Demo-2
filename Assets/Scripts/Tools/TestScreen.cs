@@ -229,7 +229,6 @@ public class TestScreen : MonoBehaviour
 
         WorldEvents.BlewUpMisterB = true;
         ChangeCheckmark(BlewUpMisterB, WorldEvents.BlewUpMisterB);
-
     }
 
     public void ChangeCheckmark(Button button, bool isEventTrue)

@@ -14,7 +14,7 @@ public class InventoryCombinations
 
     int[] randomNos = new int[] { 9001, 9002, 9003, 9004, 9005 };
 
-    public bool CombineItems(Item inventoryItem, ObjectsInLevel worldObject)    //inventory items with world
+    public bool CombineItems(Item inventoryItem, InWorldObject worldObject)    //inventory items with world
     {
         _putItemBack = false;
 
@@ -34,7 +34,7 @@ public class InventoryCombinations
     }
 
 
-    public IEnumerator CombineItemRoutine(Item inventoryItem, ObjectsInLevel worldObject)    //inventory items with world
+    public IEnumerator CombineItemRoutine(Item inventoryItem, InWorldObject worldObject)    //inventory items with world
     {
         DialogueManager.ThisDialogueType = DialogueType.ItemWorldCombination;    //the tiype of dialogue will be overwritten later if the combination triggers the start of an npc dialogue
         bool isRandomNo = FindLines(inventoryItem, worldObject);
@@ -128,14 +128,14 @@ public class InventoryCombinations
         }   
     }
 
-    private bool FindLines(Item inventoryItem, ObjectsInLevel worldObject) // inventory with world
+    private bool FindLines(Item inventoryItem, InWorldObject worldObject) // inventory with world
     {
         bool isRandomNo = false;
         switch (inventoryItem.IType)
         {
             case ItemType.AysMagicDynamiteShake:
                 {
-                    if (worldObject == ObjectsInLevel.Teapot)
+                    if (worldObject == InWorldObject.Teapot)
                     {
                         GameManager.Instance.MyInventory.DeleteDraggedItem();
 
@@ -152,7 +152,7 @@ public class InventoryCombinations
                 break;
             case ItemType.AysSecretIngredients:
                 {
-                    if (worldObject == ObjectsInLevel.AyTheTearCollector)
+                    if (worldObject == InWorldObject.AyTheTearCollector)
                     {
                         GameManager.Instance.MyInventory.DeleteDraggedItem();
 
@@ -167,7 +167,7 @@ public class InventoryCombinations
                 break;
             case ItemType.GalleryKey:
                 {
-                    if (worldObject == ObjectsInLevel.GalleryPrivateDoor)
+                    if (worldObject == InWorldObject.GalleryPrivateDoor)
                     {
                         GameManager.Instance.MyInventory.DeleteDraggedItem();
                         InGameObjectManager.Instance.ItemEnablerGO.EnableItem(ItemType.Brush);
@@ -180,7 +180,7 @@ public class InventoryCombinations
                 break;
             case ItemType.MaskRemains:
                 {
-                    if (worldObject == ObjectsInLevel.CopperBowl)
+                    if (worldObject == InWorldObject.CopperBowl)
                     {
                         GameManager.Instance.MyInventory.DeleteDraggedItem();
 
@@ -195,7 +195,7 @@ public class InventoryCombinations
                 break;
             case ItemType.TeaLeaves:
                 {
-                    if (worldObject == ObjectsInLevel.MadameOpposita)
+                    if (worldObject == InWorldObject.MadameOpposita)
                     {
                         //GameManager.Instance.MyInventory.EndDragging(UIDrawer.DraggingFromSlotNo);
 

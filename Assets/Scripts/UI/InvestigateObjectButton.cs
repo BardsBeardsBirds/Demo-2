@@ -13,7 +13,7 @@ public class InvestigateObjectButton : MonoBehaviour, IPointerEnterHandler, IPoi
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        MouseClickOnObject.MouseIsOnInvestigateButton = true;
+        ClickableObject.MouseIsOnInvestigateButton = true;
         GameManager.Instance.UICanvas.ObjectDescriptionText.enabled = true;
         if (ActionPanel.IsInInventory)
             ActionPanel.ShowHoverInvestigationLine(DialogueType.InventoryInvestigation);
@@ -24,7 +24,7 @@ public class InvestigateObjectButton : MonoBehaviour, IPointerEnterHandler, IPoi
 
     public void OnPointerExit(PointerEventData eventData)
     {
-            MouseClickOnObject.MouseIsOnInvestigateButton = false;
+            ClickableObject.MouseIsOnInvestigateButton = false;
             GameManager.Instance.UICanvas.HideObjectDescriptionText();
     }
 }

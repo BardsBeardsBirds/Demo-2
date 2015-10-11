@@ -11,7 +11,7 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
     public Text ItemAmountTxt;
     public string ItemName = "";
 
-    private MouseClickOnObject mouseClickOnObject;
+    private ClickableObject mouseClickOnObject;
     private Text _descriptionText;
 
     private GameObject _investigateButton;

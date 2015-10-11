@@ -224,7 +224,7 @@ public class DialoguePlayback : MonoBehaviour
     }
 
     #region ObjectCommentary
-    public void PlaybackCommentary(DialogueType dialogueType, ObjectsInLevel objectInLevel)
+    public void PlaybackCommentary(DialogueType dialogueType, InWorldObject objectInLevel)
     {
         Debug.LogWarning(dialogueType + " " + objectInLevel);
         StartCoroutine(ObjectCommentary.CommentaryRoutine(dialogueType, objectInLevel));
@@ -241,7 +241,7 @@ public class DialoguePlayback : MonoBehaviour
         StartCoroutine(ObjectCommentary.LetsGetCloserRoutine());
     }
 
-    public void PlaybackCombineItemsWithWorld(Item inventoryItem, ObjectsInLevel worldObject)
+    public void PlaybackCombineItemsWithWorld(Item inventoryItem, InWorldObject worldObject)
     {
         StartCoroutine(GameManager.Instance.IIventoryItemWithObject.CombineItemRoutine(inventoryItem, worldObject));
     }

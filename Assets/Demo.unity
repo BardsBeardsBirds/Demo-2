@@ -630,8 +630,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 25017532}
-  - 114: {fileID: 25017533}
   - 136: {fileID: 25017534}
+  - 114: {fileID: 25017533}
   m_Layer: 0
   m_Name: Madame OppositaGO
   m_TagString: Untagged
@@ -660,14 +660,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 25017531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 239caf64097a9dc4c822aac9d8e7ced6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 5
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyCharacter: 9
 --- !u!136 &25017534
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1324,14 +1323,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 49780154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 12
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 3
 --- !u!23 &49780157
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1832,8 +1830,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 81461464}
-  - 114: {fileID: 81461465}
   - 136: {fileID: 81461466}
+  - 114: {fileID: 81461467}
   m_Layer: 0
   m_Name: Bart TumblescreamGO
   m_TagString: Untagged
@@ -1854,22 +1852,6 @@ Transform:
   - {fileID: 2041967996}
   m_Father: {fileID: 1970536039}
   m_RootOrder: 7
---- !u!114 &81461465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 81461463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Instance: {fileID: 0}
-  MyObject: 2
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
 --- !u!136 &81461466
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1883,6 +1865,21 @@ CapsuleCollider:
   m_Height: 1.70000005
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &81461467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81461463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239caf64097a9dc4c822aac9d8e7ced6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Instance: {fileID: 0}
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyCharacter: 3
 --- !u!1001 &82466380
 Prefab:
   m_ObjectHideFlags: 0
@@ -4836,14 +4833,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 186061137}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: d3d15a3256db3954f90f6b2e9d4338bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 100
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MySquanderLandsObject: 1
 --- !u!23 &186061140
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5275,7 +5271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &203286576
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9798,14 +9794,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 364687230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9cb538b972279439bde815e5e1c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 502
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyDoor: 3
 --- !u!65 &364687233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10050,14 +10045,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 374755995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 239caf64097a9dc4c822aac9d8e7ced6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 3
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyCharacter: 4
 --- !u!136 &374755998
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11641,14 +11635,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 474059052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: ed5dc2afc389b404cbf0d6b0b24196ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 601
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyButton: 2
 --- !u!65 &474059055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13220,14 +13213,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 540462634}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 31
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 2
 --- !u!23 &540462637
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13570,14 +13562,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 554296466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 239caf64097a9dc4c822aac9d8e7ced6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 1
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyCharacter: 2
 --- !u!136 &554296469
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13832,14 +13823,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 558562489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9cb538b972279439bde815e5e1c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 503
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyDoor: 4
 --- !u!65 &558562492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14205,14 +14195,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 580513943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: efc0d461a3b234f4ab5c1ae12a6c5f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 101
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyTownObject: 2
 --- !u!23 &580513946
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16515,14 +16504,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 628196332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9cb538b972279439bde815e5e1c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 504
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyDoor: 5
 --- !u!65 &628196335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16691,8 +16679,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 639882918}
-  - 114: {fileID: 639882919}
   - 136: {fileID: 639882920}
+  - 114: {fileID: 639882919}
   m_Layer: 0
   m_Name: Mysterious ObstructorGO
   m_TagString: Untagged
@@ -16721,14 +16709,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 639882917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 239caf64097a9dc4c822aac9d8e7ced6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 7
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyCharacter: 8
 --- !u!136 &639882920
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22318,14 +22305,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 833183498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9cb538b972279439bde815e5e1c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 102
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyDoor: 1
 --- !u!23 &833183501
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25640,14 +25626,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 950378906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9cb538b972279439bde815e5e1c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 504
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyDoor: 0
 --- !u!65 &950378909
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29467,14 +29452,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1089426075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9cb538b972279439bde815e5e1c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 503
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyDoor: 0
 --- !u!65 &1089426078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30698,14 +30682,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1122580378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 21
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 12
 --- !u!23 &1122580381
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32272,14 +32255,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1169386643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: ed5dc2afc389b404cbf0d6b0b24196ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 601
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyButton: 2
 --- !u!65 &1169386646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33414,14 +33396,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1216372806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 33
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 13
 --- !u!23 &1216372809
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33630,14 +33611,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1222675335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 239caf64097a9dc4c822aac9d8e7ced6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 8
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyCharacter: 10
 --- !u!136 &1222675338
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34770,14 +34750,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1261100872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 30
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 22
 --- !u!23 &1261100875
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35024,14 +35003,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1275210940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 33
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 13
 --- !u!23 &1275210942
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35258,14 +35236,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287872528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9cb538b972279439bde815e5e1c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 501
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyDoor: 0
 --- !u!65 &1287872531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35315,14 +35292,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1289207077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9cb538b972279439bde815e5e1c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 502
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyDoor: 0
 --- !u!65 &1289207080
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38805,14 +38781,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1418469950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: ed5dc2afc389b404cbf0d6b0b24196ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 600
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyButton: 1
 --- !u!65 &1418469953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43781,14 +43756,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1577939322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 16
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 6
 --- !u!23 &1577939325
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44208,14 +44182,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1589869030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d9cb538b972279439bde815e5e1c632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 501
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyDoor: 2
 --- !u!65 &1589869033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45495,15 +45468,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 460300, guid: a752afc071cd9d44a848d5fd5152ab9c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -38.7999992
+      value: -25.6000004
       objectReference: {fileID: 0}
     - target: {fileID: 460300, guid: a752afc071cd9d44a848d5fd5152ab9c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 119.300003
+      value: 100.199997
       objectReference: {fileID: 0}
     - target: {fileID: 460300, guid: a752afc071cd9d44a848d5fd5152ab9c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 112
+      value: 217.399994
       objectReference: {fileID: 0}
     - target: {fileID: 460300, guid: a752afc071cd9d44a848d5fd5152ab9c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -50123,14 +50096,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1820777098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 239caf64097a9dc4c822aac9d8e7ced6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 4
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyCharacter: 6
 --- !u!136 &1820777101
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -52050,14 +52022,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1885216357}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: ed5dc2afc389b404cbf0d6b0b24196ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 600
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyButton: 1
 --- !u!65 &1885216360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52900,14 +52871,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1908882191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 27
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 19
 --- !u!23 &1908882194
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53891,14 +53861,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1939524510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 25
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 17
 --- !u!23 &1939524513
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55263,14 +55232,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2008509631}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 22
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 14
 --- !u!23 &2008509634
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57496,14 +57464,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2049092750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 239caf64097a9dc4c822aac9d8e7ced6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 6
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyCharacter: 7
 --- !u!136 &2049092753
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -58293,14 +58260,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2081241060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c65eba822d4b0498dd4fc351a64ecf, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c1e12c7be900d45b41f126b4d8edf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 0}
-  MyObject: 14
-  depthIntoScene: 10
-  defaultDepthIntoScene: 5
-  selectScale: .300000012
+  MyObject: 0
+  DescriptionText: {fileID: 0}
+  MyPickupable: 4
 --- !u!23 &2081241063
 MeshRenderer:
   m_ObjectHideFlags: 0

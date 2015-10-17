@@ -11,8 +11,7 @@ public class ClickableWoodsObject : ClickableObject
 
     public static Dictionary<ClickableWoodsObjects, InWorldObject> WoodsObjects = new Dictionary<ClickableWoodsObjects, InWorldObject>() 
     {
-            {ClickableWoodsObjects.Null, InWorldObject.Null},      
-    
+            {ClickableWoodsObjects.Null, InWorldObject.Null},          
     };
 
     public void Start()

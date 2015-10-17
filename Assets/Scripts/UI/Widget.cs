@@ -11,8 +11,6 @@ public class Widget : MonoBehaviour
         set { _animator.SetBool("IsActive", value); }
     }
 
-
-
     public void Awake()
     {
         _animator = GetComponent<Animator>();

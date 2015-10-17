@@ -8,6 +8,7 @@ public class TestScreen : MonoBehaviour
 
     private static ItemDatabase _itemDatabase;
     public InputField InputIDField;
+    public InputField InputRupeeField;
 
     public Button PassedIntroduction;
     public Button EndCelebration;
@@ -54,6 +55,14 @@ public class TestScreen : MonoBehaviour
         }
 
         Debug.LogWarning("could not add " + InputIDField.text);
+    }
+
+    public void ChangeRupee()
+    {
+        int rupee = 0;
+        int.TryParse(InputRupeeField.text, out rupee);
+        GameManager.Instance.OverrideMoney(rupee);
+        InputRupeeField.text = "";
     }
 
     public void WhatDialoguesDidWePass()

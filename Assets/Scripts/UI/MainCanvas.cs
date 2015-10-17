@@ -7,10 +7,9 @@ public class MainCanvas : MonoBehaviour
     public GameObject MainPanel;
     public GameObject DialogueUI;
     public GameObject InventoryCanvasGO;
-    public GameObject PauseMenuCanvas;
-    public GameObject PauseMenuMainWindow;
-    public GameObject PauseMenuHelpWindow;
+
     public GameObject ScreenButtonWidget;
+    public PauseMenuScreenManager PauseMenuManager;
     public GameObject IntroScreen;
     public TestScreen TestScreen;
 
@@ -39,9 +38,6 @@ public class MainCanvas : MonoBehaviour
         ObjectDescriptionTextGO = GameObject.Find("ObjectDescriptionText");
         ObjectDescriptionText = ObjectDescriptionTextGO.GetComponent<Text>();
 
-        PauseMenuCanvas = GameObject.Find("PauseMenuCanvas");
-        PauseMenuMainWindow = PauseMenuCanvas.transform.FindChild("MainPanel").gameObject;
-        PauseMenuHelpWindow = PauseMenuCanvas.transform.FindChild("HelpPanel").gameObject;
 
         if (DialogueUI == null)
         {
@@ -133,25 +129,7 @@ public class MainCanvas : MonoBehaviour
         }
     }
 
-    public void ShowPauseMainMenu()
-    {
-        PauseMenuMainWindow.GetComponent<PauseMainPanel>().MainPanelOpen = true;
-    }
-
-    public void HidePauseMainMenu()
-    {
-        PauseMenuMainWindow.GetComponent<PauseMainPanel>().MainPanelOpen = false;
-    }
-
-    public void ShowHelpMenu()
-    {
-        PauseMenuHelpWindow.GetComponent<PauseHelpPanel>().HelpPanelOpen = true;
-    }
-
-    public void HideHelpMenu()
-    {
-        PauseMenuHelpWindow.GetComponent<PauseHelpPanel>().HelpPanelOpen = false;
-    }
+    
 
     public void ShowDialogueOptionsUI()
     {

@@ -84,7 +84,7 @@ public class SceneFader : MonoBehaviour
 
                 GameManager.Instance.FadeBlackToClear();
 
-                PauseMenu p = GameManager.Instance.UICanvas.PauseMenuCanvas.GetComponent<PauseMenu>();
+                PauseMenu p = PauseMenuScreenManager.Instance.PauseMenuCanvas.GetComponent<PauseMenu>();
                 p.ResumeGame();
                 
                 GameManager.Instance.UICanvas.WidgetActive();   //Show UI components here

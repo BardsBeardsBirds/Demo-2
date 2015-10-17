@@ -2,23 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PauseMenuStates {Main, Help, None};
+public enum PauseMenuStates {Main, Help, SaveGame, LoadGame, None};
 
 public class PauseMenu : MonoBehaviour
 {
-    public PauseMenu Instance;
+    public static PauseMenu Instance;
     public PauseMenuStates MenuState;
-
 
     public void Start()
     {
         Instance = this;
-
     }
 
-    public void PauseGame()
+    public void ToMainPauseMenu()
     {
-        GameManager.Instance.UICanvas.ShowPauseMainMenu();
+        PauseMenuScreenManager.Instance.ShowPauseMainMenu();      
 
         if (InventoryCanvas.InventoryIsOpen)
             GameManager.Instance.UICanvas.HideInventory();
@@ -46,15 +44,31 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void ShowHelp()
+    public void ToHelp()
     {
-        GameManager.Instance.UICanvas.HidePauseMainMenu();
-        GameManager.Instance.UICanvas.ShowHelpMenu();
+        PauseMenuScreenManager.Instance.HidePauseMainMenu();
+        PauseMenuScreenManager.Instance.ShowHelpMenu();
 
         MenuState = PauseMenuStates.Help;
     }
 
-    public void QuitAppliction()
+    public void ToSaveGame()
+    {
+        PauseMenuScreenManager.Instance.HidePauseMainMenu();
+        PauseMenuScreenManager.Instance.ShowSaveGameMenu(); 
+        
+        MenuState = PauseMenuStates.SaveGame;
+    }
+
+    public void ToLoadGame()
+    {
+        PauseMenuScreenManager.Instance.HidePauseMainMenu();
+        PauseMenuScreenManager.Instance.ShowLoadGameMenu(); 
+        
+        MenuState = PauseMenuStates.LoadGame;
+    }
+
+    public void ToQuitGame()
     {
         AudioManager.Instance.UISoundsScript.PlayDrumRoll();   // sound
         StartCoroutine(TimeManager.WaitUntilEndOfClip(2f));
@@ -62,53 +76,27 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void SaveGame()
-    {
-        AudioManager.Instance.UISoundsScript.PlayClick();   // sound
 
-        SaveAndLoadGame saver = new SaveAndLoadGame();
-        saver.SaveGameData();
 
-        ResumeGame();
-        MenuState = PauseMenuStates.None;
-    }
 
-    public void LoadGame()
-    {
-        AudioManager.Instance.UISoundsScript.PlayClick();   // sound
-
-        Debug.Log("Start loading game");
-        GameManager.Instance.GameStateToPaused();   //?? This one??
-
-        CharacterControllerLogic.CharacterState state = CharacterControllerLogic.Instance.GetState();
-        if(state == CharacterControllerLogic.CharacterState.Talking || state == CharacterControllerLogic.CharacterState.TalkingLastLine)
-            DialogueManager.EndDialogueState(DialogueManager.CurrentDialogueNPC);
-
-        Inventory inventory = Inventory.Instance;
-        inventory.InitialiseInventoryItems.Clear();
-        inventory.ResetAmounts();
-
-        Time.timeScale = 1;
-
-        GameObject sceneFaderGO = GameObject.Instantiate(Resources.Load("Prefabs/UI/ScreenFaderClearToBlack")) as GameObject;
-        sceneFaderGO.transform.SetParent(GameObject.Find("Canvas").transform);
-
-        SaveAndLoadGame loader = new SaveAndLoadGame();
-        loader.IsNotNewGame();
-
-        SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
-        fader.BlackFader = SceneFader.ToBlack.LoadFromInGame;
-        fader.IsFadingToBlack = true;
-        SceneFader.HasLoadedGame = false;
-
-        ClosePanel();
-        MenuState = PauseMenuStates.None;
-    }
 
     public void ReturnToMenu()
     {
-        GameManager.Instance.UICanvas.HideHelpMenu();
-        GameManager.Instance.UICanvas.ShowPauseMainMenu();
+        switch (MenuState)
+        {
+            case PauseMenuStates.Help:
+                PauseMenuScreenManager.Instance.HideHelpMenu();
+                break;
+            case PauseMenuStates.SaveGame:
+                PauseMenuScreenManager.Instance.HideSaveGameMenu();
+                break;
+            case PauseMenuStates.LoadGame:
+                PauseMenuScreenManager.Instance.HideLoadGameMenu();
+
+                break;
+        }
+
+        PauseMenuScreenManager.Instance.ShowPauseMainMenu();
 
         MenuState = PauseMenuStates.Main;
     }
@@ -117,14 +105,14 @@ public class PauseMenu : MonoBehaviour
     {
         if (MenuState == PauseMenuStates.Main)
         {
-            GameManager.Instance.UICanvas.HidePauseMainMenu();
+            PauseMenuScreenManager.Instance.HidePauseMainMenu();
 
             if (InventoryCanvas.InventoryIsOpen)
                 GameManager.Instance.UICanvas.ShowInventory();
         }
         else if (MenuState == PauseMenuStates.Help)
         {
-            GameManager.Instance.UICanvas.HideHelpMenu();
+            PauseMenuScreenManager.Instance.HideHelpMenu();
 
             if (InventoryCanvas.InventoryIsOpen)
                 GameManager.Instance.UICanvas.ShowInventory();

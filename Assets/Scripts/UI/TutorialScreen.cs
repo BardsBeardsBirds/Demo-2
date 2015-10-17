@@ -5,7 +5,7 @@ public class TutorialScreen : MonoBehaviour
         public void ToTutorial()
         {
             GameManager.Instance.GameStateToPaused();
-            GameManager.Instance.UICanvas.ShowHelpMenu();
+            PauseMenuScreenManager.Instance.ShowHelpMenu();
             Destroy(GameManager.Instance.UICanvas.IntroScreen);
 
         }

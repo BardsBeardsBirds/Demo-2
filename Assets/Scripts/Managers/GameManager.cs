@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
             //PAUSE MENU
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                UICanvas.PauseMenuCanvas.GetComponent<PauseMenu>().PauseGame();
+                PauseMenuScreenManager.Instance.PauseMenuCanvas.GetComponent<PauseMenu>().ToMainPauseMenu();
             }
 
             if (Input.GetKeyUp(KeyCode.N))
@@ -191,7 +191,7 @@ public class GameManager : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Escape))  //closing menu
         {
             if (Time.timeScale != 1)
-                UICanvas.PauseMenuCanvas.GetComponent<PauseMenu>().ResumeGame();
+                PauseMenuScreenManager.Instance.PauseMenuCanvas.GetComponent<PauseMenu>().ResumeGame();
         }
     }
 
@@ -274,6 +274,15 @@ public class GameManager : MonoBehaviour
             UICanvas.MoneyOnScreen.Minus = true;
             StartCoroutine(SubtractOneToCoins(amountToChange));
         }
+        MyConsole.WriteToConsole("We have now " + RupeeHeld + " rupees");
+    }
+
+    public void OverrideMoney(int amount)
+    {
+        RupeeHeld = amount;
+
+        UICanvas.MoneyOnScreen.DisplayDifferentAmount(RupeeHeld);
+
         MyConsole.WriteToConsole("We have now " + RupeeHeld + " rupees");
     }
 

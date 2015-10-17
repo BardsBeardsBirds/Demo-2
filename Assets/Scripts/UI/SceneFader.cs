@@ -4,6 +4,75 @@ using System.Collections;
 
 public class SceneFader : MonoBehaviour
 {
+    private Animator _animator;
+    public static bool HasLoadedGame = false;
+
+    public bool ToBlack
+    {
+        get { return _animator.GetBool("ToBlack"); }
+        set { _animator.SetBool("ToBlack", value); }
+    }
+    public bool ToAlpha
+    {
+        get { return _animator.GetBool("ToAlpha"); }
+        set { _animator.SetBool("ToAlpha", value); }
+    }
+
+    public void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
+    public void ToBlackEvents()
+    {
+            //if (BlackFader == ToBlack.LoadFromMainMenu)
+            //{
+            //    MainMenuManager.LoadLevel();
+            //    GameManager.MyGameType = GameManager.GameType.LoadFromMenu;
+            //}
+         //   else if (BlackFader == ToBlack.LoadFromInGame)
+        //    {
+         //       GameManager.MyGameType = GameManager.GameType.LoadFromInGame;
+
+         //       GameManager.Instance.FadeBlackToClear();
+
+        //        PauseMenu p = PauseMenuScreenManager.Instance.PauseMenuCanvas.GetComponent<PauseMenu>();
+         //       p.ResumeGame();
+                
+         //       GameManager.Instance.UICanvas.WidgetActive();   //Show UI components here
+        SaveAndLoadGame loadGame = new SaveAndLoadGame();
+        loadGame.LoadGameData();
+        HasLoadedGame = true;
+
+
+
+
+
+         //   }
+            //else if (BlackFader == ToBlack.NewGameFromMainMenu)
+            //{
+            //    MainMenuManager.LoadLevel();
+            //}
+    }
+
+    public void ToAlphaEvents()
+    {
+        //if (!HasLoadedGame)
+        //{
+        //    SaveAndLoadGame loadGame = new SaveAndLoadGame();
+        //    loadGame.LoadGameData();
+        //    HasLoadedGame = true;
+        //}
+        ToBlack = false;
+        CharacterControllerLogic.Instance.GoToIdleState();
+
+    }
+
+    public void HideFader()
+    {
+        ToAlpha = false;
+    }
+    /*
     public enum ToBlack { FinishGame, NewGameFromMainMenu, LoadFromMainMenu, LoadFromInGame};
     public enum ToClear { StartFromNew, StartFromLoad };
     public ToBlack BlackFader;
@@ -17,12 +86,13 @@ public class SceneFader : MonoBehaviour
 
     public static bool HasLoadedGame = false;
 
-    public void Awake()
-    {
-        HasLoadedGame = false;
+    //public void Awake()
+    //{
+    //    HasLoadedGame = false;
 
-        BlackImage = this.gameObject.GetComponent<Image>();
-    }
+    //    BlackImage = this.gameObject.GetComponent<Image>();
+    //}
+    
 
     public void Update()
     {
@@ -101,4 +171,5 @@ public class SceneFader : MonoBehaviour
             IsFadingToBlack = false;
         }
     }
+    */
 }

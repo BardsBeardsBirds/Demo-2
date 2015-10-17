@@ -3,7 +3,7 @@ using UnityEngine.UI;
 public class MainCanvas : MonoBehaviour
 {
     public enum Hoverings { MouseInWorld, MouseInInventory };
-
+    // TODO: Create it as static instance
     public GameObject MainPanel;
     public GameObject DialogueUI;
     public GameObject InventoryCanvasGO;
@@ -23,6 +23,7 @@ public class MainCanvas : MonoBehaviour
     public UIDrawer MyUIDrawer;
     public MoneyDisplay MoneyOnScreen;  //the script that arranges displaying the money on screen.
     public DialogueOptions MyDialogueOptions;
+    public SceneFader ScreenFader;
 
     private bool _widgetIsActive = false;
     private bool _testScreenIsOpen = false;

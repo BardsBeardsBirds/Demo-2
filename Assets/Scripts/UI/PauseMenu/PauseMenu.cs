@@ -106,17 +106,22 @@ public class PauseMenu : MonoBehaviour
         if (MenuState == PauseMenuStates.Main)
         {
             PauseMenuScreenManager.Instance.HidePauseMainMenu();
-
-            if (InventoryCanvas.InventoryIsOpen)
-                GameManager.Instance.UICanvas.ShowInventory();
         }
         else if (MenuState == PauseMenuStates.Help)
         {
             PauseMenuScreenManager.Instance.HideHelpMenu();
-
-            if (InventoryCanvas.InventoryIsOpen)
-                GameManager.Instance.UICanvas.ShowInventory();
         }
+        else if (MenuState == PauseMenuStates.SaveGame)
+        {
+            PauseMenuScreenManager.Instance.HideSaveGameMenu();
+        }
+        else if (MenuState == PauseMenuStates.LoadGame)
+        {
+            PauseMenuScreenManager.Instance.HideLoadGameMenu();
+        }
+
+        if (InventoryCanvas.InventoryIsOpen)
+            GameManager.Instance.UICanvas.ShowInventory();
     }
 
     private void ShowInGamePanels()

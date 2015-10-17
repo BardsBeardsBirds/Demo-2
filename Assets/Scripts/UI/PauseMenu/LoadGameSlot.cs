@@ -20,19 +20,20 @@ public class LoadGameSlot : MonoBehaviour
 
         Time.timeScale = 1;
 
-        GameObject sceneFaderGO = GameObject.Instantiate(Resources.Load("Prefabs/UI/ScreenFaderClearToBlack")) as GameObject;
-        sceneFaderGO.transform.SetParent(GameObject.Find("Canvas").transform);
+    //    GameObject sceneFaderGO = GameObject.Instantiate(Resources.Load("Prefabs/UI/ScreenFaderClearToBlack")) as GameObject;
+    //    sceneFaderGO.transform.SetParent(GameObject.Find("Canvas").transform);
 
         SaveAndLoadGame loader = new SaveAndLoadGame();
         loader.IsNotNewGame();
 
-        SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
-        fader.BlackFader = SceneFader.ToBlack.LoadFromInGame;
-        fader.IsFadingToBlack = true;
-        SceneFader.HasLoadedGame = false;
+        GameManager.Instance.UICanvas.ScreenFader.ToBlack = true;
+        //SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
+        //fader.BlackFader = SceneFader.ToBlack.LoadFromInGame;
+        //fader.IsFadingToBlack = true;
+        //SceneFader.HasLoadedGame = false;
 
-        PauseMenu.Instance.MenuState = PauseMenuStates.Main;
-     //   ClosePanel();
+        PauseMenu.Instance.ResumeGame();
+        //   ClosePanel();
 
      //   PauseMenu.Instance.ResumeGame();
 

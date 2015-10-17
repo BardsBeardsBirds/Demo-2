@@ -38,10 +38,10 @@ public class MainMenuManager : MonoBehaviour
         GameObject sceneFaderGO = GameObject.Instantiate(Resources.Load("Prefabs/UI/ScreenFaderClearToBlack")) as GameObject;
         sceneFaderGO.transform.SetParent(GameObject.Find("Canvas").transform);
 
-        SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
-        fader.BlackFader = SceneFader.ToBlack.NewGameFromMainMenu;
-        fader.IsFadingToBlack = true;
-        MainMenuSound.FadeOut = true;
+        //SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
+        //fader.BlackFader = SceneFader.ToBlack.NewGameFromMainMenu;
+        //fader.IsFadingToBlack = true;
+        //MainMenuSound.FadeOut = true;
     }
 
     public void QuitGame()
@@ -62,10 +62,10 @@ public class MainMenuManager : MonoBehaviour
         GameObject sceneFaderGO = GameObject.Instantiate(Resources.Load("Prefabs/UI/ScreenFaderClearToBlack")) as GameObject;
         sceneFaderGO.transform.SetParent(GameObject.Find("Canvas").transform);
 
-        SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
-        fader.BlackFader = SceneFader.ToBlack.LoadFromMainMenu;
-        fader.IsFadingToBlack = true;
-        MainMenuSound.FadeOut = true;
+        //SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
+        //fader.BlackFader = SceneFader.ToBlack.LoadFromMainMenu;
+        //fader.IsFadingToBlack = true;
+        //MainMenuSound.FadeOut = true;
     }
 
     private void GreyOutLoadGameButton()

@@ -112,6 +112,7 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+
         //Debug.Log(GamePlayingMode);
     }
 
@@ -399,33 +400,33 @@ public class GameManager : MonoBehaviour
         //InGameObjectManager.PickedUpMaskOfMockery = false;
     }
 
-    public void FadeBlackToClear()
-    {
-        GameObject sceneFaderGO = null;
+    //public void FadeBlackToClear()
+    //{
+    //    GameObject sceneFaderGO = null;
 
-        foreach (Transform trans in UICanvas.transform)
-        {
-            if (trans.gameObject.name == "ScreenFaderBlackToClear")
-                sceneFaderGO = trans.gameObject;
-        }
+    //    foreach (Transform trans in UICanvas.transform)
+    //    {
+    //        if (trans.gameObject.name == "ScreenFaderBlackToClear")
+    //            sceneFaderGO = trans.gameObject;
+    //    }
 
-        if (sceneFaderGO == null)
-            Debug.Log("could not find fader go!");
+    //    if (sceneFaderGO == null)
+    //        Debug.Log("could not find fader go!");
 
-        sceneFaderGO.SetActive(true);
+    //    sceneFaderGO.SetActive(true);
 
-        SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
-        if (MyGameType == GameType.NewGame)
-            fader.ClearFader = SceneFader.ToClear.StartFromNew;
-        else
-        {
-            fader.BlackImage.color = new Color(0, 0, 0, 1);
-            fader.ClearFader = SceneFader.ToClear.StartFromLoad;
-            Debug.Log("fader from load");
-        }
+    //    SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
+    //    if (MyGameType == GameType.NewGame)
+    //        fader.ClearFader = SceneFader.ToClear.StartFromNew;
+    //    else
+    //    {
+    //        fader.BlackImage.color = new Color(0, 0, 0, 1);
+    //        fader.ClearFader = SceneFader.ToClear.StartFromLoad;
+    //        Debug.Log("fader from load");
+    //    }
 
-        fader.IsFadingToClear = true;
-    }
+    //    fader.IsFadingToClear = true;
+    //}
 
     public void LoadEventConsequences()
     {

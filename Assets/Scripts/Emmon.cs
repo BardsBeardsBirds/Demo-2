@@ -12,8 +12,8 @@ public class Emmon : MonoBehaviour
     public GameObject InWaterGo;
     public bool InWater = false;
 
-    public AreaEnum CurrentArea;
-    public AreaEnum PreviousArea;
+    public Areas CurrentArea;
+    public Areas PreviousArea;
 
     public bool MovePlayer = false;
    // public bool RotatePlayerTowardsNPC = false;

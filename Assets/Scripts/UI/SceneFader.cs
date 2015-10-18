@@ -6,6 +6,7 @@ public class SceneFader : MonoBehaviour
 {
     private Animator _animator;
     public static bool HasLoadedGame = false;
+    public int LoadingSlot;
 
     public bool ToBlack
     {
@@ -41,7 +42,7 @@ public class SceneFader : MonoBehaviour
                 
          //       GameManager.Instance.UICanvas.WidgetActive();   //Show UI components here
         SaveAndLoadGame loadGame = new SaveAndLoadGame();
-        loadGame.LoadGameData();
+        loadGame.LoadGameData(LoadingSlot);
         HasLoadedGame = true;
 
 

@@ -10,7 +10,6 @@ public class ItemLoader : MonoBehaviour
     void Start()
     {
         Instance = this;
-    //    ItemContainer ic = ItemContainer.Load(path);
 
         _database = GameObject.FindGameObjectWithTag("ItemDatabase").GetComponent<ItemDatabase>();
         GetAllItems();

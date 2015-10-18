@@ -4,12 +4,12 @@ using System.Collections;
 public class Area : MonoBehaviour 
 {
     public Area Instance;
-    public AreaEnum Name;
+    public Areas Name;
     public AudioClip AreaSoundtrack;
     public void Awake()
     {
         Instance = this;
-        if (Name == AreaEnum.Null)
+        if (Name == Areas.Null)
             Debug.LogError("There is an area not assigned");
 
         AreaSoundtrack = Resources.Load("Audio/Music/" + FindName()) as AudioClip;
@@ -28,10 +28,10 @@ public class Area : MonoBehaviour
             return;
         }
 
-        if (Name == AreaEnum.The_Two_Spoons)
+        if (Name == Areas.The_Two_Spoons)
         { }
 
-        if (Name == AreaEnum.Town)
+        if (Name == Areas.Town)
         {
         }
 	}
@@ -40,9 +40,9 @@ public class Area : MonoBehaviour
     {
         var soundtrackName = "";
 
-        if (Name == AreaEnum.Barts_House)
+        if (Name == Areas.Barts_House)
             soundtrackName = "Crater Environment";
-        else if (Name == AreaEnum.Town)
+        else if (Name == Areas.Town)
             soundtrackName = "The Two Spoons";
         else
             MyConsole.WriteToConsole("Unknown area!");

@@ -14,7 +14,7 @@ public class AmbientSoundtracks : MonoBehaviour
     private float _transitionOut;
     private float _quarterNote;
 
-    public Dictionary<AreaEnum, AudioMixerSnapshot> AmbientSoundtrackClips = new Dictionary<AreaEnum, AudioMixerSnapshot>()
+    public Dictionary<Areas, AudioMixerSnapshot> AmbientSoundtrackClips = new Dictionary<Areas, AudioMixerSnapshot>()
     {
     };
 
@@ -25,28 +25,28 @@ public class AmbientSoundtracks : MonoBehaviour
         _transitionIn = _quarterNote * 5;
         _transitionOut = _quarterNote * 5;
 
-        AmbientSoundtrackClips.Add(AreaEnum.The_Two_Spoons, InTheTwoSpoons);
+        AmbientSoundtrackClips.Add(Areas.The_Two_Spoons, InTheTwoSpoons);
     }
 
-    public AudioMixerSnapshot FindSoundtrack(AreaEnum currentArea)
+    public AudioMixerSnapshot FindSoundtrack(Areas currentArea)
     {
         AudioMixerSnapshot snapshot = AmbientSoundtrackClips[currentArea];
 
         return snapshot;
     }
 
-    public float FindTransitionInTime(AreaEnum currentArea)
+    public float FindTransitionInTime(Areas currentArea)
     {
-        if (currentArea == AreaEnum.The_Two_Spoons)
+        if (currentArea == Areas.The_Two_Spoons)
             _transitionIn = _quarterNote;
         else
             _transitionIn = _quarterNote * 5;
         return _transitionIn;
     }
 
-    public float FindTransitionOutTime(AreaEnum currentArea)
+    public float FindTransitionOutTime(Areas currentArea)
     {
-        if (currentArea == AreaEnum.The_Two_Spoons)
+        if (currentArea == Areas.The_Two_Spoons)
             _transitionOut = _quarterNote;
         else
             _transitionOut = _quarterNote * 5;

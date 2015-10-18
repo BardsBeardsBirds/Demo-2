@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using System.Xml;
 using System.Xml.Serialization;
@@ -36,8 +34,6 @@ public enum ItemType {
 
 public class Item
 {
-
-
     [XmlAttribute("ID")]
     public int ID;
     [XmlElement("Type")]

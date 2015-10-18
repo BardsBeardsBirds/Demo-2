@@ -9,7 +9,7 @@ public class Rabbit : MonoBehaviour
     public CritterState State;
 
     public List<Transform> WanderLocations = new List<Transform>();
-    public List<AreaEnum> ActiveAreas = new List<AreaEnum>();   // the areas from which the rabbit could be seen by the player, so in which he should be active
+    public List<Areas> ActiveAreas = new List<Areas>();   // the areas from which the rabbit could be seen by the player, so in which he should be active
     private float _speed = 4f;
     private float _rotationSpeed = 4f;
     private float _timer = 0;

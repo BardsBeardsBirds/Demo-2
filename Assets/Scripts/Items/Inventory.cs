@@ -76,7 +76,8 @@ public class Inventory : MonoBehaviour
             GameManager.MyGameType != GameManager.GameType.None)
         {
             SaveAndLoadGame load = new SaveAndLoadGame();
-            load.LoadInventoryItemsFromMainMenu();
+            Debug.Log("TODO: load inventory function");
+      //      load.LoadInventoryItemsFromMainMenu();
         }
 
     }

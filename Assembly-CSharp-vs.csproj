@@ -96,7 +96,7 @@
      <Compile Include="Assets\Scripts\Items\MoneyThrower.cs" />
      <Compile Include="Assets\Scripts\Items\PickUpItemListener.cs" />
      <Compile Include="Assets\Scripts\Locations\Area.cs" />
-     <Compile Include="Assets\Scripts\Locations\AreaEnum.cs" />
+     <Compile Include="Assets\Scripts\Locations\Areas.cs" />
      <Compile Include="Assets\Scripts\Locations\GroundTerrain.cs" />
      <Compile Include="Assets\Scripts\Locations\WaterBehaviour.cs" />
      <Compile Include="Assets\Scripts\Locations\WaterWheelHorizontal.cs" />
@@ -133,6 +133,10 @@
      <Compile Include="Assets\Scripts\ObjectInteraction\ObjectsInWorld\ClickableWoodsObject.cs" />
      <Compile Include="Assets\Scripts\ObjectInteraction\ObjectsInWorld\InWorldObject.cs" />
      <Compile Include="Assets\Scripts\SaveLoadData\DataSaveTools.cs" />
+     <Compile Include="Assets\Scripts\SaveLoadData\External\GameSlotInfo.cs" />
+     <Compile Include="Assets\Scripts\SaveLoadData\External\GameSlotInfoContainer.cs" />
+     <Compile Include="Assets\Scripts\SaveLoadData\External\GameSlotInfoLoader.cs" />
+     <Compile Include="Assets\Scripts\SaveLoadData\External\GameSlots.cs" />
      <Compile Include="Assets\Scripts\SaveLoadData\LoadItemsFromSave.cs" />
      <Compile Include="Assets\Scripts\SaveLoadData\SaveAndLoadGame.cs" />
      <Compile Include="Assets\Scripts\SaveLoadData\SaveGameData.cs" />
@@ -208,6 +212,7 @@
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Resources\Xml\gameSlots.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />

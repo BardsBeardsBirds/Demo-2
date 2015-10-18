@@ -1,13 +1,28 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 
 public class LoadGameSlot : MonoBehaviour
 {
+    public int SlotNumber;
+    public bool SlotExists = false;
+    public Text GameNo;
+    public Text Info;
+    
+    public void Awake()
+    {
+        if(!SlotExists)
+        {
+            this.GetComponent<Image>().color = new Color(0.72f, 0.72f, 0.72f);
+            this.GetComponent<Button>().interactable = false;
+        }
+    }
+
     public void LoadGame()
     {
         AudioManager.Instance.UISoundsScript.PlayClick();   // sound
 
-        Debug.Log("Start loading game");
+        Debug.Log("Start loading game from slot " + SlotNumber);
         GameManager.Instance.GameStateToPaused();   //?? This one??
 
         CharacterControllerLogic.CharacterState state = CharacterControllerLogic.Instance.GetState();
@@ -27,6 +42,8 @@ public class LoadGameSlot : MonoBehaviour
         loader.IsNotNewGame();
 
         GameManager.Instance.UICanvas.ScreenFader.ToBlack = true;
+        GameManager.Instance.UICanvas.ScreenFader.LoadingSlot = SlotNumber;
+
         //SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
         //fader.BlackFader = SceneFader.ToBlack.LoadFromInGame;
         //fader.IsFadingToBlack = true;
@@ -36,15 +53,19 @@ public class LoadGameSlot : MonoBehaviour
         //   ClosePanel();
 
      //   PauseMenu.Instance.ResumeGame();
-
     }
 
-    //private void ClosePanel()
-    //{
-    //    PauseMenuScreenManager.Instance.HideLoadGameMenu();
+    public void ShowUsedSlot(string slotInfo)
+    {
+        this.GetComponent<Image>().color = new Color(1f, 1f, 1f);
+        this.GetComponent<Button>().interactable = true;
 
-    //    if (InventoryCanvas.InventoryIsOpen)
-    //        GameManager.Instance.UICanvas.ShowInventory();
-    //}
+        Info.text = slotInfo;
+    }
+
+    public void ShowEmptySlowText()
+    {
+        Info.text = "Empty Slot";
+    }
 }
 

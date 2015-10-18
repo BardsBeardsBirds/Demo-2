@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class SaveAndLoadGame
 {
-    public void SaveGameData()
+    public void SaveGameData(int slot)
     {
         BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/demo1Progress.dat");
+
+        string saveSlotName = FindSavePath(slot);
+        FileStream file = File.Create(Application.persistentDataPath + saveSlotName);
 
         SaveGameData data = new SaveGameData();
-
         savePlayerState(data);
         saveWorldEvents(data);
         saveInGameObjects(data);
@@ -21,12 +22,14 @@ public class SaveAndLoadGame
         file.Close();
     }
 
-    public void LoadGameData()
+    public void LoadGameData(int slot)
     {
-        if (File.Exists(Application.persistentDataPath + "/demo1Progress.dat"))
+        string loadSlotName = FindLoadPath(slot);
+        Debug.Log(Application.persistentDataPath + loadSlotName);
+        if (File.Exists(Application.persistentDataPath + loadSlotName))
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/demo1Progress.dat", FileMode.Open);
+            FileStream file = File.Open(Application.persistentDataPath + loadSlotName, FileMode.Open);
             SaveGameData data = (SaveGameData)bf.Deserialize(file);
             file.Close();
 
@@ -87,6 +90,117 @@ public class SaveAndLoadGame
         }
     }
 
+    public void CheckSaveSlots(int loadOrSave)
+    {
+        if (loadOrSave == 1)
+        {
+            LoadGamePanel loadGamePanel = PauseMenuScreenManager.Instance.PauseLoadGameWindow.GetComponent<LoadGamePanel>();
+
+            for (int i = 0; i < loadGamePanel.GameSlots.Count; i++)
+            {
+                string saveSlotName = FindSavePath(i + 1);
+
+                if (File.Exists(Application.persistentDataPath + saveSlotName))
+                {
+                    if (!loadGamePanel.GameSlots[i].SlotExists)
+                    {
+                        string slotInfo = LoadGameSlotInfo(saveSlotName);
+
+                        loadGamePanel.GameSlots[i].SlotExists = true;
+                        loadGamePanel.GameSlots[i].ShowUsedSlot(slotInfo);
+                    }
+                }
+                else
+                {
+                    loadGamePanel.GameSlots[i].ShowEmptySlowText();
+                }
+            }
+        }
+
+
+
+
+
+
+
+        else if (loadOrSave == 2)
+        {
+            SaveGamePanel saveGamePanel = PauseMenuScreenManager.Instance.PauseSaveGameWindow.GetComponent<SaveGamePanel>();
+
+            for (int i = 0; i < saveGamePanel.GameSlots.Count; i++)
+            {
+                string saveSlotName = FindSavePath(i + 1);
+
+                if (File.Exists(Application.persistentDataPath + saveSlotName))
+                {
+                    if (!saveGamePanel.GameSlots[i].SlotExists)
+                    {
+                        string slotInfo = LoadGameSlotInfo(saveSlotName);
+
+                        saveGamePanel.GameSlots[i].SlotExists = true;
+                        saveGamePanel.GameSlots[i].ShowUsedSlot(slotInfo);
+                    }
+                }
+                else
+                {
+                    saveGamePanel.GameSlots[i].ShowEmptySlowText();
+                }
+            }
+        }
+        else
+            Debug.LogWarning("This must be a wrong value");
+    }
+
+    public string LoadGameSlotInfo(string saveName)
+    {
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Open(Application.persistentDataPath + saveName, FileMode.Open);
+        SaveGameData data = (SaveGameData)bf.Deserialize(file);
+        file.Close();
+
+        string saveDate = data.SaveDateTime.ToString("MM-dd-yyyy");
+        string saveTime = data.SaveDateTime.ToString("HH:mm");
+        string location = Areas.Tea_House_Cafe.ToString();
+        int level = 1;
+
+        string s = "Saved on " + saveDate + " at " + saveTime + "\n" + location + ". Level " + level;
+        return s;
+    }
+
+    public string FindSavePath(int slot)
+    {
+        string saveSlotName = "";
+        if (slot == 1)
+            saveSlotName = "/demo2Slot1.dat";
+        else if (slot == 2)
+            saveSlotName = "/demo2Slot2.dat";
+        else if (slot == 3)
+            saveSlotName = "/demo2Slot3.dat";
+        else if (slot == 4)
+            saveSlotName = "/demo2Slot4.dat";
+        else
+            Debug.Log("Trying to save to unknown slot " + slot);
+
+        return saveSlotName;
+    }
+
+    public string FindLoadPath(int slot)
+    {
+        string loadSlotName = "";
+        if (slot == 1)
+            loadSlotName = "/demo2Slot1.dat";
+        else if (slot == 2)
+            loadSlotName = "/demo2Slot2.dat";
+        else if (slot == 3)
+            loadSlotName = "/demo2Slot3.dat";
+        else if (slot == 4)
+            loadSlotName = "/demo2Slot4.dat";
+        else
+            Debug.Log("Trying to load unknown slot " + slot);
+
+        return loadSlotName;
+    }
+    
     private void saveInventoryData(SaveGameData data)
     {
         //foreach (Item item in Inventory.Instance.Items)
@@ -112,31 +226,33 @@ public class SaveAndLoadGame
         //}
     }
 
-    public void LoadInventoryItemsFromMainMenu()
+    public void LoadInventoryItemsFromMainMenu(int slot)
     {
-        if (File.Exists(Application.persistentDataPath + "/demo1Progress.dat"))
-        {
-            BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/demo1Progress.dat", FileMode.Open);
-            SaveGameData data = (SaveGameData)bf.Deserialize(file);
-            file.Close();
+        //string loadSlotName = FindLoadPath(slot);
 
-            for (int i = 0; i < data.RoughneckShot; i++)
-            {
-                Inventory.Instance.InitialiseInventoryItems.Add(1);
-            }
-            for (int i = 0; i < data.Carrot; i++)
-            {
-                Inventory.Instance.InitialiseInventoryItems.Add(2);
-                Debug.Log("added " + data.Carrot + " " + ItemType.Carrot);
-            }
-            for (int i = 0; i < data.MaskOfMockery; i++)
-            {
-                Inventory.Instance.InitialiseInventoryItems.Add(3);
-            }
+        //if (File.Exists(Application.persistentDataPath + loadSlotName))
+        //{
+        //    BinaryFormatter bf = new BinaryFormatter();
+        //    FileStream file = File.Open(Application.persistentDataPath + loadSlotName, FileMode.Open);
+        //    SaveGameData data = (SaveGameData)bf.Deserialize(file);
+        //    file.Close();
 
-            Inventory.Instance.LoadItemsFromSave();
-        }
+        //    for (int i = 0; i < data.RoughneckShot; i++)
+        //    {
+        //        Inventory.Instance.InitialiseInventoryItems.Add(1);
+        //    }
+        //    for (int i = 0; i < data.Carrot; i++)
+        //    {
+        //        Inventory.Instance.InitialiseInventoryItems.Add(2);
+        //        Debug.Log("added " + data.Carrot + " " + ItemType.Carrot);
+        //    }
+        //    for (int i = 0; i < data.MaskOfMockery; i++)
+        //    {
+        //        Inventory.Instance.InitialiseInventoryItems.Add(3);
+        //    }
+
+        //    Inventory.Instance.LoadItemsFromSave();
+        //}
     }
 
     private void loadInventoryItemsInGame(SaveGameData data)
@@ -177,20 +293,21 @@ public class SaveAndLoadGame
 
     private void saveInGameObjects(SaveGameData data)
     {
-        data.PickedUpCarrot = InGameObjectManager.PickedUpCarrot;
-        data.PickedUpMaskOfMockery = InGameObjectManager.PickedUpMaskOfMockery;
+   //     data.PickedUpCarrot = InGameObjectManager.PickedUpCarrot;
+   //     data.PickedUpMaskOfMockery = InGameObjectManager.PickedUpMaskOfMockery;
     }
 
     private void loadInGameObjects(SaveGameData data)
     {
-        InGameObjectManager.PickedUpCarrot = data.PickedUpCarrot;
-        InGameObjectManager.PickedUpMaskOfMockery = data.PickedUpMaskOfMockery;
+    //    InGameObjectManager.PickedUpCarrot = data.PickedUpCarrot;
+    //    InGameObjectManager.PickedUpMaskOfMockery = data.PickedUpMaskOfMockery;
     }
 
     private void savePlayerState(SaveGameData data)
     {
         Debug.Log("saving player status");
         data.Rupee = GameManager.Instance.RupeeHeld;
+        data.SaveDateTime = DateTime.Now;
     }
 
     private void loadPlayerState(SaveGameData data)

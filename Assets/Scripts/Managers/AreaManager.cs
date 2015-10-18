@@ -20,7 +20,7 @@ public class AreaManager : MonoBehaviour
         Mixer = GameManager.Instance.Mixer;
     }
 
-    public void StartAmbientSoundtrack(AreaEnum currentArea, AudioClip audioClip, float transitionIn)
+    public void StartAmbientSoundtrack(Areas currentArea, AudioClip audioClip, float transitionIn)
     {
    //     Debug.LogError("previous: " + PreviousArea + "and now: " + currentArea);
         if (Emmon.Instance.CurrentArea == currentArea)

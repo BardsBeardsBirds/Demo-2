@@ -54,6 +54,9 @@ public class PauseMenu : MonoBehaviour
 
     public void ToSaveGame()
     {
+        SaveAndLoadGame games = new SaveAndLoadGame();
+        games.CheckSaveSlots(2);
+
         PauseMenuScreenManager.Instance.HidePauseMainMenu();
         PauseMenuScreenManager.Instance.ShowSaveGameMenu(); 
         
@@ -62,6 +65,9 @@ public class PauseMenu : MonoBehaviour
 
     public void ToLoadGame()
     {
+        SaveAndLoadGame games = new SaveAndLoadGame();
+        games.CheckSaveSlots(1);
+
         PauseMenuScreenManager.Instance.HidePauseMainMenu();
         PauseMenuScreenManager.Instance.ShowLoadGameMenu(); 
         
@@ -75,10 +81,6 @@ public class PauseMenu : MonoBehaviour
         MyConsole.WriteToConsole("We quit the game");
         Application.Quit();
     }
-
-
-
-
 
     public void ReturnToMenu()
     {
@@ -95,9 +97,7 @@ public class PauseMenu : MonoBehaviour
 
                 break;
         }
-
         PauseMenuScreenManager.Instance.ShowPauseMainMenu();
-
         MenuState = PauseMenuStates.Main;
     }
 

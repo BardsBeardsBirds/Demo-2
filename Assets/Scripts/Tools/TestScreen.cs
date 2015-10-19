@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class TestScreen : MonoBehaviour 
@@ -9,6 +10,7 @@ public class TestScreen : MonoBehaviour
     private static ItemDatabase _itemDatabase;
     public InputField InputIDField;
     public InputField InputRupeeField;
+    public InputField InputCharacterSituationField;
 
     public Button PassedIntroduction;
     public Button EndCelebration;
@@ -71,6 +73,38 @@ public class TestScreen : MonoBehaviour
         {
             Debug.Log(DialogueManager.PassedDialogueLines[i]);
         }
+    }
+
+    public void CharacterPosition()
+    {
+        int situation = 0;
+        int.TryParse(InputCharacterSituationField.text, out situation);
+
+        if (situation == 1)
+        {
+            GameManager.NPCs[Character.Ay].parent.position = new Vector3(-110.95f, 95.68f, 6.05f);
+            GameManager.NPCs[Character.Bart].parent.position = new Vector3(-61.43f, 111.53f, -4.36f);
+            GameManager.NPCs[Character.Benny].parent.position = new Vector3(-60.89f, 100f, 54.03f);
+            GameManager.NPCs[Character.Leon].parent.position = new Vector3(-26.53f, 102.02f, 44.62f);
+            GameManager.NPCs[Character.MrB].parent.position = new Vector3(-32.67f, 102.01f, 40.47f);
+            GameManager.NPCs[Character.Obstructor].parent.position = new Vector3(52.18f, 106.18f, -15.78f);
+            GameManager.NPCs[Character.Opposita].parent.position = new Vector3(-30.7f, 120.17f, -81.66f);
+            GameManager.NPCs[Character.Sentinel].parent.position = new Vector3(-73.44f, 99.27f, 56.84f);
+        }
+        else if (situation == 2)
+        {
+            GameManager.NPCs[Character.Ay].parent.position = new Vector3(-36.8f, 100f, 213.16f);
+            GameManager.NPCs[Character.Bart].parent.position = new Vector3(-17.12f, 100.75f, 209.25f);
+            GameManager.NPCs[Character.Benny].parent.position = new Vector3(-22.4f, 100f, 205.32f);
+            GameManager.NPCs[Character.Leon].parent.position = new Vector3(-26.28f, 100f, 205.55f);
+            GameManager.NPCs[Character.MrB].parent.position = new Vector3(-33.75f, 100f, 207.15f);
+            GameManager.NPCs[Character.Obstructor].parent.position = new Vector3(-19.72f, 100.75f, 206.91f);
+            GameManager.NPCs[Character.Opposita].parent.position = new Vector3(-29.71f, 100f, 205.73f);
+            GameManager.NPCs[Character.Sentinel].parent.position = new Vector3(-36.53f, 100f, 209.82f);
+        }
+        else
+            Debug.LogWarning("this character situation does not exist: " + situation);
+
     }
 
     public void DoPassedIntroduction()

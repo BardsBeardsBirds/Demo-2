@@ -88,7 +88,7 @@ Material:
       data:
         first:
           name: WaveSpeed
-        second: {r: 53.6888542, g: -30.9833565, b: 19.6722145, a: -10.3277864}
+        second: {r: 15, g: -60, b: 10, a: -20}
       data:
         first:
           name: _RefrColor

@@ -8,6 +8,7 @@ public class LoadGameSlot : MonoBehaviour
     public bool SlotExists = false;
     public Text GameNo;
     public Text Info;
+    public Text SaveNo;
     
     public void Awake()
     {
@@ -55,12 +56,31 @@ public class LoadGameSlot : MonoBehaviour
      //   PauseMenu.Instance.ResumeGame();
     }
 
-    public void ShowUsedSlot(string slotInfo)
+    public void ShowUsedSlot(string slotInfo, int slotNo)
     {
         this.GetComponent<Image>().color = new Color(1f, 1f, 1f);
         this.GetComponent<Button>().interactable = true;
 
         Info.text = slotInfo;
+
+
+        if (slotNo == 0)
+        {
+            Debug.Log("SAVE SLOT 0: " + WorldEvents.SavedOnSlot1);
+            SaveNo.text = "Save No.\n" + "" + WorldEvents.SavedOnSlot1;
+        }
+        else if (slotNo == 1)
+        {
+            SaveNo.text = "Save No.\n" + "" + WorldEvents.SavedOnSlot2;
+        }
+        else if (slotNo == 2)
+        {
+            SaveNo.text = "Save No.\n" + "" + WorldEvents.SavedOnSlot3;
+        }
+        else if (slotNo == 3)
+        {
+            SaveNo.text = "Save No.\n" + "" + WorldEvents.SavedOnSlot4;
+        }
     }
 
     public void ShowEmptySlowText()

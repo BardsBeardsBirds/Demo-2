@@ -6,23 +6,48 @@ using UnityEngine;
 public class SaveGameData
 {
     public bool IsThisANewGame;
-    //public bool EmmonWasBlockedBySentinel;
-    //public bool EmmonHasRoughneckShot;
-    //public bool EmmonHasMaskOfMockery;
-    //public bool EmmonKnowsAy;
-    //public bool EmmonKnowsBenny;
-    //public bool BennyHasOfferedLute;
-    //public bool EmmonSawTheLute;
-    //public bool EmmonKnowsMaskLocation;
-    //public bool EmmonHasPassedTheSentinel;
 
-    //public bool PickedUpCarrot;
-    //public bool PickedUpMaskOfMockery;
+    public int SavesNoSlot1;
+    public int SavesNoSlot2;
+    public int SavesNoSlot3;
+    public int SavesNoSlot4;
 
-    //public int Carrot;
-    //public int RoughneckShot;
-    //public int MaskOfMockery;
 
+
+
+    public bool EndCelebration;
+
+    //spoke to characters
+    public bool PassedIntroduction;
+    public bool SpokeToAy;
+    public bool SpokeToMrB;
+    public bool SpokeToObstructor;
+    public bool SpokeToOpposita;
+
+    //after golden screech
+    public bool IsAfterGoldenScreech;
+    public bool NeedsToKnowWhatSacrificeIs;
+    public bool KnowsWhatSacrificeIs;
+
+    public bool AskedAyAboutGallery;
+
+    //opposita and getting the gallery key
+    public bool BlewUpMisterB;
+    public bool OppositaIsCrying;
+    public bool OppositaRevealedScissors;
+
+    //gallery
+    public bool LookingForGalleryVisitors;
+    public int PeopleNotGoingToGallery;
+
+    public bool OpenedGate;
+
+    //Side Quests
+    public bool DecipheredSentinelsMessage;
+
+    //Items
+    public bool ReceivedBookOfMusicalWildlife;
+    
     public int Rupee;
 
     public DateTime SaveDateTime;

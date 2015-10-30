@@ -104,7 +104,7 @@ Material:
       data:
         first:
           name: _HorizonColor
-        second: {r: .135759518, g: .228107125, b: .381078809, a: 0}
+        second: {r: .654411793, g: .654411793, b: .654411793, a: 0}
       data:
         first:
           name: _ReflectionTex_ST

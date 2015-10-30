@@ -76,8 +76,6 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
                     //     GameManager.Instance.MyInventory.EndDragging(UIDrawer.DraggingFromSlotNo);
                     GameManager.Instance.MyInventory.HideDraggedItem(); // not entirely sure about this one
                 }
-
-
             }
             else
             {

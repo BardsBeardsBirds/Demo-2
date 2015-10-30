@@ -5,7 +5,6 @@ public class ItemEnabler : MonoBehaviour
 {    
     public void Awake()
     {
-        Debug.Log(InGameObjectManager.Instance);
         InGameObjectManager.Instance.Scissors.SetActive(false);
         InGameObjectManager.Instance.Brush.SetActive(false);
 

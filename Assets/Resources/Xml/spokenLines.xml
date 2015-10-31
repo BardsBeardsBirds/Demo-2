@@ -253,7 +253,7 @@
 		</SpokenLine>
 		<SpokenLine ID="11075">
 			<Speaker>Ay</Speaker>
-			<Text>As I was investigating the soil around my house in order to find them, I localised the banana. After that neutralising it was only a matter of getting hold of the right tools and having some patience.</Text>
+			<Text>As I was investigating the soil around my house in order to find them, I localised the banana. After that neutralising it was only a matter of exercising the right skills.</Text>
 			<DialogueType>AyDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="11080">
@@ -318,12 +318,12 @@
 		</SpokenLine>
 		<SpokenLine ID="11101">
 			<Speaker>Ay</Speaker>
-			<Text>No… but if it is something sinister, I would certainly be interested in learned more about it…</Text>
+			<Text>No… but if it is something sinister, I would certainly be interested in learning more about it…</Text>
 			<DialogueType>AyDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="11102">
 			<Speaker>Emmon</Speaker>
-			<Text>If I think you might help be of use for your dark plans I will inform you.</Text>
+			<Text>If I think it might be of use for your dark plans I will inform you.</Text>
 			<DialogueType>AyDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="11103">
@@ -548,7 +548,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12003">
 			<Speaker>Bart</Speaker>
-			<Text>Och son, didn’t you hear? Mister B. is going to close the Inside Out Art Gallery! That place always gives me inspiration.</Text>
+			<Text>Och son, didn’t you hear? Mister B. is going to close the Inside Out Art Gallery! That place is as a second home to me.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12004">
@@ -613,17 +613,25 @@
 		</SpokenLine>
 		<SpokenLine ID="12017">
 			<Speaker>Bart</Speaker>
-			<Text>We are not discussing your mother now, Emmon.</Text>
+			<Text>When we lost your mother I couldn’t sing a single ballad for a year. </Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12018">
 			<Speaker>Bart</Speaker>
-			<Text>And as you know the Gallery is very important for Valeria as well. Many magnificent works of hers hang there.</Text>
+			<Text>But do you remember how she used to sing: Life is like a song! We must shout it out loud. Celebrate life!</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12019">
+			<Speaker>Emmon</Speaker>
+			<Text>Yes we should...</Text>
+		</SpokenLine>
+		<SpokenLine ID="12020">
+			<Speaker>Emmon</Speaker>
+			<Text>So why is the gallery so important for Valeria?</Text>
+		</SpokenLine>
+		<SpokenLine ID="12021">
 			<Speaker>Bart</Speaker>
-			<Text>Son, you really need to help your old father to prevent this disaster from happening.</Text>
+			<Text>Many magnificent works of hers hang there. Son, you really need to help your old father to prevent this disaster from happening.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12030">
@@ -938,7 +946,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12223">
 			<Speaker>Bart</Speaker>
-			<Text>Go talk to other villagers, muster support!</Text>
+			<Text>Right. Let’s have a chat with the other townsfolk.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12230">
@@ -1018,7 +1026,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12300">
 			<Speaker>Emmon</Speaker>
-			<Text>Do you know anything about making a sacrifice for Cynicism?</Text>
+			<Text>I need to make a sacrifice to Cynicism. Any ideas?</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12301">
@@ -1118,7 +1126,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12332">
 			<Speaker>Bart</Speaker>
-			<Text>When she was finished, he pointed her to a suitable location. There she should build her city, he said.</Text>
+			<Text>He signalled her to stop, and took her to a special location. There she should build her city, he said.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12335">
@@ -1138,10 +1146,18 @@
 		</SpokenLine>
 		<SpokenLine ID="12340">
 			<Speaker>Emmon</Speaker>
-			<Text>This story leads nowhere. Why is it called ‘The myth of Mockery and Cynicism’? What does this Zaptacka figure have to do with it?</Text>
+			<Text>This story leads nowhere. </Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12341">
+			<Speaker>Emmon</Speaker>
+			<Text>This story leads nowhere. How do you expect me to relate to absurd ancient deities? </Text>
+		</SpokenLine>
+		<SpokenLine ID="12342">
+			<Speaker>Emmon</Speaker>
+			<Text>And what does this Zaptacka figure have to do with it?</Text>
+		</SpokenLine>
+		<SpokenLine ID="12343">
 			<Speaker>Bart</Speaker>
 			<Text>It will all become clear in a while, Emmon. For once in your life, be patient!</Text>
 			<DialogueType>BartDialogue</DialogueType>
@@ -1163,12 +1179,20 @@
 		</SpokenLine>
 		<SpokenLine ID="12350">
 			<Speaker>Bart</Speaker>
-			<Text>He wasn’t generous at all, my son. He was just mocking the poor princess. She did not know that the malicious Mockery had brought her to the Holy Woods of Cynicism.</Text>
-			<DialogueType>BartDialogue</DialogueType>
+			<Text>Mockery wasn’t generous at all, my son. He was just mocking the poor princess.</Text>
 		</SpokenLine>
 		<SpokenLine ID="12351">
 			<Speaker>Bart</Speaker>
-			<Text>And the Holy Woods of Cynicism are the favourite spot of the God Cynicism.</Text>
+			<Text>She did not know that the malicious Mockery had brought her to Cynicism’s favourite hang-out spot, the Holy Woods. </Text>
+			<DialogueType>BartDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="12352">
+			<Speaker>Emmon</Speaker>
+			<Text>The Holy Woods of Cynicism!!</Text>
+		</SpokenLine>
+		<SpokenLine ID="12353">
+			<Speaker>Bart</Speaker>
+			<Text>Exactly.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12355">
@@ -1198,7 +1222,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12362">
 			<Speaker>Bart</Speaker>
-			<Text>So he went to Mockery and in a misanthropic fit of rage he smashed Mockery’s face with an anvil.</Text>
+			<Text>So he went to Mockery and in an uncontrolled fit of rage he smashed Mockery’s face with an anvil.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12363">
@@ -1208,7 +1232,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12364">
 			<Speaker>Bart</Speaker>
-			<Text>Oddly enough he didn’t exterminate them or something; he just showed them a new location where  in the end they founded the city of Atadom.</Text>
+			<Text>Oddly enough he didn’t  throw fireballs at them or something; he just showed them a new location where  in the end they founded the city of Atadom.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12365">
@@ -1353,7 +1377,7 @@
 		</SpokenLine>
 		<SpokenLine ID="13006">
 			<Speaker>Emmon</Speaker>
-			<Text>But why don’t you want to come with me then? Chop chop, let’s go the the Gallery and take a look at your paintings!</Text>
+			<Text>But why don’t you want to come with me then? Come on, let’s go the the Gallery and take a look at your paintings!</Text>
 			<DialogueType>BennyDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="13007">
@@ -1743,7 +1767,7 @@
 		</SpokenLine>
 		<SpokenLine ID="14021">
 			<Speaker>Leon</Speaker>
-			<Text>Yes you can! One tea for monsieur…</Text>
+			<Text>Yes you can! One tea for the young minstrel. </Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14022">
@@ -1828,12 +1852,12 @@
 		</SpokenLine>
 		<SpokenLine ID="14051">
 			<Speaker>Leon</Speaker>
-			<Text>I’m as busy as a bee. I don’t have time to talk. Je m’excuse.</Text>
+			<Text>I’m as busy as a bee. I don’t have time to talk. I beg your pardon</Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14052">
 			<Speaker>Eremma</Speaker>
-			<Text>LEON, DARLING?</Text>
+			<Text>LEON?</Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14053">
@@ -1843,7 +1867,7 @@
 		</SpokenLine>
 		<SpokenLine ID="14054">
 			<Speaker>Leon</Speaker>
-			<Text>Sorry, I must leave you, IMMEDIATELY. Au revoir.</Text>
+			<Text>Sorry, I must leave you, IMMEDIATELY. Bye.</Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14055">
@@ -1883,7 +1907,7 @@
 		</SpokenLine>
 		<SpokenLine ID="14066">
 			<Speaker>Eremma</Speaker>
-			<Text>TELL THAT BUSKER HE SHOULD BE CAREFUL! CYNICISM IS A DANGEROUS ENTITY.</Text>
+			<Text>TELL THAT BUSKER HE SHOULD BE CAREFUL! CYNICISM IS A DANGEROUS THING!</Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14067">
@@ -1933,17 +1957,17 @@
 		</SpokenLine>
 		<SpokenLine ID="14102">
 			<Speaker>Leon</Speaker>
-			<Text>Well, congratulations. This heathen work of art is really astonishing.</Text>
+			<Text>Well, congratulations. This place is really astonishing.</Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14110">
 			<Speaker>Emmon</Speaker>
-			<Text>I thought you didn’t like the Outside In Gallery? Something with a childhood trauma…</Text>
+			<Text>I thought you didn’t like the Outside In Gallery?</Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14111">
 			<Speaker>Leon</Speaker>
-			<Text>Don’t get me started. I used to be the manager of the museum bar.  My first job. Never saw a single customer. Without the increasing amount of visitors we were on a sinking ship.</Text>
+			<Text>Don’t get me started.I used to be a waiter for the museum cafeteria. My first job. Never saw a single customer. Without the increasing amount of visitors we were on a sinking ship.</Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14112">
@@ -1978,7 +2002,7 @@
 		</SpokenLine>
 		<SpokenLine ID="15001">
 			<Speaker>Emmon</Speaker>
-			<Text>Howdy! What are you getting up to in this old wagon? I’m Emmon by the way.</Text>
+			<Text>Howdy! What are you up to in this old wagon? I’m Emmon by the way.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15002">
@@ -2033,7 +2057,7 @@
 		</SpokenLine>
 		<SpokenLine ID="15026">
 			<Speaker>Opposita</Speaker>
-			<Text>Dream on boy, dream on.</Text>
+			<Text>Well…   no.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15030">
@@ -2103,7 +2127,7 @@
 		</SpokenLine>
 		<SpokenLine ID="15058">
 			<Speaker>Opposita</Speaker>
-			<Text>I knew it! The spirit of the ladybug didn’t trick me. Now I see everything clearly! You are planning to close the Outside in Art Gallery to provoke your father.</Text>
+			<Text>I knew it! The spirit of the mighty wombat didn’t trick me. Now I see everything clearly! You are planning to close the Outside in Art Gallery to provoke your father.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15059">
@@ -2158,7 +2182,7 @@
 		</SpokenLine>
 		<SpokenLine ID="15091">
 			<Speaker>Opposita</Speaker>
-			<Text>Of course I already knew you would come back eventually..</Text>
+			<Text>Of course I knew you would come back eventually..</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15095">
@@ -2408,10 +2432,22 @@
 		</SpokenLine>
 		<SpokenLine ID="15305">
 			<Speaker>Emmon</Speaker>
+			<Text>He used his almighty powers to her into a camel so she would be able to withstand the desert heat.</Text>
+		</SpokenLine>
+		<SpokenLine ID="15306">
+			<Speaker>Opposita</Speaker>
+			<Text>I do not understand.</Text>
+		</SpokenLine>
+		<SpokenLine ID="15307">
+			<Speaker>Opposita</Speaker>
+			<Text>Camels are not known for their city building capacities, are they? It would just further jeopardise the poor Anchorians.</Text>
+		</SpokenLine>
+		<SpokenLine ID="15308">
+			<Speaker>Emmon</Speaker>
 			<Text>Let’s continue, I have a dangerous quest waiting.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
-		<SpokenLine ID="15306">
+		<SpokenLine ID="15309">
 			<Speaker>Opposita</Speaker>
 			<Text>As you wish.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
@@ -2468,32 +2504,43 @@
 		</SpokenLine>
 		<SpokenLine ID="15330">
 			<Speaker>Emmon</Speaker>
-			<Text>Are we getting to the gory part now?</Text>
+			<Text>Oh yes!</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15331">
-			<Speaker>Opposita</Speaker>
-			<Text>Your prediction is true, but of course any layman could have guessed this. We are entering...</Text>
+			<Speaker>Emmon</Speaker>
+			<Text> Oh yes! All these unexpected events have turned this story into a wild emotional rollercoaster!</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15332">
 			<Speaker>Opposita</Speaker>
-			<Text>THE CLIMAX!</Text>
-			<DialogueType>OppositaDialogue</DialogueType>
+			<Text>Yes. You better fasten your seatbelts. We are entering...</Text>
 		</SpokenLine>
+		<SpokenLine/>
+		<SpokenLine/>
 		<SpokenLine ID="15340">
 			<Speaker>Emmon</Speaker>
-			<Text>This is taking too long! Do you know yourself where we are heading?</Text>
+			<Text>Are we getting to the gory part now?</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15341">
 			<Speaker>Opposita</Speaker>
-			<Text>I always know how my stories finish. Even if I dislike their ending.</Text>
+			<Text>Your prediction is true, but of course any layman could have guessed this. We are entering...</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15342">
+			<Speaker>Opposita</Speaker>
+			<Text>THE CLIMAX!</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15350">
 			<Speaker>Emmon</Speaker>
-			<Text>She shouldn’t have trusted this Mockery guy!</Text>
+			<Text>This is taking too long! Do you know yourself where we are heading?</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="15351">
+			<Speaker>Opposita</Speaker>
+			<Text>I always know how my stories finish. Even if I dislike their ending.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15360">
@@ -2593,7 +2640,7 @@
 		</SpokenLine>
 		<SpokenLine ID="15395">
 			<Speaker>Opposita</Speaker>
-			<Text>Cynicism wanted to be alone with his owls again, so he thought: lets bring the confusing princess and these other creatures to a place where they can found a city.</Text>
+			<Text>Cynicism wanted to be alone with his owls again, so he thought: lets bring the sticky princess and these other mortals to a place where they can found a city.</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15396">
@@ -2863,7 +2910,7 @@
 		</SpokenLine>
 		<SpokenLine ID="16004">
 			<Speaker>MrB</Speaker>
-			<Text>But the stupid peasants in this town simply seem to not understand the true value of art.</Text>
+			<Text>But the foolish townspeople in this town simply seem to not understand the true value of art.</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16005">
@@ -2978,7 +3025,7 @@
 		</SpokenLine>
 		<SpokenLine ID="16029">
 			<Speaker>Emmon</Speaker>
-			<Text>I am sure I can find visitors!</Text>
+			<Text>I am sure I can find visitors! In fact I will start mustering support right away!</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16030">
@@ -3103,7 +3150,7 @@
 		</SpokenLine>
 		<SpokenLine ID="16066">
 			<Speaker>MrB</Speaker>
-			<Text>Yes, without a doubt people from all of Baton will flock to the museum to catch a glimpse of this historical object. It will do. I am sure.</Text>
+			<Text>Oh yes, without a doubt people from all of Baton will flock to the museum to catch a glimpse of this historical object. It will do. I am sure.</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16067">
@@ -3143,7 +3190,7 @@
 		</SpokenLine>
 		<SpokenLine ID="16081">
 			<Speaker>Emmon</Speaker>
-			<Text>I have launched plan B, mister. Although people are not eager yet to come to the gallery, getting the Golden Screech from the Citadel of Doubt should create enough interest. What do you think?</Text>
+			<Text>I have launched plan B, mister. Although people are not yet eager to come to the gallery, getting the Golden Screech from the Citadel of Doubt should create enough interest. What do you think?</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16082">
@@ -3223,20 +3270,29 @@
 		</SpokenLine>
 		<SpokenLine ID="16200">
 			<Speaker>Emmon</Speaker>
-			<Text>So everything turned all right!</Text>
+			<Text>So everything turned out all right!</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16201">
 			<Speaker>MrB</Speaker>
-			<Text>Indeed. People are eager to come see the Golden Screech. Your scheme worked.</Text>
+			<Text>Indeed. </Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16202">
+			<Speaker>MrB</Speaker>
+			<Text>People are so busy marveling at this Screech of your that they don’t even notice all their money ends up in the pockets of Mister B. And that’s me!</Text>
+			<DialogueType>MrBDialogue</DialogueType>
+		</SpokenLine>
+		<SpokenLine ID="16203">
+			<Speaker>MrB</Speaker>
+			<Text>Your scheme worked.</Text>
+		</SpokenLine>
+		<SpokenLine ID="16204">
 			<Speaker>Emmon</Speaker>
 			<Text>That means you will keep the gallery open right?</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
-		<SpokenLine ID="16203">
+		<SpokenLine ID="16205">
 			<Speaker>MrB</Speaker>
 			<Text>Yes, this exhibition offers good prospects for future business. My minions are working on a follow-up strategy as we speak.</Text>
 			<DialogueType>MrBDialogue</DialogueType>
@@ -3288,7 +3344,7 @@
 		</SpokenLine>
 		<SpokenLine ID="17011">
 			<Speaker>Obstructor</Speaker>
-			<Text>You can’t fool me. Everybody knows Mister B. is a [dwarfish]  creature with a moustache, whereas you… I don’t even know how to describe you.</Text>
+			<Text>You can’t fool me. Everybody knows Mister B. is a smoothly dressed guy with an outrageous moustache, whereas you… I don’t even know how to describe you.</Text>
 			<DialogueType>ObstructorDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="17012">
@@ -3613,7 +3669,7 @@
 		</SpokenLine>
 		<SpokenLine ID="18033">
 			<Speaker>Sentinel</Speaker>
-			<Text>But with this last message… well, I forgot the key [vertaalsleutel]. It is disastrous! I don’t understand my orders anymore!</Text>
+			<Text>But with this last message… well, I forgot the key to break the code. It is disastrous! I don’t understand my orders anymore!</Text>
 			<DialogueType>SentinelDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="18034">
@@ -3653,15 +3709,19 @@
 		</SpokenLine>
 		<SpokenLine ID="18050">
 			<Speaker>Emmon</Speaker>
-			<Text>I deciphered your orders for you. Look here: it says the king needs you to stand guard at [the big crafters house in Nailbore Rock.] Not this -slightly- trivial shed.</Text>
+			<Text>I deciphered your orders for you. Look here: it says the king needs you to attend  the royal piano tuning ceremony. Not this -slightly trivial- shed. </Text>
 			<DialogueType>SentinelDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="18051">
 			<Speaker>Sentinel</Speaker>
-			<Text>What?! I am totally wrong here! I will have to move swift. I hope nobody found out yet!</Text>
+			<Text>What?!</Text>
 			<DialogueType>SentinelDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="18052">
+			<Speaker>Sentinel</Speaker>
+			<Text>I am this year the keeper of the royal tuning fork! That is an incredibly important duty. And I am totally wrong here! I will have to move swift. I hope nobody found out yet!</Text>
+		</SpokenLine>
+		<SpokenLine ID="18053">
 			<Speaker>Emmon</Speaker>
 			<Text>And there runs the king’s guard. Right. Let’s see what’s inside.</Text>
 			<DialogueType>SentinelDialogue</DialogueType>

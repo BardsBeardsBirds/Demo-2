@@ -27,10 +27,11 @@ public class MadameOpposita : MonoBehaviour
     private static List<int> LastOptionsBefore15290 = new List<int>() { 15260, 15265, 15270 };
     private static List<int> LastOptionsBefore15300 = new List<int>() { 15260, 15265, 15270 };
     private static List<int> LastOptionsBefore15305 = new List<int>() { 15260, 15265, 15270 };
-    private static List<int> LastOptionsBefore15320 = new List<int>() { 15290, 15300, 15305 };
-    private static List<int> LastOptionsBefore15330 = new List<int>() { 15290, 15300, 15305 };
-    private static List<int> LastOptionsBefore15340 = new List<int>() { 15290, 15300, 15305 };
-    private static List<int> LastOptionsBefore15350 = new List<int>() { 15290, 15300, 15305 };
+    private static List<int> LastOptionsBefore15308 = new List<int>() { 15260, 15265, 15270 };
+    private static List<int> LastOptionsBefore15320 = new List<int>() { 15290, 15300, 15305, 15308 };
+    private static List<int> LastOptionsBefore15330 = new List<int>() { 15290, 15300, 15305, 15308 };
+    private static List<int> LastOptionsBefore15340 = new List<int>() { 15290, 15300, 15305, 15308 };
+    private static List<int> LastOptionsBefore15350 = new List<int>() { 15290, 15300, 15305, 15308 };
     private static List<int> LastOptionsBefore15370 = new List<int>() { 15320, 15330, 15340, 15350, 15390 };
     private static List<int> LastOptionsBefore15379 = new List<int>() { 15320, 15330, 15340, 15350, 15370, 15390 };
     private static List<int> LastOptionsBefore15390 = new List<int>() { 15320, 15330, 15340, 15350, 15370 };
@@ -67,6 +68,7 @@ public class MadameOpposita : MonoBehaviour
         {15290, LastOptionsBefore15290},
         {15300, LastOptionsBefore15300},
         {15305, LastOptionsBefore15305},
+        {15308, LastOptionsBefore15308},
         {15320, LastOptionsBefore15320},
         {15330, LastOptionsBefore15330},
         {15340, LastOptionsBefore15340},
@@ -156,9 +158,12 @@ public class MadameOpposita : MonoBehaviour
       
         if (IsLastBefore(optionID, 15300))
             DialogueMenu.AddToDialogueOptions(15300);
-      
+
         if (IsLastBefore(optionID, 15305))
             DialogueMenu.AddToDialogueOptions(15305);
+
+        if (IsLastBefore(optionID, 15308))
+            DialogueMenu.AddToDialogueOptions(15308);
       
         if (IsLastBefore(optionID, 15320))
             DialogueMenu.AddToDialogueOptions(15320);
@@ -523,6 +528,22 @@ public class MadameOpposita : MonoBehaviour
         {
             AddToDialogue(15305);
             AddToDialogue(15306);
+            AddToDialogue(15307);
+            AddToDialogue(15308);
+            AddToDialogue(15309);
+            AddToDialogue(15310);
+            AddToDialogue(15311);
+            AddToDialogue(15312);
+            AddToDialogue(15313);
+            AddToDialogue(15314);
+            AddToDialogue(15315);
+            AddToDialogue(15316);
+        }
+
+        if (dialogueOptionID == 15308)
+        {
+            AddToDialogue(15308);
+            AddToDialogue(15309);
             AddToDialogue(15310);
             AddToDialogue(15311);
             AddToDialogue(15312);
@@ -547,9 +568,9 @@ public class MadameOpposita : MonoBehaviour
 
         if (dialogueOptionID == 15330)
         {
-            AddToDialogue(15330);
             AddToDialogue(15331);
             AddToDialogue(15332);
+            AddToDialogue(15342);
             AddToDialogue(15360);
             AddToDialogue(15361);
             AddToDialogue(15362);
@@ -563,6 +584,7 @@ public class MadameOpposita : MonoBehaviour
         {
             AddToDialogue(15340);
             AddToDialogue(15341);
+            AddToDialogue(15342);
             AddToDialogue(15360);
             AddToDialogue(15361);
             AddToDialogue(15362);
@@ -575,6 +597,7 @@ public class MadameOpposita : MonoBehaviour
         if (dialogueOptionID == 15350)
         {
             AddToDialogue(15350);
+            AddToDialogue(15351);
             AddToDialogue(15360);
             AddToDialogue(15361);
             AddToDialogue(15362);

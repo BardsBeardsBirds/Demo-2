@@ -271,6 +271,8 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12017);
             AddToDialogue(12018);
             AddToDialogue(12019);
+            AddToDialogue(12020);
+            AddToDialogue(12021);
         }
 
         if (dialogueOptionID == 12006)
@@ -519,14 +521,19 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12337);
             AddToDialogue(12350);
             AddToDialogue(12351);
+            AddToDialogue(12352);
+            AddToDialogue(12353);
         }
 
         if (dialogueOptionID == 12340)
         {
-            AddToDialogue(12340);
             AddToDialogue(12341);
+            AddToDialogue(12342);
+            AddToDialogue(12343);
             AddToDialogue(12350);
             AddToDialogue(12351);
+            AddToDialogue(12352);
+            AddToDialogue(12353);
         }
 
         if (dialogueOptionID == 12345)
@@ -535,6 +542,8 @@ public class BartTumblescream : MonoBehaviour
             AddToDialogue(12347);
             AddToDialogue(12350);
             AddToDialogue(12351);
+            AddToDialogue(12352);
+            AddToDialogue(12353);
         }
 
         if (dialogueOptionID == 12355)

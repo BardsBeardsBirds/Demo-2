@@ -56,6 +56,7 @@ public class Sentinel : MonoBehaviour
                         AddToDialogue(18050);
                         AddToDialogue(18051);
                         AddToDialogue(18052);
+                        AddToDialogue(18053);
 
                         DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(18050);
                     }

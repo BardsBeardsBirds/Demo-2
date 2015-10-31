@@ -160,6 +160,8 @@ public class MrB : MonoBehaviour
                 AddToDialogue(16201);
                 AddToDialogue(16202);
                 AddToDialogue(16203);
+                AddToDialogue(16204);
+                AddToDialogue(16205);
 
                 DialoguePlayback.EndingDialogue = true;
 

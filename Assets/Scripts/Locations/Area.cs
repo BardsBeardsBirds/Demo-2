@@ -17,10 +17,24 @@ public class Area : MonoBehaviour
 
     public void OnTriggerEnter () 
     {
-        float transitionIn = AmbientSoundtracks.Instance.FindTransitionInTime(this.Name);
-        AreaManager.Instance.StartAmbientSoundtrack(this.Name, AreaSoundtrack, transitionIn);
+     //   float transitionIn = AmbientSoundtracks.Instance.FindTransitionInTime(this.Name);
+     //   AreaManager.Instance.StartAmbientSoundtrack(this.Name, AreaSoundtrack, transitionIn);
 
        // Debug.Log("We are now in: " + AreaManager.CurrentArea);
+        if (AreaManager.CurrentArea != Name)
+        {
+            AreaManager.CurrentArea = Name;
+
+            if (AreaNameDisplay.Instance.IsInAnimation())
+            {
+                AreaNameDisplay.Instance.RestartAnimation(Name.ToString());
+            }
+            else
+            {
+                AreaNameDisplay.Instance.DisplayAreaName(Name.ToString());
+            }
+
+        }
 
         if (AreaSoundtrack == null)
         {
@@ -34,6 +48,7 @@ public class Area : MonoBehaviour
         if (Name == Areas.Town)
         {
         }
+
 	}
 
     private string FindName()

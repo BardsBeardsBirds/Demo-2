@@ -157,6 +157,7 @@
      <Compile Include="Assets\Scripts\Tools\RotateTowards.cs" />
      <Compile Include="Assets\Scripts\Tools\Spin.cs" />
      <Compile Include="Assets\Scripts\Tools\TestScreen.cs" />
+     <Compile Include="Assets\Scripts\UI\AreaNameDisplay.cs" />
      <Compile Include="Assets\Scripts\UI\Clock.cs" />
      <Compile Include="Assets\Scripts\UI\DescriptionUnderlining.cs" />
      <Compile Include="Assets\Scripts\UI\InteractionWithObjectButton.cs" />

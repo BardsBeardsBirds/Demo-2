@@ -7,7 +7,7 @@ public class AreaManager : MonoBehaviour
 {
     public static AreaManager Instance;
     public GameObject AmbientPlayer;
-    //public static AreaEnum CurrentArea;
+    public static Areas CurrentArea;
     //public static AreaEnum PreviousArea;
     public static AudioMixerGroup Mixer;
 

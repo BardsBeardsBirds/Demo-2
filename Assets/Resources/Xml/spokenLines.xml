@@ -613,7 +613,7 @@
 		</SpokenLine>
 		<SpokenLine ID="12017">
 			<Speaker>Bart</Speaker>
-			<Text>When we lost your mother I couldn’t sing a single ballad for a year. </Text>
+			<Text>When we lost your mother I couldn’t sing a single ballad for a year.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12018">
@@ -624,10 +624,12 @@
 		<SpokenLine ID="12019">
 			<Speaker>Emmon</Speaker>
 			<Text>Yes we should...</Text>
+			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12020">
 			<Speaker>Emmon</Speaker>
 			<Text>So why is the gallery so important for Valeria?</Text>
+			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12021">
 			<Speaker>Bart</Speaker>
@@ -1146,16 +1148,18 @@
 		</SpokenLine>
 		<SpokenLine ID="12340">
 			<Speaker>Emmon</Speaker>
-			<Text>This story leads nowhere. </Text>
+			<Text>This story leads nowhere.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12341">
 			<Speaker>Emmon</Speaker>
-			<Text>This story leads nowhere. How do you expect me to relate to absurd ancient deities? </Text>
+			<Text>This story leads nowhere. How do you expect me to relate to absurd ancient deities?</Text>
+			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12342">
 			<Speaker>Emmon</Speaker>
 			<Text>And what does this Zaptacka figure have to do with it?</Text>
+			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12343">
 			<Speaker>Bart</Speaker>
@@ -1180,15 +1184,17 @@
 		<SpokenLine ID="12350">
 			<Speaker>Bart</Speaker>
 			<Text>Mockery wasn’t generous at all, my son. He was just mocking the poor princess.</Text>
+			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12351">
 			<Speaker>Bart</Speaker>
-			<Text>She did not know that the malicious Mockery had brought her to Cynicism’s favourite hang-out spot, the Holy Woods. </Text>
+			<Text>She did not know that the malicious Mockery had brought her to Cynicism’s favourite hang-out spot, the Holy Woods.</Text>
 			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12352">
 			<Speaker>Emmon</Speaker>
 			<Text>The Holy Woods of Cynicism!!</Text>
+			<DialogueType>BartDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="12353">
 			<Speaker>Bart</Speaker>
@@ -1767,7 +1773,7 @@
 		</SpokenLine>
 		<SpokenLine ID="14021">
 			<Speaker>Leon</Speaker>
-			<Text>Yes you can! One tea for the young minstrel. </Text>
+			<Text>Yes you can! One tea for the young minstrel.</Text>
 			<DialogueType>LeonDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="14022">
@@ -2433,14 +2439,17 @@
 		<SpokenLine ID="15305">
 			<Speaker>Emmon</Speaker>
 			<Text>He used his almighty powers to her into a camel so she would be able to withstand the desert heat.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15306">
 			<Speaker>Opposita</Speaker>
 			<Text>I do not understand.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15307">
 			<Speaker>Opposita</Speaker>
 			<Text>Camels are not known for their city building capacities, are they? It would just further jeopardise the poor Anchorians.</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15308">
 			<Speaker>Emmon</Speaker>
@@ -2509,15 +2518,14 @@
 		</SpokenLine>
 		<SpokenLine ID="15331">
 			<Speaker>Emmon</Speaker>
-			<Text> Oh yes! All these unexpected events have turned this story into a wild emotional rollercoaster!</Text>
+			<Text>Oh yes! All these unexpected events have turned this story into a wild emotional rollercoaster!</Text>
 			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="15332">
 			<Speaker>Opposita</Speaker>
 			<Text>Yes. You better fasten your seatbelts. We are entering...</Text>
+			<DialogueType>OppositaDialogue</DialogueType>
 		</SpokenLine>
-		<SpokenLine/>
-		<SpokenLine/>
 		<SpokenLine ID="15340">
 			<Speaker>Emmon</Speaker>
 			<Text>Are we getting to the gory part now?</Text>
@@ -3275,7 +3283,7 @@
 		</SpokenLine>
 		<SpokenLine ID="16201">
 			<Speaker>MrB</Speaker>
-			<Text>Indeed. </Text>
+			<Text>Indeed.</Text>
 			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16202">
@@ -3286,6 +3294,7 @@
 		<SpokenLine ID="16203">
 			<Speaker>MrB</Speaker>
 			<Text>Your scheme worked.</Text>
+			<DialogueType>MrBDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="16204">
 			<Speaker>Emmon</Speaker>
@@ -3709,7 +3718,7 @@
 		</SpokenLine>
 		<SpokenLine ID="18050">
 			<Speaker>Emmon</Speaker>
-			<Text>I deciphered your orders for you. Look here: it says the king needs you to attend  the royal piano tuning ceremony. Not this -slightly trivial- shed. </Text>
+			<Text>I deciphered your orders for you. Look here: it says the king needs you to attend  the royal piano tuning ceremony. Not this -slightly trivial- shed.</Text>
 			<DialogueType>SentinelDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="18051">
@@ -3720,6 +3729,7 @@
 		<SpokenLine ID="18052">
 			<Speaker>Sentinel</Speaker>
 			<Text>I am this year the keeper of the royal tuning fork! That is an incredibly important duty. And I am totally wrong here! I will have to move swift. I hope nobody found out yet!</Text>
+			<DialogueType>SentinelDialogue</DialogueType>
 		</SpokenLine>
 		<SpokenLine ID="18053">
 			<Speaker>Emmon</Speaker>

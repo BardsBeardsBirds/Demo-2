@@ -119,7 +119,7 @@ public class WaterFlowTest : MonoBehaviour
         {
             _riverDirection = Vector4.Lerp(_riverDirection, to, 15f * Time.deltaTime);
             WaterGO.GetComponent<Renderer>().sharedMaterial.SetVector("WaveSpeed", _riverDirection);
-            Debug.Log("3: " + _riverDirection + " en " + to);
+            //Debug.Log("3: " + _riverDirection + " en " + to);
 
             if (to == _direction1)
             {

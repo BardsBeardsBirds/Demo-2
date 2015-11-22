@@ -93,6 +93,8 @@ public class ThirdPersonCamera : MonoBehaviour
     private Vector3[] _viewFrustum;
     private Vector3 _characterOffset;
 
+    private LayerMask _layerMask = (1<<0);  // all the layers the camera should be looking for
+
     private bool _freezeCamera;
     private GameObject _сameraLoadGamePosition;
     public Dictionary<Character, GameObject> DialogueCameraPositions = new Dictionary<Character, GameObject>();
@@ -395,7 +397,7 @@ public class ThirdPersonCamera : MonoBehaviour
     {
         // Compensate for walls between camera
         RaycastHit wallHit = new RaycastHit();
-        if (Physics.Linecast(fromObject, toTarget, out wallHit))
+        if (Physics.Linecast(fromObject, toTarget, out wallHit, _layerMask))
         {
             Debug.DrawRay(wallHit.point, wallHit.normal, Color.red);
             toTarget = wallHit.point;
@@ -465,7 +467,7 @@ public class ThirdPersonCamera : MonoBehaviour
     {
         if (DialogueCameraPositions[character] == null)
         {
-            //Debug.LogWarning("no camera position set up for: " + character);
+            Debug.LogWarning("no camera position set up for: " + character);
             return;
         }
 

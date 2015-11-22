@@ -6,16 +6,16 @@ using UnityEngine;
 
     public class LoadItemsFromSave : MonoBehaviour
     {
-        public void LoadAllItemsFromSave()
-        {
-            Inventory inventory = GameManager.Instance.FindInventory();
+        //public void LoadAllItemsFromSave()
+        //{
+        //    Inventory inventory = GameManager.Instance.FindInventory();
 
-            foreach (int itemNumber in inventory.InitialiseInventoryItems)
-            {
-                Debug.Log("Add " + itemNumber);
+        //    foreach (int itemNumber in inventory.InitialiseInventoryItems)
+        //    {
+        //        Debug.Log("Add " + itemNumber);
 
-                inventory.AddItem(itemNumber);
-            }
-        }
+        //        inventory.AddItem(itemNumber);
+        //    }
+        //}
     }
 

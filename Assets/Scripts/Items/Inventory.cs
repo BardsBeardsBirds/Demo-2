@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
     public Animator MyAnimator;
     public List<GameObject> SlotList = new List<GameObject>();
     public List<Item> Items = new List<Item>();
-    public List<int> InitialiseInventoryItems = new List<int>();
+    //public List<int> InitialiseInventoryItems = new List<int>();
     public GameObject Slots;
     public GameObject DraggedItemGameObject;
     public ItemDatabase Database;
@@ -31,10 +31,10 @@ public class Inventory : MonoBehaviour
         MyAnimator.SetBool("Open", false);
 
         Database = GameObject.FindGameObjectWithTag("ItemDatabase").GetComponent<ItemDatabase>();
-        InitialiseInventoryItems.Clear();
+        //InitialiseInventoryItems.Clear();
         ResetAmounts();
 
-        Debug.Log("cleared inventory list");
+        //Debug.Log("cleared inventory list");
        
         Instance.Slots = Resources.Load("Prefabs/UI/InventoryWindow/Slot") as GameObject;
      //   Instance.Tooltip = Resources.Load("Prefabs/UI/InventoryWindow/Tooltip") as GameObject;
@@ -72,12 +72,13 @@ public class Inventory : MonoBehaviour
         //ItemManager.AddItem(ItemType.TeaLeaves);
         //ItemManager.AddItem(ItemType.Brush);
 
-        if (GameManager.MyGameType != GameManager.GameType.NewGame && 
-            GameManager.MyGameType != GameManager.GameType.None)
+        //we load the game from main menu
+        if (GameManager.MyGameType != GameType.NewGame && 
+            GameManager.MyGameType != GameType.None)
         {
             SaveAndLoadGame load = new SaveAndLoadGame();
-            Debug.Log("TODO: load inventory function");
-      //      load.LoadInventoryItemsFromMainMenu();
+            Debug.LogWarning("TODO: load inventory function with the RIGHT slot!!");
+            load.LoadInventoryItemsFromMainMenu(2);
         }
 
     }
@@ -168,7 +169,7 @@ public class Inventory : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("add at empty slot: " + item.IType);
+                    //Debug.Log("add at empty slot: " + item.IType);
                     AddItemAtEmptySlot(item);
                 }
                 break;
@@ -205,7 +206,7 @@ public class Inventory : MonoBehaviour
 
     public void AddItemAtEmptySlot(Item item)
     {
-        Debug.Log("add at empty slot: " + item);
+        Debug.Log("add at empty slot: " + item.IType);
         for (int i = 0; i < Items.Count; i++)
         {
             if(Items[i].IType == ItemType.Empty)
@@ -237,15 +238,22 @@ public class Inventory : MonoBehaviour
         Items[slotNumber] = new Item();
     }
 
-    public void LoadItemsFromSave()
-    {
-      //  Debug.Log(InitialiseInventoryItems.Count);
-        for (int i = 0; i < InitialiseInventoryItems.Count; i++)
-        {
-            Debug.Log("Add to inventory" + InitialiseInventoryItems[i]);
+    //public void LoadItemsFromSave()
+    //{
+    //    //  Debug.Log(InitialiseInventoryItems.Count);
+    //    for (int i = 0; i < InitialiseInventoryItems.Count; i++)
+    //    {
+    //        Debug.Log("Add to inventory" + InitialiseInventoryItems[i]);
 
-            AddItem(InitialiseInventoryItems[i]);
-        }
+    //        AddItem(InitialiseInventoryItems[i]);
+    //    }
+    //}
+
+    public void LoadItemsFromSave(ItemType item)
+    {
+        //Debug.Log("Add to inventory " + item);
+
+        ItemManager.AddItem(item);
     }
 
     public void ResetAmounts()

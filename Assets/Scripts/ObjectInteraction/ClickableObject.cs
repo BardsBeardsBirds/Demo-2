@@ -12,9 +12,9 @@ public class ClickableObject : MonoBehaviour
     public InWorldObject MyObject;
     public static InWorldObject CurrentObject;
 
-    private float depthIntoScene = 10;   
-    private float defaultDepthIntoScene = 5;
-    private float selectScale = .3f;
+    //private float depthIntoScene = 10;   
+    //private float defaultDepthIntoScene = 5;
+    //private float selectScale = .3f;
 
     public Text DescriptionText;
 
@@ -189,15 +189,17 @@ public class ClickableObject : MonoBehaviour
 
         if (UIDrawer.IsDraggingItem)
         {
-            bool tryCombine = false;
-            tryCombine = GameManager.Instance.IIventoryItemWithObject.CombineItems(GameManager.Instance.MyInventory.TheDraggedItem, MyObject);
-
-            if (tryCombine)
+            if (CharacterControllerLogic.Instance.GetState() != CharacterControllerLogic.CharacterState.Talking && CharacterControllerLogic.Instance.GetState() != CharacterControllerLogic.CharacterState.TalkingLastLine)
             {
-                Debug.LogWarning("We can combine these two!! Dragging from slot no " + UIDrawer.DraggingFromSlotNo);
-                GameManager.Instance.MyInventory.EndDragging(UIDrawer.DraggingFromSlotNo);
-            }
+                bool tryCombine = false;
+                tryCombine = GameManager.Instance.IIventoryItemWithObject.CombineItems(GameManager.Instance.MyInventory.TheDraggedItem, MyObject);
 
+                if (tryCombine)
+                {
+                    Debug.LogWarning("We can combine these two!! Dragging from slot no " + UIDrawer.DraggingFromSlotNo);
+                    GameManager.Instance.MyInventory.EndDragging(UIDrawer.DraggingFromSlotNo);
+                }
+            }
         }
         else
         {

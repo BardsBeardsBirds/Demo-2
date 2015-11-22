@@ -25,6 +25,8 @@ public class MainCanvas : MonoBehaviour
     public DialogueOptions MyDialogueOptions;
     public SceneFader ScreenFader;
 
+    private GameObject _screenFaderGo;
+
     private bool _widgetIsActive = false;
     private bool _testScreenIsOpen = false;
 
@@ -72,7 +74,7 @@ public class MainCanvas : MonoBehaviour
             Debug.LogError("couldn't find DialogueOptions");
         }
 
-        if (GameManager.MyGameType != GameManager.GameType.NewGame)
+        if (GameManager.MyGameType != GameType.NewGame)
             GameManager.Instance.UICanvas.WidgetActive();
     }
 
@@ -180,4 +182,13 @@ public class MainCanvas : MonoBehaviour
     {
         ScreenButtonWidget.GetComponent<Widget>().WidgetActive = false;
     }
+        
+    public Transform FindFaderGO()
+    {
+        _screenFaderGo = transform.Find("ScreenFaderGO").gameObject;
+        if (_screenFaderGo == null)
+            Debug.LogError("cannot find the screen fader GO");
+        return _screenFaderGo.transform;
+    }
+
 }

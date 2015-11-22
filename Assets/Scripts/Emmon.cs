@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-
+﻿using UnityEngine;
 
 public class Emmon : MonoBehaviour
 {
@@ -68,7 +66,7 @@ public class Emmon : MonoBehaviour
     {
         if(ThirdPersonCamera.Instance.PlayerDialoguePositions[_dialoguePartner] == null)
         {
-            //Debug.LogWarning("we have no player dialogue position for: " + _dialoguePartner);
+            Debug.LogWarning("we have no player dialogue position for: " + _dialoguePartner);
             MovePlayer = false;
             return;
         }

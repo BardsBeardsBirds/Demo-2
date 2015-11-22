@@ -37,7 +37,7 @@ public class SaveAndLoadGame
             loadPlayerState(data);
             loadWorldEvents(data);
             loadInGameObjects(data);
-            if (GameManager.MyGameType == GameManager.GameType.LoadFromInGame)
+            if (GameManager.MyGameType == GameType.LoadFromInGame)
             {
                 Debug.Log("Load game from in-game");
                 LoadGameIngame(data);  
@@ -47,9 +47,6 @@ public class SaveAndLoadGame
                 Debug.Log("Load game from main menu");
                 LoadGameFromMainMenu();
             }
-
-            //when we have loaded everything, fade screen to alpha
-            GameManager.Instance.UICanvas.ScreenFader.ToAlpha = true;
         }
         else
             Debug.Log("There is no game saved");
@@ -82,22 +79,20 @@ public class SaveAndLoadGame
         }
     }
 
-    public void IsNotNewGame()
+    public void IsNotNewGame(int gameSlotNo)
     {
         using (StreamWriter sw = new StreamWriter("NewGame.txt"))
         {
             // Add some text to the file.
-            sw.Write("This is not a new game");
+            sw.Write("This is not a new game. Game slot " + gameSlotNo);
         }
     }
 
-    public void CheckSaveSlots(int loadOrSave)
+    public void CheckSaveSlots(GameType loadOrSave)
     {
-        // load
-        if (loadOrSave == 1)
+        // load game from Pause Menu
+        if (loadOrSave == GameType.LoadFromInGame)
         {
-            Debug.Log("Load Game SHOW SLOT INFO");
-
             LoadGamePanel loadGamePanel = PauseMenuScreenManager.Instance.PauseLoadGameWindow.GetComponent<LoadGamePanel>();
 
             for (int i = 0; i < loadGamePanel.GameSlots.Count; i++)
@@ -120,8 +115,8 @@ public class SaveAndLoadGame
             }
         }
 
-        //save
-        else if (loadOrSave == 2)
+        //save game from Pause Menu
+        else if (loadOrSave == GameType.None)
         {
             SaveGamePanel saveGamePanel = PauseMenuScreenManager.Instance.PauseSaveGameWindow.GetComponent<SaveGamePanel>();
 
@@ -144,13 +139,36 @@ public class SaveAndLoadGame
                 }
             }
         }
+            //load game from Main Menu
+        else if(loadOrSave == GameType.LoadFromMainMenu)
+        {
+            LoadGamePanel loadGamePanel = GameObject.Find("LoadGameMenu").GetComponent<LoadGamePanel>();
+
+            for (int i = 0; i < loadGamePanel.GameSlots.Count; i++)
+            {
+                string saveSlotName = FindSavePath(i + 1);
+
+                if (File.Exists(Application.persistentDataPath + saveSlotName))
+                {
+                    LoadTimesSavedOnSlot(saveSlotName, i + 1);
+
+                    string slotInfo = LoadGameSlotInfo(saveSlotName);
+
+                    loadGamePanel.GameSlots[i].SlotExists = true;
+                    loadGamePanel.GameSlots[i].ShowUsedSlot(slotInfo, i);
+                }
+                else
+                {
+                    loadGamePanel.GameSlots[i].ShowEmptySlowText();
+                }
+            }
+        }
         else
             Debug.LogWarning("This must be a wrong value");
     }
 
     public string LoadGameSlotInfo(string saveName)
     {
-        Debug.Log("get save slot info");
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Open(Application.persistentDataPath + saveName, FileMode.Open);
         SaveGameData data = (SaveGameData)bf.Deserialize(file);
@@ -158,7 +176,8 @@ public class SaveAndLoadGame
 
         string saveDate = data.SaveDateTime.ToString("MM-dd-yyyy");
         string saveTime = data.SaveDateTime.ToString("HH:mm");
-        string location = Areas.Tea_House_Cafe.ToString();
+        string location = data.CurrentArea.ToString();
+        TextAdjustment.ReplaceUnderscores(location);
         int level = 1;
 
 
@@ -176,32 +195,25 @@ public class SaveAndLoadGame
 
         if (slotNumber == 1)
         {
-            Debug.Log("data 1: " + data.SavesNoSlot1 + " world events: " + WorldEvents.SavedOnSlot1);
             WorldEvents.SavedOnSlot1 = data.SavesNoSlot1;
-            Debug.Log("data: " + data.SavesNoSlot1 + " world events: " + WorldEvents.SavedOnSlot1);
 
         }
         else if (slotNumber == 2)
         {
-            Debug.Log("data 2: " + data.SavesNoSlot2 + " world events: " + WorldEvents.SavedOnSlot2);
             WorldEvents.SavedOnSlot2 = data.SavesNoSlot2;
-            Debug.Log("data: " + data.SavesNoSlot2 + " world events: " + WorldEvents.SavedOnSlot2);
-
         }
 
         else if (slotNumber == 3)
         {
-            Debug.Log("data 3: " + data.SavesNoSlot3 + " world events: " + WorldEvents.SavedOnSlot3);
             WorldEvents.SavedOnSlot3 = data.SavesNoSlot3;
-            Debug.Log("data: " + data.SavesNoSlot3 + " world events: " + WorldEvents.SavedOnSlot3);
 
         }
 
         else if (slotNumber == 4)
         {
-            Debug.Log("data 4: " + data.SavesNoSlot4 + " world events: " + WorldEvents.SavedOnSlot4);
+       //     Debug.Log("data 4: " + data.SavesNoSlot4 + " world events: " + WorldEvents.SavedOnSlot4);
             WorldEvents.SavedOnSlot4 = data.SavesNoSlot4;
-            Debug.Log("data: " + data.SavesNoSlot4 + " world events: " + WorldEvents.SavedOnSlot4);
+//            Debug.Log("data: " + data.SavesNoSlot4 + " world events: " + WorldEvents.SavedOnSlot4);
 
         }
     }
@@ -242,80 +254,37 @@ public class SaveAndLoadGame
     
     private void saveInventoryData(SaveGameData data)
     {
-        //foreach (Item item in Inventory.Instance.Items)
-        //{
-        //    Debug.LogWarning("I saved " + data.Carrot + " " + item.IType);
+        SaveInventoryData saveInventory = new SaveInventoryData();
 
-        //    if (item.IType == ItemType.RoughneckShot)
-        //    {
-        //        for (int i = 0; i < item.ItemAmount; i++)
-        //        {
-        //            data.RoughneckShot = data.RoughneckShot + 1;
-        //        }
-        //        Debug.LogWarning("I saved " + data.RoughneckShot + " " + item.IType);
-        //    }
-        //    else if (item.IType == ItemType.Carrot)
-        //    {
-        //        for (int i = 0; i < item.ItemAmount; i++)
-        //        {
-        //            data.Carrot = data.Carrot + 1;
-        //        }
-        //        Debug.LogWarning("I saved " + data.Carrot + " " + item.IType);
-        //    }
-        //}
+        saveInventory.SaveInventory(data);
     }
 
     public void LoadInventoryItemsFromMainMenu(int slot)
     {
-        //string loadSlotName = FindLoadPath(slot);
+        string loadSlotName = FindLoadPath(slot);
 
-        //if (File.Exists(Application.persistentDataPath + loadSlotName))
-        //{
-        //    BinaryFormatter bf = new BinaryFormatter();
-        //    FileStream file = File.Open(Application.persistentDataPath + loadSlotName, FileMode.Open);
-        //    SaveGameData data = (SaveGameData)bf.Deserialize(file);
-        //    file.Close();
+        if (File.Exists(Application.persistentDataPath + loadSlotName))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + loadSlotName, FileMode.Open);
+            SaveGameData data = (SaveGameData)bf.Deserialize(file);
+            file.Close();
 
-        //    for (int i = 0; i < data.RoughneckShot; i++)
-        //    {
-        //        Inventory.Instance.InitialiseInventoryItems.Add(1);
-        //    }
-        //    for (int i = 0; i < data.Carrot; i++)
-        //    {
-        //        Inventory.Instance.InitialiseInventoryItems.Add(2);
-        //        Debug.Log("added " + data.Carrot + " " + ItemType.Carrot);
-        //    }
-        //    for (int i = 0; i < data.MaskOfMockery; i++)
-        //    {
-        //        Inventory.Instance.InitialiseInventoryItems.Add(3);
-        //    }
+            Debug.LogWarning("load inventory stuff");
 
-        //    Inventory.Instance.LoadItemsFromSave();
-        //}
+            LoadInventoryData loadInventory = new LoadInventoryData();
+            loadInventory.LoadInventory(data);
+        }
     }
 
     private void loadInventoryItemsInGame(SaveGameData data)
     {       
-        Inventory.Instance.InitialiseInventoryItems.Clear();
         Inventory.Instance.MakeAllSlotsEmpty();
 
         Debug.LogWarning("load inventory stuff");
 
-        //for (int i = 0; i < data.RoughneckShot; i++)
-        //{
-        //    Inventory.Instance.InitialiseInventoryItems.Add(1);
-        //}
-        //for (int i = 0; i < data.Carrot; i++)
-        //{
-        //    Inventory.Instance.InitialiseInventoryItems.Add(2);
-        //    Debug.Log("added " + data.Carrot + " " + ItemType.Carrot);
-        //}
-        //for (int i = 0; i < data.MaskOfMockery; i++)
-        //{
-        //    Inventory.Instance.InitialiseInventoryItems.Add(3);
-        //}
-
-  //      Inventory.Instance.LoadItemsFromSave();
+        LoadInventoryData loadInventory = new LoadInventoryData();
+        loadInventory.LoadInventory(data);
     }
 
     private void saveWorldEvents(SaveGameData data)
@@ -333,7 +302,6 @@ public class SaveAndLoadGame
         data.IsAfterGoldenScreech = WorldEvents.IsAfterGoldenScreech;
         data.NeedsToKnowWhatSacrificeIs = WorldEvents.NeedsToKnowWhatSacrificeIs;
         data.KnowsWhatSacrificeIs = WorldEvents.KnowsWhatSacrificeIs;
-
 
         //opposita and getting the gallery key
         data.BlewUpMisterB = WorldEvents.BlewUpMisterB;
@@ -410,12 +378,16 @@ public class SaveAndLoadGame
         Debug.Log("saving player status");
         data.Rupee = GameManager.Instance.RupeeHeld;
         data.SaveDateTime = DateTime.Now;
+        data.CurrentArea = AreaManager.CurrentArea;
     }
 
     private void loadPlayerState(SaveGameData data)
     {
         GameManager.Instance.OverrideMoney(data.Rupee);
-        Debug.Log("loaded player status:" + data.Rupee + " rupee");
+
+        AreaManager.CurrentArea = data.CurrentArea;//TODO AREA DETERMINES THE LOCATION THE PLAYER REVIVES;
+
+        Debug.Log("loaded player status: we have " + data.Rupee + " rupee");
     }
 
     private void saveGameSlotData(SaveGameData data, int slotNo)

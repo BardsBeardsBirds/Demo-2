@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb95c94c42dc9304b8fbd39826598939, type: 3}
+  m_Name: TaskDatabase
+  m_EditorClassIdentifier: 
+  MyTasks:
+  - ID: 0
+    TaskName: Emmon
+    Type: 10
+    Description: Improved model of the hero. Needs animations.
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 1
+    DialogueStage: 0
+    ModelingStage: 6
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 1
+    TaskName: Mister B.
+    Type: 10
+    Description: Mister B. has been modeled. On to the texturing stage.
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 1
+    DialogueStage: 0
+    ModelingStage: 3
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 2
+    TaskName: Bart
+    Type: 10
+    Description: Bart has been modeled. On to the texturing stage.
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 1
+    DialogueStage: 0
+    ModelingStage: 3
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 3
+    TaskName: Leon
+    Type: 10
+    Description: Bart has been modeled. On to the texturing stage.
+    TaskOwner: 0
+    TaskStatus: 1
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 3
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 4
+    TaskName: Madame Opposita
+    Type: 10
+    Description: The model of Madame Opposita is kind of finished.
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 2
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 5
+    TaskName: Ay
+    Type: 10
+    Description: Ay needs more animations.
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 6
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 6
+    TaskName: Benny Twospoons
+    Type: 10
+    Description: Benny needs more animations
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 6
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 7
+    TaskName: Sentinel
+    Type: 10
+    Description: The sentinel needs better animations. He also needs a special animation
+      when he runs away.
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 6
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 8
+    TaskName: Opposita's Corner
+    Type: 1
+    Description: We need a drawing of the area where Madame Opposita hangs out. Her
+      waggon, the place she sits etc.
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 0
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 9
+    TaskName: Tea House Cafe
+    Type: 1
+    Description: We need a drawing of the tea house cafe, especially to see the colours
+      of houses, and to plan the route Leon is going to walk. We need set locations
+      for the teapot, the place where Mister B. sits and the place where Emmon will
+      immitate the mother.
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 0
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 10
+    TaskName: Art Gallery Front
+    Type: 1
+    Description: We need a drawing from the front of the gallery. How do the gallery
+      and nature blend in?
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 0
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 11
+    TaskName: Art Gallery Interior
+    Type: 1
+    Description: We want at least one drawing from the interior of the gallery, to
+      get the right admosphere of the place.
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 0
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 12
+    TaskName: 'Save and Load inventory data '
+    Type: 60
+    Description: How to efficiently save and load item data?
+    TaskOwner: 0
+    TaskStatus: 1
+    TaskPriority: 1
+    DialogueStage: 0
+    ModelingStage: 0
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 13
+    TaskName: Dialogues from multiple camera angles
+    Type: 60
+    Description: 'Let''s experiment if it is doable to feature multiple camera angle
+      dialogues. Each NPC gets several camera positions. These could include:
+
+      -side shot, viewing both conversation partners
+
+      -shot on npc
+
+      -shot on Emmon
+
+      -close up npc
+
+      -close up Emmon
+
+      -other angles, such as top down.
+
+      Per dialogue line a different, appropriate angle can be determined.
+
+
+      Further exploration could include moving camera angles, zooming camera angles
+      and tilting camera angles.'
+    TaskOwner: 0
+    TaskStatus: 1
+    TaskPriority: 1
+    DialogueStage: 0
+    ModelingStage: 0
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15
+  - ID: 14
+    TaskName: Bart's House Interior
+    Type: 1
+    Description: We need at least one drawing of the interior of Bart's house. What
+      stuff does he have in his house?
+    TaskOwner: 0
+    TaskStatus: 0
+    TaskPriority: 0
+    DialogueStage: 0
+    ModelingStage: 0
+    UIStage: 0
+    MusicStage: 0
+    DateCreated: 2015-11-15

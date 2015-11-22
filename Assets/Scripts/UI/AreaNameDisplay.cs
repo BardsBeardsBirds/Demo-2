@@ -22,8 +22,7 @@ public class AreaNameDisplay : MonoBehaviour
     {
         if (_followUpAnimation && _areaText.color.a < 0.02f)
         {
-            Debug.Log("We zijn er");
-            _areaText.text = _name;
+            _areaText.text = TextAdjustment.ReplaceUnderscores(_name);
             _animator.SetBool("Display", true);
             _followUpAnimation = false;
         }
@@ -32,7 +31,7 @@ public class AreaNameDisplay : MonoBehaviour
     public void DisplayAreaName(string name)
     {
         _areaText.enabled = true;
-        _areaText.text = name;
+        _areaText.text = TextAdjustment.ReplaceUnderscores(name);
         _animator.SetBool("Display", true);
     }
 

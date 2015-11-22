@@ -746,25 +746,7 @@ public class MadameOpposita : MonoBehaviour
             }
         }
 
-        //if (dialogueOptionID == 15503)
-        //{
-        //    AddToDialogue(15503);
-        //    AddToDialogue(15504);
-        //    AddToDialogue(15505);
-        //    AddToDialogue(15506);
-        //    AddToDialogue(15507);
-        //    AddToDialogue(15508);
-        //}
 
-        //if (dialogueOptionID == 15510)
-        //{
-        //    AddToDialogue(15510);
-        //    AddToDialogue(15511);
-        //    AddToDialogue(15512);
-        //    AddToDialogue(15513);
-        //    AddToDialogue(15514);
-        //    AddToDialogue(15515);
-        //}
 
         if (dialogueOptionID == 15810)
         {

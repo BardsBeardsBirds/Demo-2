@@ -8,15 +8,16 @@ using UnityEngine.UI;
 public class MainMenuManager : MonoBehaviour
 {
     public MainMenu CurrentMenu;
+    private static LoadingScreen _loadingScreen;
 
      public void Start()
     {
+        _loadingScreen = GameObject.Find("LoadingScreen").GetComponent<LoadingScreen>();
+
+        if (_loadingScreen == null)
+            Debug.LogWarning("cannot find loading screen go");
+
         ShowMenu(CurrentMenu);
- //       Debug.Log(Application.persistentDataPath);    //the location of the save file
-        if (!File.Exists(Application.persistentDataPath + "/demo1Progress.dat"))
-            GreyOutLoadGameButton();
-        else
-            ActivateLoadGameButton();
     }
 
      public void ShowMenu(MainMenu menu)
@@ -34,14 +35,9 @@ public class MainMenuManager : MonoBehaviour
 
         loader.ThisIsANewGame();
         Debug.Log("starting a new game");
+        MainMenuManager.LoadLevel();
 
-        GameObject sceneFaderGO = GameObject.Instantiate(Resources.Load("Prefabs/UI/ScreenFaderClearToBlack")) as GameObject;
-        sceneFaderGO.transform.SetParent(GameObject.Find("Canvas").transform);
-
-        //SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
-        //fader.BlackFader = SceneFader.ToBlack.NewGameFromMainMenu;
-        //fader.IsFadingToBlack = true;
-        //MainMenuSound.FadeOut = true;
+        MainMenuSound.FadeOut = true;
     }
 
     public void QuitGame()
@@ -50,33 +46,13 @@ public class MainMenuManager : MonoBehaviour
     }
 
     public static void LoadLevel()
-    {       
-        Application.LoadLevel("Demo1");
+    {
+        _loadingScreen.LoadLevel("Demo");
     }
 
-    public void LoadGame()
+    public void CheckLoadGameSlots()
     {
-        SaveAndLoadGame loader = new SaveAndLoadGame();
-        loader.IsNotNewGame();
-
-        GameObject sceneFaderGO = GameObject.Instantiate(Resources.Load("Prefabs/UI/ScreenFaderClearToBlack")) as GameObject;
-        sceneFaderGO.transform.SetParent(GameObject.Find("Canvas").transform);
-
-        //SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
-        //fader.BlackFader = SceneFader.ToBlack.LoadFromMainMenu;
-        //fader.IsFadingToBlack = true;
-        //MainMenuSound.FadeOut = true;
-    }
-
-    private void GreyOutLoadGameButton()
-    {
-        GameObject button = GameObject.Find("LoadGameButton");
-        button.GetComponent<Button>().interactable = false;
-    }
-
-    private void ActivateLoadGameButton()
-    {
-        GameObject button = GameObject.Find("LoadGameButton");
-        button.SetActive(true);
+        SaveAndLoadGame games = new SaveAndLoadGame();
+        games.CheckSaveSlots(GameType.LoadFromMainMenu);
     }
 }

@@ -1,18 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Audio;
 
+public enum GameType { NewGame, LoadFromMainMenu, LoadFromInGame, None };
+
 public class GameManager : MonoBehaviour
 {
     public enum GameMode { Paused, Running, DeadMode, MissionAccomplished };
-    public enum GameType { NewGame, LoadFromMenu, LoadFromInGame, None};
 
     public AudioMixerGroup Mixer;
 
     public static GameManager Instance;
 
+    public static int LoadedGameSlotNo;
     public int RupeeHeld;
     public DayNightCycle DayCycle;
 
@@ -74,16 +77,20 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         //////////////////////////////////////////////////////////////////////////
-        //bool newGame = IsThisGameNew();
-        //if (newGame)
-        //    MyGameType = GameType.NewGame;
-        //else
-        //    MyGameType = GameType.LoadFromMenu;
+        bool newGame = IsThisGameNew();
+        if (newGame)
+            MyGameType = GameType.NewGame;
+        else
+        {
+            MyGameType = GameType.LoadFromMainMenu;
 
-        //Debug.Log("MyGameType " + MyGameType);
+            SaveAndLoadGame loadGame = new SaveAndLoadGame();
+            loadGame.LoadGameData(LoadedGameSlotNo);
+        }
+        Debug.Log("Game Manager woke up. MyGameType: " + MyGameType + ". We loaded slot " + LoadedGameSlotNo);
 
-        //if (MyGameType == GameType.NewGame)
-        //    // TODO: Start Begin Dialogue
+      //  if (MyGameType == GameType.NewGame)
+            // TODO: Start Begin Dialogue
 
         //FadeBlackToClear();
         ////////////////////////////////////////////////////////////////////////
@@ -150,6 +157,10 @@ public class GameManager : MonoBehaviour
 
             if (Input.GetKeyUp(KeyCode.N))
             {
+                string old = "old_old";
+
+                string newT = TextAdjustment.ReplaceUnderscores(old);
+                Debug.Log(old + " changed to " + newT);
                 //Debug.Log("EmmonWasBlockedBySentinel" + WorldEvents.EmmonKnowsWhatSentinelWants);
                 //Debug.Log("EmmonHasRoughneckShot" + WorldEvents.EmmonHasRoughneckShot);
                 //Debug.Log("PickedUpMaskOfMockery" + InGameObjectManager.PickedUpMaskOfMockery);
@@ -257,7 +268,7 @@ public class GameManager : MonoBehaviour
         if (Player == null)
             Debug.LogError("Couldn't find the player!");
 
-        Debug.Log("set player position");
+    //    Debug.Log("set player position");
      //   Player.transform.position = new Vector3(-31f, 5.5f, 145f);
      //   Player.transform.rotation = new Quaternion(0.0f, -0.1f, 0.0f, -1.0f);
     }
@@ -364,8 +375,15 @@ public class GameManager : MonoBehaviour
             while (line != null)
             {
                 Debug.LogWarning(line); // prints each line of the file
-                if (line == "This is not a new game")
+                if (line.Contains("This is not a new game"))
                 {
+                    char lastChar = line[line.Length - 1];
+                    int no = 0;
+                    GameManager.LoadedGameSlotNo = lastChar;
+
+                    if (Int32.TryParse(lastChar.ToString(), out no))
+                        GameManager.LoadedGameSlotNo = no;
+                    
                     return false;
                 }
                 else if

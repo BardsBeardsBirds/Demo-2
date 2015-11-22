@@ -55,7 +55,7 @@ public class PauseMenu : MonoBehaviour
     public void ToSaveGame()
     {
         SaveAndLoadGame games = new SaveAndLoadGame();
-        games.CheckSaveSlots(2);
+        games.CheckSaveSlots(GameType.None);    //save game game type
 
         PauseMenuScreenManager.Instance.HidePauseMainMenu();
         PauseMenuScreenManager.Instance.ShowSaveGameMenu(); 
@@ -66,7 +66,7 @@ public class PauseMenu : MonoBehaviour
     public void ToLoadGame()
     {
         SaveAndLoadGame games = new SaveAndLoadGame();
-        games.CheckSaveSlots(1);
+        games.CheckSaveSlots(GameType.LoadFromInGame);
 
         PauseMenuScreenManager.Instance.HidePauseMainMenu();
         PauseMenuScreenManager.Instance.ShowLoadGameMenu(); 

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TaskCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tasks>
+    <Task ID="0">
+      <Name>Emmon</Name>
+      <Type>Model</Type>
+      <Description>Improved model of the hero. Needs animations.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Normal</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>Animating</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="1">
+      <Name>Mister B.</Name>
+      <Type>Model</Type>
+      <Description>Mister B. has been modeled. On to the texturing stage.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Normal</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>Texturing</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="2">
+      <Name>Bart</Name>
+      <Type>Model</Type>
+      <Description>Bart has been modeled. On to the texturing stage.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Normal</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>Texturing</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="3">
+      <Name>Leon</Name>
+      <Type>Model</Type>
+      <Description>Bart has been modeled. On to the texturing stage.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>InProgress</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>Texturing</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="4">
+      <Name>Madame Opposita</Name>
+      <Type>Model</Type>
+      <Description>The model of Madame Opposita is kind of finished.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>Modeling</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="5">
+      <Name>Ay</Name>
+      <Type>Model</Type>
+      <Description>Ay needs more animations.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>Animating</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="6">
+      <Name>Benny Twospoons</Name>
+      <Type>Model</Type>
+      <Description>Benny needs more animations</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>Animating</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="7">
+      <Name>Sentinel</Name>
+      <Type>Model</Type>
+      <Description>The sentinel needs better animations. He also needs a special animation when he runs away.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>Animating</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="8">
+      <Name>Opposita's Corner</Name>
+      <Type>ConceptArt</Type>
+      <Description>We need a drawing of the area where Madame Opposita hangs out. Her waggon, the place she sits etc.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>None</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="9">
+      <Name>Tea House Cafe</Name>
+      <Type>ConceptArt</Type>
+      <Description>We need a drawing of the tea house cafe, especially to see the colours of houses, and to plan the route Leon is going to walk. We need set locations for the teapot, the place where Mister B. sits and the place where Emmon will immitate the mother.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>None</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="10">
+      <Name>Art Gallery Front</Name>
+      <Type>ConceptArt</Type>
+      <Description>We need a drawing from the front of the gallery. How do the gallery and nature blend in?</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>None</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="11">
+      <Name>Art Gallery Interior</Name>
+      <Type>ConceptArt</Type>
+      <Description>We want at least one drawing from the interior of the gallery, to get the right admosphere of the place.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>None</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="12">
+      <Name>Save and Load inventory data </Name>
+      <Type>GameplayFunctionality</Type>
+      <Description>How to efficiently save and load item data?</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>InProgress</Status>
+      <Priority>Normal</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>None</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="13">
+      <Name>Dialogues from multiple camera angles</Name>
+      <Type>GameplayFunctionality</Type>
+      <Description>Let's experiment if it is doable to feature multiple camera angle dialogues. Each NPC gets several camera positions. These could include:
+-side shot, viewing both conversation partners
+-shot on npc
+-shot on Emmon
+-close up npc
+-close up Emmon
+-other angles, such as top down.
+Per dialogue line a different, appropriate angle can be determined.
+
+Further exploration could include moving camera angles, zooming camera angles and tilting camera angles.</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>InProgress</Status>
+      <Priority>Normal</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>None</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+    <Task ID="14">
+      <Name>Bart's House Interior</Name>
+      <Type>ConceptArt</Type>
+      <Description>We need at least one drawing of the interior of Bart's house. What stuff does he have in his house?</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>None</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-11-15</DateCreated>
+    </Task>
+  </Tasks>
+</TaskCollection>

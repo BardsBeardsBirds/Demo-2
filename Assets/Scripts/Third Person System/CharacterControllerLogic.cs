@@ -551,4 +551,22 @@ public class CharacterControllerLogic : MonoBehaviour
         CharacterState state = _state;
         return state;
     }
+
+    public void ChooseIdleState(int rand)
+    {
+        if (rand > 0 && rand < 6)
+            _animator.SetInteger("IdleNo", 1);
+        else if (rand == 6)
+            _animator.SetInteger("IdleNo", 2);
+        else if (rand == 7)
+            _animator.SetInteger("IdleNo", 3);
+        else if (rand == 8)
+            _animator.SetInteger("IdleNo", 4);
+        else if (rand == 9)
+            _animator.SetInteger("IdleNo", 5);
+        else
+        {
+            Debug.Log(rand + " out of range");
+        }
+    }
 }

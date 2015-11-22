@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-
 public class LoadGameSlot : MonoBehaviour
 {
     public int SlotNumber;
@@ -21,7 +20,7 @@ public class LoadGameSlot : MonoBehaviour
 
     public void LoadGame()
     {
-        AudioManager.Instance.UISoundsScript.PlayClick();   // sound
+        GameManager.MyGameType = GameType.LoadFromInGame; //after we implement the main menu we can get rid of this line.
 
         Debug.Log("Start loading game from slot " + SlotNumber);
         GameManager.Instance.GameStateToPaused();   //?? This one??
@@ -31,29 +30,27 @@ public class LoadGameSlot : MonoBehaviour
             DialogueManager.EndDialogueState(DialogueManager.CurrentDialogueNPC);
 
         Inventory inventory = Inventory.Instance;
-        inventory.InitialiseInventoryItems.Clear();
+
         inventory.ResetAmounts();
 
         Time.timeScale = 1;
 
-    //    GameObject sceneFaderGO = GameObject.Instantiate(Resources.Load("Prefabs/UI/ScreenFaderClearToBlack")) as GameObject;
-    //    sceneFaderGO.transform.SetParent(GameObject.Find("Canvas").transform);
-
         SaveAndLoadGame loader = new SaveAndLoadGame();
-        loader.IsNotNewGame();
+        loader.IsNotNewGame(SlotNumber);
 
-        GameManager.Instance.UICanvas.ScreenFader.ToBlack = true;
-        GameManager.Instance.UICanvas.ScreenFader.LoadingSlot = SlotNumber;
-
-        //SceneFader fader = sceneFaderGO.GetComponent<SceneFader>();
-        //fader.BlackFader = SceneFader.ToBlack.LoadFromInGame;
-        //fader.IsFadingToBlack = true;
-        //SceneFader.HasLoadedGame = false;
+        GameManager.Instance.UICanvas.ScreenFader.StartToBlack(SlotNumber);
 
         PauseMenu.Instance.ResumeGame();
-        //   ClosePanel();
+    }
 
-     //   PauseMenu.Instance.ResumeGame();
+    public void LoadGameFromMainMenu()
+    {
+        SaveAndLoadGame loader = new SaveAndLoadGame();
+        loader.IsNotNewGame(SlotNumber);
+
+        MainMenuManager.LoadLevel();
+
+        MainMenuSound.FadeOut = true;
     }
 
     public void ShowUsedSlot(string slotInfo, int slotNo)
@@ -66,7 +63,6 @@ public class LoadGameSlot : MonoBehaviour
 
         if (slotNo == 0)
         {
-            Debug.Log("SAVE SLOT 0: " + WorldEvents.SavedOnSlot1);
             SaveNo.text = "Save No.\n" + "" + WorldEvents.SavedOnSlot1;
         }
         else if (slotNo == 1)

@@ -84,7 +84,7 @@ public class TestScreen : MonoBehaviour
         {
             GameManager.NPCs[Character.Ay].parent.position = new Vector3(-110.95f, 95.68f, 6.05f);
             GameManager.NPCs[Character.Bart].parent.position = new Vector3(-61.43f, 111.53f, -4.36f);
-            GameManager.NPCs[Character.Benny].parent.position = new Vector3(-60.89f, 100f, 54.03f);
+            GameManager.NPCs[Character.Benny].parent.position = new Vector3(-64.69f, 100f, 51.16f);
             GameManager.NPCs[Character.Leon].parent.position = new Vector3(-26.53f, 102.02f, 44.62f);
             GameManager.NPCs[Character.MrB].parent.position = new Vector3(-32.67f, 102.01f, 40.47f);
             GameManager.NPCs[Character.Obstructor].parent.position = new Vector3(52.18f, 106.18f, -15.78f);

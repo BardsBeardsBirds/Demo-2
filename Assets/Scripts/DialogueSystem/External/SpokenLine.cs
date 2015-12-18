@@ -20,6 +20,24 @@ public class SpokenLine
     [XmlElement("AudioId")]
     public int AudioId;
 
+    [XmlElement("CameraAngle")]
+    public CameraAngle CamAngle;
+
+    [XmlElement("CameraMovement")]
+    public CameraMoves CamMovement;
+
+    [XmlElement("CameraMoveSmoothing")]
+    public SmoothCameraMovement CamSmoothing;
+
+    [XmlElement("CameraMoveStartTime")]
+    public int CamMoveStartTime;
+
+    [XmlElement("CameraMoveEndTime")]
+    public int CamMoveEndTime;
+
+    //[XmlElement("CameraMovementTiming")]
+    //public CameraMovementTiming CamMovementTiming;
+
     [XmlElement("Object")]
     public string Object;
 

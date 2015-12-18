@@ -147,6 +147,10 @@
      <Compile Include="Assets\Scripts\Sound\MainMenuSound.cs" />
      <Compile Include="Assets\Scripts\Sound\SetReverb.cs" />
      <Compile Include="Assets\Scripts\Sound\UISounds.cs" />
+     <Compile Include="Assets\Scripts\Third Person System\Camera\CameraAngle.cs" />
+     <Compile Include="Assets\Scripts\Third Person System\Camera\CameraAngles.cs" />
+     <Compile Include="Assets\Scripts\Third Person System\Camera\CameraMoves.cs" />
+     <Compile Include="Assets\Scripts\Third Person System\Camera\DialogueCamera.cs" />
      <Compile Include="Assets\Scripts\Third Person System\CharacterAnimation.cs" />
      <Compile Include="Assets\Scripts\Third Person System\CharacterControllerLogic.cs" />
      <Compile Include="Assets\Scripts\Third Person System\DebugDraw.cs" />
@@ -220,6 +224,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\Resources\Xml\spokenLines - kopie.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
      <None Include="Assets\Environment\Nature Pack 2\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />

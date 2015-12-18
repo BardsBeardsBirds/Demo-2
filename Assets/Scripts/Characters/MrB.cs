@@ -368,7 +368,7 @@ public class MrB : MonoBehaviour
     private static void AddToDialogue(int dialogueID)
     {
         Debug.Log("Adding to dialogue: " + dialogueID);
-        DialoguePlayback.AddToDialogue(dialogueID);
+        DialoguePlayback.AddToDialogue(GameManager.CharacterDialogueLists[Character.MrB][dialogueID]);
     }
 
     private bool IsLastBefore(int lastLine, int dialogueOptionID)

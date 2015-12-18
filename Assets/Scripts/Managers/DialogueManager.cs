@@ -7,7 +7,7 @@ public class DialogueManager
     public static DialogueType ThisDialogueType = DialogueType.None;
     public static Character CurrentDialogueNPC;
 
-    public static List<int> PassedDialogueLines = new List<int>();
+    public static List<SpokenLine> PassedDialogueLines = new List<SpokenLine>();
 
     public static void StartDialogueState(Character NPC, int optionalForcedDialogue)
     {
@@ -60,7 +60,8 @@ public class DialogueManager
                 Debug.LogError("Who is this conversation partner?");
                 break;
         }
-        ThirdPersonCamera.Instance.CameraToDialoguePosition(NPC);
+        SpokenLine spokenLine = new SpokenLine();   //TODO TEMPP
+        ThirdPersonCamera.Instance.CameraToDialoguePosition(NPC, spokenLine);
         Emmon.Instance.TriggerPlayerMove(NPC);
     }
 
@@ -74,35 +75,43 @@ public class DialogueManager
 
         ThisDialogueType = DialogueType.None;
 
-        GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("DialogueState", false);
-        GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Talking", false);
-        GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Listening", false);
+        //GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("DialogueState", false);
+        //GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Talking", false);
+        //GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Listening", false);
+        CharacterControllerLogic.Instance.SetTalkingBool(false);
 
         GameManager.Instance.UICanvas.HideDialogueOptionsUI();
         ThirdPersonCamera.Instance.ReturnCameraToOldPosition();
 
-        CharacterControllerLogic.Instance.EndTalkingState();
+        CharacterControllerLogic.Instance.EndDialogueState();
     }
     
 
     public static void NPCToListeningState(Character NPC)
     {
-        GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Talking", false);
-        GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Listening", true);
+    //    GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Talking", false);
+   //     GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Listening", true);
     }
 
-    public static void AddToPassedDialogueLines(int id)
+    public static void EverybodyWaitForDialogueChoice(Character NPC)
     {
-        Debug.Log("Add to passed dialogue lines: " + id);
-        if(!PassedDialogueLines.Contains(id))
-            PassedDialogueLines.Add(id);
+   //     GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Talking", false);
+   //     GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Listening", true);
+        CharacterControllerLogic.Instance.SetTalkingBool(false);
+    }
+
+    public static void AddToPassedDialogueLines(SpokenLine spokenLine)
+    {
+        Debug.Log("Add to passed dialogue lines: " + spokenLine.ID);
+        if(!PassedDialogueLines.Contains(spokenLine))
+            PassedDialogueLines.Add(spokenLine);
     }
 
     public static bool IsDialoguePassed(int id)
     {
         for (int i = 0; i < PassedDialogueLines.Count; i++)
         {
-            if (id == PassedDialogueLines[i])
+            if (id == PassedDialogueLines[i].ID)
                 return true;
         }
         return false;

@@ -118,6 +118,7 @@ public class BennyTwospoons : MonoBehaviour
                 DialogueMenu.AddToDialogueOptions(13001);
                 DialogueMenu.AddToDialogueOptions(13010);
                 DialogueMenu.AddToDialogueOptions(13100);
+
                 if (GameManager.Instance.MyInventory.LookForItem(ItemType.AysMagicDynamiteShake))
                     DialogueMenu.AddToDialogueOptions(13200);
                 DialogueMenu.AddToDialogueOptions(13300);
@@ -132,6 +133,10 @@ public class BennyTwospoons : MonoBehaviour
                     DialogueMenu.AddToDialogueOptions(13412);
 
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(13410);
+
+          //          DialoguePlayback.EndingDialogue = true;
+
+      //              return 13410;
                 }
                 else
                 {
@@ -142,9 +147,12 @@ public class BennyTwospoons : MonoBehaviour
                     DialogueMenu.AddToDialogueOptions(13402);
 
                     DialoguePlayback.Instance.PlaybackDialogueWithoutOptions(13400);
-                }
 
-                DialoguePlayback.EndingDialogue = true;
+         //           DialoguePlayback.EndingDialogue = true;
+          //          return 13400;
+                }
+                           DialoguePlayback.EndingDialogue = true;
+
 
                 break; 
             default: //in all other dialogue options
@@ -298,7 +306,7 @@ public class BennyTwospoons : MonoBehaviour
     private static void AddToDialogue(int dialogueID)
     {
         Debug.Log("Adding to dialogue: " + dialogueID);
-        DialoguePlayback.AddToDialogue(dialogueID);
+        DialoguePlayback.AddToDialogue(GameManager.CharacterDialogueLists[Character.Benny][dialogueID]);
     }
 
     private bool IsLastBefore(int lastLine, int dialogueOptionID)

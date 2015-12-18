@@ -97,8 +97,16 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private bool _freezeCamera;
     private GameObject _сameraLoadGamePosition;
-    public Dictionary<Character, GameObject> DialogueCameraPositions = new Dictionary<Character, GameObject>();
+    public Dictionary<Character, GameObject> DialogueCameraAngles = new Dictionary<Character, GameObject>();
     public Dictionary<Character, GameObject> PlayerDialoguePositions = new Dictionary<Character, GameObject>();
+
+    public Camera MyCamera
+    {
+        get
+        {
+            return this._camera;
+        }
+    }
 
     public Transform CameraXform
     {
@@ -181,14 +189,14 @@ public class ThirdPersonCamera : MonoBehaviour
 
         _сameraLoadGamePosition = GameObject.Find("CameraLoadGamePosition");
 
-        DialogueCameraPositions.Add(Character.Ay, GameObject.Find("AyDialogueCamera"));
-        DialogueCameraPositions.Add(Character.Bart, GameObject.Find("BartDialogueCamera"));
-        DialogueCameraPositions.Add(Character.Benny, GameObject.Find("BennyDialogueCamera"));
-        DialogueCameraPositions.Add(Character.Leon, GameObject.Find("LeonDialogueCamera"));
-        DialogueCameraPositions.Add(Character.MrB, GameObject.Find("MrBDialogueCamera"));
-        DialogueCameraPositions.Add(Character.Obstructor, GameObject.Find("ObstructorDialogueCamera"));
-        DialogueCameraPositions.Add(Character.Opposita, GameObject.Find("OppositaDialogueCamera"));
-        DialogueCameraPositions.Add(Character.Sentinel, GameObject.Find("SentinelDialogueCamera"));
+        DialogueCameraAngles.Add(Character.Ay, GameObject.Find("AyCameraAngles"));
+        DialogueCameraAngles.Add(Character.Bart, GameObject.Find("BartCameraAngles"));
+        DialogueCameraAngles.Add(Character.Benny, GameObject.Find("BennyCameraAngles"));
+        DialogueCameraAngles.Add(Character.Leon, GameObject.Find("LeonCameraAngles"));
+        DialogueCameraAngles.Add(Character.MrB, GameObject.Find("MrBCameraAngles"));
+        DialogueCameraAngles.Add(Character.Obstructor, GameObject.Find("ObstructorCameraAngles"));
+        DialogueCameraAngles.Add(Character.Opposita, GameObject.Find("OppositaCameraAngles"));
+        DialogueCameraAngles.Add(Character.Sentinel, GameObject.Find("SentinelCameraAngles"));
 
         PlayerDialoguePositions.Add(Character.Ay, GameObject.Find("AyPlayerDialoguePosition"));
         PlayerDialoguePositions.Add(Character.Bart, GameObject.Find("BartPlayerDialoguePosition"));
@@ -278,7 +286,7 @@ public class ThirdPersonCamera : MonoBehaviour
             case CamStates.Behind:
                 ResetCamera();
                 // Only update camera look direction if moving
-                if (_follow.Speed > _follow.LocomotionThreshold && _follow.IsInLocomotion() && !_follow.IsInPivot())
+                if (_follow.Speed > _follow.LocomotionThreshold && _follow.IsInLocomotion())
                 {
 
                     _lookDir = Vector3.Lerp(_followXForm.right * (leftX < 0 ? 1f : -1f), _followXForm.forward * (leftY < 0 ? -1f : 1f), Mathf.Abs(Vector3.Dot(this.transform.forward, _followXForm.forward)));
@@ -463,9 +471,9 @@ public class ThirdPersonCamera : MonoBehaviour
         _followXForm = GameObject.FindWithTag("CameraTarget").transform;
     }
 
-    public void CameraToDialoguePosition(Character character)
+    public void CameraToDialoguePosition(Character character, SpokenLine spokenLine)
     {
-        if (DialogueCameraPositions[character] == null)
+        if (DialogueCameraAngles[character] == null)
         {
             Debug.LogWarning("no camera position set up for: " + character);
             return;
@@ -473,8 +481,9 @@ public class ThirdPersonCamera : MonoBehaviour
 
         _freezeCamera = true;
 
-        _camera.transform.position = DialogueCameraPositions[character].transform.position;
-        _camera.transform.rotation = DialogueCameraPositions[character].transform.rotation;
+        DialogueCameraAngles[character].GetComponent<DialogueCamera>().FindAngle(_camera, spokenLine);
+        //_camera.transform.position = DialogueCameraAngles[character].transform.position;
+        //_camera.transform.rotation = DialogueCameraAngles[character].transform.rotation;
     }
 
     public void ReturnCameraToOldPosition()

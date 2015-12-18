@@ -7,18 +7,18 @@ public class DialoguePlayback : MonoBehaviour
 {
     public static Character NPC;
     public static DialoguePlayback Instance;
+    public static SpokenLine CurrentSpokenLine;
 
     public static bool EndingDialogue = false;
     public static bool LastLineOfTheBlock = false;
 
     public static int DeleteLineID = 0;
-    public static int CurrentLineID = 0;
 
-    public static List<int> CurrentDialogueIDs = new List<int>();
+    public static List<SpokenLine> CurrentDialogueLines = new List<SpokenLine>();
 
     private static string _currentDialogueLine;
 
-    private List<char> _autoWriteChars = new List<char>();
+    public static List<char> AutoWriteChars = new List<char>();
 
     public void Awake()
     {
@@ -45,11 +45,35 @@ public class DialoguePlayback : MonoBehaviour
 
         Text lineText = GameManager.Instance.UICanvas.DialogueLineImage.GetComponentInChildren<Text>();
         lineText.text = _currentDialogueLine;
-   //     lineText.text = "";
-        //   lineText.enabled = true;        
-        //_autoWriteChars.Clear();
+        lineText.text = "";
+        lineText.enabled = true;
 
-     //   StartCoroutine(AutoType(lineText));
+        StartCoroutine(AutoType(lineText));
+    }
+
+    IEnumerator AutoType(Text lineText)
+    {
+        AutoWriteChars.Clear();
+
+        foreach (char letter in _currentDialogueLine.ToCharArray())
+        {
+            AutoWriteChars.Add(letter);
+        }
+
+        for (int i = 0; i < AutoWriteChars.Count; i++)
+        {
+            DialogueTimer.IsTyping = true;
+
+            lineText.text += AutoWriteChars[i];
+
+            if (i == AutoWriteChars.Count - 1)
+            {
+                DialogueTimer.IsTyping = false;
+                AutoWriteChars.Clear();
+                break;
+            }
+            yield return new WaitForSeconds(.015f);
+        }
     }
 
     public static void TriggerDialogue(int dialogueOptionID)
@@ -102,29 +126,29 @@ public class DialoguePlayback : MonoBehaviour
 
     public static IEnumerator DialogueRoutine()
     {
-        for (int i = 0; i < DialoguePlayback.CurrentDialogueIDs.Count; i++)
-        {
-            var id = DialoguePlayback.CurrentDialogueIDs[i];
 
+        for (int i = 0; i < DialoguePlayback.CurrentDialogueLines.Count; i++)
+        {
             LastLineOfTheBlock = false;
 
-            SpokenLine spokenLine = GameManager.CharacterDialogueLists[NPC][id];
+            CurrentSpokenLine = GameManager.CharacterDialogueLists[NPC][DialoguePlayback.CurrentDialogueLines[i].ID];
+            SpokenLine spokenLine = CurrentSpokenLine;
 
-            DialogueColour.SetTextColour(id, spokenLine);
+            DialogueColour.SetTextColour(spokenLine);
 
             Instance.SetCurrentDialogueLine(spokenLine.Text);
 
-            CurrentLineID = id;
+            ThirdPersonCamera.Instance.DialogueCameraAngles[NPC].GetComponent<DialogueCamera>().FindAngle(ThirdPersonCamera.Instance.MyCamera, spokenLine);
 
-            Debug.Log("currently going over : " + GameManager.NPCs[NPC].gameObject.name + "/" + id);
+            Debug.Log("currently going over : " + GameManager.NPCs[NPC].gameObject.name + "/" + spokenLine.ID);
 
-            string audioFile = GameManager.NPCs[NPC].gameObject.name + "/" + id;
+            string audioFile = GameManager.NPCs[NPC].gameObject.name + "/" + spokenLine.ID;
             AudioManager.Instance.PlayDialogueAudio(audioFile);
 
             //animation
-            SetTalkingListening(id);
+            SetTalkingListening(spokenLine.ID);
 
-            if (i + 1 == DialoguePlayback.CurrentDialogueIDs.Count)
+            if (i + 1 == DialoguePlayback.CurrentDialogueLines.Count)
             {
                 LastLineOfTheBlock = true;
                 DialoguePlayback.ClearDialogueList();
@@ -140,37 +164,37 @@ public class DialoguePlayback : MonoBehaviour
             float timerLength = (float)DialogueTimer.AudioClipLength;
 
             yield return new WaitForSeconds((float)timerLength);
+
+            while (DialogueTimer.IsTyping)
+            {
+                yield return null;
+            }
+
+
         }
     }
 
-    //public static void ResetTextColour()
-    //{
-    //    Text lineText = GameManager.Instance.UICanvas.DialogueLineImage.GetComponentInChildren<Text>();
-    //    lineText.color = new Color(.95f, .95f, .95f);
-
-    //}
-
-    
-
     private static void SetTalkingListening(int id)
     {
-        //SpokenLine spokenLine = GameManager.CharacterDialogueLists[NPC][id];
+        SpokenLine spokenLine = GameManager.CharacterDialogueLists[NPC][id];
 
-        //if (spokenLine.Speaker == NPC)
-        //{
-        //    GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Listening", false);
-        //    GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Talking", true);
-        //}
-        //else
-        //{
-        //    GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Listening", true);
-        //    GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Talking", false);
-        //}
+        if (spokenLine.Speaker == NPC)
+        {
+            //GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Listening", false);
+            //GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Talking", true);
+            CharacterControllerLogic.Instance.SetTalkingBool(false);
+        }
+        else
+        {
+            //GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Listening", true);
+            //GameManager.NPCs[NPC].GetComponent<Animator>().SetBool("Talking", false);
+            CharacterControllerLogic.Instance.SetTalkingBool(false);
+        }
     }
 
-    public static void AddToDialogue(int dialogueID)
+    public static void AddToDialogue(SpokenLine spokenLine)
     {
-        CurrentDialogueIDs.Add(dialogueID);
+        CurrentDialogueLines.Add(spokenLine);
 
         if (DeleteLineID != 0)
         {
@@ -181,7 +205,8 @@ public class DialoguePlayback : MonoBehaviour
 
     public static void DeleteLine(int deleteLineID)
     {
-        DialogueManager.AddToPassedDialogueLines(deleteLineID);
+        SpokenLine spokenLine = GameManager.CharacterDialogueLists[NPC][deleteLineID];  //something might be wrong here
+        DialogueManager.AddToPassedDialogueLines(spokenLine);
     }
 
     public static void DialogueNumberToSituation(int id)
@@ -220,7 +245,7 @@ public class DialoguePlayback : MonoBehaviour
 
     public static void ClearDialogueList()
     {
-        CurrentDialogueIDs.Clear();
+        CurrentDialogueLines.Clear();
     }
 
     #region ObjectCommentary
@@ -249,25 +274,6 @@ public class DialoguePlayback : MonoBehaviour
     public void PlaybackCombineItemsInventory(Item inventoryItem, Item subjectedInventoryItem)
     {
         StartCoroutine(GameManager.Instance.IIventoryItemWithObject.CombineItemRoutine(inventoryItem, subjectedInventoryItem));
-    }
-
-    IEnumerator AutoType(Text lineText)
-    {
-        DialogueTimer.LineFinished = false;
-
-        foreach (char letter in _currentDialogueLine.ToCharArray())
-        {
-            _autoWriteChars.Add(letter);
-        }
-
-        for (int i = 0; i < _autoWriteChars.Count; i++)
-        {
-            if (DialogueTimer.LineFinished)
-                break;
-
-            lineText.text += _autoWriteChars[i];
-            yield return new WaitForSeconds(.015f);
-        }
     }
 
     #endregion

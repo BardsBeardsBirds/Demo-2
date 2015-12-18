@@ -802,7 +802,7 @@ public class MadameOpposita : MonoBehaviour
 
     private static void AddToDialogue(int dialogueID)
     {
-        DialoguePlayback.AddToDialogue(dialogueID);
+        DialoguePlayback.AddToDialogue(GameManager.CharacterDialogueLists[Character.Opposita][dialogueID]);
     }
 
     private bool IsLastBefore(int lastChosenOptionID, int dialogueOptionID)

@@ -8,11 +8,6 @@ public class DialogueMenu : MonoBehaviour
     public static int NumberOfOptions = 4;
     public static Character Character;
 
-    //public static string[] AllDialogueOptions = new string[]
-    //{
-
-    //};
-
     public static string[] VisibleDialogueOptions = new string[]
     {
         "option1",
@@ -33,7 +28,7 @@ public class DialogueMenu : MonoBehaviour
         {
             string goName = "DialogueOption" + (i + 1);
             GameObject dialogueOption = GameObject.Find(goName);
-        //    dialogueOption.GetComponent<Image>().enabled = true;
+
             dialogueOption.GetComponent<Button>().enabled = true;
             Text Optiontext = dialogueOption.GetComponentInChildren<Text>();
             Optiontext.text = VisibleDialogueOptions[i];

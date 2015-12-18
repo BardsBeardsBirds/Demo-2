@@ -74,18 +74,22 @@ public class Emmon : MonoBehaviour
         GameObject goal = ThirdPersonCamera.Instance.PlayerDialoguePositions[_dialoguePartner];
         Vector3 moveDir = goal.transform.position - Instance.transform.position;
 
-        CharacterControllerLogic.Instance.ForceSpeed(.8f);
+        CharacterControllerLogic.Instance.ForwardSpeed = .2f;
+        CharacterControllerLogic.Instance.ForceSpeed(1);
 
         // Rotate towards the target
         Instance.transform.rotation = Quaternion.Slerp(Instance.transform.rotation, Quaternion.LookRotation(moveDir), 6 * Time.deltaTime);
         Instance.transform.eulerAngles = new Vector3(0, Instance.transform.eulerAngles.y, 0);
 
         // move towards the target
-        Instance.transform.position = Vector3.MoveTowards(Instance.transform.position, new Vector3(goal.transform.position.x, Instance.transform.position.y ,goal.transform.position.z), Time.deltaTime * 4);
+        Instance.transform.position = Vector3.MoveTowards(Instance.transform.position, new Vector3(goal.transform.position.x, Instance.transform.position.y ,goal.transform.position.z), Time.deltaTime * 1);
         var distance = Vector3.Distance(Instance.transform.position, goal.transform.position);
 
+        // apply gravity during animation
+        if (!CharacterControllerLogic.CharacterController.isGrounded)
+            Instance.transform.position = new Vector3(Instance.transform.position.x, Instance.transform.position.y - 1f * Time.deltaTime, Instance.transform.position.z);
 
-        if (distance < 1f)
+        if (distance < .2f)
         {
             ReachDialoguePosition();
         }
@@ -94,6 +98,8 @@ public class Emmon : MonoBehaviour
     public void ReachDialoguePosition()
     {
         MovePlayer = false;
+        CharacterControllerLogic.Instance.StopMoving();
+        CharacterControllerLogic.Instance.ForwardSpeed = 2f;
         TimeManager.Instance.CreateRotator(Instance.transform, GameManager.NPCs[_dialoguePartner].transform, 6, 4);
     }
 }

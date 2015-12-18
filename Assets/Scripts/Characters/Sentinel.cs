@@ -163,7 +163,7 @@ public class Sentinel : MonoBehaviour
 
     private static void AddToDialogue(int dialogueID)
     {
-        DialoguePlayback.AddToDialogue(dialogueID);
+        DialoguePlayback.AddToDialogue(GameManager.CharacterDialogueLists[Character.Sentinel][dialogueID]);
     }
 
     private bool IsLastBefore(int lastLine, int dialogueOptionID)

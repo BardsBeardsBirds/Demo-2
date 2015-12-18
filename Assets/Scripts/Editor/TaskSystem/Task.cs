@@ -36,6 +36,8 @@ public class Task
 
     [XmlElement("DateCreated")]
     public string DateCreated;
+    [XmlElement("DateCompleted")]
+    public string DateCompleted;
 
 
 

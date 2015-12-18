@@ -343,7 +343,8 @@ public class AyTheTearCollector : MonoBehaviour
 
     private static void AddToDialogue(int dialogueID)
     {
-        DialoguePlayback.AddToDialogue(dialogueID);
+    //    DialoguePlayback.AddToDialogue(dialogueID);
+        DialoguePlayback.AddToDialogue(GameManager.CharacterDialogueLists[Character.Ay][dialogueID]);
     }
 
     private bool IsLastBefore(int lastChosenOptionID, int dialogueOptionID)

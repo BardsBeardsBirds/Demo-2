@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class DialogueColour : MonoBehaviour
 {
-    public static void SetTextColour(int id, SpokenLine spokenLine)
+    public static void SetTextColour(SpokenLine spokenLine)
     {
         Text lineText = GameManager.Instance.UICanvas.DialogueLineImage.GetComponentInChildren<Text>();
 

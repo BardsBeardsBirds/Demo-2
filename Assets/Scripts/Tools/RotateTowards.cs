@@ -9,15 +9,11 @@ public class RotateTowards : MonoBehaviour
     public Transform Target;
     public float Speed;
     public float Timer;
-    //private float _distance;
 
     public void Start()
     {
-     //   GameManager.InCutScene = true;
   //      Debug.LogWarning("to the right " + Vector3.Angle(From.transform.right, Target.transform.position - From.transform.position) + " and to the left " + Vector3.Angle(-From.transform.right, Target.transform.position - From.transform.position));
         
-  //      _distance = Vector3.Distance(Target.transform.position, From.transform.position);
-
         if (Vector3.Angle(From.transform.right, Target.transform.position - From.transform.position) <= Vector3.Angle(-From.transform.right, Target.transform.position - From.transform.position))
         {
      //       Debug.Log("Turn Right");
@@ -47,12 +43,12 @@ public class RotateTowards : MonoBehaviour
                 {
                     if (_leftRight == LeftRight.Right && Vector3.Angle(-From.transform.right, Target.transform.position - From.transform.position) > 90)//we want to go right, but only if the angle towards the left is more than 90. Otherwise we turned too far.
                     {
-                        CharacterControllerLogic.Instance.ForceTurningAngle(90);
+                        CharacterControllerLogic.Instance.ForceTurningAngle(1);
                     }
                     else if (_leftRight == LeftRight.Left && Vector3.Angle(From.transform.right, Target.transform.position - From.transform.position) > 90) //we want to go left, but only if the angle towards the right is more than 90. Otherwise we turned too far.
                     {
                         //Debug.LogWarning("to the right " + Vector3.Angle(From.transform.right, Target.transform.position - From.transform.position));
-                        CharacterControllerLogic.Instance.ForceTurningAngle(-90);
+                        CharacterControllerLogic.Instance.ForceTurningAngle(-1);
                     }
                     else
                     {
@@ -73,12 +69,7 @@ public class RotateTowards : MonoBehaviour
 
     private void EndTimer()
     {
-        CharacterControllerLogic.Instance.ForceSpeed(0);
-        CharacterControllerLogic.Instance.ForceTurningAngle(0);
-
-
-      //  GameManager.InCutScene = false;
-
+        CharacterControllerLogic.Instance.StopMovingAndTurning();
         Destroy(this.gameObject);
     }
 }

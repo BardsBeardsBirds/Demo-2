@@ -5,7 +5,8 @@ using System.Collections.Generic;
 
 public static class ObjectCommentary
 {
-    public static int CurrentID = 0;
+    //public static int CurrentID = 0;
+    public static SpokenLine CurrentSpokenLine;
     public static bool AskingLute = false;
     public static int ChangeIndex = 0;
     public static string ChangeLine = "";
@@ -20,14 +21,13 @@ public static class ObjectCommentary
 
         SpokenLine spokenLine = GameManager.ObjectInteractionDialogue[id];
 
-        DialogueColour.SetTextColour(id, spokenLine);
+        DialogueColour.SetTextColour(spokenLine);
 
-     //   DialoguePlayback.Instance.SetCurrentDialogueLine(GameManager.ObjectInteractionDialogue[id].Text);
         DialoguePlayback.Instance.SetCurrentDialogueLine(spokenLine.Text);
 
         DialoguePlayback.Instance.ShowDialogueLines();
 
-        string audioFile = "ObjectInteraction/" + id;
+        string audioFile = "ObjectInteraction/" + spokenLine.ID;
         AudioManager.Instance.PlayDialogueAudio(audioFile);
 
         EndObjectCommentary();
@@ -45,28 +45,27 @@ public static class ObjectCommentary
 
         for (int i = 0; i < CurrentDialogueIDs.Count; i++)
         {
-            var id = CurrentDialogueIDs[i];
-            CurrentID = id;
-            Debug.Log(dialogueType + " " + id);
+            CurrentSpokenLine = GameManager.ObjectInteractionDialogue[CurrentDialogueIDs[i]];
+            SpokenLine spokenLine = CurrentSpokenLine;
 
-            SpokenLine spokenLine = null;
+            Debug.Log(dialogueType + " " + spokenLine.ID);
 
             if (dialogueType == DialogueType.ObjectInvestigation)
             {
-                spokenLine = GameManager.ObjectInvestigationDialogue[id];
+                spokenLine = GameManager.ObjectInvestigationDialogue[spokenLine.ID];
                 DialoguePlayback.Instance.SetCurrentDialogueLine(spokenLine.Text);
             }
             else if (dialogueType == DialogueType.ObjectInteraction)
             {
-                spokenLine = GameManager.ObjectInteractionDialogue[id];
+                spokenLine = GameManager.ObjectInteractionDialogue[spokenLine.ID];
                 DialoguePlayback.Instance.SetCurrentDialogueLine(spokenLine.Text);
             }
 
-            DialogueColour.SetTextColour(id, spokenLine);
+            DialogueColour.SetTextColour(spokenLine);
 
             DialoguePlayback.Instance.ShowDialogueLines();
 
-            int audioId = CheckUniqueAudio(id);
+            int audioId = CheckUniqueAudio(spokenLine.ID);
             string audioFile = "ObjectInteraction/" + audioId;
             AudioManager.Instance.PlayDialogueAudio(audioFile);
 

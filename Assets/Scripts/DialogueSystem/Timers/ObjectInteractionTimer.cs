@@ -30,20 +30,20 @@ public class ObjectInteractionTimer
                 {
                     TimeManager.Instance.DialogueIsPlaying = false;
                     DialoguePlayback.Instance.HideDialogueLines();
-                    DoSomethingAtEnd(ObjectCommentary.CurrentID);
+                    DoSomethingAtEnd(ObjectCommentary.CurrentSpokenLine);
                     DialogueManager.ThisDialogueType = DialogueType.None;
-                    CharacterControllerLogic.Instance.EndTalkingState();
+                    CharacterControllerLogic.Instance.EndDialogueState();
                 }
             }
         }
     }
 
-    private static void DoSomethingAtEnd(int id)
+    private static void DoSomethingAtEnd(SpokenLine spokenline)
     {
-        if(id == 2054) //pick up the mask of Mockery
-        {
-            InGameObjectManager.Instance.TurnOffObject(GameObject.Find("MaskOfMockery"));
-        }
+        //if (spokenline.ID == 2054) //pick up the mask of Mockery
+        //{
+        //    InGameObjectManager.Instance.TurnOffObject(GameObject.Find("MaskOfMockery"));
+        //}
     }
 }
 

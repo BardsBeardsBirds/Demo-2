@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 using System;
@@ -134,6 +134,9 @@ public class TaskListView
                 GUILayout.Label("Status: ", GUILayout.Width(100));
                 Database.Tasks.Get(i).TaskStatus = (Status)EditorGUILayout.EnumPopup(Database.Tasks.Get(i).TaskStatus);
                 GUILayout.EndHorizontal();
+
+                if (Database.Tasks.Get(i).TaskStatus == Status.Completed)
+                    Database.Tasks.Get(i).DateCompleted = DateTime.Today.Year.ToString() + "-" + DateTime.Today.Month.ToString() + "-" + DateTime.Today.Day.ToString();
 
                 GUILayout.BeginHorizontal();
                 GUILayout.Label(" ", GUILayout.Width(200));

@@ -20,7 +20,6 @@ public class DialogueOption : MonoBehaviour
         DialoguePlayback.Instance.PlaybackDialogue(DialogueMenu.CurrentVisibleDialogueOptionsID[i - 1]);   //the lines dispayed
 
         DialogueOptions.Offset = 0;
-
     }
 }
 

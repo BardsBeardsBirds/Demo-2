@@ -4,7 +4,7 @@
     <Task ID="0">
       <Name>Emmon</Name>
       <Type>Model</Type>
-      <Description>Improved model of the hero. Needs animations.</Description>
+      <Description>Improved model of the hero. Needs more animations. Created some idle animations and one talking animation.</Description>
       <Whose_x0020_Task>Cesar</Whose_x0020_Task>
       <Status>Open</Status>
       <Priority>Normal</Priority>
@@ -13,6 +13,7 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="1">
       <Name>Mister B.</Name>
@@ -26,32 +27,35 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="2">
       <Name>Bart</Name>
       <Type>Model</Type>
       <Description>Bart has been modeled. On to the texturing stage.</Description>
       <Whose_x0020_Task>Cesar</Whose_x0020_Task>
-      <Status>Open</Status>
+      <Status>InProgress</Status>
       <Priority>Normal</Priority>
       <DialogueStage>None</DialogueStage>
       <ModelingStage>Texturing</ModelingStage>
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="3">
       <Name>Leon</Name>
       <Type>Model</Type>
-      <Description>Bart has been modeled. On to the texturing stage.</Description>
+      <Description>Bart has been modeled. Texturing is in a far stage</Description>
       <Whose_x0020_Task>Cesar</Whose_x0020_Task>
-      <Status>InProgress</Status>
+      <Status>Open</Status>
       <Priority>Low</Priority>
       <DialogueStage>None</DialogueStage>
       <ModelingStage>Texturing</ModelingStage>
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="4">
       <Name>Madame Opposita</Name>
@@ -65,6 +69,7 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="5">
       <Name>Ay</Name>
@@ -78,6 +83,7 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="6">
       <Name>Benny Twospoons</Name>
@@ -91,6 +97,7 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="7">
       <Name>Sentinel</Name>
@@ -104,6 +111,7 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="8">
       <Name>Opposita's Corner</Name>
@@ -117,6 +125,7 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="9">
       <Name>Tea House Cafe</Name>
@@ -130,6 +139,7 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="10">
       <Name>Art Gallery Front</Name>
@@ -143,6 +153,7 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="11">
       <Name>Art Gallery Interior</Name>
@@ -156,41 +167,37 @@
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
     </Task>
     <Task ID="12">
       <Name>Save and Load inventory data </Name>
       <Type>GameplayFunctionality</Type>
       <Description>How to efficiently save and load item data?</Description>
       <Whose_x0020_Task>Cesar</Whose_x0020_Task>
-      <Status>InProgress</Status>
+      <Status>Completed</Status>
       <Priority>Normal</Priority>
       <DialogueStage>None</DialogueStage>
       <ModelingStage>None</ModelingStage>
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted>2015-12-16</DateCompleted>
     </Task>
     <Task ID="13">
       <Name>Dialogues from multiple camera angles</Name>
       <Type>GameplayFunctionality</Type>
-      <Description>Let's experiment if it is doable to feature multiple camera angle dialogues. Each NPC gets several camera positions. These could include:
--side shot, viewing both conversation partners
--shot on npc
--shot on Emmon
--close up npc
--close up Emmon
--other angles, such as top down.
-Per dialogue line a different, appropriate angle can be determined.
+      <Description>Let's experiment if it is doable to feature multiple camera angle dialogues. There are many angles possible, such as shots on Emmon, the NPS, overview shots, topdown shots and other scenery shots. Each Additionally, camera effect such as zooming give extra possibilities. Spokenline can have a particular camera angle and effect.
 
-Further exploration could include moving camera angles, zooming camera angles and tilting camera angles.</Description>
+Future extention: it would be great to have the option to start or stop camera movement somewhere during a spokenline. Also smoothing the movement would be an improvement.</Description>
       <Whose_x0020_Task>Cesar</Whose_x0020_Task>
-      <Status>InProgress</Status>
+      <Status>Completed</Status>
       <Priority>Normal</Priority>
       <DialogueStage>None</DialogueStage>
       <ModelingStage>None</ModelingStage>
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted>2015-12-16</DateCompleted>
     </Task>
     <Task ID="14">
       <Name>Bart's House Interior</Name>
@@ -204,6 +211,21 @@ Further exploration could include moving camera angles, zooming camera angles an
       <UIStage>None</UIStage>
       <MusicStage>None</MusicStage>
       <DateCreated>2015-11-15</DateCreated>
+      <DateCompleted />
+    </Task>
+    <Task ID="15">
+      <Name>Valeria Vata Valota</Name>
+      <Type>Model</Type>
+      <Description>She needs to be modeled as well, as she is featured in the final scene. But what does she look like?</Description>
+      <Whose_x0020_Task>Cesar</Whose_x0020_Task>
+      <Status>Open</Status>
+      <Priority>Low</Priority>
+      <DialogueStage>None</DialogueStage>
+      <ModelingStage>Concept</ModelingStage>
+      <UIStage>None</UIStage>
+      <MusicStage>None</MusicStage>
+      <DateCreated>2015-12-10</DateCreated>
+      <DateCompleted />
     </Task>
   </Tasks>
 </TaskCollection>

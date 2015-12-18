@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
 
 public class DialogueTimer
 {
@@ -8,11 +6,11 @@ public class DialogueTimer
     public static float AudioClipLength = 0f;
     public static int ChosenOptionID;
 
-    public static bool LineFinished = false;
+    public static bool IsTyping;
+    public static bool AudioFinished = false;
 
     private float _timer = 0;
     
-
     public void Start()
     {
         AudioClipLength = 0f;
@@ -25,12 +23,10 @@ public class DialogueTimer
 
     public void SetDialogueTimerLength(float timerLength)
     {
-        timerLength = timerLength / 1.5f;   ///TO make every thing go faster 
+   //     timerLength = timerLength / 1.5f;   ///TO make every thing go faster 
         AudioClipLength = timerLength;
-        _timer = 1f;
+    //    _timer = 1f;
         _timer = timerLength;
-
-        LineFinished = false;
     }
 
     public void Update()
@@ -47,15 +43,7 @@ public class DialogueTimer
                     Debug.Log("exit the dialogue");
 
                     TimeManager.Instance.DialogueIsPlaying = false;
-
                     DialogueManager.EndDialogueState(DialogueManager.CurrentDialogueNPC);
-
-
-                    //if (WorldEvents.MissionAccomplished)
-                    //{
-                    //    //TODO End CREDITS!
-
-                    //}
                 }
                 else
                 {
@@ -71,15 +59,14 @@ public class DialogueTimer
                     }
                 }
          //       Debug.Log("Do we do something at the end?" + DialoguePlayback.CurrentLineID);
+                CameraAngles.StopMovingCamera();
 
-                DoSomethingAtEnd(DialoguePlayback.CurrentLineID);
-
-                LineFinished = true;
+                DoSomethingAtEnd(DialoguePlayback.CurrentSpokenLine);
             }
         }       
     }
 
-    private static void DoSomethingAtEnd(int id)
+    private static void DoSomethingAtEnd(SpokenLine spokenLine)
     {
         //if (id == 3025) //drink the roughneck shot after this one
         //{
